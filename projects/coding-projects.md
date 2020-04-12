@@ -1,5 +1,15 @@
 # Coding Projects
 
+### KPI Tacker
+
+- Consider name:
+  - Modularized Rapid Development, Accelerated Development Toolkit
+  -
+
+### [cloud-photo-viewer](cloud-photo-viewer.md)
+
+Ability to ingest photos from Dropbox and Google Drive and visualize them
+
 ## Open Me API / Tracks
 
 An overarching project that aims to:

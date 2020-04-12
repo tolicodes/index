@@ -4,9 +4,13 @@
 
 ## ACTIVE PROJECTS
 
-### [cloud-photo-viewer](cloud-photo-viewer.md)
+- [PickleJS](./picklejs.md)
 
-Ability to ingest photos from Dropbox and Google Drive and visualize them
+### [Financial Health](./financial-health.md)
+
+### [Health](./health.md)
+
+Become financially healthy
 
 ## Stable Projects
 
@@ -15,3 +19,13 @@ Ability to ingest photos from Dropbox and Google Drive and visualize them
 ## [Writing Projects](./writing-projects.md)
 
 ## [Non Coding Projects](./non-coding-projects.md)
+
+## [Random Todos](./random-todos.md)
+
+## [Relationship with Asya](./relationship-with-asya.md)
+
+## [Organizing](./organizing.md)
+
+## [Technical Reading](./technical-reading.md)
+
+## [With Asya][./with-asya.md]
