@@ -3,6 +3,7 @@
 ## Template
 
 1. Set up project in [trello](./trello.md)
+
 2. Go to https://github.com/new and enter a project name
 3. Add "Node.js" `.gitignore` and choose `GNU General Public License`
 4. Clone it down
