@@ -1,4 +1,6 @@
-# semantic-release
+# semantic-release-commitizen
+
+Installs semantic release with commitizen
 
 ```bash
 yarn add --dev @semantic-release/changelog @semantic-release/commit-analyzer @semantic-release/git @semantic-release/release-notes-generator cz-conventional-changelog husky semantic-release semantic-release-monorepo syncpack
