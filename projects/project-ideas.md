@@ -25,6 +25,7 @@
 6. Are there any breaking changes? (y/N) (checkbox)
 7. Does this change affect any open issues?
    1. Add issue references (e.g. "fix #123", "re #123".):
+   2. Pick JIRA issue
 8. Show final commit message (ex: feat(queue): added debugging, writing tmp file, bug fix)
 
 ### Other features
