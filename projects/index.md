@@ -14,6 +14,10 @@ Become financially healthy
 
 ## Stable Projects
 
+## [Project Ideas](./project-ideas.md)
+
+Scratchpad for ideas I have
+
 ## [Coding Projects](./coding-projects.md)
 
 ## [Writing Projects](./writing-projects.md)
