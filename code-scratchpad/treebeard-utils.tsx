@@ -1,3 +1,12 @@
+/**
+ * I started playing around with treebeard but the default
+ * instructions were not expanding the tree. It has something
+ * to do with the way React handles mutations. So I tried
+ * an approach where I make deep copies and reference nodes
+ * by ID. It didn't work, stuck on the `active` property not
+ * taken off the cursor
+ */
+
 import React, { useState, useEffect } from "react";
 import { Treebeard } from "react-treebeard";
 import { v4 as uuid } from "uuid";
