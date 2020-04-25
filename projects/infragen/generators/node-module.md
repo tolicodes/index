@@ -1,5 +1,13 @@
 # node-module
 
+1. Run
+
+```
+yarn init
+```
+
+2. Add standard scripts
+
 package.json
 
 ```json
