@@ -1,5 +1,5 @@
 {
-  "name": "package/electron-app",
+  "name": "@package/electron-app",
   "version": "0.1.0",
   "private": true,
   "homepage": ".",
@@ -29,11 +29,20 @@
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
-    "test": "react-scripts test",
+    "test": "jest --config jest.config.json",
+    "test:watch": "yarn test --watch",
+    "test:debug": "DEBUG=* yarn test --verbose",
+    "test:watch:debug": "yarn test:debug --watch",
+    "test:integration": "USE_REAL_API=true yarn test",
+    "test:integration:watch": "yarn test:integration --watch",
+    "test:integration:debug": "DEBUG=* yarn run test:integration --verbose",
+    "test:integration:debug:watch": "yarn run test:integration:debug --watch",
     "eject": "react-scripts eject",
     "install-build-dependencies": "electron-builder install-app-deps",
     "electron:dev": "concurrently \"BROWSER=none yarn start\" \"wait-on http://localhost:3000 && tsc -p electron -w\" \"wait-on http://localhost:3000 && tsc -p electron && electron .\"",
-    "electron:build": "yarn build && tsc -p electron && electron-builder"
+    "electron:build": "yarn build && tsc -p electron && electron-builder",
+    "storybook": "start-storybook -p 9009 -s public",
+    "build-storybook": "build-storybook -s public"
   },
   "eslintConfig": {
     "extends": "react-app"
@@ -51,6 +60,11 @@
     ]
   },
   "devDependencies": {
+    "@storybook/addon-actions": "^5.3.18",
+    "@storybook/addon-links": "^5.3.18",
+    "@storybook/addons": "^5.3.18",
+    "@storybook/preset-create-react-app": "^2.1.1",
+    "@storybook/react": "^5.3.18",
     "concurrently": "^5.1.0",
     "electron-builder": "^22.4.1",
     "wait-on": "^4.0.2"
