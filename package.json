@@ -1,0 +1,33 @@
+{
+  "name": "index",
+  "version": "1.0.0",
+  "scripts": {
+    "sync-packages": "syncpack fix-mismatches",
+    "publish": "yarn run sync-packages && lerna run build && lerna exec --concurrency 1 -- npx --no-install semantic-release -e semantic-release-monorepo"
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
+  },
+  "husky": {
+    "hooks": {
+      "prepare-commit-msg": "exec < /dev/tty && git cz --hook || true"
+    }
+  },
+  "main": "index.js",
+  "repository": "git@github.com:tolicodes/index.git",
+  "author": "Anatoliy Zaslavskiy <toli@tolicodes.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "@semantic-release/changelog": "^5.0.1",
+    "@semantic-release/commit-analyzer": "^8.0.1",
+    "@semantic-release/git": "^9.0.0",
+    "@semantic-release/release-notes-generator": "^9.0.1",
+    "cz-conventional-changelog": "^3.1.0",
+    "husky": "^4.2.5",
+    "semantic-release": "^17.0.7",
+    "semantic-release-monorepo": "^7.0.2",
+    "syncpack": "^5.0.1"
+  }
+}

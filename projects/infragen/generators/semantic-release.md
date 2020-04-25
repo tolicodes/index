@@ -60,7 +60,7 @@ steps:
     title: Publish packages
     stage: "publish"
     type: freestyle
-    working_directory: "./node-cli-toolkit"
+    working_directory: "./<your project></your>"
     arguments:
       image: "node:latest"
       commands:
