@@ -6,6 +6,10 @@
 - Built in electron
 - Inspiration: https://www.electronjs.org/apps/metrogit (in angular)
 
+### Commit Flow
+
+#### New Commit
+
 1. Select which files to commit.
    1. Files are organized in [tree](https://github.com/react-component/tree)
    2. Click into file to see [diff](https://github.com/otakustay/react-diff-view)
@@ -23,7 +27,11 @@
    1. Add issue references (e.g. "fix #123", "re #123".):
 8. Show final commit message (ex: feat(queue): added debugging, writing tmp file, bug fix)
 
-Other features
+### Other features
 
 - Automatically run `test:watch`. If a new test is passing suggest committing that test
 - If contains multiple changed jest tests suggest splitting into multiple commits
+
+### Append Commit
+
+Allows to change the message
