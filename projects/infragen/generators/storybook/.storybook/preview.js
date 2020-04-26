@@ -1,4 +1,6 @@
-import { addDecorator } from '@storybook/react'; // <- or your view layer
+import { addDecorator, addParameters } from '@storybook/react';
+import { DocsPage } from '@storybook/addon-docs/blocks';
+
 import { withTests } from '@storybook/addon-jest';
 
 import results from '../.jest-test-results.json';
@@ -8,3 +10,7 @@ addDecorator(
     results,
   })
 );
+
+addParameters({
+  docs: { page: DocsPage },
+})
