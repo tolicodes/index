@@ -12,7 +12,7 @@ Copy files from [storybook](./storybook/)
 Run
 
 ```
-yarn add --dev @storybook/addon-jest
+yarn add --dev @storybook/addon-jest @storybook/addon-docs
 ```
 
 `package.json`

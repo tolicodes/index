@@ -7,7 +7,13 @@
    {
       "scripts": {
         "test": "jest --config jest.config.json",
-        "test:watch": "jest --config jest.config.json --watch"
+        "test:watch": "yarn test --watch",
+        "test:debug": "DEBUG=* yarn test --verbose",
+        "test:watch:debug": "yarn test:debug --watch",
+        "test:integration": "USE_REAL_API=true yarn test",
+        "test:integration:watch": "yarn test:integration --watch",
+        "test:integration:debug": "DEBUG=* yarn run test:integration --verbose",
+        "test:integration:debug:watch": "yarn run test:integration:debug --watch",
       }
    };
    ```
@@ -42,6 +48,6 @@
 
 7. run
 
-```bash
-yarn add --dev jest-watch-lerna-packages
-```
+   ```bash
+   yarn add --dev jest-watch-lerna-packages
+   ```
