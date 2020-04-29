@@ -1,0 +1,15 @@
+version: "3.4"
+services:
+  markdown-dev:
+    build: .
+    ports:
+      - "8642:8642"
+    volumes:
+      - .:/app
+  # markdown-prod:
+  #   build: .
+  #   ports:
+  #     - "80:8642"
+  #   volumes:
+  #     - .:/app
+  #   image: tolicodes/index-markdown
