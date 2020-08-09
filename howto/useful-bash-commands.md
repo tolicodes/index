@@ -50,7 +50,11 @@ done
 ```
 find . -type d -maxdepth 1 -exec pwd \;
 ```
+
+## App Shortcuts
+### iTerm
+- Split Vertically: Command+D
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTUzMzcyNzA1NywtMTczNzAzMjY4OCw5NT
-g3NzY4MzgsMTMxMTQzMjQ2NV19
+eyJoaXN0b3J5IjpbODkzODkzNDU5LC01MzM3MjcwNTcsLTE3Mz
+cwMzI2ODgsOTU4Nzc2ODM4LDEzMTE0MzI0NjVdfQ==
 -->
