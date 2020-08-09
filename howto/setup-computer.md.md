@@ -10,6 +10,10 @@ curl -s 'https://api.macapps.link/en/chrome-dropbox-drive-github-sequelpro-vscod
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"
 ```
 
+```
+brew install 
+```
+
 ### Install Google Drive Sync and Dropbox
 These are automatically installed by MacApps
 
@@ -28,8 +32,9 @@ Takes forever to sync so...install it first
 - 1Password
 	- Configure using iphone
 	- Preferences->Security->Allow Touch ID
-- Amphetamine
 - WhatsApp
+
+- Amphetamine
 - SpeedTest
 - Duplicate Finder Remover
 	- Preferences->Upgrade to Pro->Restore
@@ -324,8 +329,8 @@ Takes forever to sync so...install it first
 - create-react-native-app
 - Expo
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNDUxNzA2NTgxLDI5MjMwMDIyOCwtMTAyMD
-c5NzQ0NiwtMjg2NDM5NDQ5LDEyOTEwMjMxNzgsLTUwMTkxMzcw
-LC0xNzM0MzExOTk0LC0zNjQyOTU5NTksNjA1MTc2MjIzLDYwMz
-MzMjQ1XX0=
+eyJoaXN0b3J5IjpbMTA2MjU2NjAzNiwyOTIzMDAyMjgsLTEwMj
+A3OTc0NDYsLTI4NjQzOTQ0OSwxMjkxMDIzMTc4LC01MDE5MTM3
+MCwtMTczNDMxMTk5NCwtMzY0Mjk1OTU5LDYwNTE3NjIyMyw2MD
+MzMzI0NV19
 -->
