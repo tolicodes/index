@@ -72,7 +72,7 @@ fi
 
 ### Find all directories in a folder
 ```
-find . -type d -maxdepth 1 -exec pwd \;
+find . -type d -maxdepth 1 -execdir pwd \;
 ```
 
 ### Make array out of new lines
@@ -95,7 +95,7 @@ done
 ### iTerm
 - Split Vertically: Command+D
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTU0NzE2OTI1MCwtNTU3Mjk3MjA1LC01Mz
+eyJoaXN0b3J5IjpbMTQ3Mzc4NTQwMywtNTU3Mjk3MjA1LC01Mz
 M3MjcwNTcsLTE3MzcwMzI2ODgsOTU4Nzc2ODM4LDEzMTE0MzI0
 NjVdfQ==
 -->
