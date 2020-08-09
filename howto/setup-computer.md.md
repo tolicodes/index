@@ -58,12 +58,22 @@ npm i -g codefresh
 	- Authenticate with key from previous step
 
 		  codefresh auth create-context --api-key KEY_GOES_HERE
-   - Go to "CodeFresh Registry Section" click generate and copy Docker login command and paste it in terminal
-   - RescueTime
+	- Go to "CodeFresh Registry Section" click generate and copy Docker login command and paste it in terminal
+	- RescueTime
 	   - Login as adz@nycitt.com
-   - Tower
+	- Tower
 		- License in 1Password
 		- Choose Default to clone to: `~/Sites`
+	- Visual Studio Code
+		- Open Vscode Command Exec (Command + Shift + P) and then type ">install code" and press "Enter". This will install `code`
+		- Go to Preferences->Settings->Type "font terminal" and paste "Droid Sans Mono Dotted for Powerline"
+		- Use "Settings Sync" extension to sync [these settings](https://gist.github.com/tolicodes/05e150802f12d1e3c4ccfbe997f8b43f) login with Github and check "Auto Download", "Auto Upload", "Force Download", "Force Upload"  and type "Download Settings" in Console. Press "Shift+Alt+D" to sync
+	- Zoom
+		- Settings->Recording
+		- Store recordings in Dropbox/ALL/Recordings
+		- Choose location to save the recording to after meetings ends
+		- Add timestamp
+		- Record video during screen sharing->Place video next to shared screen
 ### App Store
 
 #### Installed By MacApps
@@ -367,7 +377,7 @@ npm i -g codefresh
 - create-react-native-app
 - Expo
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE0MjM5ODU1MDMsMjkyMzAwMjI4LC0xMD
+eyJoaXN0b3J5IjpbLTIwMTQ0NjUwMjMsMjkyMzAwMjI4LC0xMD
 IwNzk3NDQ2LC0yODY0Mzk0NDksMTI5MTAyMzE3OCwtNTAxOTEz
 NzAsLTE3MzQzMTE5OTQsLTM2NDI5NTk1OSw2MDUxNzYyMjMsNj
 AzMzMyNDVdfQ==
