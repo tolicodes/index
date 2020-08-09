@@ -18,11 +18,12 @@ done
 #### One Level Down
 ```bash
 function executeInAllDirs {
+    
 	dirs=$(find . -maxdepth 1 -type d -execdir test -d {}/.git \; -prune -print 2>/dev/null)
 	for dir in $dirs; do
 		originalPwd=$(pwd)
 		cd $dir
-		$($1)
+		eval $1
 		cd $originalPwd
 	done
 }
@@ -214,7 +215,7 @@ done
 ### iTerm
 - Split Vertically: Command+D
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTY3MTExOTcwNiwxMzI3NTM0MTIzLDE4OT
+eyJoaXN0b3J5IjpbLTUxMTkyMDk5MSwxMzI3NTM0MTIzLDE4OT
 M4ODc5MDQsLTE3MjAyMTA2MzEsLTU1NzI5NzIwNSwtNTMzNzI3
 MDU3LC0xNzM3MDMyNjg4LDk1ODc3NjgzOCwxMzExNDMyNDY1XX
 0=
