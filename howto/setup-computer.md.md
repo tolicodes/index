@@ -308,17 +308,19 @@ find . -type d -depth 1 -exec "cd {} \; -exec && git config --get remote.origin.
 ```
 
 ### Clone on new computer
-1. `cd ~/Sites`
-2. Clone personal repos
+```
+cd ~/Sites
 
-		git clone git@github.com:tolicodes/node-cli-toolkit.git
-	    git clone git@github.com:tolicodes/activity-brainstorm.git
-		git clone git@github.com:tolicodes/node-api-toolkit.git
-		git clone git@github.com:tolicodes/dropbox-photo-viewer.git
-		git clone git@github.com:tolicodes/souleclipse.us.git
-		git clone git@github.com:tolicodes/principles.git
-		git clone git@github.com:hoverinc/infragen.git
-		git clone git@github.com:tolicodes/github-toolkit.git
+# Personal Repos
+git clone git@github.com:tolicodes/node-cli-toolkit.git
+   git clone git@github.com:tolicodes/activity-brainstorm.git
+git clone git@github.com:tolicodes/node-api-toolkit.git
+git clone git@github.com:tolicodes/dropbox-photo-viewer.git
+git clone git@github.com:tolicodes/souleclipse.us.git
+git clone git@github.com:tolicodes/principles.git
+git clone git@github.com:hoverinc/infragen.git
+git clone git@github.com:tolicodes/github-toolkit.git
+git clone git@github.com:tolicodes/zoomevents.git
 
 
 3. Clone Client repos
@@ -331,19 +333,7 @@ find . -type d -depth 1 -exec "cd {} \; -exec && git config --get remote.origin.
 	git clone https://github.com/tolicodes/hover-index
 	git clone git@github.com:tolicodes/index.git
 	git clone git@github.com:tolicodes/infragen.git
-	git clone git@github.com:EricNiehaus/koinapp.git
-	git clone git@github.com:chrissabaitis/koinapp-api.git
-	git clone git@github.com:tolicodes/node-api-toolkit.git
-	git clone git@github.com:tolicodes/node-cli-toolkit.git
-	git clone git@github.com:numinar/numinar.git
-	git clone git@github.com:tolicodes/principles.git
-	git clone git@github.com:COVID-basic-needs/react-frontend.git
-	git clone git@github.com:tolicodes/souleclipse.us.git
-	git clone git@github.com:storybookjs/storybook.git
-	git clone https://github.com/tolicodes/storybook-jest
-	git clone git@github.com:tolicodes/tolicodes.com.git
-	git clone git@github.com:tolicodes/tree.git
-	git clone git@github.com:tolicodes/zoomevents.git
+	
 		
 4.  Clone HOVER repos
 
@@ -424,7 +414,7 @@ find . -type d -depth 1 -exec "cd {} \; -exec && git config --get remote.origin.
 - create-react-native-app
 - Expo
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTcxNjA1MTg2LDEzNjkzNDQ4MjEsLTE4OD
+eyJoaXN0b3J5IjpbNTE1MTc2MTg5LDEzNjkzNDQ4MjEsLTE4OD
 E3OTY1Niw4MDk5NTA4MywyOTIzMDAyMjgsLTEwMjA3OTc0NDYs
 LTI4NjQzOTQ0OSwxMjkxMDIzMTc4LC01MDE5MTM3MCwtMTczND
 MxMTk5NCwtMzY0Mjk1OTU5LDYwNTE3NjIyMyw2MDMzMzI0NV19
