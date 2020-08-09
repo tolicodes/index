@@ -47,9 +47,15 @@ npm i -g lerna
 
 # Codefresh
 npm i -g codefresh
+
+
+# MANUAL Command
+## Log into npm
+npm login`
 ```
 
-- In Iterm go to Preferences->Profiles->Text->Fonts and select "Droid Sans Mono Dotted for Powerline"
+- iTerm
+	- In Iterm go to Preferences->Profiles->Text->Fonts and select "Droid Sans Mono Dotted for Powerline"
 - Codefresh
 	- Get API Key From [here](https://g.codefresh.io/user/settings)
 	- Authenticate with key from previous step
@@ -61,25 +67,23 @@ npm i -g codefresh
 	- Tower
 		- License in 1Password
 		- Choose Default to clone to: `~/Sites`
-	- Visual Studio Code
-		- Open Vscode Command Exec (Command + Shift + P) and then type ">install code" and press "Enter". This will install `code`
-		- Go to Preferences->Settings->Type "font terminal" and paste "Droid Sans Mono Dotted for Powerline"
-		- Use "Settings Sync" extension to sync [these settings](https://gist.github.com/tolicodes/05e150802f12d1e3c4ccfbe997f8b43f) login with Github and check "Auto Download", "Auto Upload", "Force Download", "Force Upload"  and type "Download Settings" in Console. Press "Shift+Alt+D" to sync
-	- Zoom
-		- Settings->Recording
-		- Store recordings in Dropbox/ALL/Recordings
-		- Choose location to save the recording to after meetings ends
-		- Add timestamp
-		- Record video during screen sharing->Place video next to shared screen
-	- OBS
-		- [Install OBS](https://obsproject.com/download)
-- OBS->Preferences->Output->Recording->Recording Format select "mp4"
-		- OBS->Preferences->Output->Record->Recording Path set to "/Users/toli/ToliCodes Dropbox/Anatoliy Zaslavskiy/ALL/Recordings"
-		- OBS->Preferences->Video Both resolutions to 1920x1200
-		- Setup Display recording + top left hand corner video scene
-- Log into npm
-	`npm login`
-The-0ok nb
+- Visual Studio Code
+	- Open Vscode Command Exec (Command + Shift + P) and then type ">install code" and press "Enter". This will install `code`
+	- Go to Preferences->Settings->Type "font terminal" and paste "Droid Sans Mono Dotted for Powerline"
+	- Use "Settings Sync" extension to sync [these settings](https://gist.github.com/tolicodes/05e150802f12d1e3c4ccfbe997f8b43f) login with Github and check "Auto Download", "Auto Upload", "Force Download", "Force Upload"  and type "Download Settings" in Console. Press "Shift+Alt+D" to sync
+- Zoom
+	- Settings->Recording
+	- Store recordings in Dropbox/ALL/Recordings
+	- Choose location to save the recording to after meetings ends
+	- Add timestamp
+	- Record video during screen sharing->Place video next to shared screen
+- OBS
+	- OBS->Preferences->Output->Recording->Recording Format select "mp4"
+	- OBS->Preferences->Output->Record->Recording Path set to "/Users/toli/ToliCodes Dropbox/Anatoliy Zaslavskiy/ALL/Recordings"
+	- OBS->Preferences->Video Both resolutions to 1920x1200
+	- Setup Display recording + top left hand corner video scene
+
+
 ### App Store
 
 #### Installed By MacApps
@@ -413,10 +417,10 @@ done
 curl -s 'https://api.macapps.link/en/chrome-dropbox-drive-github-sequelpro-vscode-docker-sketch-iterm-1password-cyberduck-spotify-skype-slack-whatsapp-discord' | sh
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTk0MTMwNzIyMywtODg2NzkzODU5LDE5Mz
-M1MzIyMDgsLTE3NzM1OTg4MDAsMjExNjU5MzIxOCw1MTUxNzYx
-ODksMTM2OTM0NDgyMSwtMTg4MTc5NjU2LDgwOTk1MDgzLDI5Mj
-MwMDIyOCwtMTAyMDc5NzQ0NiwtMjg2NDM5NDQ5LDEyOTEwMjMx
-NzgsLTUwMTkxMzcwLC0xNzM0MzExOTk0LC0zNjQyOTU5NTksNj
-A1MTc2MjIzLDYwMzMzMjQ1XX0=
+eyJoaXN0b3J5IjpbOTkzODg5OTg3LC04ODY3OTM4NTksMTkzMz
+UzMjIwOCwtMTc3MzU5ODgwMCwyMTE2NTkzMjE4LDUxNTE3NjE4
+OSwxMzY5MzQ0ODIxLC0xODgxNzk2NTYsODA5OTUwODMsMjkyMz
+AwMjI4LC0xMDIwNzk3NDQ2LC0yODY0Mzk0NDksMTI5MTAyMzE3
+OCwtNTAxOTEzNzAsLTE3MzQzMTE5OTQsLTM2NDI5NTk1OSw2MD
+UxNzYyMjMsNjAzMzMyNDVdfQ==
 -->
