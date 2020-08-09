@@ -52,15 +52,15 @@ git config --global branch.autosetupmerge always
 ### Loop over directory and execute command
 Recursive
 ```
-dirs=$(find . -type d | cut -c 3-)
+dirs=$(find . -maxdepth=1 -type d 2>/dev/null | cut -c 3-)
 
 SAVEIFS=$IFS   # Save current IFS
 IFS=$'\n'      # Change IFS to new line
-nadmes=($dirs) # split to array $names
+dirs=($dirs) # split to array $names
 IFS=$SAVEIFS   # Restore IFS
 
-for dir in dirs; do
-  ( cd "${dir%/*}" && COMMAND )
+for dir in $dirs; do
+  ( cd "${dir%/*}" && pwd )
 done
 ```
 
@@ -124,7 +124,7 @@ done
 ### iTerm
 - Split Vertically: Command+D
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE3NTc5NjI0OTAsLTU1NzI5NzIwNSwtNT
+eyJoaXN0b3J5IjpbLTE4ODc0MzI3MDgsLTU1NzI5NzIwNSwtNT
 MzNzI3MDU3LC0xNzM3MDMyNjg4LDk1ODc3NjgzOCwxMzExNDMy
 NDY1XX0=
 -->
