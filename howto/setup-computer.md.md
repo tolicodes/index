@@ -41,16 +41,7 @@ Takes forever to sync so...install it first
 
 - [Chrome](https://www.google.com/chrome/?brand=CHBD&gclid=CjwKCAiA8K7uBRBBEiwACOm4d-CR4CPqSUYJJhj8Fks_GWJeAjOJvcLZibwbbQTjiNl9CM1-1W5VgRoCXNkQAvD_BwE&gclsrc=aw.ds)
 	- Login as toli@nycitt.com
-	- Setup your pinned tabs:
-		- [toli@nycitt.com Gmail](http://gmail.com)
-		- [adz@nycitt.com Gmail](http://gmail.com)
-		- [Calendar](https://calendar.google.com/)
-	- Setup Trello window
-		- Login as adz@nycitt.com
-		- Open boards for projects you're working on
-- [Dropbox](https://www.dropbox.com/downloading)
-   - Choose "Online only"
-   - Choose "Selective Sync" and only sync "ALL->Recordings"
+	- TabCloud - open Main
 - [HubStaff](https://app.hubstaff.com/download)
 - [Docker](https://www.docker.com/products/docker-desktop)
 - [Google Drive](https://www.google.com/drive/download/)
@@ -296,6 +287,7 @@ Takes forever to sync so...install it first
 - create-react-native-app
 - Expo
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTUwMTkxMzcwLC0xNzM0MzExOTk0LC0zNj
-QyOTU5NTksNjA1MTc2MjIzLDYwMzMzMjQ1XX0=
+eyJoaXN0b3J5IjpbMTI5MTAyMzE3OCwtNTAxOTEzNzAsLTE3Mz
+QzMTE5OTQsLTM2NDI5NTk1OSw2MDUxNzYyMjMsNjAzMzMyNDVd
+fQ==
 -->
