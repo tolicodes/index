@@ -303,7 +303,7 @@ The-0ok nb
 ```
 find . -type d -depth 1 -exec git --git-dir={}/.git --work-tree=$PWD/{} config --get remote.origin.url \;
 
-find . -type d -depth 1 -exec "cd {}\; -exec && git config --get remote.origin.url \; -exec&& cd .." \;
+find . -type d -depth 1 -exec "cd {} \; -exec && git config --get remote.origin.url  \; -exec&& cd .." \;
 ```
 
 ### Clone on new computer
@@ -396,7 +396,7 @@ find . -type d -depth 1 -exec "cd {}\; -exec && git config --get remote.origin.u
 - create-react-native-app
 - Expo
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTExNjA3OTU1MDAsMjAzMzU3MzAwOCw4MD
+eyJoaXN0b3J5IjpbLTE4ODE3OTY1NiwtMTE2MDc5NTUwMCw4MD
 k5NTA4MywyOTIzMDAyMjgsLTEwMjA3OTc0NDYsLTI4NjQzOTQ0
 OSwxMjkxMDIzMTc4LC01MDE5MTM3MCwtMTczNDMxMTk5NCwtMz
 Y0Mjk1OTU5LDYwNTE3NjIyMyw2MDMzMzI0NV19
