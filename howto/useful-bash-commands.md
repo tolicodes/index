@@ -228,12 +228,9 @@ function FUNCTIONNAME { #### REPLACE FUNCTIONNAME with your function name
 	    --action*) #### CHANGE THIS
 		  shift
 	      ACTION=`echo $1 | sed -e 's/^[^=]*=//g'`
-	      shift
 	      ;;
 	    *)
 	      shift
-	      echo "yo
-	      echo $1
 	      ARGS="$1"
 	  esac
 	done
@@ -250,8 +247,8 @@ FUNCTIONNAME -f --action testing test
 ### iTerm
 - Split Vertically: Command+D
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNTI0MDI2NjczLDEzMjc1MzQxMjMsMTg5Mz
-g4NzkwNCwtMTcyMDIxMDYzMSwtNTU3Mjk3MjA1LC01MzM3Mjcw
-NTcsLTE3MzcwMzI2ODgsOTU4Nzc2ODM4LDEzMTE0MzI0NjVdfQ
-==
+eyJoaXN0b3J5IjpbMTQxMzYxMzM0MiwxMzI3NTM0MTIzLDE4OT
+M4ODc5MDQsLTE3MjAyMTA2MzEsLTU1NzI5NzIwNSwtNTMzNzI3
+MDU3LC0xNzM3MDMyNjg4LDk1ODc3NjgzOCwxMzExNDMyNDY1XX
+0=
 -->
