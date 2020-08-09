@@ -21,6 +21,11 @@ find . -type d -execdir test -d {}/.git \; -prune -print 2>/dev/null
 If you want only want repos immediately in this directory
 ```bash
 find . -maxdepth 1 -type d -execdir test -d {}/.git \; -prune -print 2>/dev/null
+
+dirs=$(find . -maxdepth 1 -type d -execdir test -d {}/.git \; -prune -print 2>/dev/null)
+for i in $(dirs); do
+   echo "$i Hi"
+ done
 ```
 
 ### Get All Unpushed Repos
@@ -184,7 +189,8 @@ done
 ### iTerm
 - Split Vertically: Command+D
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTMyNzUzNDEyMywxODkzODg3OTA0LC0xNz
-IwMjEwNjMxLC01NTcyOTcyMDUsLTUzMzcyNzA1NywtMTczNzAz
-MjY4OCw5NTg3NzY4MzgsMTMxMTQzMjQ2NV19
+eyJoaXN0b3J5IjpbLTI4OTY1NDg4LDEzMjc1MzQxMjMsMTg5Mz
+g4NzkwNCwtMTcyMDIxMDYzMSwtNTU3Mjk3MjA1LC01MzM3Mjcw
+NTcsLTE3MzcwMzI2ODgsOTU4Nzc2ODM4LDEzMTE0MzI0NjVdfQ
+==
 -->
