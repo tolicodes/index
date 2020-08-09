@@ -26,7 +26,7 @@ curl -s 'https://api.macapps.link/en/chrome-dropbox-drive-github-sequelpro-vscod
 ```
 
 ```
-brew install the-clock hubstaff nvm yarn
+brew install the-clock hubstaff nvm yarn rescuetime tower
 ```
 
 Setup
@@ -59,6 +59,11 @@ npm i -g codefresh
 
 		  codefresh auth create-context --api-key KEY_GOES_HERE
    - Go to "CodeFresh Registry Section" click generate and copy Docker login command and paste it in terminal
+   - RescueTime
+	   - Login as adz@nycitt.com
+   - Tower
+		- License in 1Password
+		- Choose Default to clone to: `~/Sites`
 ### App Store
 
 #### Installed By MacApps
@@ -362,7 +367,7 @@ npm i -g codefresh
 - create-react-native-app
 - Expo
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE2MjgzNDgyMjQsMjkyMzAwMjI4LC0xMD
+eyJoaXN0b3J5IjpbLTE0MjM5ODU1MDMsMjkyMzAwMjI4LC0xMD
 IwNzk3NDQ2LC0yODY0Mzk0NDksMTI5MTAyMzE3OCwtNTAxOTEz
 NzAsLTE3MzQzMTE5OTQsLTM2NDI5NTk1OSw2MDUxNzYyMjMsNj
 AzMzMyNDVdfQ==
