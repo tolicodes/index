@@ -30,7 +30,6 @@ function executeInAllDirs {
 
 executeInAllDirs "pwd"
 
-
 ```
 Replace `COMMAND` with your command
 
@@ -211,11 +210,61 @@ for item in $items; do
 done
 ```
 
+### Make Function with Flags
+```bash
+while test $# -gt 0; do # For each argument
+  case "$1" in
+    -h|--help)
+      echo "$package - attempt to capture frames"
+      echo " "
+      echo "$package [options] application [arguments]"
+      echo " "
+      echo "options:"
+      echo "-h, --help                show brief help"
+      echo "-a, --action=ACTION       specify an action to use"
+      echo "-o, --output-dir=DIR      specify a directory to store output in"
+      exit 0
+      ;;
+    -a)
+      shift
+      if test $# -gt 0; then
+        export PROCESS=$1
+      else
+        echo "no process specified"
+        exit 1
+      fi
+      shift
+      ;;
+    --action*)
+      export PROCESS=`echo $1 | sed -e 's/^[^=]*=//g'`
+      shift
+      ;;
+    -o)
+      shift
+      if test $# -gt 0; then
+        export OUTPUT=$1
+      else
+        echo "no output dir specified"
+        exit 1
+      fi
+      shift
+      ;;
+    --output-dir*)
+      export OUTPUT=`echo $1 | sed -e 's/^[^=]*=//g'`
+      shift
+      ;;
+    *)
+      break
+      ;;
+  esac
+done
+```
+
 ## App Shortcuts
 ### iTerm
 - Split Vertically: Command+D
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTUxMTkyMDk5MSwxMzI3NTM0MTIzLDE4OT
+eyJoaXN0b3J5IjpbLTQ2Mjc2ODEzNCwxMzI3NTM0MTIzLDE4OT
 M4ODc5MDQsLTE3MjAyMTA2MzEsLTU1NzI5NzIwNSwtNTMzNzI3
 MDU3LC0xNzM3MDMyNjg4LDk1ODc3NjgzOCwxMzExNDMyNDY1XX
 0=
