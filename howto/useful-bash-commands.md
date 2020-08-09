@@ -174,6 +174,7 @@ find . -maxdepth 1 -type d -print 2>/dev/null | cut -c 3-
 
 ### Make array out of new lines
 ```bash
+function 
 items="Item 1
 Item 2
 Item 3"
@@ -242,15 +243,15 @@ function FUNCTIONNAME { #### REPLACE FUNCTIONNAME with your function name
 	[[ ARGS ]] && echo $ARGS
 }
 
-FUNCTIONNAME -f --action testing word other
+FUNCTIONNAME -f --action testing word
 ```
 
 ## App Shortcuts
 ### iTerm
 - Split Vertically: Command+D
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTU1NjYwODUyNCwxMzI3NTM0MTIzLDE4OT
-M4ODc5MDQsLTE3MjAyMTA2MzEsLTU1NzI5NzIwNSwtNTMzNzI3
-MDU3LC0xNzM3MDMyNjg4LDk1ODc3NjgzOCwxMzExNDMyNDY1XX
-0=
+eyJoaXN0b3J5IjpbOTA5NjMxMjI2LDEzMjc1MzQxMjMsMTg5Mz
+g4NzkwNCwtMTcyMDIxMDYzMSwtNTU3Mjk3MjA1LC01MzM3Mjcw
+NTcsLTE3MzcwMzI2ODgsOTU4Nzc2ODM4LDEzMTE0MzI0NjVdfQ
+==
 -->
