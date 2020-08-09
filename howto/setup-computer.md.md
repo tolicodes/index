@@ -297,6 +297,12 @@ npm i -g codefresh
 		- **password**: (Password sent via Cisco Meraki) - search in email 
 	
 ## Repos to Clone
+### Get Remotes from Old Computer
+```
+find . -type d -depth 1 -exec git --git-dir={}/.git --work-tree=$PWD/{} pull origin master \;
+```
+
+### Clone on new computer
 1. `cd ~/Sites`
 2. Clone personal repos
 
@@ -386,8 +392,8 @@ npm i -g codefresh
 - create-react-native-app
 - Expo
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbODA5OTUwODMsMjkyMzAwMjI4LC0xMDIwNz
-k3NDQ2LC0yODY0Mzk0NDksMTI5MTAyMzE3OCwtNTAxOTEzNzAs
-LTE3MzQzMTE5OTQsLTM2NDI5NTk1OSw2MDUxNzYyMjMsNjAzMz
-MyNDVdfQ==
+eyJoaXN0b3J5IjpbMTQ2MjAyNDgxOSw4MDk5NTA4MywyOTIzMD
+AyMjgsLTEwMjA3OTc0NDYsLTI4NjQzOTQ0OSwxMjkxMDIzMTc4
+LC01MDE5MTM3MCwtMTczNDMxMTk5NCwtMzY0Mjk1OTU5LDYwNT
+E3NjIyMyw2MDMzMzI0NV19
 -->
