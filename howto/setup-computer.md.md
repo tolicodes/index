@@ -49,11 +49,18 @@ npm i -g lerna
 npm i -g codefresh
 
 
-# MANUAL Command
+# MANUAL Commands
 ## Log into npm
-npm login`
+npm login
 ```
 
+- 1Password
+	- Open on login
+	- Configure using iphone
+	- Preferences->Security->Allow Touch ID
+	- In chrome [install plugin](https://chrome.google.com/webstore/detail/1password-extension-deskt/aomjjhallfgjeglblehebfpbcfeobpgk?hl=en) and configure it
+- WhatsApp
+- The Clock
 - iTerm
 	- In Iterm go to Preferences->Profiles->Text->Fonts and select "Droid Sans Mono Dotted for Powerline"
 - Codefresh
@@ -83,17 +90,10 @@ npm login`
 	- OBS->Preferences->Video Both resolutions to 1920x1200
 	- Setup Display recording + top left hand corner video scene
 
-
 ### App Store
 
 #### Installed By MacApps
-- 1Password
-	- Open on login
-	- Configure using iphone
-	- Preferences->Security->Allow Touch ID
-	- In chrome [install plugin](https://chrome.google.com/webstore/detail/1password-extension-deskt/aomjjhallfgjeglblehebfpbcfeobpgk?hl=en) and configure it
-- WhatsApp
-- The Clock
+
 
 #### Needs install
 - Amphetamine
@@ -417,10 +417,10 @@ done
 curl -s 'https://api.macapps.link/en/chrome-dropbox-drive-github-sequelpro-vscode-docker-sketch-iterm-1password-cyberduck-spotify-skype-slack-whatsapp-discord' | sh
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbOTkzODg5OTg3LC04ODY3OTM4NTksMTkzMz
-UzMjIwOCwtMTc3MzU5ODgwMCwyMTE2NTkzMjE4LDUxNTE3NjE4
-OSwxMzY5MzQ0ODIxLC0xODgxNzk2NTYsODA5OTUwODMsMjkyMz
-AwMjI4LC0xMDIwNzk3NDQ2LC0yODY0Mzk0NDksMTI5MTAyMzE3
-OCwtNTAxOTEzNzAsLTE3MzQzMTE5OTQsLTM2NDI5NTk1OSw2MD
-UxNzYyMjMsNjAzMzMyNDVdfQ==
+eyJoaXN0b3J5IjpbLTE0NTI3MDI3NDIsLTg4Njc5Mzg1OSwxOT
+MzNTMyMjA4LC0xNzczNTk4ODAwLDIxMTY1OTMyMTgsNTE1MTc2
+MTg5LDEzNjkzNDQ4MjEsLTE4ODE3OTY1Niw4MDk5NTA4MywyOT
+IzMDAyMjgsLTEwMjA3OTc0NDYsLTI4NjQzOTQ0OSwxMjkxMDIz
+MTc4LC01MDE5MTM3MCwtMTczNDMxMTk5NCwtMzY0Mjk1OTU5LD
+YwNTE3NjIyMyw2MDMzMzI0NV19
 -->
