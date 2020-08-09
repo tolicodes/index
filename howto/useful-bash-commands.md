@@ -51,7 +51,48 @@ git config --global branch.autosetupmerge always
 ## General
 ### Loop over directory and execute command
 Recursive
+```bash
+dirs=$(find . -type d 2>/dev/null | cut -c 3-)
+
+# needed for zsh
+setopt sh_word_split
+
+SAVEIFS=$IFS   # Save current IFS
+IFS=$'\n'      # Change IFS to new line
+dirs=($dirs)   # split to array
+IFS=$SAVEIFS   # Restore IFS
+
+for dir in $dirs; do
+	originalDir=$(pwd)
+	cd $dir
+	COMMAND
+	cd $originalDir
+done
 ```
+
+Replace `COMMAND` with your command
+
+Example:
+```
+dirs=$(find . -type d 2>/dev/null | cut -c 3-)
+
+# needed for zsh
+setopt sh_word_split
+
+SAVEIFS=$IFS   # Save current IFS
+IFS=$'\n'      # Change IFS to new line
+dirs=($dirs)   # split to array
+IFS=$SAVEIFS   # Restore IFS
+
+for dir in $dirs; do
+	originalDir=$(pwd)
+	cd $dir
+	COMMAND
+	cd $originalDir
+done
+
+Immediate Dir
+```bash
 dirs=$(find . -maxdepth 1 -type d 2>/dev/null | cut -c 3-)
 
 # needed for zsh
@@ -130,7 +171,7 @@ done
 ### iTerm
 - Split Vertically: Command+D
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNDc4NjkxOTcyLDE4OTM4ODc5MDQsLTE3Mj
-AyMTA2MzEsLTU1NzI5NzIwNSwtNTMzNzI3MDU3LC0xNzM3MDMy
-Njg4LDk1ODc3NjgzOCwxMzExNDMyNDY1XX0=
+eyJoaXN0b3J5IjpbLTE4MDg4OTQ2MTEsMTg5Mzg4NzkwNCwtMT
+cyMDIxMDYzMSwtNTU3Mjk3MjA1LC01MzM3MjcwNTcsLTE3Mzcw
+MzI2ODgsOTU4Nzc2ODM4LDEzMTE0MzI0NjVdfQ==
 -->
