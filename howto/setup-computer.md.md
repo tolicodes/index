@@ -30,6 +30,7 @@ Takes forever to sync so...install it first
 	- Check Run as "Menu Application" in the main screen 
 - XCode
 	- Open Xcode and agree to license agreement
+	- - Install command line tools `xcode-select --install`
 - DayOne
 	- Sign in using icloud
 - Slack
@@ -37,8 +38,7 @@ Takes forever to sync so...install it first
 - Numbers
 
 ### Download
-- Install command line tools `xcode-select --install`
-- Opoen Xcode and press agree
+
 - [Chrome](https://www.google.com/chrome/?brand=CHBD&gclid=CjwKCAiA8K7uBRBBEiwACOm4d-CR4CPqSUYJJhj8Fks_GWJeAjOJvcLZibwbbQTjiNl9CM1-1W5VgRoCXNkQAvD_BwE&gclsrc=aw.ds)
 	- Login as toli@nycitt.com
 	- Setup your pinned tabs:
@@ -296,6 +296,6 @@ Takes forever to sync so...install it first
 - create-react-native-app
 - Expo
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE3MzQzMTE5OTQsLTM2NDI5NTk1OSw2MD
-UxNzYyMjMsNjAzMzMyNDVdfQ==
+eyJoaXN0b3J5IjpbLTUwMTkxMzcwLC0xNzM0MzExOTk0LC0zNj
+QyOTU5NTksNjA1MTc2MjIzLDYwMzMzMjQ1XX0=
 -->
