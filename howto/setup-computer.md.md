@@ -26,7 +26,7 @@ curl -s 'https://api.macapps.link/en/chrome-dropbox-drive-github-sequelpro-vscod
 ```
 
 ```
-brew install the-clock
+brew install the-clock hubstaff
 ```
 
 ### App Store
@@ -81,11 +81,11 @@ brew install the-clock
 
 ### Download
 
-### Installed By 
+#### Installed By MacApps
 - [Chrome](https://www.google.com/chrome/?brand=CHBD&gclid=CjwKCAiA8K7uBRBBEiwACOm4d-CR4CPqSUYJJhj8Fks_GWJeAjOJvcLZibwbbQTjiNl9CM1-1W5VgRoCXNkQAvD_BwE&gclsrc=aw.ds)
 	- Login as toli@nycitt.com
 	- TabCloud - open Main
-- Cyberdock
+- Cyberduck
 - [HubStaff](https://app.hubstaff.com/download)
 - [Docker](https://www.docker.com/products/docker-desktop)
 - [Google Drive](https://www.google.com/drive/download/)
@@ -107,6 +107,7 @@ brew install the-clock
 	- In Iterm go to Preferences->Profiles->Text->Fonts and select "Droid Sans Mono Dotted for Powerline"
 - [NVM](https://github.com/nvm-sh/nvm#installation-and-update) - 
 
+		
 	  curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.35.1/install.sh | bash
 	  source ~/.zshrc
 	  nvm install 12
@@ -331,7 +332,7 @@ brew install the-clock
 - create-react-native-app
 - Expo
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTgwNzY4OTA0MiwyOTIzMDAyMjgsLTEwMj
+eyJoaXN0b3J5IjpbLTU0NDU5NTc3NSwyOTIzMDAyMjgsLTEwMj
 A3OTc0NDYsLTI4NjQzOTQ0OSwxMjkxMDIzMTc4LC01MDE5MTM3
 MCwtMTczNDMxMTk5NCwtMzY0Mjk1OTU5LDYwNTE3NjIyMyw2MD
 MzMzI0NV19
