@@ -14,20 +14,27 @@ done
 ```
 
 ### Loop over All Git Repos in Folder
-```bash
-find . -type d -execdir test -d {}/.git \; -prune -print 2>/dev/null
-```
 
-If you want only want repos immediately in this directory
+#### One Level Down
 ```bash
-find . -maxdepth 1 -type d -execdir test -d {}/.git \; -prune -print 2>/dev/null
-
 dirs=$(find . -maxdepth 1 -type d -execdir test -d {}/.git \; -prune -print 2>/dev/null)
 for dir in $dirs; do
 	originalPwd=$(pwd)
-   cd $dir
-   pwd
-   cd $originalPwd
+	cd $dir
+	COMMAND ### REPLACE THIS
+	cd $originalPwd
+done
+```
+Replace `COMMAND` with your command
+
+#### Example
+```bash
+dirs=$(find . -maxdepth 1 -type d -execdir test -d {}/.git \; -prune -print 2>/dev/null)
+for dir in $dirs; do
+	originalPwd=$(pwd)
+	cd $dir
+	pwd ### REPLACE THIS
+	cd $originalPwd
 done
 ```
 
@@ -192,8 +199,8 @@ done
 ### iTerm
 - Split Vertically: Command+D
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNTQ1MTM0MTg1LDEzMjc1MzQxMjMsMTg5Mz
-g4NzkwNCwtMTcyMDIxMDYzMSwtNTU3Mjk3MjA1LC01MzM3Mjcw
-NTcsLTE3MzcwMzI2ODgsOTU4Nzc2ODM4LDEzMTE0MzI0NjVdfQ
-==
+eyJoaXN0b3J5IjpbLTUwMzY1NjE0MiwxMzI3NTM0MTIzLDE4OT
+M4ODc5MDQsLTE3MjAyMTA2MzEsLTU1NzI5NzIwNSwtNTMzNzI3
+MDU3LC0xNzM3MDMyNjg4LDk1ODc3NjgzOCwxMzExNDMyNDY1XX
+0=
 -->
