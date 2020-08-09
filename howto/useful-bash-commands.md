@@ -23,8 +23,6 @@ If you want only want repos immediately in this directory
 find . -maxdepth 1 -type d -execdir test -d {}/.git \; -prune -print 2>/dev/null
 ```
 
-
-
 ### Get All Unpushed Repos
 ```
 for dir in *; do
@@ -77,11 +75,28 @@ fi
 find . -type d -maxdepth 1 -exec pwd \;
 ```
 
+### Make array out of new lines
+```
+names="Item 1
+Item2
+Item3"
+
+SAVEIFS=$IFS   # Save current IFS
+IFS=$'\n'      # Change IFS to new line
+names=($names) # split to array $names
+IFS=$SAVEIFS   # Restore IFS
+
+for (( i=0; i<${#names[@]}; i++ ))
+do
+    echo "$i: ${names[$i]}"
+done
+```
+
 ## App Shortcuts
 ### iTerm
 - Split Vertically: Command+D
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTk3NDg0MzYzMSwtNTU3Mjk3MjA1LC01Mz
+eyJoaXN0b3J5IjpbMTUwMjg4MjM2NSwtNTU3Mjk3MjA1LC01Mz
 M3MjcwNTcsLTE3MzcwMzI2ODgsOTU4Nzc2ODM4LDEzMTE0MzI0
 NjVdfQ==
 -->
