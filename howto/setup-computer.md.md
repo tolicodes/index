@@ -90,6 +90,7 @@ The-0ok nb
 
 #### Installed By MacApps
 - 1Password
+	- Open 
 	- Configure using iphone
 	- Preferences->Security->Allow Touch ID
 	- In chrome [install plugin](https://chrome.google.com/webstore/detail/1password-extension-deskt/aomjjhallfgjeglblehebfpbcfeobpgk?hl=en) and configure it
@@ -415,9 +416,9 @@ git clone git@github.com:tolicodes/zoomevents.git
 - create-react-native-app
 - Expo
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjE5NzE3MjIyLDIxMTY1OTMyMTgsNTE1MT
-c2MTg5LDEzNjkzNDQ4MjEsLTE4ODE3OTY1Niw4MDk5NTA4Mywy
-OTIzMDAyMjgsLTEwMjA3OTc0NDYsLTI4NjQzOTQ0OSwxMjkxMD
-IzMTc4LC01MDE5MTM3MCwtMTczNDMxMTk5NCwtMzY0Mjk1OTU5
-LDYwNTE3NjIyMyw2MDMzMzI0NV19
+eyJoaXN0b3J5IjpbLTg2MjU5NDAzMSwyMTE2NTkzMjE4LDUxNT
+E3NjE4OSwxMzY5MzQ0ODIxLC0xODgxNzk2NTYsODA5OTUwODMs
+MjkyMzAwMjI4LC0xMDIwNzk3NDQ2LC0yODY0Mzk0NDksMTI5MT
+AyMzE3OCwtNTAxOTEzNzAsLTE3MzQzMTE5OTQsLTM2NDI5NTk1
+OSw2MDUxNzYyMjMsNjAzMzMyNDVdfQ==
 -->
