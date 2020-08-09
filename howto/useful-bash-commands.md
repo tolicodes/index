@@ -225,21 +225,27 @@ function FUNCTIONNAME { #### REPLACE FUNCTIONNAME with your function name
 	      shift
 	      FLAG=true #### CHANGE THIS
 	      ;;
-	    --action*)
+	    --action*) #### CHANGE THIS
 		  shift
 	      ACTION=`echo $1 | sed -e 's/^[^=]*=//g'`
 	      shift
 	      ;;
+	     *)
+		    ARGS=$1
 	  esac
 	done
+	
+	[[ FLAG ]] && echo "Flagged"
+	[[ ACTION ]] && echo "ACTION"
+	[[ ARGS ]] && echo
 ```
 
 ## App Shortcuts
 ### iTerm
 - Split Vertically: Command+D
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTI5Mjk5NDUxLDEzMjc1MzQxMjMsMTg5Mz
-g4NzkwNCwtMTcyMDIxMDYzMSwtNTU3Mjk3MjA1LC01MzM3Mjcw
-NTcsLTE3MzcwMzI2ODgsOTU4Nzc2ODM4LDEzMTE0MzI0NjVdfQ
-==
+eyJoaXN0b3J5IjpbLTEzNDk5Njg1NzMsMTMyNzUzNDEyMywxOD
+kzODg3OTA0LC0xNzIwMjEwNjMxLC01NTcyOTcyMDUsLTUzMzcy
+NzA1NywtMTczNzAzMjY4OCw5NTg3NzY4MzgsMTMxMTQzMjQ2NV
+19
 -->
