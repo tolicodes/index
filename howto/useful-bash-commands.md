@@ -21,11 +21,14 @@ git config master.remote origin
 git config master.merge refs/heads/master
 ```
 
-`
-
 ### Push All Branches
 ```
 git push --all
+```
+
+### No Need to set upstream branch
+```
+git config --global branch.autosetupmerge always
 ```
 
 ## General
@@ -41,6 +44,6 @@ done
 find . -type d -maxdepth 1 -exec pwd \;
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTQyNzMyMTgwMCwtMTczNzAzMjY4OCw5NT
+eyJoaXN0b3J5IjpbMTI2MDk1MDQ1NiwtMTczNzAzMjY4OCw5NT
 g3NzY4MzgsMTMxMTQzMjQ2NV19
 -->
