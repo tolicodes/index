@@ -7,8 +7,8 @@ find . -type d -depth 1 -exec git --git-dir={}/.git --work-tree=$PWD/{} config -
 ## General
 ### Loop over directory and execute command
 ```
-find . -type d -depth 1 -exec cd {} \; -exec COMMAND  \; -exec cd .. \;
+find . -type d -maxdepth 1 -exec cd {} \; -exec COMMAND  \; -exec cd .. \;
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTMxMTQzMjQ2NV19
+eyJoaXN0b3J5IjpbMjExMDAwOTYzNSwxMzExNDMyNDY1XX0=
 -->
