@@ -65,7 +65,7 @@ IFS=$SAVEIFS   # Restore IFS
 for dir in $dirs; do
 	originalDir=$(pwd)
 	cd $dir
-	COMMAND
+	COMMAND ##### REPLACE THIS
 	cd $originalDir
 done
 ```
@@ -73,7 +73,7 @@ done
 Replace `COMMAND` with your command
 
 Example:
-```
+```bash
 dirs=$(find . -type d 2>/dev/null | cut -c 3-)
 
 # needed for zsh
@@ -87,9 +87,10 @@ IFS=$SAVEIFS   # Restore IFS
 for dir in $dirs; do
 	originalDir=$(pwd)
 	cd $dir
-	COMMAND
+	pwd ### REPLACE THIS
 	cd $originalDir
 done
+```
 
 Immediate Dir
 ```bash
@@ -100,34 +101,19 @@ setopt sh_word_split
 
 SAVEIFS=$IFS   # Save current IFS
 IFS=$'\n'      # Change IFS to new line
-dirs=($dirs) # split to array $names
+dirs=($dirs)   # split to array
 IFS=$SAVEIFS   # Restore IFS
 
 for dir in $dirs; do
 	originalDir=$(pwd)
 	cd $dir
-	pwd
+	COMMAND #### REPLACE THIS
 	cd $originalDir
 done
 ```
 
-Example
-```
-dirs=$(find . -type d 2>/dev/null | cut -c 3-) 
-for dir in $dirs; do
-  ( cd "${dir%/*}" && echo pwd )
-done
-```
-
-One level:
-```
-for dir in *; do
-  ( cd "${dir%/*}" && COMMAND )
-done
-```
-
 ### Check if File Exists
-```sh
+```bash
 if test -f "FILE"; then
     YOURCOMMAND
 fi
@@ -171,7 +157,7 @@ done
 ### iTerm
 - Split Vertically: Command+D
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE4MDg4OTQ2MTEsMTg5Mzg4NzkwNCwtMT
-cyMDIxMDYzMSwtNTU3Mjk3MjA1LC01MzM3MjcwNTcsLTE3Mzcw
-MzI2ODgsOTU4Nzc2ODM4LDEzMTE0MzI0NjVdfQ==
+eyJoaXN0b3J5IjpbMTc1MjUxNjc3MSwxODkzODg3OTA0LC0xNz
+IwMjEwNjMxLC01NTcyOTcyMDUsLTUzMzcyNzA1NywtMTczNzAz
+MjY4OCw5NTg3NzY4MzgsMTMxMTQzMjQ2NV19
 -->
