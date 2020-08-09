@@ -212,16 +212,12 @@ done
 
 ### Make Function with Flags
 ```bash
+function FUNCTIONNAME { #### REPLACE FUNCTIONNAME with your function name
 while test $# -gt 0; do # For each argument
   case "$1" in
     -h|--help)
-      echo "$package - attempt to capture frames"
-      echo " "
-      echo "$package [options] application [arguments]"
-      echo " "
-      echo "options:"
       echo "-h, --help                show brief help"
-      echo "-a, --action=ACTION       specify an action to use"
+      echo "-a, --action=ACTION       action with f"
       echo "-o, --output-dir=DIR      specify a directory to store output in"
       exit 0
       ;;
@@ -264,7 +260,7 @@ done
 ### iTerm
 - Split Vertically: Command+D
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTQ2Mjc2ODEzNCwxMzI3NTM0MTIzLDE4OT
+eyJoaXN0b3J5IjpbMTE3ODQ1MTk1MSwxMzI3NTM0MTIzLDE4OT
 M4ODc5MDQsLTE3MjAyMTA2MzEsLTU1NzI5NzIwNSwtNTMzNzI3
 MDU3LC0xNzM3MDMyNjg4LDk1ODc3NjgzOCwxMzExNDMyNDY1XX
 0=
