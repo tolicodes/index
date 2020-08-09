@@ -13,6 +13,13 @@ for dir in *; do
 done
 ```
 
+### Get All Unpushed Repos
+```
+for dir in *; do
+  ( cd "${dir%/*}" && echo "git clone $(git config --get remote.origin.url)" )
+done
+```
+
 ### Overwrite Origin
 ```
 git remote rm origin
@@ -44,6 +51,6 @@ done
 find . -type d -maxdepth 1 -exec pwd \;
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTI2MDk1MDQ1NiwtMTczNzAzMjY4OCw5NT
-g3NzY4MzgsMTMxMTQzMjQ2NV19
+eyJoaXN0b3J5IjpbLTE1NTg4NzIyMjksLTE3MzcwMzI2ODgsOT
+U4Nzc2ODM4LDEzMTE0MzI0NjVdfQ==
 -->
