@@ -13,6 +13,15 @@ for dir in *; do
 done
 ```
 
+### Loop over All Git Repos
+```
+DIRS="$( find "$@" -type d \( -execdir test -e {}/.ignore \; -prune \) -o \( -execdir test -d {}/.git \; -prune -print \) )"
+
+for d in $DIRS; do
+  echo $d
+done
+```
+
 ### Get All Unpushed Repos
 ```
 for dir in *; do
@@ -69,6 +78,6 @@ find . -type d -maxdepth 1 -exec pwd \;
 ### iTerm
 - Split Vertically: Command+D
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTU5NDc0OTI0NywtNTMzNzI3MDU3LC0xNz
-M3MDMyNjg4LDk1ODc3NjgzOCwxMzExNDMyNDY1XX0=
+eyJoaXN0b3J5IjpbLTQ3NTYwMTI4LC01MzM3MjcwNTcsLTE3Mz
+cwMzI2ODgsOTU4Nzc2ODM4LDEzMTE0MzI0NjVdfQ==
 -->
