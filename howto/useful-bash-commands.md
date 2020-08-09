@@ -52,8 +52,17 @@ git config --global branch.autosetupmerge always
 ### Loop over directory and execute command
 Recursive
 ```
-for dir in *; do
+dirs=$(find . -type d | cut -c 3-)
+for dir in dirs; do
   ( cd "${dir%/*}" && COMMAND )
+done
+```
+
+Example
+```
+dirs=$(find . -type d | cut -c 3- ) 
+for dir in $dirs; do
+  ( cd "${dir%/*}" && echo pwd )
 done
 ```
 
@@ -109,7 +118,7 @@ done
 ### iTerm
 - Split Vertically: Command+D
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE4Mzc4OTYxMDgsLTU1NzI5NzIwNSwtNT
-MzNzI3MDU3LC0xNzM3MDMyNjg4LDk1ODc3NjgzOCwxMzExNDMy
-NDY1XX0=
+eyJoaXN0b3J5IjpbLTIxOTkyMTE4OCwtNTU3Mjk3MjA1LC01Mz
+M3MjcwNTcsLTE3MzcwMzI2ODgsOTU4Nzc2ODM4LDEzMTE0MzI0
+NjVdfQ==
 -->
