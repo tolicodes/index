@@ -217,8 +217,8 @@ while test $# -gt 0; do # For each argument
   case "$1" in
     -h|--help)
       echo "-h, --help                show brief help"
-      echo "-a, --action=ACTION       action with f"
-      echo "-o, --output-dir=DIR      specify a directory to store output in"
+      echo "-f					      boolean flag command -f"
+	   
       exit 0
       ;;
     -a)
@@ -260,8 +260,8 @@ done
 ### iTerm
 - Split Vertically: Command+D
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTE3ODQ1MTk1MSwxMzI3NTM0MTIzLDE4OT
-M4ODc5MDQsLTE3MjAyMTA2MzEsLTU1NzI5NzIwNSwtNTMzNzI3
-MDU3LC0xNzM3MDMyNjg4LDk1ODc3NjgzOCwxMzExNDMyNDY1XX
-0=
+eyJoaXN0b3J5IjpbMzExMjk4MTg2LDEzMjc1MzQxMjMsMTg5Mz
+g4NzkwNCwtMTcyMDIxMDYzMSwtNTU3Mjk3MjA1LC01MzM3Mjcw
+NTcsLTE3MzcwMzI2ODgsOTU4Nzc2ODM4LDEzMTE0MzI0NjVdfQ
+==
 -->
