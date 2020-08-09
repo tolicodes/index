@@ -53,7 +53,12 @@ if test -f "FILE"; then
 fi
 ```
 
-Exampl
+Example:
+```
+if test -f "package.json"; then
+    echo $FILE
+fi
+```
 
 ### Find all directories in a folder
 ```
@@ -64,6 +69,6 @@ find . -type d -maxdepth 1 -exec pwd \;
 ### iTerm
 - Split Vertically: Command+D
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNzQxMjUwMjAyLC01MzM3MjcwNTcsLTE3Mz
-cwMzI2ODgsOTU4Nzc2ODM4LDEzMTE0MzI0NjVdfQ==
+eyJoaXN0b3J5IjpbLTU5NDc0OTI0NywtNTMzNzI3MDU3LC0xNz
+M3MDMyNjg4LDk1ODc3NjgzOCwxMzExNDMyNDY1XX0=
 -->
