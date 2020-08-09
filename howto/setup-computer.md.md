@@ -33,6 +33,16 @@ Setup
 ```
 rm ~/.zshrc && ln -s ~/Google\ Drive/ALL\ -\ Toli/Config\ Files/.zshrc && source ~/.zshrc
 
+git clone https://github.com/powerline/fonts.git --depth=1
+	# install
+	cd fonts
+	./install.sh
+	# clean-up a bit
+	cd ..
+	rm -rf fonts
+```
+
+- In Iterm go to Preferences->Profiles->Text->Fonts and select "Droid Sans Mono Dotted for Powerline"
 ### App Store
 
 #### Installed By MacApps
@@ -108,7 +118,8 @@ rm ~/.zshrc && ln -s ~/Google\ Drive/ALL\ -\ Toli/Config\ Files/.zshrc && source
 	# clean-up a bit
 	cd ..
 	rm -rf fonts
-	- In Iterm go to Preferences->Profiles->Text->Fonts and select "Droid Sans Mono Dotted for Powerline"
+	
+    - In Iterm go to Preferences->Profiles->Text->Fonts and select "Droid Sans Mono Dotted for Powerline"
 - [NVM](https://github.com/nvm-sh/nvm#installation-and-update) - 
 
 	  curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.35.1/install.sh | bash
@@ -335,7 +346,7 @@ rm ~/.zshrc && ln -s ~/Google\ Drive/ALL\ -\ Toli/Config\ Files/.zshrc && source
 - create-react-native-app
 - Expo
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbODA0OTkxNjczLDI5MjMwMDIyOCwtMTAyMD
+eyJoaXN0b3J5IjpbMjUyMjY3MTYxLDI5MjMwMDIyOCwtMTAyMD
 c5NzQ0NiwtMjg2NDM5NDQ5LDEyOTEwMjMxNzgsLTUwMTkxMzcw
 LC0xNzM0MzExOTk0LC0zNjQyOTU5NTksNjA1MTc2MjIzLDYwMz
 MzMjQ1XX0=
