@@ -15,14 +15,6 @@ Takes forever to sync so...install it first
    - Choose "Selective Sync" and only sync "ALL->Recordings"
    - Drag `ALL/Recordings` to Finder sidebar
 
-### MacApps
-```
-curl -s 'https://api.macapps.link/en/chrome-dropbox-drive-github-sequelpro-vscode-docker-sketch-iterm-1password-cyberduck-spotify-skype-slack-whatsapp-discord' | sh
-```
-
-- Github
-	- 
-
 ### HomeBrew
 ```
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"
@@ -317,7 +309,7 @@ cd ~/Sites
 
 # Personal Repos
 git clone git@github.com:tolicodes/node-cli-toolkit.git
-   git clone git@github.com:tolicodes/activity-brainstorm.git
+git clone git@github.com:tolicodes/activity-brainstorm.git
 git clone git@github.com:tolicodes/node-api-toolkit.git
 git clone git@github.com:tolicodes/dropbox-photo-viewer.git
 git clone git@github.com:tolicodes/souleclipse.us.git
@@ -326,18 +318,16 @@ git clone git@github.com:hoverinc/infragen.git
 git clone git@github.com:tolicodes/github-toolkit.git
 git clone git@github.com:tolicodes/zoomevents.git
 
+# Client repos
+git clone git@github.com:COVID-basic-needs/JS-frontend.git
+git clone git@github.com:TackleHunger/TackleHunger.git
+git clone git@github.com:tolicodes/erxes.git
+git clone https://github.com/tolicodes/erxes-api
 
-3. Clone Client repos
-	
-	git clone git@github.com:COVID-basic-needs/JS-frontend.git
-	git clone git@github.com:TackleHunger/TackleHunger.git
-	git clone git@github.com:tolicodes/erxes.git
-	git clone https://github.com/tolicodes/erxes-api
-
-	git clone https://github.com/tolicodes/hover-index
-	git clone git@github.com:tolicodes/index.git
-	git clone git@github.com:tolicodes/infragen.git
-	
+git clone https://github.com/tolicodes/hover-index
+git clone git@github.com:tolicodes/index.git
+git clone git@github.com:tolicodes/infragen.git
+```
 		
 4.  Clone HOVER repos
 
@@ -417,10 +407,18 @@ git clone git@github.com:tolicodes/zoomevents.git
 - create-react-app
 - create-react-native-app
 - Expo
+
+## Depracated
+
+### MacApps
+```
+curl -s 'https://api.macapps.link/en/chrome-dropbox-drive-github-sequelpro-vscode-docker-sketch-iterm-1password-cyberduck-spotify-skype-slack-whatsapp-discord' | sh
+```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTkzMzUzMjIwOCwtMTc3MzU5ODgwMCwyMT
-E2NTkzMjE4LDUxNTE3NjE4OSwxMzY5MzQ0ODIxLC0xODgxNzk2
-NTYsODA5OTUwODMsMjkyMzAwMjI4LC0xMDIwNzk3NDQ2LC0yOD
-Y0Mzk0NDksMTI5MTAyMzE3OCwtNTAxOTEzNzAsLTE3MzQzMTE5
-OTQsLTM2NDI5NTk1OSw2MDUxNzYyMjMsNjAzMzMyNDVdfQ==
+eyJoaXN0b3J5IjpbMTg4MzUzNDIxLDE5MzM1MzIyMDgsLTE3Nz
+M1OTg4MDAsMjExNjU5MzIxOCw1MTUxNzYxODksMTM2OTM0NDgy
+MSwtMTg4MTc5NjU2LDgwOTk1MDgzLDI5MjMwMDIyOCwtMTAyMD
+c5NzQ0NiwtMjg2NDM5NDQ5LDEyOTEwMjMxNzgsLTUwMTkxMzcw
+LC0xNzM0MzExOTk0LC0zNjQyOTU5NTksNjA1MTc2MjIzLDYwMz
+MzMjQ1XX0=
 -->
