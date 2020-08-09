@@ -51,7 +51,7 @@ for dir in $dirs; do
 	originalPwd=$(pwd)
 	cd $dir
     unmerged=$(git branch --no-merged)
-    [ unmerged ] && echo $dir
+    [ $unmerged ] && echo $dir
 	cd $originalPwd
 done
 ```
@@ -250,8 +250,8 @@ FUNCTIONNAME -f --action testing word
 ### iTerm
 - Split Vertically: Command+D
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEwMzgzODEzODgsMTMyNzUzNDEyMywxOD
-kzODg3OTA0LC0xNzIwMjEwNjMxLC01NTcyOTcyMDUsLTUzMzcy
-NzA1NywtMTczNzAzMjY4OCw5NTg3NzY4MzgsMTMxMTQzMjQ2NV
-19
+eyJoaXN0b3J5IjpbMTE5MjA4MTA5MCwxMzI3NTM0MTIzLDE4OT
+M4ODc5MDQsLTE3MjAyMTA2MzEsLTU1NzI5NzIwNSwtNTMzNzI3
+MDU3LC0xNzM3MDMyNjg4LDk1ODc3NjgzOCwxMzExNDMyNDY1XX
+0=
 -->
