@@ -26,8 +26,12 @@ curl -s 'https://api.macapps.link/en/chrome-dropbox-drive-github-sequelpro-vscod
 ```
 
 ```
-brew install the-clock hubstaff
+brew install the-clock hubstaff nvm yarn
 ```
+
+Setup
+```
+rm ~/.zshrc && ln -s ~/Google\ Drive/ALL\ -\ Toli/Config\ Files/.zshrc && source ~/.zshrc
 
 ### App Store
 
@@ -97,17 +101,16 @@ brew install the-clock hubstaff
 	- `rm ~/.zshrc && ln -s ~/Google\ Drive/ALL\ -\ Toli/Config\ Files/.zshrc && source ~/.zshrc`
 	- Install Powerline Fonts: 
 	
-		    git clone https://github.com/powerline/fonts.git --depth=1
-			# install
-			cd fonts
-			./install.sh
-			# clean-up a bit
-			cd ..
-			rm -rf fonts
+    git clone https://github.com/powerline/fonts.git --depth=1
+	# install
+	cd fonts
+	./install.sh
+	# clean-up a bit
+	cd ..
+	rm -rf fonts
 	- In Iterm go to Preferences->Profiles->Text->Fonts and select "Droid Sans Mono Dotted for Powerline"
 - [NVM](https://github.com/nvm-sh/nvm#installation-and-update) - 
 
-		
 	  curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.35.1/install.sh | bash
 	  source ~/.zshrc
 	  nvm install 12
@@ -332,8 +335,8 @@ brew install the-clock hubstaff
 - create-react-native-app
 - Expo
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTU0NDU5NTc3NSwyOTIzMDAyMjgsLTEwMj
-A3OTc0NDYsLTI4NjQzOTQ0OSwxMjkxMDIzMTc4LC01MDE5MTM3
-MCwtMTczNDMxMTk5NCwtMzY0Mjk1OTU5LDYwNTE3NjIyMyw2MD
-MzMzI0NV19
+eyJoaXN0b3J5IjpbODA0OTkxNjczLDI5MjMwMDIyOCwtMTAyMD
+c5NzQ0NiwtMjg2NDM5NDQ5LDEyOTEwMjMxNzgsLTUwMTkxMzcw
+LC0xNzM0MzExOTk0LC0zNjQyOTU5NTksNjA1MTc2MjIzLDYwMz
+MzMjQ1XX0=
 -->
