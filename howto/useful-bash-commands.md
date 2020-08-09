@@ -120,7 +120,7 @@ fi
 ```
 
 Example:
-```
+```bash
 if test -f "package.json"; then
     echo $FILE
 fi
@@ -128,28 +128,34 @@ fi
 
 ### Find all directories in a folder
 Recursive:
-```
+```bash
 find . -type d | cut -c 3-
 ```
 
 1 level:
-```
+```bash
 find . -maxdepth 1 -type d | cut -c 3-
 ```
 
+Ignoring Permission Errors
+
 ### Make array out of new lines
-```
-names="Item 1
+```bash
+items="Item 1
 Item 2
 Item 3"
 
+# needed for zsh
+setopt sh_word_split
+
 SAVEIFS=$IFS   # Save current IFS
 IFS=$'\n'      # Change IFS to new line
-names=($names) # split to array $names
+items=($items)   # split to array
 IFS=$SAVEIFS   # Restore IFS
 
-for name in names; do
-    echo $name
+for item in $items; d
+	COMMAND #### REPLACE THIS
+	cd $originalDir
 done
 ```
 
@@ -157,7 +163,7 @@ done
 ### iTerm
 - Split Vertically: Command+D
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTc1MjUxNjc3MSwxODkzODg3OTA0LC0xNz
+eyJoaXN0b3J5IjpbLTg5OTE4ODE4MywxODkzODg3OTA0LC0xNz
 IwMjEwNjMxLC01NTcyOTcyMDUsLTUzMzcyNzA1NywtMTczNzAz
 MjY4OCw5NTg3NzY4MzgsMTMxMTQzMjQ2NV19
 -->
