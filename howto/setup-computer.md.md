@@ -29,7 +29,7 @@ curl -s 'https://api.macapps.link/en/chrome-dropbox-drive-github-sequelpro-vscod
 ```
 
 ```
-brew cask install the-clock hubstaff rescuetime tower postman hub obs google-chrome dropbox google-backup-and-sync github sequel-pro
+brew cask install the-clock hubstaff rescuetime tower postman hub obs google-chrome dropbox google-backup-and-sync github sequel-pro visual-studio-code docker sketch iterm2 1password cyberduck spotify skype slack whatsapp discord
 
 brew install nvm yarn jq
 ```
@@ -418,9 +418,9 @@ git clone git@github.com:tolicodes/zoomevents.git
 - create-react-native-app
 - Expo
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTI3ODI4ODExNiwyMTE2NTkzMjE4LDUxNT
-E3NjE4OSwxMzY5MzQ0ODIxLC0xODgxNzk2NTYsODA5OTUwODMs
-MjkyMzAwMjI4LC0xMDIwNzk3NDQ2LC0yODY0Mzk0NDksMTI5MT
-AyMzE3OCwtNTAxOTEzNzAsLTE3MzQzMTE5OTQsLTM2NDI5NTk1
-OSw2MDUxNzYyMjMsNjAzMzMyNDVdfQ==
+eyJoaXN0b3J5IjpbLTE3NzM1OTg4MDAsMjExNjU5MzIxOCw1MT
+UxNzYxODksMTM2OTM0NDgyMSwtMTg4MTc5NjU2LDgwOTk1MDgz
+LDI5MjMwMDIyOCwtMTAyMDc5NzQ0NiwtMjg2NDM5NDQ5LDEyOT
+EwMjMxNzgsLTUwMTkxMzcwLC0xNzM0MzExOTk0LC0zNjQyOTU5
+NTksNjA1MTc2MjIzLDYwMzMzMjQ1XX0=
 -->
