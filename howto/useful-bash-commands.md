@@ -86,9 +86,8 @@ IFS=$'\n'      # Change IFS to new line
 names=($names) # split to array $names
 IFS=$SAVEIFS   # Restore IFS
 
-for (( i=0; i<${#names[@]}; i++ ))
-do
-    echo "$i: ${names[$i]}"
+for name in names; do
+    echo $name
 done
 ```
 
@@ -96,7 +95,7 @@ done
 ### iTerm
 - Split Vertically: Command+D
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTUwMjg4MjM2NSwtNTU3Mjk3MjA1LC01Mz
-M3MjcwNTcsLTE3MzcwMzI2ODgsOTU4Nzc2ODM4LDEzMTE0MzI0
-NjVdfQ==
+eyJoaXN0b3J5IjpbLTIxMjIzNTY3MTYsLTU1NzI5NzIwNSwtNT
+MzNzI3MDU3LC0xNzM3MDMyNjg4LDk1ODc3NjgzOCwxMzExNDMy
+NDY1XX0=
 -->
