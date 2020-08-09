@@ -318,9 +318,39 @@ find . -type d -depth 1 -exec "cd {} \; -exec && git config --get remote.origin.
 		git clone git@github.com:tolicodes/principles.git
 		git clone git@github.com:hoverinc/infragen.git
 
+
+3. Clone Client repos
+	
+	git clone git@github.com:COVID-basic-needs/JS-frontend.git
+	git clone git@github.com:TackleHunger/TackleHunger.git
+
+	git clone git@github.com:COVID-basic-needs/azure-functions.git
+	git clone git@github.com:tolicodes/cf-kompose-plugin.git
+	git clone git@github.com:COVID-basic-needs/convert-food-pantry-data.git
+	git clone git@github.com:erxes/dev-docker.git
+	git clone git@github.com:tolicodes/cloud-photo-viewer.git
+	git clone git@github.com:tolicodes/electron-git.git
+	git clone git@github.com:tolicodes/erxes.git
+	git clone https://github.com/tolicodes/erxes-api
+	git clone git@github.com:tolicodes/github-toolkit.git
+	git clone https://github.com/tolicodes/hover-index
+	git clone git@github.com:tolicodes/index.git
+	git clone git@github.com:tolicodes/infragen.git
+	git clone git@github.com:EricNiehaus/koinapp.git
+	git clone git@github.com:chrissabaitis/koinapp-api.git
+	git clone git@github.com:tolicodes/node-api-toolkit.git
+	git clone git@github.com:tolicodes/node-cli-toolkit.git
+	git clone git@github.com:numinar/numinar.git
+	git clone git@github.com:tolicodes/principles.git
+	git clone git@github.com:COVID-basic-needs/react-frontend.git
+	git clone git@github.com:tolicodes/souleclipse.us.git
+	git clone git@github.com:storybookjs/storybook.git
+	git clone https://github.com/tolicodes/storybook-jest
+	git clone git@github.com:tolicodes/tolicodes.com.git
+	git clone git@github.com:tolicodes/tree.git
+	git clone git@github.com:tolicodes/zoomevents.git
 		
-		
-3.  Clone HOVER repos
+4.  Clone HOVER repos
 
 		git clone git@github.com:hoverinc/design-pro-frontend.git
 		git clone git@github.com:hoverinc/ks8-applications.git
@@ -346,7 +376,7 @@ find . -type d -depth 1 -exec "cd {} \; -exec && git config --get remote.origin.
 		git clone git@github.com:hoverinc/developers.hover.to.git
 		git clone git@github.com:tolicodes/public-notes.git
 
-4. Yarn everything
+5. Yarn everything
 
        for f in ~/Sites/*
 	   do cd $f && yarn 
@@ -399,9 +429,9 @@ find . -type d -depth 1 -exec "cd {} \; -exec && git config --get remote.origin.
 - create-react-native-app
 - Expo
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE1MjQ0OTk5OTksMTM2OTM0NDgyMSwtMT
-g4MTc5NjU2LDgwOTk1MDgzLDI5MjMwMDIyOCwtMTAyMDc5NzQ0
-NiwtMjg2NDM5NDQ5LDEyOTEwMjMxNzgsLTUwMTkxMzcwLC0xNz
-M0MzExOTk0LC0zNjQyOTU5NTksNjA1MTc2MjIzLDYwMzMzMjQ1
-XX0=
+eyJoaXN0b3J5IjpbMTY1NjkzNjUxMSwxMzY5MzQ0ODIxLC0xOD
+gxNzk2NTYsODA5OTUwODMsMjkyMzAwMjI4LC0xMDIwNzk3NDQ2
+LC0yODY0Mzk0NDksMTI5MTAyMzE3OCwtNTAxOTEzNzAsLTE3Mz
+QzMTE5OTQsLTM2NDI5NTk1OSw2MDUxNzYyMjMsNjAzMzMyNDVd
+fQ==
 -->
