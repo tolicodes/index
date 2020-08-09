@@ -46,6 +46,15 @@ for dir in *; do
 done
 ```
 
+### Check if File Exists
+```sh
+if test -f "FILE"; then
+    YOURCOMMAND
+fi
+```
+
+Exampl
+
 ### Find all directories in a folder
 ```
 find . -type d -maxdepth 1 -exec pwd \;
@@ -55,6 +64,6 @@ find . -type d -maxdepth 1 -exec pwd \;
 ### iTerm
 - Split Vertically: Command+D
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbODkzODkzNDU5LC01MzM3MjcwNTcsLTE3Mz
+eyJoaXN0b3J5IjpbNzQxMjUwMjAyLC01MzM3MjcwNTcsLTE3Mz
 cwMzI2ODgsOTU4Nzc2ODM4LDEzMTE0MzI0NjVdfQ==
 -->
