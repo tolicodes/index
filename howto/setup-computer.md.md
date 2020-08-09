@@ -31,6 +31,7 @@ Takes forever to sync so...install it first
 - XCode
 	- Open Xcode and agree to license agreement
 - DayOne
+	- Sign in using icloud
 - Slack
 - TheClock
 - Numbers
@@ -295,6 +296,6 @@ Takes forever to sync so...install it first
 - create-react-native-app
 - Expo
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTM2NDI5NTk1OSw2MDUxNzYyMjMsNjAzMz
-MyNDVdfQ==
+eyJoaXN0b3J5IjpbLTE3MzQzMTE5OTQsLTM2NDI5NTk1OSw2MD
+UxNzYyMjMsNjAzMzMyNDVdfQ==
 -->
