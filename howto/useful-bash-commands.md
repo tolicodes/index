@@ -213,48 +213,32 @@ done
 ### Make Function with Flags
 ```bash
 function FUNCTIONNAME { #### REPLACE FUNCTIONNAME with your function name
-while test $# -gt 0; do # For each argument
-  case "$1" in
-    -h|--help)
-      echo "-h, --help                show brief help"
-      echo "-f					      boolean flag command -f"
-	  echo "--action=ACTION			  flag with value"
-      exit 0
-      ;;
-    -f)
-      shift
-      DO SOMETHING WITH #
-      ;;
-    --action*)
-      export PROCESS=`echo $1 | sed -e 's/^[^=]*=//g'`
-      shift
-      ;;
-    -o)
-      shift
-      if test $# -gt 0; then
-        export OUTPUT=$1
-      else
-        echo "no output dir specified"
-        exit 1
-      fi
-      shift
-      ;;
-    --output-dir*)
-      export OUTPUT=`echo $1 | sed -e 's/^[^=]*=//g'`
-      shift
-      ;;
-    *)
-      break
-      ;;
-  esac
-done
+	while test $# -gt 0; do # For each argument
+	  case "$1" in
+	    -h|--help)
+	      echo "-h, --help                show brief help"
+	      echo "-f					      boolean flag command -f"
+		  echo "--action=ACTION			  flag with value"
+	      exit 0
+	      ;;
+	    -f)
+	      shift
+	      FLAG=true #### CHANGE THIS
+	      ;;
+	    --action*)
+		  shift
+	      ACTION=`echo $1 | sed -e 's/^[^=]*=//g'`
+	      shift
+	      ;;
+	  esac
+	done
 ```
 
 ## App Shortcuts
 ### iTerm
 - Split Vertically: Command+D
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbODkxNTU5OTQzLDEzMjc1MzQxMjMsMTg5Mz
+eyJoaXN0b3J5IjpbMTI5Mjk5NDUxLDEzMjc1MzQxMjMsMTg5Mz
 g4NzkwNCwtMTcyMDIxMDYzMSwtNTU3Mjk3MjA1LC01MzM3Mjcw
 NTcsLTE3MzcwMzI2ODgsOTU4Nzc2ODM4LDEzMTE0MzI0NjVdfQ
 ==
