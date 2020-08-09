@@ -78,8 +78,8 @@ find . -type d -maxdepth 1 -exec pwd \;
 ### Make array out of new lines
 ```
 names="Item 1
-Item2
-Item3"
+Item 2
+Item 3"
 
 SAVEIFS=$IFS   # Save current IFS
 IFS=$'\n'      # Change IFS to new line
@@ -95,7 +95,7 @@ done
 ### iTerm
 - Split Vertically: Command+D
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIxMjIzNTY3MTYsLTU1NzI5NzIwNSwtNT
-MzNzI3MDU3LC0xNzM3MDMyNjg4LDk1ODc3NjgzOCwxMzExNDMy
-NDY1XX0=
+eyJoaXN0b3J5IjpbMTU0NzE2OTI1MCwtNTU3Mjk3MjA1LC01Mz
+M3MjcwNTcsLTE3MzcwMzI2ODgsOTU4Nzc2ODM4LDEzMTE0MzI0
+NjVdfQ==
 -->
