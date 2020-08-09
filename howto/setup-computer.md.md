@@ -26,7 +26,7 @@ curl -s 'https://api.macapps.link/en/chrome-dropbox-drive-github-sequelpro-vscod
 ```
 
 ```
-brew install the-clock hubstaff nvm yarn rescuetime tower postman jq hub
+brew install the-clock hubstaff nvm yarn rescuetime tower postman jq hub obs
 ```
 
 Setup
@@ -74,6 +74,15 @@ npm i -g codefresh
 		- Choose location to save the recording to after meetings ends
 		- Add timestamp
 		- Record video during screen sharing->Place video next to shared screen
+	- OBS
+		- [Install OBS](https://obsproject.com/download)
+- OBS->Preferences->Output->Recording->Recording Format select "mp4"
+		- OBS->Preferences->Output->Record->Recording Path set to "/Users/toli/ToliCodes Dropbox/Anatoliy Zaslavskiy/ALL/Recordings"
+		- OBS->Preferences->Video Both resolutions to 1920x1200
+		- Setup Display recording + top left hand corner video scene
+- Log into npm
+	`npm login`
+
 ### App Store
 
 #### Installed By MacApps
@@ -377,8 +386,8 @@ npm i -g codefresh
 - create-react-native-app
 - Expo
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTQyODgxNDcxNywyOTIzMDAyMjgsLTEwMj
-A3OTc0NDYsLTI4NjQzOTQ0OSwxMjkxMDIzMTc4LC01MDE5MTM3
-MCwtMTczNDMxMTk5NCwtMzY0Mjk1OTU5LDYwNTE3NjIyMyw2MD
-MzMzI0NV19
+eyJoaXN0b3J5IjpbODA5OTUwODMsMjkyMzAwMjI4LC0xMDIwNz
+k3NDQ2LC0yODY0Mzk0NDksMTI5MTAyMzE3OCwtNTAxOTEzNzAs
+LTE3MzQzMTE5OTQsLTM2NDI5NTk1OSw2MDUxNzYyMjMsNjAzMz
+MyNDVdfQ==
 -->
