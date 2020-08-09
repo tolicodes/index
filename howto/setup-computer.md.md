@@ -1,9 +1,13 @@
 # My Setup
 ## Software
 ### MacApps
+```
 curl -s 'https://api.macapps.link/en/chrome-dropbox-drive-github-sequelpro-vscode-docker-sketch-iterm-1password-cyberduck-spotify-skype-slack-whatsapp-discord' | sh
+```
 
 ### Install Google Drive Sync and Dropbox
+These are automatically installed by MacApps
+
 Takes forever to sync so...install it first
 - [Google Drive](https://www.google.com/drive/download/)
 	- Sign in as adz@nycitt.com
@@ -313,7 +317,8 @@ Takes forever to sync so...install it first
 - create-react-native-app
 - Expo
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjkyMzAwMjI4LC0xMDIwNzk3NDQ2LC0yOD
-Y0Mzk0NDksMTI5MTAyMzE3OCwtNTAxOTEzNzAsLTE3MzQzMTE5
-OTQsLTM2NDI5NTk1OSw2MDUxNzYyMjMsNjAzMzMyNDVdfQ==
+eyJoaXN0b3J5IjpbMTU4NzY5MzIzOCwyOTIzMDAyMjgsLTEwMj
+A3OTc0NDYsLTI4NjQzOTQ0OSwxMjkxMDIzMTc4LC01MDE5MTM3
+MCwtMTczNDMxMTk5NCwtMzY0Mjk1OTU5LDYwNTE3NjIyMyw2MD
+MzMzI0NV19
 -->
