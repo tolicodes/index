@@ -5,6 +5,11 @@
 curl -s 'https://api.macapps.link/en/chrome-dropbox-drive-github-sequelpro-vscode-docker-sketch-iterm-1password-cyberduck-spotify-skype-slack-whatsapp-discord' | sh
 ```
 
+### HomeBrew
+```
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"
+```
+
 ### Install Google Drive Sync and Dropbox
 These are automatically installed by MacApps
 
@@ -18,6 +23,8 @@ Takes forever to sync so...install it first
    - Drag `ALL/Recordings` to Finder sidebar
 
 ### App Store
+
+### Installed By MacApps
 - 1Password
 	- Configure using iphone
 	- Preferences->Security->Allow Touch ID
@@ -317,8 +324,8 @@ Takes forever to sync so...install it first
 - create-react-native-app
 - Expo
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTU4NzY5MzIzOCwyOTIzMDAyMjgsLTEwMj
-A3OTc0NDYsLTI4NjQzOTQ0OSwxMjkxMDIzMTc4LC01MDE5MTM3
-MCwtMTczNDMxMTk5NCwtMzY0Mjk1OTU5LDYwNTE3NjIyMyw2MD
-MzMzI0NV19
+eyJoaXN0b3J5IjpbNDUxNzA2NTgxLDI5MjMwMDIyOCwtMTAyMD
+c5NzQ0NiwtMjg2NDM5NDQ5LDEyOTEwMjMxNzgsLTUwMTkxMzcw
+LC0xNzM0MzExOTk0LC0zNjQyOTU5NTksNjA1MTc2MjIzLDYwMz
+MzMjQ1XX0=
 -->
