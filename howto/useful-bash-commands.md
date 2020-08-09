@@ -13,6 +13,14 @@ for dir in *; do
 done
 ```
 
+### Overwrite Origin
+```
+git remote rm origin
+git remote add origin git@github.com:tolicodes/infragen.git
+git config master.remote origin
+config master.merge refs/heads/master
+```
+
 ## General
 ### Loop over directory and execute command
 ```
@@ -26,5 +34,5 @@ done
 find . -type d -maxdepth 1 -exec pwd \;
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNTg1MzAxMDAsMTMxMTQzMjQ2NV19
+eyJoaXN0b3J5IjpbOTU4Nzc2ODM4LDEzMTE0MzI0NjVdfQ==
 -->
