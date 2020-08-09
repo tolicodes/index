@@ -50,7 +50,7 @@ dirs=$(find . -maxdepth 1 -type d -execdir test -d {}/.git \; -prune -print 2>/d
 for dir in $dirs; do
 	originalPwd=$(pwd)
 	cd $dir
-	COMMAND ### REPLACE THIS
+    [[ $(git branch --no-merged)
 	cd $originalPwd
 done
 ```
@@ -249,8 +249,8 @@ FUNCTIONNAME -f --action testing word
 ### iTerm
 - Split Vertically: Command+D
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTQzMjgxMTQ4NCwxMzI3NTM0MTIzLDE4OT
-M4ODc5MDQsLTE3MjAyMTA2MzEsLTU1NzI5NzIwNSwtNTMzNzI3
-MDU3LC0xNzM3MDMyNjg4LDk1ODc3NjgzOCwxMzExNDMyNDY1XX
-0=
+eyJoaXN0b3J5IjpbNTk4ODE1MTA5LDEzMjc1MzQxMjMsMTg5Mz
+g4NzkwNCwtMTcyMDIxMDYzMSwtNTU3Mjk3MjA1LC01MzM3Mjcw
+NTcsLTE3MzcwMzI2ODgsOTU4Nzc2ODM4LDEzMTE0MzI0NjVdfQ
+==
 -->
