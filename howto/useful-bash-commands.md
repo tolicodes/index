@@ -24,7 +24,7 @@ find . -maxdepth 1 -type d -execdir test -d {}/.git \; -prune -print 2>/dev/null
 ```
 
 ### Get All Unpushed Repos
-```
+```bash
 for dir in *; do
   ( echo $dir && cd "${dir%/*}" && echo $(git branch --no-merged) )
 done
@@ -184,7 +184,7 @@ done
 ### iTerm
 - Split Vertically: Command+D
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbOTE1NTk1MTM1LDE4OTM4ODc5MDQsLTE3Mj
-AyMTA2MzEsLTU1NzI5NzIwNSwtNTMzNzI3MDU3LC0xNzM3MDMy
-Njg4LDk1ODc3NjgzOCwxMzExNDMyNDY1XX0=
+eyJoaXN0b3J5IjpbMTMyNzUzNDEyMywxODkzODg3OTA0LC0xNz
+IwMjEwNjMxLC01NTcyOTcyMDUsLTUzMzcyNzA1NywtMTczNzAz
+MjY4OCw5NTg3NzY4MzgsMTMxMTQzMjQ2NV19
 -->
