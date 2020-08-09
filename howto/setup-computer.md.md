@@ -11,7 +11,7 @@ curl -s 'https://api.macapps.link/en/chrome-dropbox-drive-github-sequelpro-vscod
 ```
 
 ```
-brew install 
+brew install the-clock
 ```
 
 ### Install Google Drive Sync and Dropbox
@@ -28,12 +28,14 @@ Takes forever to sync so...install it first
 
 ### App Store
 
-### Installed By MacApps
+#### Installed By MacApps
 - 1Password
 	- Configure using iphone
 	- Preferences->Security->Allow Touch ID
 - WhatsApp
+- The Clock
 
+#### Needs install
 - Amphetamine
 - SpeedTest
 - Duplicate Finder Remover
@@ -72,11 +74,7 @@ Takes forever to sync so...install it first
 			- [1124 Fell1124-fell.slack.com](https://app.slack.com/t/1124-fell/login/z-app-586439096176-1290453447346-fa656e5e56b763e03cb8a7bd04f9583393980b57e1c6f63febb1996c8ba64424)
 			- [KissThisWorldkissthisworld.slack.com](https://app.slack.com/t/kissthisworld/login/z-app-805944651956-1283722996166-4a15073dd230f6c5f9f8a06e402d043b1511874c0866770a0486438f7b750566)
 			- [sexhackhackathon20sexhackhackathon20.slack.com](https://app.slack.com/t/sexhackhackathon20/login/z-app-1049003326133-1290659590083-47db4a3efa62431e05e9f06ea4250775b99e8c0f9e52c1b06b2a853bbee09dc6)
-		- adz@nycitt.com
-			- 
-- TheClock
 - Numbers
-
 
 ### Download
 
@@ -329,8 +327,8 @@ Takes forever to sync so...install it first
 - create-react-native-app
 - Expo
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTA2MjU2NjAzNiwyOTIzMDAyMjgsLTEwMj
-A3OTc0NDYsLTI4NjQzOTQ0OSwxMjkxMDIzMTc4LC01MDE5MTM3
-MCwtMTczNDMxMTk5NCwtMzY0Mjk1OTU5LDYwNTE3NjIyMyw2MD
-MzMzI0NV19
+eyJoaXN0b3J5IjpbLTIwMTQ2Njc5MDYsMjkyMzAwMjI4LC0xMD
+IwNzk3NDQ2LC0yODY0Mzk0NDksMTI5MTAyMzE3OCwtNTAxOTEz
+NzAsLTE3MzQzMTE5OTQsLTM2NDI5NTk1OSw2MDUxNzYyMjMsNj
+AzMzMyNDVdfQ==
 -->
