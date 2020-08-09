@@ -23,6 +23,8 @@ Takes forever to sync so...install it first
 ```
 brew cask install the-clock hubstaff rescuetime tower postman obs google-chrome dropbox google-backup-and-sync github sequel-pro visual-studio-code docker sketch iterm2 1password cyberduck spotify skype slack whatsapp discord
 
+brew cask install hubstaff rescuetime tower postman obs google-chrome dropbox google-backup-and-sync github sequel-pro visual-studio-code docker sketch iterm2 1password cyberduck spotify skype slack whatsapp discord
+
 brew install nvm yarn jq hub
 ```
 
@@ -417,10 +419,10 @@ done
 curl -s 'https://api.macapps.link/en/chrome-dropbox-drive-github-sequelpro-vscode-docker-sketch-iterm-1password-cyberduck-spotify-skype-slack-whatsapp-discord' | sh
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE0NTI3MDI3NDIsLTg4Njc5Mzg1OSwxOT
-MzNTMyMjA4LC0xNzczNTk4ODAwLDIxMTY1OTMyMTgsNTE1MTc2
-MTg5LDEzNjkzNDQ4MjEsLTE4ODE3OTY1Niw4MDk5NTA4MywyOT
-IzMDAyMjgsLTEwMjA3OTc0NDYsLTI4NjQzOTQ0OSwxMjkxMDIz
-MTc4LC01MDE5MTM3MCwtMTczNDMxMTk5NCwtMzY0Mjk1OTU5LD
-YwNTE3NjIyMyw2MDMzMzI0NV19
+eyJoaXN0b3J5IjpbLTMxMjUxMTcxMSwtMTQ1MjcwMjc0MiwtOD
+g2NzkzODU5LDE5MzM1MzIyMDgsLTE3NzM1OTg4MDAsMjExNjU5
+MzIxOCw1MTUxNzYxODksMTM2OTM0NDgyMSwtMTg4MTc5NjU2LD
+gwOTk1MDgzLDI5MjMwMDIyOCwtMTAyMDc5NzQ0NiwtMjg2NDM5
+NDQ5LDEyOTEwMjMxNzgsLTUwMTkxMzcwLC0xNzM0MzExOTk0LC
+0zNjQyOTU5NTksNjA1MTc2MjIzLDYwMzMzMjQ1XX0=
 -->
