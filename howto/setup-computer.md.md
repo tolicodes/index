@@ -317,6 +317,8 @@ find . -type d -depth 1 -exec "cd {} \; -exec && git config --get remote.origin.
 		git clone git@github.com:tolicodes/souleclipse.us.git
 		git clone git@github.com:tolicodes/principles.git
 		git clone git@github.com:hoverinc/infragen.git
+
+		
 		
 3.  Clone HOVER repos
 
@@ -397,8 +399,9 @@ find . -type d -depth 1 -exec "cd {} \; -exec && git config --get remote.origin.
 - create-react-native-app
 - Expo
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTM2OTM0NDgyMSwtMTg4MTc5NjU2LDgwOT
-k1MDgzLDI5MjMwMDIyOCwtMTAyMDc5NzQ0NiwtMjg2NDM5NDQ5
-LDEyOTEwMjMxNzgsLTUwMTkxMzcwLC0xNzM0MzExOTk0LC0zNj
-QyOTU5NTksNjA1MTc2MjIzLDYwMzMzMjQ1XX0=
+eyJoaXN0b3J5IjpbLTE1MjQ0OTk5OTksMTM2OTM0NDgyMSwtMT
+g4MTc5NjU2LDgwOTk1MDgzLDI5MjMwMDIyOCwtMTAyMDc5NzQ0
+NiwtMjg2NDM5NDQ5LDEyOTEwMjMxNzgsLTUwMTkxMzcwLC0xNz
+M0MzExOTk0LC0zNjQyOTU5NTksNjA1MTc2MjIzLDYwMzMzMjQ1
+XX0=
 -->
