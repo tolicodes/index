@@ -17,6 +17,8 @@ Takes forever to sync so...install it first
 - Amphetamine
 - WhatsApp
 - SpeedTest
+- Duplicate Finder Remover
+	- Preferences->Upgrade to Pro->Restore
 - Be Focused Pro
 	- Open Settings and Log In (adz@nycit.com)
 	- Launch at Startup
@@ -310,7 +312,7 @@ Takes forever to sync so...install it first
 - create-react-native-app
 - Expo
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEwMjA3OTc0NDYsLTI4NjQzOTQ0OSwxMj
-kxMDIzMTc4LC01MDE5MTM3MCwtMTczNDMxMTk5NCwtMzY0Mjk1
-OTU5LDYwNTE3NjIyMyw2MDMzMzI0NV19
+eyJoaXN0b3J5IjpbMTc3MTExMDk4MywtMTAyMDc5NzQ0NiwtMj
+g2NDM5NDQ5LDEyOTEwMjMxNzgsLTUwMTkxMzcwLC0xNzM0MzEx
+OTk0LC0zNjQyOTU5NTksNjA1MTc2MjIzLDYwMzMzMjQ1XX0=
 -->
