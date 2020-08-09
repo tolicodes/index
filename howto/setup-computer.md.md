@@ -20,7 +20,7 @@ Takes forever to sync so...install it first
 	- Launch at Startup
 - Giphy Capture
 - Moom
-    - Go to General, uncheck "Show preferences on launch", check "Launch automatically on launch"
+    - Go to General, uncheck "Show preferences on launch", check "Launch automatically on login"
  	- Configure Moom Settings
 		- Command+Option+Left - left side
 		- Command+Option+Right - right side
@@ -293,5 +293,5 @@ Takes forever to sync so...install it first
 - create-react-native-app
 - Expo
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE2OTgyNTAzNjMsNjAzMzMyNDVdfQ==
+eyJoaXN0b3J5IjpbNjA1MTc2MjIzLDYwMzMzMjQ1XX0=
 -->
