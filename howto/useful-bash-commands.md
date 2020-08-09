@@ -15,7 +15,7 @@ done
 
 ### Loop over All Git Repos
 ```
-find . -type d -execdir test -d {}/.git \\; -prune -print
+find . -type d -execdir test -d {}/.git \; -prune -print
 ```
 
 ### Get All Unpushed Repos
@@ -74,6 +74,6 @@ find . -type d -maxdepth 1 -exec pwd \;
 ### iTerm
 - Split Vertically: Command+D
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTA5MTA0NDgyNywtNTMzNzI3MDU3LC0xNz
-M3MDMyNjg4LDk1ODc3NjgzOCwxMzExNDMyNDY1XX0=
+eyJoaXN0b3J5IjpbLTc2NzI5NDQ1LC01MzM3MjcwNTcsLTE3Mz
+cwMzI2ODgsOTU4Nzc2ODM4LDEzMTE0MzI0NjVdfQ==
 -->
