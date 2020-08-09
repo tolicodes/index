@@ -327,39 +327,39 @@ git clone https://github.com/tolicodes/erxes-api
 git clone https://github.com/tolicodes/hover-index
 git clone git@github.com:tolicodes/index.git
 git clone git@github.com:tolicodes/infragen.git
+
+# Hover
+git clone git@github.com:hoverinc/design-pro-frontend.git
+git clone git@github.com:hoverinc/ks8-applications.git
+git clone git@github.com:hoverinc/website.git
+git clone git@github.com:hoverinc/developers.hover.to.git
+git clone git@github.com:hoverinc/hoverctl.git
+git clone git@github.com:hoverinc/cd-tools.git
+git clone git@github.com:hoverinc/machete.git
+git clone git@github.com:hoverinc/org_analytics.git
+git clone git@github.com:hoverinc/hyperion.git
+git clone git@github.com:hoverinc/billing-frontend.git
+git clone git@github.com:hoverinc/codefresh_qa.git
+git clone git@github.com:hoverinc/design-tokens.git
+git clone git@github.com:hoverinc/engineering.git
+git clone git@github.com:hoverinc/hover-javascript.git
+git clone git@github.com:hoverinc/picklejs.git
+git clone git@github.com:hoverinc/webapps.git
+git clone git@github.com:hoverinc/codefresh-test.git
+git clone git@github.com:hoverinc/rfc.git
+git clone git@github.com:hoverinc/developers.hover.to.git
+git clone git@github.com:hoverinc/front-end-fastify-server.git
+git clone git@github.com:hoverinc/hover-cli.git
+git clone git@github.com:hoverinc/developers.hover.to.git
+git clone git@github.com:tolicodes/public-notes.git
 ```
-		
-4.  Clone HOVER repos
 
-		git clone git@github.com:hoverinc/design-pro-frontend.git
-		git clone git@github.com:hoverinc/ks8-applications.git
-		git clone git@github.com:hoverinc/website.git
-		git clone git@github.com:hoverinc/developers.hover.to.git
-		git clone git@github.com:hoverinc/hoverctl.git
-		git clone git@github.com:hoverinc/cd-tools.git
-		git clone git@github.com:hoverinc/machete.git
-		git clone git@github.com:hoverinc/org_analytics.git
-		git clone git@github.com:hoverinc/hyperion.git
-		git clone git@github.com:hoverinc/billing-frontend.git
-		git clone git@github.com:hoverinc/codefresh_qa.git
-		git clone git@github.com:hoverinc/design-tokens.git
-		git clone git@github.com:hoverinc/engineering.git
-		git clone git@github.com:hoverinc/hover-javascript.git
-		git clone git@github.com:hoverinc/picklejs.git
-		git clone git@github.com:hoverinc/webapps.git
-		git clone git@github.com:hoverinc/codefresh-test.git
-		git clone git@github.com:hoverinc/rfc.git
-		git clone git@github.com:hoverinc/developers.hover.to.git
-		git clone git@github.com:hoverinc/front-end-fastify-server.git
-		git clone git@github.com:hoverinc/hover-cli.git
-		git clone git@github.com:hoverinc/developers.hover.to.git
-		git clone git@github.com:tolicodes/public-notes.git
-
-5. Yarn everything
-
-       for f in ~/Sites/*
-	   do cd $f && yarn 
-	   done
+Yarn everything
+```
+for f in ~/Sites/*
+	do cd $f && yarn 
+done
+```
 
 ## Online Tools
 - Code Storage
@@ -415,10 +415,10 @@ git clone git@github.com:tolicodes/infragen.git
 curl -s 'https://api.macapps.link/en/chrome-dropbox-drive-github-sequelpro-vscode-docker-sketch-iterm-1password-cyberduck-spotify-skype-slack-whatsapp-discord' | sh
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTg4MzUzNDIxLDE5MzM1MzIyMDgsLTE3Nz
-M1OTg4MDAsMjExNjU5MzIxOCw1MTUxNzYxODksMTM2OTM0NDgy
-MSwtMTg4MTc5NjU2LDgwOTk1MDgzLDI5MjMwMDIyOCwtMTAyMD
-c5NzQ0NiwtMjg2NDM5NDQ5LDEyOTEwMjMxNzgsLTUwMTkxMzcw
-LC0xNzM0MzExOTk0LC0zNjQyOTU5NTksNjA1MTc2MjIzLDYwMz
-MzMjQ1XX0=
+eyJoaXN0b3J5IjpbLTg4Njc5Mzg1OSwxOTMzNTMyMjA4LC0xNz
+czNTk4ODAwLDIxMTY1OTMyMTgsNTE1MTc2MTg5LDEzNjkzNDQ4
+MjEsLTE4ODE3OTY1Niw4MDk5NTA4MywyOTIzMDAyMjgsLTEwMj
+A3OTc0NDYsLTI4NjQzOTQ0OSwxMjkxMDIzMTc4LC01MDE5MTM3
+MCwtMTczNDMxMTk5NCwtMzY0Mjk1OTU5LDYwNTE3NjIyMyw2MD
+MzMzI0NV19
 -->
