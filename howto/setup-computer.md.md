@@ -56,11 +56,15 @@ Takes forever to sync so...install it first
 - TheClock
 - Numbers
 
+### MacApps
+
+
 ### Download
 
 - [Chrome](https://www.google.com/chrome/?brand=CHBD&gclid=CjwKCAiA8K7uBRBBEiwACOm4d-CR4CPqSUYJJhj8Fks_GWJeAjOJvcLZibwbbQTjiNl9CM1-1W5VgRoCXNkQAvD_BwE&gclsrc=aw.ds)
 	- Login as toli@nycitt.com
 	- TabCloud - open Main
+- Cyberdock
 - [HubStaff](https://app.hubstaff.com/download)
 - [Docker](https://www.docker.com/products/docker-desktop)
 - [Google Drive](https://www.google.com/drive/download/)
@@ -306,7 +310,7 @@ Takes forever to sync so...install it first
 - create-react-native-app
 - Expo
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTI4NjQzOTQ0OSwxMjkxMDIzMTc4LC01MD
-E5MTM3MCwtMTczNDMxMTk5NCwtMzY0Mjk1OTU5LDYwNTE3NjIy
-Myw2MDMzMzI0NV19
+eyJoaXN0b3J5IjpbLTEwMjA3OTc0NDYsLTI4NjQzOTQ0OSwxMj
+kxMDIzMTc4LC01MDE5MTM3MCwtMTczNDMxMTk5NCwtMzY0Mjk1
+OTU5LDYwNTE3NjIyMyw2MDMzMzI0NV19
 -->
