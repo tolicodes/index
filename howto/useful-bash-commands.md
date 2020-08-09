@@ -23,6 +23,8 @@ If you want only want repos immediately in this directory
 find . -maxdepth 1 -type d -execdir test -d {}/.git \; -prune -print 2>/dev/null
 ```
 
+
+
 ### Get All Unpushed Repos
 ```
 for dir in *; do
@@ -79,6 +81,7 @@ find . -type d -maxdepth 1 -exec pwd \;
 ### iTerm
 - Split Vertically: Command+D
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTU1NzI5NzIwNSwtNTMzNzI3MDU3LC0xNz
-M3MDMyNjg4LDk1ODc3NjgzOCwxMzExNDMyNDY1XX0=
+eyJoaXN0b3J5IjpbMTk3NDg0MzYzMSwtNTU3Mjk3MjA1LC01Mz
+M3MjcwNTcsLTE3MzcwMzI2ODgsOTU4Nzc2ODM4LDEzMTE0MzI0
+NjVdfQ==
 -->
