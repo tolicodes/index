@@ -92,6 +92,7 @@ The-0ok nb
 - 1Password
 	- Configure using iphone
 	- Preferences->Security->Allow Touch ID
+	- In chrome [install plugin](https://chrome.google.com/webstore/detail/1password-extension-deskt/aomjjhallfgjeglblehebfpbcfeobpgk?hl=en) and configure it
 - WhatsApp
 - The Clock
 
@@ -414,9 +415,9 @@ git clone git@github.com:tolicodes/zoomevents.git
 - create-react-native-app
 - Expo
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNTE1MTc2MTg5LDEzNjkzNDQ4MjEsLTE4OD
-E3OTY1Niw4MDk5NTA4MywyOTIzMDAyMjgsLTEwMjA3OTc0NDYs
-LTI4NjQzOTQ0OSwxMjkxMDIzMTc4LC01MDE5MTM3MCwtMTczND
-MxMTk5NCwtMzY0Mjk1OTU5LDYwNTE3NjIyMyw2MDMzMzI0NV19
-
+eyJoaXN0b3J5IjpbMjExNjU5MzIxOCw1MTUxNzYxODksMTM2OT
+M0NDgyMSwtMTg4MTc5NjU2LDgwOTk1MDgzLDI5MjMwMDIyOCwt
+MTAyMDc5NzQ0NiwtMjg2NDM5NDQ5LDEyOTEwMjMxNzgsLTUwMT
+kxMzcwLC0xNzM0MzExOTk0LC0zNjQyOTU5NTksNjA1MTc2MjIz
+LDYwMzMzMjQ1XX0=
 -->
