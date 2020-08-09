@@ -21,6 +21,7 @@ curl -s 'https://api.macapps.link/en/chrome-dropbox-drive-github-sequelpro-vscod
 ```
 
 - Github
+	- 
 
 ### HomeBrew
 ```
@@ -396,8 +397,8 @@ find . -type d -depth 1 -exec "cd {} \; -exec && git config --get remote.origin.
 - create-react-native-app
 - Expo
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE4ODE3OTY1NiwtMTE2MDc5NTUwMCw4MD
-k5NTA4MywyOTIzMDAyMjgsLTEwMjA3OTc0NDYsLTI4NjQzOTQ0
-OSwxMjkxMDIzMTc4LC01MDE5MTM3MCwtMTczNDMxMTk5NCwtMz
-Y0Mjk1OTU5LDYwNTE3NjIyMyw2MDMzMzI0NV19
+eyJoaXN0b3J5IjpbMTM2OTM0NDgyMSwtMTg4MTc5NjU2LDgwOT
+k1MDgzLDI5MjMwMDIyOCwtMTAyMDc5NzQ0NiwtMjg2NDM5NDQ5
+LDEyOTEwMjMxNzgsLTUwMTkxMzcwLC0xNzM0MzExOTk0LC0zNj
+QyOTU5NTksNjA1MTc2MjIzLDYwMzMzMjQ1XX0=
 -->
