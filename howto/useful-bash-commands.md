@@ -22,9 +22,14 @@ function executeInAllDirs {
 	for dir in $dirs; do
 		originalPwd=$(pwd)
 		cd $dir
-		COMMAND ### REPLACE THIS
+		$($1)
 		cd $originalPwd
 	done
+}
+
+executeInAllDirs "pwd"
+
+
 ```
 Replace `COMMAND` with your command
 
@@ -209,8 +214,8 @@ done
 ### iTerm
 - Split Vertically: Command+D
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNzQxMjAxMDAzLDEzMjc1MzQxMjMsMTg5Mz
-g4NzkwNCwtMTcyMDIxMDYzMSwtNTU3Mjk3MjA1LC01MzM3Mjcw
-NTcsLTE3MzcwMzI2ODgsOTU4Nzc2ODM4LDEzMTE0MzI0NjVdfQ
-==
+eyJoaXN0b3J5IjpbMTY3MTExOTcwNiwxMzI3NTM0MTIzLDE4OT
+M4ODc5MDQsLTE3MjAyMTA2MzEsLTU1NzI5NzIwNSwtNTMzNzI3
+MDU3LC0xNzM3MDMyNjg4LDk1ODc3NjgzOCwxMzExNDMyNDY1XX
+0=
 -->
