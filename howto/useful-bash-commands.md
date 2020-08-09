@@ -16,9 +16,14 @@ done
 ### Overwrite Origin
 ```
 git remote rm origin
-git remote add origin git@github.com:tolicodes/infragen.git
+git remote add origin ORIGIN
 git config master.remote origin
 git config master.merge refs/heads/master
+```
+
+### Push All Branches
+```
+git push --all
 ```
 
 ## General
@@ -34,6 +39,6 @@ done
 find . -type d -maxdepth 1 -exec pwd \;
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNzg5NDcyMTg0LDk1ODc3NjgzOCwxMzExND
-MyNDY1XX0=
+eyJoaXN0b3J5IjpbLTE3MzcwMzI2ODgsOTU4Nzc2ODM4LDEzMT
+E0MzI0NjVdfQ==
 -->
