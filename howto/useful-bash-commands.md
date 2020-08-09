@@ -6,7 +6,9 @@ find . -type d -depth 1 -exec git --git-dir={}/.git --work-tree=$PWD/{} config -
 
 ## General
 ### Loop over directory and execute command
-find . -type d -depth 1 -exec command1 \; -exec && git config --get remote.origin.url  \; -exec&& cd .. \;
+```
+find . -type d -depth 1 -exec cd {} \; -exec COMMAND  \; -exec cd .. \;
+```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE5NjAwMTIwMTZdfQ==
+eyJoaXN0b3J5IjpbMTMxMTQzMjQ2NV19
 -->
