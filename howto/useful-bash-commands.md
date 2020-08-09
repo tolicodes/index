@@ -232,7 +232,8 @@ function FUNCTIONNAME { #### REPLACE FUNCTIONNAME with your function name
 	      ;;
 	     *)
 		    shift
-		    ARGS=$1
+		    echo $1
+		    ARGS="$1"
 	  esac
 	done
 	
@@ -241,14 +242,14 @@ function FUNCTIONNAME { #### REPLACE FUNCTIONNAME with your function name
 	[[ ARGS ]] && echo $ARGS
 }
 
-FUNCTIONNAME -f --action=testing test
+FUNCTIONNAME -f --action testing test
 ```
 
 ## App Shortcuts
 ### iTerm
 - Split Vertically: Command+D
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTQ2OTEwNDUyNywxMzI3NTM0MTIzLDE4OT
+eyJoaXN0b3J5IjpbLTQyMTIxMzM3OCwxMzI3NTM0MTIzLDE4OT
 M4ODc5MDQsLTE3MjAyMTA2MzEsLTU1NzI5NzIwNSwtNTMzNzI3
 MDU3LC0xNzM3MDMyNjg4LDk1ODc3NjgzOCwxMzExNDMyNDY1XX
 0=
