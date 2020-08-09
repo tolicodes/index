@@ -1,5 +1,20 @@
 # My Setup
 ## Software
+### Install Google Drive Sync and Dropbox
+These are automatically installed by MacApps
+```
+curl -s 'https://api.macapps.link/en/chrome-dropbox-drive' | sh
+```
+
+Takes forever to sync so...install it first
+- [Google Drive](https://www.google.com/drive/download/)
+	- Sign in as adz@nycitt.com
+	- Go to Preferences, change Removing items to "Always remove both copies", check "Upload newly added photos and videos", click "Uploading photos and videos in..." and pick "High Quality"
+ - [Dropbox](https://www.dropbox.com/downloading) 
+   - Choose "Online only"
+   - Choose "Selective Sync" and only sync "ALL->Recordings"
+   - Drag `ALL/Recordings` to Finder sidebar
+
 ### MacApps
 ```
 curl -s 'https://api.macapps.link/en/chrome-dropbox-drive-github-sequelpro-vscode-docker-sketch-iterm-1password-cyberduck-spotify-skype-slack-whatsapp-discord' | sh
@@ -13,18 +28,6 @@ curl -s 'https://api.macapps.link/en/chrome-dropbox-drive-github-sequelpro-vscod
 ```
 brew install the-clock
 ```
-
-### Install Google Drive Sync and Dropbox
-These are automatically installed by MacApps
-
-Takes forever to sync so...install it first
-- [Google Drive](https://www.google.com/drive/download/)
-	- Sign in as adz@nycitt.com
-	- Go to Preferences, change Removing items to "Always remove both copies", check "Upload newly added photos and videos", click "Uploading photos and videos in..." and pick "High Quality"
- - [Dropbox](https://www.dropbox.com/downloading) 
-   - Choose "Online only"
-   - Choose "Selective Sync" and only sync "ALL->Recordings"
-   - Drag `ALL/Recordings` to Finder sidebar
 
 ### App Store
 
@@ -78,6 +81,7 @@ Takes forever to sync so...install it first
 
 ### Download
 
+### Installed By 
 - [Chrome](https://www.google.com/chrome/?brand=CHBD&gclid=CjwKCAiA8K7uBRBBEiwACOm4d-CR4CPqSUYJJhj8Fks_GWJeAjOJvcLZibwbbQTjiNl9CM1-1W5VgRoCXNkQAvD_BwE&gclsrc=aw.ds)
 	- Login as toli@nycitt.com
 	- TabCloud - open Main
@@ -327,8 +331,8 @@ Takes forever to sync so...install it first
 - create-react-native-app
 - Expo
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIwMTQ2Njc5MDYsMjkyMzAwMjI4LC0xMD
-IwNzk3NDQ2LC0yODY0Mzk0NDksMTI5MTAyMzE3OCwtNTAxOTEz
-NzAsLTE3MzQzMTE5OTQsLTM2NDI5NTk1OSw2MDUxNzYyMjMsNj
-AzMzMyNDVdfQ==
+eyJoaXN0b3J5IjpbMTgwNzY4OTA0MiwyOTIzMDAyMjgsLTEwMj
+A3OTc0NDYsLTI4NjQzOTQ0OSwxMjkxMDIzMTc4LC01MDE5MTM3
+MCwtMTczNDMxMTk5NCwtMzY0Mjk1OTU5LDYwNTE3NjIyMyw2MD
+MzMzI0NV19
 -->
