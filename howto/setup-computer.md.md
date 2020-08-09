@@ -26,7 +26,7 @@ curl -s 'https://api.macapps.link/en/chrome-dropbox-drive-github-sequelpro-vscod
 ```
 
 ```
-brew install the-clock hubstaff nvm yarn rescuetime tower
+brew install the-clock hubstaff nvm yarn rescuetime tower postman jq hub
 ```
 
 Setup
@@ -377,8 +377,8 @@ npm i -g codefresh
 - create-react-native-app
 - Expo
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIwMTQ0NjUwMjMsMjkyMzAwMjI4LC0xMD
-IwNzk3NDQ2LC0yODY0Mzk0NDksMTI5MTAyMzE3OCwtNTAxOTEz
-NzAsLTE3MzQzMTE5OTQsLTM2NDI5NTk1OSw2MDUxNzYyMjMsNj
-AzMzMyNDVdfQ==
+eyJoaXN0b3J5IjpbLTQyODgxNDcxNywyOTIzMDAyMjgsLTEwMj
+A3OTc0NDYsLTI4NjQzOTQ0OSwxMjkxMDIzMTc4LC01MDE5MTM3
+MCwtMTczNDMxMTk5NCwtMzY0Mjk1OTU5LDYwNTE3NjIyMyw2MD
+MzMzI0NV19
 -->
