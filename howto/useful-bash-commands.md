@@ -17,13 +17,14 @@ done
 
 #### One Level Down
 ```bash
-dirs=$(find . -maxdepth 1 -type d -execdir test -d {}/.git \; -prune -print 2>/dev/null)
-for dir in $dirs; do
-	originalPwd=$(pwd)
-	cd $dir
-	COMMAND ### REPLACE THIS
-	cd $originalPwd
-done
+function executeInAllDirs {
+	dirs=$(find . -maxdepth 1 -type d -execdir test -d {}/.git \; -prune -print 2>/dev/null)
+	for dir in $dirs; do
+		originalPwd=$(pwd)
+		cd $dir
+		COMMAND ### REPLACE THIS
+		cd $originalPwd
+	done
 ```
 Replace `COMMAND` with your command
 
@@ -39,6 +40,15 @@ done
 ```
 
 ### Get All Unpushed Repos
+```bash
+dirs=$(find . -maxdepth 1 -type d -execdir test -d {}/.git \; -prune -print 2>/dev/null)
+for dir in $dirs; do
+	originalPwd=$(pwd)
+	cd $dir
+	COMMAND ### REPLACE THIS
+	cd $originalPwd
+done
+```
 ```bash
 for dir in *; do
   ( echo $dir && cd "${dir%/*}" && echo $(git branch --no-merged) )
@@ -199,8 +209,8 @@ done
 ### iTerm
 - Split Vertically: Command+D
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTUwMzY1NjE0MiwxMzI3NTM0MTIzLDE4OT
-M4ODc5MDQsLTE3MjAyMTA2MzEsLTU1NzI5NzIwNSwtNTMzNzI3
-MDU3LC0xNzM3MDMyNjg4LDk1ODc3NjgzOCwxMzExNDMyNDY1XX
-0=
+eyJoaXN0b3J5IjpbNzQxMjAxMDAzLDEzMjc1MzQxMjMsMTg5Mz
+g4NzkwNCwtMTcyMDIxMDYzMSwtNTU3Mjk3MjA1LC01MzM3Mjcw
+NTcsLTE3MzcwMzI2ODgsOTU4Nzc2ODM4LDEzMTE0MzI0NjVdfQ
+==
 -->
