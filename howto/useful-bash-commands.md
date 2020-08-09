@@ -54,6 +54,9 @@ Recursive
 ```
 dirs=$(find . -maxdepth 1 -type d 2>/dev/null | cut -c 3-)
 
+# needed for zsh
+setopt sh_word_split
+
 SAVEIFS=$IFS   # Save current IFS
 IFS=$'\n'      # Change IFS to new line
 dirs=($dirs) # split to array $names
@@ -61,7 +64,6 @@ IFS=$SAVEIFS   # Restore IFS
 
 for dir in $dirs; do
 	echo $dir
-  cd $dir && pwd
 done
 ```
 
@@ -125,7 +127,7 @@ done
 ### iTerm
 - Split Vertically: Command+D
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTg5Mzg4NzkwNCwtMTcyMDIxMDYzMSwtNT
-U3Mjk3MjA1LC01MzM3MjcwNTcsLTE3MzcwMzI2ODgsOTU4Nzc2
-ODM4LDEzMTE0MzI0NjVdfQ==
+eyJoaXN0b3J5IjpbLTEzNTM3NzgzOTMsMTg5Mzg4NzkwNCwtMT
+cyMDIxMDYzMSwtNTU3Mjk3MjA1LC01MzM3MjcwNTcsLTE3Mzcw
+MzI2ODgsOTU4Nzc2ODM4LDEzMTE0MzI0NjVdfQ==
 -->
