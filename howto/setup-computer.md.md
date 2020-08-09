@@ -13,6 +13,8 @@ Takes forever to sync so...install it first
 ### App Store
 - 1Password
 - Amphetamine
+- WhatsApp
+- SpeedTest
 - Be Focused Pro
 	- Open Settings and Log In (adz@nycit.com)
 - Giphy Capture
@@ -293,5 +295,5 @@ Takes forever to sync so...install it first
 - create-react-native-app
 - Expo
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNjAzMzMyNDVdfQ==
+eyJoaXN0b3J5IjpbLTYyMDE2OTYxNiw2MDMzMzI0NV19
 -->
