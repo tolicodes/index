@@ -230,7 +230,9 @@ function FUNCTIONNAME { #### REPLACE FUNCTIONNAME with your function name
 	      ACTION=`echo $1 | sed -e 's/^[^=]*=//g'`
 	      ;;
 	    *)
+		  shift
 	      ARGS=`echo $1`
+	      break
 	      ;;
 	  esac
 	done
@@ -240,15 +242,15 @@ function FUNCTIONNAME { #### REPLACE FUNCTIONNAME with your function name
 	[[ ARGS ]] && echo $ARGS
 }
 
-FUNCTIONNAME -f --action testing word
+FUNCTIONNAME -f --action testing word other
 ```
 
 ## App Shortcuts
 ### iTerm
 - Split Vertically: Command+D
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE2NjM0MTQ3MDksMTMyNzUzNDEyMywxOD
-kzODg3OTA0LC0xNzIwMjEwNjMxLC01NTcyOTcyMDUsLTUzMzcy
-NzA1NywtMTczNzAzMjY4OCw5NTg3NzY4MzgsMTMxMTQzMjQ2NV
-19
+eyJoaXN0b3J5IjpbMTU1NjYwODUyNCwxMzI3NTM0MTIzLDE4OT
+M4ODc5MDQsLTE3MjAyMTA2MzEsLTU1NzI5NzIwNSwtNTMzNzI3
+MDU3LC0xNzM3MDMyNjg4LDk1ODc3NjgzOCwxMzExNDMyNDY1XX
+0=
 -->
