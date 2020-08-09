@@ -31,18 +31,34 @@ brew install the-clock hubstaff nvm yarn
 
 Setup
 ```
+# powerline fonts
 rm ~/.zshrc && ln -s ~/Google\ Drive/ALL\ -\ Toli/Config\ Files/.zshrc && source ~/.zshrc
 
 git clone https://github.com/powerline/fonts.git --depth=1
-	# install
-	cd fonts
-	./install.sh
-	# clean-up a bit
-	cd ..
-	rm -rf fonts
+# install
+cd fonts
+./install.sh
+# clean-up a bit
+cd ..
+rm -rf fonts
+
+# nvm
+nvm install 12
+
+# lerna
+npm i -g lerna
+
+# Codefresh
+npm i -g codefresh
 ```
 
 - In Iterm go to Preferences->Profiles->Text->Fonts and select "Droid Sans Mono Dotted for Powerline"
+- Codefresh
+	- Get API Key From [here](https://g.codefresh.io/user/settings)
+	- Authenticate with key from previous step
+
+		  codefresh auth create-context --api-key KEY_GOES_HERE
+   - Go to "CodeFresh Registry Section" click generate and copy Docker login command and paste it in terminal
 ### App Store
 
 #### Installed By MacApps
@@ -346,8 +362,8 @@ git clone https://github.com/powerline/fonts.git --depth=1
 - create-react-native-app
 - Expo
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjUyMjY3MTYxLDI5MjMwMDIyOCwtMTAyMD
-c5NzQ0NiwtMjg2NDM5NDQ5LDEyOTEwMjMxNzgsLTUwMTkxMzcw
-LC0xNzM0MzExOTk0LC0zNjQyOTU5NTksNjA1MTc2MjIzLDYwMz
-MzMjQ1XX0=
+eyJoaXN0b3J5IjpbLTE2MjgzNDgyMjQsMjkyMzAwMjI4LC0xMD
+IwNzk3NDQ2LC0yODY0Mzk0NDksMTI5MTAyMzE3OCwtNTAxOTEz
+NzAsLTE3MzQzMTE5OTQsLTM2NDI5NTk1OSw2MDUxNzYyMjMsNj
+AzMzMyNDVdfQ==
 -->
