@@ -16,7 +16,7 @@ done
 ### Get All Unpushed Repos
 ```
 for dir in *; do
-  ( echo $dir && cd "${dir%/*}" && echo(git branch --no-merged) )
+  ( echo $dir && cd "${dir%/*}" && echo $(git branch --no-merged) )
 done
 ```
 
@@ -51,6 +51,6 @@ done
 find . -type d -maxdepth 1 -exec pwd \;
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTMzMzAyMjc5NywtMTczNzAzMjY4OCw5NT
+eyJoaXN0b3J5IjpbLTUzMzcyNzA1NywtMTczNzAzMjY4OCw5NT
 g3NzY4MzgsMTMxMTQzMjQ2NV19
 -->
