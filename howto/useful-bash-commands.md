@@ -16,7 +16,7 @@ done
 ### Get All Unpushed Repos
 ```
 for dir in *; do
-  ( cd "${dir%/*}" && echo "git clone $(git config --get remote.origin.url)" )
+  ( echo $dir && cd "${dir%/*}" && git cherry -v )
 done
 ```
 
@@ -51,6 +51,6 @@ done
 find . -type d -maxdepth 1 -exec pwd \;
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE1NTg4NzIyMjksLTE3MzcwMzI2ODgsOT
-U4Nzc2ODM4LDEzMTE0MzI0NjVdfQ==
+eyJoaXN0b3J5IjpbNjI5MzU3NjA5LC0xNzM3MDMyNjg4LDk1OD
+c3NjgzOCwxMzExNDMyNDY1XX0=
 -->
