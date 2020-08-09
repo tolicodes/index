@@ -80,7 +80,7 @@ git config --global branch.autosetupmerge always
 
 ## General
 ### Loop over directory and execute command
-Recursive
+#### Recursive
 ```bash
 dirs=$(find . -type d 2>/dev/null | cut -c 3-)
 
@@ -102,7 +102,7 @@ done
 
 Replace `COMMAND` with your command
 
-Example:
+#### Example:
 ```bash
 dirs=$(find . -type d 2>/dev/null | cut -c 3-)
 
@@ -122,7 +122,7 @@ for dir in $dirs; do
 done
 ```
 
-Immediate Dir
+#### Immediate Dir
 ```bash
 dirs=$(find . -maxdepth 1 -type d 2>/dev/null | cut -c 3-)
 
@@ -174,7 +174,6 @@ find . -maxdepth 1 -type d -print 2>/dev/null | cut -c 3-
 
 ### Make array out of new lines
 ```bash
-function 
 items="Item 1
 Item 2
 Item 3"
@@ -250,8 +249,8 @@ FUNCTIONNAME -f --action testing word
 ### iTerm
 - Split Vertically: Command+D
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbOTA5NjMxMjI2LDEzMjc1MzQxMjMsMTg5Mz
-g4NzkwNCwtMTcyMDIxMDYzMSwtNTU3Mjk3MjA1LC01MzM3Mjcw
-NTcsLTE3MzcwMzI2ODgsOTU4Nzc2ODM4LDEzMTE0MzI0NjVdfQ
-==
+eyJoaXN0b3J5IjpbMTQzMjgxMTQ4NCwxMzI3NTM0MTIzLDE4OT
+M4ODc5MDQsLTE3MjAyMTA2MzEsLTU1NzI5NzIwNSwtNTMzNzI3
+MDU3LC0xNzM3MDMyNjg4LDk1ODc3NjgzOCwxMzExNDMyNDY1XX
+0=
 -->
