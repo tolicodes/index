@@ -20,6 +20,8 @@ Takes forever to sync so...install it first
 curl -s 'https://api.macapps.link/en/chrome-dropbox-drive-github-sequelpro-vscode-docker-sketch-iterm-1password-cyberduck-spotify-skype-slack-whatsapp-discord' | sh
 ```
 
+- Github
+
 ### HomeBrew
 ```
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"
@@ -82,7 +84,7 @@ npm i -g codefresh
 		- Setup Display recording + top left hand corner video scene
 - Log into npm
 	`npm login`
-
+The-0ok nb
 ### App Store
 
 #### Installed By MacApps
@@ -394,8 +396,8 @@ find . -type d -depth 1 -exec "cd {}\; -exec && git config --get remote.origin.u
 - create-react-native-app
 - Expo
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTUyNjUxNDEzNCwyMDMzNTczMDA4LDgwOT
-k1MDgzLDI5MjMwMDIyOCwtMTAyMDc5NzQ0NiwtMjg2NDM5NDQ5
-LDEyOTEwMjMxNzgsLTUwMTkxMzcwLC0xNzM0MzExOTk0LC0zNj
-QyOTU5NTksNjA1MTc2MjIzLDYwMzMzMjQ1XX0=
+eyJoaXN0b3J5IjpbLTExNjA3OTU1MDAsMjAzMzU3MzAwOCw4MD
+k5NTA4MywyOTIzMDAyMjgsLTEwMjA3OTc0NDYsLTI4NjQzOTQ0
+OSwxMjkxMDIzMTc4LC01MDE5MTM3MCwtMTczNDMxMTk5NCwtMz
+Y0Mjk1OTU5LDYwNTE3NjIyMyw2MDMzMzI0NV19
 -->
