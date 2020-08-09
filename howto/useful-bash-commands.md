@@ -218,7 +218,7 @@ function FUNCTIONNAME { #### REPLACE FUNCTIONNAME with your function name
 	    -h|--help)
 	      echo "-h, --help                show brief help"
 	      echo "-f					      boolean flag command -f"
-		  echo "--action=ACTION			  flag with value"
+		  echo "--action ACTION			  flag with value"
 	      exit 0
 	      ;;
 	    -f)
@@ -231,21 +231,25 @@ function FUNCTIONNAME { #### REPLACE FUNCTIONNAME with your function name
 	      shift
 	      ;;
 	     *)
+		    shift
 		    ARGS=$1
 	  esac
 	done
 	
 	[[ FLAG ]] && echo "Flagged"
-	[[ ACTION ]] && echo "ACTION"
-	[[ ARGS ]] && echo
+	[[ ACTION ]] && echo "ACTION: $ACTION"
+	[[ ARGS ]] && echo $ARGS
+}
+
+FUNCTIONNAME -f --action=testing test
 ```
 
 ## App Shortcuts
 ### iTerm
 - Split Vertically: Command+D
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEzNDk5Njg1NzMsMTMyNzUzNDEyMywxOD
-kzODg3OTA0LC0xNzIwMjEwNjMxLC01NTcyOTcyMDUsLTUzMzcy
-NzA1NywtMTczNzAzMjY4OCw5NTg3NzY4MzgsMTMxMTQzMjQ2NV
-19
+eyJoaXN0b3J5IjpbMTQ2OTEwNDUyNywxMzI3NTM0MTIzLDE4OT
+M4ODc5MDQsLTE3MjAyMTA2MzEsLTU1NzI5NzIwNSwtNTMzNzI3
+MDU3LC0xNzM3MDMyNjg4LDk1ODc3NjgzOCwxMzExNDMyNDY1XX
+0=
 -->
