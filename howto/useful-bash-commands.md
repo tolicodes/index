@@ -231,7 +231,7 @@ function FUNCTIONNAME { #### REPLACE FUNCTIONNAME with your function name
 	      ;;
 	    *)
 	      shift
-	      ARGS="$1"
+	      ARGS=`echo $1`
 	  esac
 	done
 	
@@ -247,8 +247,8 @@ FUNCTIONNAME -f --action testing test
 ### iTerm
 - Split Vertically: Command+D
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTQxMzYxMzM0MiwxMzI3NTM0MTIzLDE4OT
-M4ODc5MDQsLTE3MjAyMTA2MzEsLTU1NzI5NzIwNSwtNTMzNzI3
-MDU3LC0xNzM3MDMyNjg4LDk1ODc3NjgzOCwxMzExNDMyNDY1XX
-0=
+eyJoaXN0b3J5IjpbLTE1NDMzMDIzOTMsMTMyNzUzNDEyMywxOD
+kzODg3OTA0LC0xNzIwMjEwNjMxLC01NTcyOTcyMDUsLTUzMzcy
+NzA1NywtMTczNzAzMjY4OCw5NTg3NzY4MzgsMTMxMTQzMjQ2NV
+19
 -->
