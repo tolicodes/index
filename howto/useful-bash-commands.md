@@ -218,18 +218,12 @@ while test $# -gt 0; do # For each argument
     -h|--help)
       echo "-h, --help                show brief help"
       echo "-f					      boolean flag command -f"
-	   
+	  echo "--action=ACTION			  flag with value"
       exit 0
       ;;
-    -a)
+    -f)
       shift
-      if test $# -gt 0; then
-        export PROCESS=$1
-      else
-        echo "no process specified"
-        exit 1
-      fi
-      shift
+      DO SOMETHING WITH #
       ;;
     --action*)
       export PROCESS=`echo $1 | sed -e 's/^[^=]*=//g'`
@@ -260,7 +254,7 @@ done
 ### iTerm
 - Split Vertically: Command+D
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMzExMjk4MTg2LDEzMjc1MzQxMjMsMTg5Mz
+eyJoaXN0b3J5IjpbODkxNTU5OTQzLDEzMjc1MzQxMjMsMTg5Mz
 g4NzkwNCwtMTcyMDIxMDYzMSwtNTU3Mjk3MjA1LC01MzM3Mjcw
 NTcsLTE3MzcwMzI2ODgsOTU4Nzc2ODM4LDEzMTE0MzI0NjVdfQ
 ==
