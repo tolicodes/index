@@ -134,10 +134,8 @@ The-0ok nb
 
 ### Download
 
-#### Installed By MacApps
+#### Installed By Brew
 - [Chrome](https://www.google.com/chrome/?brand=CHBD&gclid=CjwKCAiA8K7uBRBBEiwACOm4d-CR4CPqSUYJJhj8Fks_GWJeAjOJvcLZibwbbQTjiNl9CM1-1W5VgRoCXNkQAvD_BwE&gclsrc=aw.ds)
-	- Login as toli@nycitt.com
-	- TabCloud - open Main
 - Cyberduck
 - [HubStaff](https://app.hubstaff.com/download)
 - [Docker](https://www.docker.com/products/docker-desktop)
@@ -415,10 +413,10 @@ done
 curl -s 'https://api.macapps.link/en/chrome-dropbox-drive-github-sequelpro-vscode-docker-sketch-iterm-1password-cyberduck-spotify-skype-slack-whatsapp-discord' | sh
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTg4Njc5Mzg1OSwxOTMzNTMyMjA4LC0xNz
-czNTk4ODAwLDIxMTY1OTMyMTgsNTE1MTc2MTg5LDEzNjkzNDQ4
-MjEsLTE4ODE3OTY1Niw4MDk5NTA4MywyOTIzMDAyMjgsLTEwMj
-A3OTc0NDYsLTI4NjQzOTQ0OSwxMjkxMDIzMTc4LC01MDE5MTM3
-MCwtMTczNDMxMTk5NCwtMzY0Mjk1OTU5LDYwNTE3NjIyMyw2MD
-MzMzI0NV19
+eyJoaXN0b3J5IjpbMTk0MTMwNzIyMywtODg2NzkzODU5LDE5Mz
+M1MzIyMDgsLTE3NzM1OTg4MDAsMjExNjU5MzIxOCw1MTUxNzYx
+ODksMTM2OTM0NDgyMSwtMTg4MTc5NjU2LDgwOTk1MDgzLDI5Mj
+MwMDIyOCwtMTAyMDc5NzQ0NiwtMjg2NDM5NDQ5LDEyOTEwMjMx
+NzgsLTUwMTkxMzcwLC0xNzM0MzExOTk0LC0zNjQyOTU5NTksNj
+A1MTc2MjIzLDYwMzMzMjQ1XX0=
 -->
