@@ -12,6 +12,8 @@ Takes forever to sync so...install it first
 
 ### App Store
 - 1Password
+	- Configure using iphone
+	- Preferences->Security->Allow Touch ID
 - Amphetamine
 - WhatsApp
 - SpeedTest
@@ -293,5 +295,6 @@ Takes forever to sync so...install it first
 - create-react-native-app
 - Expo
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNjA1MTc2MjIzLDYwMzMzMjQ1XX0=
+eyJoaXN0b3J5IjpbLTM2NDI5NTk1OSw2MDUxNzYyMjMsNjAzMz
+MyNDVdfQ==
 -->
