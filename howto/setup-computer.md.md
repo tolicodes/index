@@ -36,10 +36,11 @@ Takes forever to sync so...install it first
 - Slack
 	- Workspaces
 		- toli@tolicodes.com
+			- [COVID-basic-needscovid-basic-needs.slack.com](https://app.slack.com/t/covid-basic-needs/login/z-app-1030749815989-1275710947639-636f8de80ad572fe7689f3934303dfaa2f0fa9ee3c3705cf6fcd38f467ea79ac)
 			- [Cloud Native Computing Foundationcloud-native.slack.com](https://app.slack.com/t/cloud-native/login/z-app-8808823398-1296639835764-5bc4b3e947380c44b608c0c6b1f9ad4a8d10e1e8d46ba68a22e425563c59084b)
 			- [Sunrise Bay Areasunrisebayarea.slack.com](https://app.slack.com/t/sunrisebayarea/login/z-app-216360348053-1314293690880-6e04ed14aa47bdc571c8537eb370a0f0dc634e70735323762e91694cf11af58c)
 			- [Gigstergigster.slack.com](https://app.slack.com/t/gigster/login/z-app-3321749430-1314293691664-6a845ab8a27e0ec157cdbb1934111921de9e6558898529e154c2a01f773dfd1b)
-			- [COVID-basic-needscovid-basic-needs.slack.com](https://app.slack.com/t/covid-basic-needs/login/z-app-1030749815989-1275710947639-636f8de80ad572fe7689f3934303dfaa2f0fa9ee3c3705cf6fcd38f467ea79ac)
+			
 			- [Bauhaus Labsbauhauslabs.slack.com](https://app.slack.com/t/bauhauslabs/login/z-app-503141149716-1290659590563-5dd56533fc10e8221eef6202934b8f0f29ef57272b171e7a404a021a68632fa0)
 			- [JS Breakout Sessionsjsbreakoutsessions.slack.com](https://app.slack.com/t/jsbreakoutsessions/login/z-app-1085592952880-1283722996774-b6b344aa7b7849fa76bdff67ead14fddbad9e0ceab4d4252a724f4fb0df3b85a)
 			- [thirdvotethird-vote.slack.com](https://app.slack.com/t/third-vote/login/z-app-415279109504-1289081656437-b4dfefcda93da0317a08890f3870b677946bfaecae05b67f5a56b53d439db5f1)
@@ -305,7 +306,7 @@ Takes forever to sync so...install it first
 - create-react-native-app
 - Expo
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjAxMjQ2NjM2OSwxMjkxMDIzMTc4LC01MD
+eyJoaXN0b3J5IjpbLTI4NjQzOTQ0OSwxMjkxMDIzMTc4LC01MD
 E5MTM3MCwtMTczNDMxMTk5NCwtMzY0Mjk1OTU5LDYwNTE3NjIy
 Myw2MDMzMzI0NV19
 -->
