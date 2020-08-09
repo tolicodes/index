@@ -60,7 +60,7 @@ dirs=($dirs) # split to array $names
 IFS=$SAVEIFS   # Restore IFS
 
 for dir in $dirs; do
-  ( cd "${dir%/*}" && pwd )
+  ( cd $dir && pwd )
 done
 ```
 
@@ -124,7 +124,7 @@ done
 ### iTerm
 - Split Vertically: Command+D
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE3MjAyMTA2MzEsLTU1NzI5NzIwNSwtNT
-MzNzI3MDU3LC0xNzM3MDMyNjg4LDk1ODc3NjgzOCwxMzExNDMy
-NDY1XX0=
+eyJoaXN0b3J5IjpbLTQ3MjY4Nzk5MywtMTcyMDIxMDYzMSwtNT
+U3Mjk3MjA1LC01MzM3MjcwNTcsLTE3MzcwMzI2ODgsOTU4Nzc2
+ODM4LDEzMTE0MzI0NjVdfQ==
 -->
