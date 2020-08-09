@@ -29,7 +29,7 @@ curl -s 'https://api.macapps.link/en/chrome-dropbox-drive-github-sequelpro-vscod
 ```
 
 ```
-brew install the-clock hubstaff nvm yarn rescuetime tower postman jq hub obs
+brew cask install the-clock hubstaff nvm yarn rescuetime tower postman jq hub obs
 ```
 
 Setup
@@ -415,9 +415,9 @@ git clone git@github.com:tolicodes/zoomevents.git
 - create-react-native-app
 - Expo
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjExNjU5MzIxOCw1MTUxNzYxODksMTM2OT
-M0NDgyMSwtMTg4MTc5NjU2LDgwOTk1MDgzLDI5MjMwMDIyOCwt
-MTAyMDc5NzQ0NiwtMjg2NDM5NDQ5LDEyOTEwMjMxNzgsLTUwMT
-kxMzcwLC0xNzM0MzExOTk0LC0zNjQyOTU5NTksNjA1MTc2MjIz
-LDYwMzMzMjQ1XX0=
+eyJoaXN0b3J5IjpbMjE5NzE3MjIyLDIxMTY1OTMyMTgsNTE1MT
+c2MTg5LDEzNjkzNDQ4MjEsLTE4ODE3OTY1Niw4MDk5NTA4Mywy
+OTIzMDAyMjgsLTEwMjA3OTc0NDYsLTI4NjQzOTQ0OSwxMjkxMD
+IzMTc4LC01MDE5MTM3MCwtMTczNDMxMTk5NCwtMzY0Mjk1OTU5
+LDYwNTE3NjIyMyw2MDMzMzI0NV19
 -->
