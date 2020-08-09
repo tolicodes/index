@@ -1,25 +1,25 @@
 ## Git
 ### List all remotes in directory
-```
+```bash
 for dir in *; do
   ( cd "${dir%/*}" && git config --get remote.origin.url )
 done
 ```
 
 ### Get All clone urls in directory
-```
+```bash
 for dir in *; do
   ( cd "${dir%/*}" && echo "git clone $(git config --get remote.origin.url)" )
 done
 ```
 
 ### Loop over All Git Repos in Folder
-```
+```bash
 find . -type d -execdir test -d {}/.git \; -prune -print 2>/dev/null
 ```
 
 If you want only want repos immediately in this directory
-```
+```bash
 find . -maxdepth 1 -type d -execdir test -d {}/.git \; -prune -print 2>/dev/null
 ```
 
@@ -127,17 +127,20 @@ fi
 ```
 
 ### Find all directories in a folder
-Recursive:
+#### Recursive:
 ```bash
 find . -type d | cut -c 3-
 ```
 
-1 level:
+#### 1 level:
 ```bash
 find . -maxdepth 1 -type d | cut -c 3-
 ```
 
-Ignoring Permission Errors
+#### Ignoring Permission Errors
+```bash
+find . -maxdepth 1 -type d -print 2>/dev/null | cut -c 3-
+```
 
 ### Make array out of new lines
 ```bash
@@ -153,9 +156,27 @@ IFS=$'\n'      # Change IFS to new line
 items=($items)   # split to array
 IFS=$SAVEIFS   # Restore IFS
 
-for item in $items; d
+for item in $items; do
 	COMMAND #### REPLACE THIS
-	cd $originalDir
+done
+```
+
+Example
+```bash
+items="Item 1
+Item 2
+Item 3"
+
+# needed for zsh
+setopt sh_word_split
+
+SAVEIFS=$IFS   # Save current IFS
+IFS=$'\n'      # Change IFS to new line
+items=($items)   # split to array
+IFS=$SAVEIFS   # Restore IFS
+
+for item in $items; do
+	echo $item #### REPLACE THIS
 done
 ```
 
@@ -163,7 +184,7 @@ done
 ### iTerm
 - Split Vertically: Command+D
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTg5OTE4ODE4MywxODkzODg3OTA0LC0xNz
-IwMjEwNjMxLC01NTcyOTcyMDUsLTUzMzcyNzA1NywtMTczNzAz
-MjY4OCw5NTg3NzY4MzgsMTMxMTQzMjQ2NV19
+eyJoaXN0b3J5IjpbOTE1NTk1MTM1LDE4OTM4ODc5MDQsLTE3Mj
+AyMTA2MzEsLTU1NzI5NzIwNSwtNTMzNzI3MDU3LC0xNzM3MDMy
+Njg4LDk1ODc3NjgzOCwxMzExNDMyNDY1XX0=
 -->
