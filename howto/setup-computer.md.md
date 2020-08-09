@@ -17,6 +17,7 @@ Takes forever to sync so...install it first
 - SpeedTest
 - Be Focused Pro
 	- Open Settings and Log In (adz@nycit.com)
+	- Launch at Startup
 - Giphy Capture
 - Moom
     - Go to General, uncheck "Show preferences on launch", check "Launch automatically on launch"
@@ -29,11 +30,8 @@ Takes forever to sync so...install it first
 	- Open Xcode and agree to license agreement
 - DayOne
 - Slack
-	- Sign Into
-		- hoverinc
-		- kissthisworld
-- WhatsApp
-	- Sign in using phone
+- TheClock
+- Numbers
 
 ### Download
 - Install command line tools `xcode-select --install`
@@ -295,5 +293,5 @@ Takes forever to sync so...install it first
 - create-react-native-app
 - Expo
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTYyMDE2OTYxNiw2MDMzMzI0NV19
+eyJoaXN0b3J5IjpbLTE2OTgyNTAzNjMsNjAzMzMyNDVdfQ==
 -->
