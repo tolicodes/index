@@ -13,15 +13,14 @@ for dir in *; do
 done
 ```
 
-### Loop over All Git Repos
+### Loop over All Git Repos in Folder
 ```
-find . -type d -execdir test -d {}/.git \; -prune -print
+find . -type d -execdir test -d {}/.git \; -prune -print 2>/dev/null
 ```
 
-If you want only immediate repos
+If you want only want repos immediately in this directory
 ```
-find . -type d -execdir test -d {}/.git \; -prune -print
-
+find . -maxdepth 1 -type d -execdir test -d {}/.git \; -prune -print 2>/dev/null
 ```
 
 ### Get All Unpushed Repos
@@ -80,6 +79,6 @@ find . -type d -maxdepth 1 -exec pwd \;
 ### iTerm
 - Split Vertically: Command+D
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTQ5NzgxODI1NCwtNTMzNzI3MDU3LC0xNz
+eyJoaXN0b3J5IjpbLTU1NzI5NzIwNSwtNTMzNzI3MDU3LC0xNz
 M3MDMyNjg4LDk1ODc3NjgzOCwxMzExNDMyNDY1XX0=
 -->
