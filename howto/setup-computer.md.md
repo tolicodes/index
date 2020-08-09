@@ -300,6 +300,8 @@ npm i -g codefresh
 ### Get Remotes from Old Computer
 ```
 find . -type d -depth 1 -exec git --git-dir={}/.git --work-tree=$PWD/{} config --get remote.origin.url \;
+
+find . -type d -depth 1 -exec git config --get remote.origin.url \;
 ```
 
 ### Clone on new computer
@@ -392,8 +394,8 @@ find . -type d -depth 1 -exec git --git-dir={}/.git --work-tree=$PWD/{} config -
 - create-react-native-app
 - Expo
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE0NzU2Nzc3MDMsODA5OTUwODMsMjkyMz
-AwMjI4LC0xMDIwNzk3NDQ2LC0yODY0Mzk0NDksMTI5MTAyMzE3
-OCwtNTAxOTEzNzAsLTE3MzQzMTE5OTQsLTM2NDI5NTk1OSw2MD
-UxNzYyMjMsNjAzMzMyNDVdfQ==
+eyJoaXN0b3J5IjpbMTY4Nzk4ODA1OCw4MDk5NTA4MywyOTIzMD
+AyMjgsLTEwMjA3OTc0NDYsLTI4NjQzOTQ0OSwxMjkxMDIzMTc4
+LC01MDE5MTM3MCwtMTczNDMxMTk5NCwtMzY0Mjk1OTU5LDYwNT
+E3NjIyMyw2MDMzMzI0NV19
 -->
