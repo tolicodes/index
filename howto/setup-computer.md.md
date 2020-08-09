@@ -301,7 +301,7 @@ npm i -g codefresh
 ```
 find . -type d -depth 1 -exec git --git-dir={}/.git --work-tree=$PWD/{} config --get remote.origin.url \;
 
-find . -type d -depth 1 -exec git config --get remote.origin.url \;
+find . -type d -depth 1 -exec "cd {} && git config --get remote.origin.url && cd .." \;
 ```
 
 ### Clone on new computer
@@ -394,7 +394,7 @@ find . -type d -depth 1 -exec git config --get remote.origin.url \;
 - create-react-native-app
 - Expo
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTY4Nzk4ODA1OCw4MDk5NTA4MywyOTIzMD
+eyJoaXN0b3J5IjpbMTkzOTUwNDAyNiw4MDk5NTA4MywyOTIzMD
 AyMjgsLTEwMjA3OTc0NDYsLTI4NjQzOTQ0OSwxMjkxMDIzMTc4
 LC01MDE5MTM3MCwtMTczNDMxMTk5NCwtMzY0Mjk1OTU5LDYwNT
 E3NjIyMyw2MDMzMzI0NV19
