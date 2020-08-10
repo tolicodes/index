@@ -25,9 +25,9 @@ steps:
         - mkdir ~/.ssh/ && echo -e "Host github.com\n\tStrictHostKeyChecking no\n" > ~/.ssh/config
         - yarn semantic-release
         - npm install netlify-cli -g
-        - yarn build
-        - npm i -g @11ty/eleventy
         - yarn run release
+        - npm i -g @11ty/eleventy
+        - yarn build
         - netlify deploy --prod
     when:
       branch:
