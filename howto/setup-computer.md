@@ -43,6 +43,9 @@ rm -rf fonts
 # nvm
 nvm install 12
 
+# Install yarn
+curl -o- -L https://yarnpkg.com/install.sh | bash`
+
 # lerna
 npm i -g lerna
 
@@ -134,7 +137,6 @@ npm login
 - Numbers
 
 ### Download 
-
 #### Installed By  Brew
 - [Chrome](https://www.google.com/chrome/?brand=CHBD&gclid=CjwKCAiA8K7uBRBBEiwACOm4d-CR4CPqSUYJJhj8Fks_GWJeAjOJvcLZibwbbQTjiNl9CM1-1W5VgRoCXNkQAvD_BwE&gclsrc=aw.ds)
 - Cyberduck
@@ -161,9 +163,7 @@ npm login
 	  curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.35.1/install.sh | bash
 	  source ~/.zshrc
 	  nvm install 12
-- Install yarn `curl -o- -L https://yarnpkg.com/install.sh | bash`
-- Install lerna
-	- `npm i -g lerna`
+- Install yarn `
 - CodeFresh CLI
 	- Get API Key From [here](https://g.codefresh.io/user/settings)
 
@@ -442,5 +442,5 @@ executeInAllGitDirs "[[ \$(find . -name package.json) ]] && yarn"
 curl -s 'https://api.macapps.link/en/chrome-dropbox-drive-github-sequelpro-vscode-docker-sketch-iterm-1password-cyberduck-spotify-skype-slack-whatsapp-discord' | sh
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEyNzczNjAwNjhdfQ==
+eyJoaXN0b3J5IjpbLTYyMTc2MjQwMV19
 -->
