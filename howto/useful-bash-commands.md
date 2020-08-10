@@ -55,11 +55,6 @@ for dir in $dirs; do
 	cd $originalPwd
 done
 ```
-```bash
-for dir in *; do
-  ( echo $dir && cd "${dir%/*}" && echo $(git branch --no-merged) )
-done
-```
 
 ### Overwrite Origin
 ```
@@ -250,8 +245,8 @@ FUNCTIONNAME -f --action testing word
 ### iTerm
 - Split Vertically: Command+D
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbODkxMDYyMzAxLC03ODMwNDM1NDIsMTE5Mj
-A4MTA5MCwxMzI3NTM0MTIzLDE4OTM4ODc5MDQsLTE3MjAyMTA2
-MzEsLTU1NzI5NzIwNSwtNTMzNzI3MDU3LC0xNzM3MDMyNjg4LD
-k1ODc3NjgzOCwxMzExNDMyNDY1XX0=
+eyJoaXN0b3J5IjpbLTU0NzAwNTA5MSwtNzgzMDQzNTQyLDExOT
+IwODEwOTAsMTMyNzUzNDEyMywxODkzODg3OTA0LC0xNzIwMjEw
+NjMxLC01NTcyOTcyMDUsLTUzMzcyNzA1NywtMTczNzAzMjY4OC
+w5NTg3NzY4MzgsMTMxMTQzMjQ2NV19
 -->
