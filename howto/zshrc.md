@@ -1,6 +1,14 @@
 ```bash
-##### Symlink Config #####
+##### Symlink SSH Keys to Google Drive #####
+
+# This is useful for keeping your ssh keys shared across computers.
+
+# Just put your ssh keys in your Google drive
+
+  
+
 rm -rf ~/.ssh
+
 ln -s ~/Google\ Drive/ALL\ -\ Toli/Config\ Files/.ssh ~/.ssh
 
   
@@ -9,9 +17,9 @@ ln -s ~/Google\ Drive/ALL\ -\ Toli/Config\ Files/.ssh ~/.ssh
 
 export ZSH="$HOME/.oh-my-zsh"
 
-ZSH_THEME="agnoster"
+ZSH_THEME="agnoster"  # pretty theme :)
 
-plugins=(git)
+plugins=(git) # shows which branch you're on and status
 
 source  "$HOME/.oh-my-zsh/oh-my-zsh.sh"
 
@@ -25,13 +33,17 @@ export NVM_DIR="$HOME/.nvm"
 
 [ -s "$NVM_DIR/bash_completion" ] && \.  "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
 
+  
+
+##### Yarn Config ######
+
 export PATH="$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin:$PATH"
 
   
 
 ##### GIT #####
 
-# Git Config
+# User Config
 
 git config --global user.name "Anatoliy Zaslavskiy"
 
@@ -39,7 +51,7 @@ git config --global user.email "toli@tolicodes.com"
 
   
 
-# git current branch
+# Get current branch name
 
 function  current_branch() {
 
@@ -48,6 +60,8 @@ git branch | awk '/^\* / { print $2 }'
 }
 
   
+
+# Does the repo have an upstream set?
 
 function  has_upstream() {
 
@@ -61,6 +75,8 @@ test  $upstream && echo  "TRUE"
 
   
 
+# The repo does not have an upstream set?
+
 function  has_no_upstream() {
 
 [[ ! $(has_upstream) ]]
@@ -69,6 +85,8 @@ function  has_no_upstream() {
 
   
 
+# Sets upstream if there is no upstream to the current branch name
+
 function  git_set_upstream() {
 
 has_no_upstream && git push --set-upstream origin $(current_branch)
@@ -76,6 +94,8 @@ has_no_upstream && git push --set-upstream origin $(current_branch)
 }
 
   
+
+# Gets the branch that this was branched off of
 
 # https://gist.github.com/joechrysler/6073741
 
@@ -97,6 +117,8 @@ git show-branch -a \
 
   
 
+# Gets the root folder for the repo
+
 function  git_root_folder() {
 
 git rev-parse --show-toplevel
@@ -105,6 +127,8 @@ git rev-parse --show-toplevel
 
   
 
+# Gets the repo name
+
 function  git_repo_name() {
 
 url=$(basename $(git config --get remote.origin.url))
@@ -112,74 +136,6 @@ url=$(basename $(git config --get remote.origin.url))
 echo  ${url//\.git/}
 
 }
-
-  
-
-# Git Alisases
-
-alias gl='git log --pretty=format:"%C(yellow)%h\\ %ad%Cred%d\\ %Creset%s%Cblue\\ [%cn]" --decorate --date=short'
-
-alias g-log-pretty=gl
-
-  
-
-alias ga='git add'
-
-alias g-add=ga
-
-  
-
-alias gd='git diff'
-
-alias g-diff=gd
-
-  
-
-alias gs='git status -s'
-
-alias g-status=gs
-
-  
-
-alias gco='git checkout'
-
-alias g-checkout=gco
-
-  
-
-alias gcom='git checkout master'
-
-alias g-checkout-master=gcom
-
-  
-
-# checkout branch and push it up
-
-function  gcob() {
-
-git checkout -b $1
-
-git_set_upstream
-
-}
-
-alias git-checkout-new-branch-and-push=gcob
-
-  
-
-# checkout branch based on master
-
-function  gcobm() {
-
-gco master
-
-gr
-
-gcob $1
-
-}
-
-alias git-checkout-new-branch-from-master-and-push=gcobm
 
   
 
@@ -211,23 +167,37 @@ alias git-checkout-copy=gcoc
 
   
 
-alias gpp='git pull origin $(git_parent_branch)'
+# checkout new branch and push it up
 
-alias gc='git commit -m'
+# example gcob new-branch
 
-alias grm='git fetch && git rebase master'
+function  gcob() {
 
-alias gr='git reset --hard && git clean -fdx'
+git checkout -b $1
 
-alias gs="git status"
+git_set_upstream
 
-alias ghb="hub browse"
+}
 
-alias gca="git commit --amend --no-edit"
+alias git-checkout-new-branch-and-push=gcob
 
-alias gt="git log --color --date-order --graph --oneline --decorate --simplify-by-decoration --branches"
+  
 
-alias gta="git log --color --date-order --graph --oneline --decorate --simplify-by-decoration --all"
+# checkout new branch based on master
+
+# example gcob new-branch
+
+function  gcobm() {
+
+gco master
+
+gr
+
+gcob $1
+
+}
+
+alias git-checkout-new-branch-from-master-and-push=gcobm
 
   
 
@@ -251,6 +221,12 @@ alias git-rename-branch=gbrn
 
   
 
+# Git Pull from another branch or same branch
+
+# gp = git pull
+
+# gp other-branch = git pull origin other-branch
+
 function  gp() {
 
 git_set_upstream
@@ -259,7 +235,13 @@ test  $1 && git pull origin $1 || git pull
 
 }
 
+alias git-pull=gp
+
   
+
+# Git Rebase with the parent branch (useful if someone worked on
+
+# it and you need to pull in the changes
 
 function  grp() {
 
@@ -267,23 +249,25 @@ git rebase $(git_parent_branch)
 
 }
 
+alias git-rebase-parent=grp
+
   
 
-# Creates a PR against the branch you branched from
+# Creates a PR against master
 
 function  pr() {
 
-gf
+gf #fetch
 
-gpp
+gpp # push and oull
 
-last_commit_message=$(git log -1 --pretty=%B)
-
-echo  $last_commit_message
+last_commit_message=$(git log -1 --pretty=%B)  # last commit is name of pr
 
 hub pull-request -b master -o -m $last_commit_message
 
 }
+
+alias git-pr=pr
 
   
 
@@ -303,6 +287,8 @@ git branch -D $branch
 
 }
 
+alias git-delete-branch=gdb
+
   
 
 # git push and pull
@@ -317,9 +303,11 @@ git push
 
 }
 
+alias git-push-pull=gpp
+
   
 
-# git pull and force push
+# git force push
 
 function  gfp() {
 
@@ -328,6 +316,8 @@ git_set_upstream
 git push -f
 
 }
+
+alias git-force-push=gfp
 
   
 
@@ -345,6 +335,8 @@ git push
 
 }
 
+alias git-add-commit-push=gacp
+
   
 
 # add, commit ammend, push
@@ -353,7 +345,7 @@ function  gacap() {
 
 git add .
 
-gca
+HUSKY_SKIP_HOOKS=1 git commit --amend --no-edit # Needs to be run inline for some reason
 
 git_set_upstream
 
@@ -361,9 +353,7 @@ git push -f
 
 }
 
-  
-
-aliias='git-add-amend-commit-push'
+alias git-add-amend-commit-push=gacap
 
   
 
@@ -373,11 +363,11 @@ function  gacpp() {
 
 gacp $1
 
-echo  "yooo"
-
 pr
 
 }
+
+alias git-add-amend-commit-push-pr=gacapp
 
   
 
@@ -388,6 +378,124 @@ function  grc() {
 git reset --hard "HEAD~$1"
 
 }
+
+alias git-reset-number-commits=grc
+
+  
+
+# Pretty Git log
+
+alias gl='git log --pretty=format:"%C(yellow)%h\\ %ad%Cred%d\\ %Creset%s%Cblue\\ [%cn]" --decorate --date=short'
+
+alias git-log-pretty=gl
+
+  
+
+# Git Add
+
+alias ga='git add'
+
+alias git-add=ga
+
+  
+
+# Git Diff
+
+alias gd='git diff'
+
+alias git-diff=gd
+
+  
+
+# Git Status
+
+alias gs='git status -s'
+
+alias git-status=gs
+
+  
+
+# Git Checkout
+
+alias gco='git checkout'
+
+alias git-checkout=gco
+
+  
+
+# Git Checkout Master
+
+alias gcom='git checkout master'
+
+alias git-checkout-master=gcom
+
+  
+
+# Git Commit
+
+alias gc='git commit -m'
+
+alias git-commit=gc
+
+  
+
+# Git rebase Master
+
+alias grm='git fetch && git rebase master'
+
+alias git-rebase-master=grm
+
+  
+
+# Git reset and clean
+
+alias gr='git reset --hard && git clean -fdx'
+
+alias git-reset=gr
+
+  
+
+# Git status
+
+alias gs="git status"
+
+alias git-status=gs
+
+  
+
+# Browse Github Repo
+
+alias ghb="hub browse"
+
+alias git-github-browse=ghb
+
+  
+
+# Git Ammend
+
+function  gca () {
+
+HUSKY_SKIP_HOOKS=1 git commit --amend --no-edit
+
+}
+
+alias git-commit-amend-no-edit=gca
+
+  
+
+# Git Tree
+
+alias gt="git log --color --date-order --graph --oneline --decorate --simplify-by-decoration --branches"
+
+alias git-tree=gt
+
+  
+
+# Git tree all
+
+alias gta="git log --color --date-order --graph --oneline --decorate --simplify-by-decoration --all"
+
+alias git-tree-all=gta
 
   
 
@@ -498,7 +606,41 @@ alias tree='npx dree parse . --show && rm tree.txt'
 export AWS_SESSION_TTL=12h
 
 export AWS_ASSUME_ROLE_TTL=12h
+
+  
+
+##### Passwords and Keys #####
+
+export HOVER_MANOWAR_USERNAME=toli@hover.to
+
+export HOVER_MANOWAR_PASSWORD=Miniqwaszx1
+
+export HOVER_MANOWAR_STAGING_USERNAME=anatoliy@hover.to
+
+export HOVER_MANOWAR_STAGING_PASSWORD=Miniqwaszx1
+
+  
+
+export SLACK_TOKEN=xoxb-8258073218-605449620465-e6zEp258mJog225P4bwfutfa
+
+  
+
+export GITHUB_TOKEN=2627775180e2fd9cefadd0e8263aa33999cb1ec9
+
+  
+
+export SSH_KEY=$(cat ~/.ssh/id_rsa | tr '\n' ',')
+
+  
+
+export NPM_TOKEN=80c8ca26-ea46-43c8-aa74-6fe970cbc95
+
+  
+
+export FONTAWESOME_NPM_AUTH_TOKEN=2A2A94D7-D451-420C-8A21-03B236D35B7
+
+export CODECOV_TOKEN=nWsm4MZw2g
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTExMzQ3ODIzNTddfQ==
+eyJoaXN0b3J5IjpbLTMxNDkyMDU2OSwtMTEzNDc4MjM1N119
 -->
