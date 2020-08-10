@@ -1,7 +1,7 @@
 ## Git
 ### List all remotes in directory
 ```bash
-for dir in ;do cd "" && git config --get remote.origin.url )
+for dir in *; do cd "" && git config --get remote.origin.url )
 done
 ```
 
@@ -15,8 +15,7 @@ done
 
 #### One Level Down
 ```bash
-function executeInAllDirs {
-    
+function executeInAllGitDirs {
 	dirs=$(find . -maxdepth 1 -type d -execdir test -d {}/.git \; -prune -print 2>/dev/null)
 	for dir in $dirs; do
 		originalPwd=$(pwd)
@@ -26,20 +25,24 @@ function executeInAllDirs {
 	done
 }
 
-executeInAllDirs "COMMAND" ### 
+executeInAllGitDirs "COMMAND" ### REPLACE THIS
 
 ```
 Replace `COMMAND` with your command
 
-#### Example
+#### Example: Print Dirs
 ```bash
-dirs=$(find . -maxdepth 1 -type d -execdir test -d {}/.git \; -prune -print 2>/dev/null)
-for dir in $dirs; do
-	originalPwd=$(pwd)
-	cd $dir
-	pwd ### REPLACE THIS
-	cd $originalPwd
-done
+function executeInAllGitDirs {
+	dirs=$(find . -maxdepth 1 -type d -execdir test -d {}/.git \; -prune -print 2>/dev/null)
+	for dir in $dirs; do
+		originalPwd=$(pwd)
+		cd $dir
+		eval $1
+		cd $originalPwd
+	done
+}
+
+executeInAllGitDirs "pwd" 
 ```
 
 ### Get All Unmerged Changed In Repo
@@ -89,5 +92,5 @@ git push --all
 git config --global branch.autosetupmerge always
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjEyMjc4NDM3OCwtMTc5MzYyMjg3OV19
+eyJoaXN0b3J5IjpbOTA3MDgyMjYxLC0xNzkzNjIyODc5XX0=
 -->
