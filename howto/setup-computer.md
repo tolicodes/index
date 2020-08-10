@@ -24,7 +24,7 @@ Takes forever to sync so...install it first
 
 brew cask install the-clock hubstaff rescuetime tower postman obs google-chrome dropbox google-backup-and-sync github sequel-pro visual-studio-code docker sketch iterm2 1password cyberduck spotify skype slack whatsapp discord moom
 
-brew cask install hubstaff rescuetime tower postman obs    spotify skype discord
+brew install nvm yarn jq hub
 ```
 
 Setup
@@ -442,5 +442,5 @@ executeInAllGitDirs "[[ \$(find . -name package.json) ]] && yarn"
 curl -s 'https://api.macapps.link/en/chrome-dropbox-drive-github-sequelpro-vscode-docker-sketch-iterm-1password-cyberduck-spotify-skype-slack-whatsapp-discord' | sh
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTYyMTc2MjQwMV19
+eyJoaXN0b3J5IjpbMTA1NzUwNzU0Nl19
 -->
