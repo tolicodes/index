@@ -2,7 +2,7 @@
   "name": "index",
   "version": "1.0.0",
   "scripts": {
-    "build": "eleventy --passthroughall --input content",
+    "build": "cp CHANGELOG.md content && eleventy --passthroughall --input content",
     "serve": "yarn build --serve",
     "release": "semantic-release"
   },
