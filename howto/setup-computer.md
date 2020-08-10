@@ -32,6 +32,9 @@ brew install yarn jq hub
 # Setting up zsh
 rm ~/.zshrc && ln -s ~/Google\ Drive/ALL\ -\ Toli/Config\ Files/.zshrc && source ~/.zshrc
 
+# Oh-my-zsh
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+
 # powerline fonts
 git clone https://github.com/powerline/fonts.git --depth=1
 cd fonts
@@ -375,8 +378,8 @@ curl -s 'https://api.macapps.link/en/chrome-dropbox-drive-github-sequelpro-vscod
 - [Brew](https://brew.sh/)
 - [OBS](https://obsproject.com/download)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbODkxMDM4NzMzLDE1Nzk5MjQzNzAsNjE2NT
-M0NDYsMTM4NTY5ODczLC0xMDE3MDE0NjA4LDEwNTI2MjI1NDQs
-MTEyMjA4MzA0MSwtMzIwODA1MzY1LC0xMDczMTE5ODYwLDEwNT
-c1MDc1NDZdfQ==
+eyJoaXN0b3J5IjpbLTE3NzMxNDIzMTgsODkxMDM4NzMzLDE1Nz
+k5MjQzNzAsNjE2NTM0NDYsMTM4NTY5ODczLC0xMDE3MDE0NjA4
+LDEwNTI2MjI1NDQsMTEyMjA4MzA0MSwtMzIwODA1MzY1LC0xMD
+czMTE5ODYwLDEwNTc1MDc1NDZdfQ==
 -->
