@@ -20,9 +20,11 @@ Takes forever to sync so...install it first
 
 ### HomeBrew
 ```bash
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"
+
 brew cask install the-clock hubstaff rescuetime tower postman obs google-chrome dropbox google-backup-and-sync github sequel-pro visual-studio-code docker sketch iterm2 1password cyberduck spotify skype slack whatsapp discord
 
-brew cask install hubstaff rescuetime tower postman obs sequel-pro visual-studio-code docker sketch cyberduck spotify skype discord
+brew cask install hubstaff rescuetime tower postman obs visual-studio-code docker sketch cyberduck spotify skype discord
 ```
 
 Setup
@@ -135,14 +137,12 @@ npm i -g codefresh
 
 ### Download
 
-#### Installed By 
+#### Installed By  Brew
 - [Chrome](https://www.google.com/chrome/?brand=CHBD&gclid=CjwKCAiA8K7uBRBBEiwACOm4d-CR4CPqSUYJJhj8Fks_GWJeAjOJvcLZibwbbQTjiNl9CM1-1W5VgRoCXNkQAvD_BwE&gclsrc=aw.ds)
 - Cyberduck
 - [HubStaff](https://app.hubstaff.com/download)
 - [Docker](https://www.docker.com/products/docker-desktop)
 - [Google Drive](https://www.google.com/drive/download/)
-com
-	- Go to Preferences, change Removing items to "Always remove both copies", check "Upload newly added photos and videos", click "Uploading photos and videos in..." and pick "High Quality"
 - [iTerm](https://www.iterm2.com/downloads.html)
 	- [https://github.com/robbyrussell/oh-my-zsh](https://github.com/robbyrussell/oh-my-zsh)
 	- `sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"`
@@ -431,7 +431,7 @@ done
 curl -s 'https://api.macapps.link/en/chrome-dropbox-drive-github-sequelpro-vscode-docker-sketch-iterm-1password-cyberduck-spotify-skype-slack-whatsapp-discord' | sh
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE5MjY2Mzk4MzQsNTE1ODEyMTMwLDM4MD
+eyJoaXN0b3J5IjpbLTE1NDA4NDU4NzQsNTE1ODEyMTMwLDM4MD
 gwNTQ3MiwxNjM4MzQ5NTYzLC0xNDUyNzAyNzQyLC04ODY3OTM4
 NTksMTkzMzUzMjIwOCwtMTc3MzU5ODgwMCwyMTE2NTkzMjE4LD
 UxNTE3NjE4OSwxMzY5MzQ0ODIxLC0xODgxNzk2NTYsODA5OTUw
