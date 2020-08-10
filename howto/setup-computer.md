@@ -24,7 +24,7 @@ Takes forever to sync so...install it first
 
 brew cask install the-clock hubstaff rescuetime tower postman obs google-chrome dropbox google-backup-and-sync github sequel-pro visual-studio-code docker sketch iterm2 1password cyberduck spotify skype slack whatsapp discord
 
-brew cask install hubstaff rescuetime tower postman obs    cyberduck spotify skype discord
+brew cask install hubstaff rescuetime tower postman obs    spotify skype discord
 ```
 
 Setup
@@ -53,7 +53,7 @@ npm i -g codefresh
 npm login
 ```
 
-### 
+#### Manual Setup
 - 1Password
 	- Open on login
 	- Configure using iphone
@@ -91,9 +91,6 @@ npm login
 
 ### App Store
 
-#### Installed By MacApps
-
-
 #### Needs install
 - Amphetamine
 - SpeedTest
@@ -112,7 +109,7 @@ npm login
 	- Check Run as "Menu Application" in the main screen 
 - XCode
 	- Open Xcode and agree to license agreement
-	- - Install command line tools `xcode-select --install`
+	- Install command line tools `xcode-select --install`
 - DayOne
 	- Sign in using icloud
 - Slack
@@ -444,5 +441,5 @@ executeInAllGitDirs "[[ \$(find . -name package.json) ]] && yarn"
 curl -s 'https://api.macapps.link/en/chrome-dropbox-drive-github-sequelpro-vscode-docker-sketch-iterm-1password-cyberduck-spotify-skype-slack-whatsapp-discord' | sh
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE3MTM5MzcwMl19
+eyJoaXN0b3J5IjpbLTY0MTI3MzU0MV19
 -->
