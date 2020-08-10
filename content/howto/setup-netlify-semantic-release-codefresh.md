@@ -10,7 +10,7 @@
 8. Go to Build & Deploy > Builds > Check Stop builds (to only allow manual builds)
 9. In CI environment you need to run `netlify deploy --prod`
 
-Make your CI file (ex: `codefresh.yml`). Make sure you add your personal access token to the environment as `NETLIFY_AUTH_TOKEN`
+Make your CI file (ex: `codefresh.yml`). Make sure you add your personal access token to the environment as `NETLIFY_AUTH_TOKEN`. Also get the `NETLIFY_SITE_ID` from  Settings > General > Site details > Site information > `API ID`, and save to `NETLIFY_SITE_ID`
 
 ```yml
 version: "1.0"
