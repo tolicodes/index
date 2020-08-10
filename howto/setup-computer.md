@@ -22,7 +22,7 @@ Takes forever to sync so...install it first
 ```bash
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"
 
-brew cask install the-clock hubstaff rescuetime tower postman obs google-chrome dropbox google-backup-and-sync github sequel-pro visual-studio-code docker sketch iterm2 1password cyberduck spotify skype slack whatsapp discord moom zoom
+brew cask install the-clock hubstaff rescuetime tower postman obs google-chrome dropbox google-backup-and-sync github sequel-pro visual-studio-code docker sketch iterm2 1password cyberduck spotify skype slack whatsapp discord moom zoom github
 
 brew install yarn jq hub
 ```
@@ -131,6 +131,8 @@ npm login
 - Postman
 	- Sign in with toli@nycitt.com
 - Slack [Workspaces](./slack-workspaces)
+- Github
+	- 
 
 
 ## Config
@@ -369,7 +371,7 @@ com
 - [Brew](https://brew.sh/)
 - [OBS](https://obsproject.com/download)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTQxMjE3NzM3NiwxMzg1Njk4NzMsLTEwMT
+eyJoaXN0b3J5IjpbMTA1ODc4MDg3OCwxMzg1Njk4NzMsLTEwMT
 cwMTQ2MDgsMTA1MjYyMjU0NCwxMTIyMDgzMDQxLC0zMjA4MDUz
 NjUsLTEwNzMxMTk4NjAsMTA1NzUwNzU0Nl19
 -->
