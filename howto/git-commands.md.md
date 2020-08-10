@@ -92,6 +92,8 @@ for dir in $dirs; do
 done
 ```
 
+### Delete Old Git Repo
+
 ### Overwrite Origin
 ```bash
 git remote rm origin
@@ -110,6 +112,6 @@ git push --all
 git config --global branch.autosetupmerge always
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNTQyODg2NzU4LDEyMDAxMzYxODMsLTE3OT
-M2MjI4NzldfQ==
+eyJoaXN0b3J5IjpbMTQ2NDg3MDU1OSwxMjAwMTM2MTgzLC0xNz
+kzNjIyODc5XX0=
 -->
