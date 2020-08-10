@@ -51,7 +51,8 @@ for dir in $dirs; do
 	originalPwd=$(pwd)
 	cd $dir
     unclean=$(git status --porcelain)
-    [[ $unclean ]] && echo $dir
+    unpushed=$(git log --branches --not --remotes)
+    [[ $unclean || $unpushed ]] && echo $dir
 	cd $originalPwd
 done
 ```
@@ -245,8 +246,8 @@ FUNCTIONNAME -f --action testing word
 ### iTerm
 - Split Vertically: Command+D
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTU0NzAwNTA5MSwtNzgzMDQzNTQyLDExOT
-IwODEwOTAsMTMyNzUzNDEyMywxODkzODg3OTA0LC0xNzIwMjEw
-NjMxLC01NTcyOTcyMDUsLTUzMzcyNzA1NywtMTczNzAzMjY4OC
-w5NTg3NzY4MzgsMTMxMTQzMjQ2NV19
+eyJoaXN0b3J5IjpbLTIwMTg4MDE1ODMsLTU0NzAwNTA5MSwtNz
+gzMDQzNTQyLDExOTIwODEwOTAsMTMyNzUzNDEyMywxODkzODg3
+OTA0LC0xNzIwMjEwNjMxLC01NTcyOTcyMDUsLTUzMzcyNzA1Ny
+wtMTczNzAzMjY4OCw5NTg3NzY4MzgsMTMxMTQzMjQ2NV19
 -->
