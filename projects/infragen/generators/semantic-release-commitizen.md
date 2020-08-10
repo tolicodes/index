@@ -12,7 +12,7 @@ package.json
 ```json
 {
   "scripts": {
-    "publish": "yarn run sync-packages && lerna run build && lerna exec --concurrency 1 -- npx --no-install semantic-release -e semantic-release-monorepo"
+    "publish": "yarn && semantic-release"
   },
   "config": {
     "commitizen": {
@@ -143,5 +143,5 @@ steps:
 ```
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE2OTU3MTY4ODldfQ==
+eyJoaXN0b3J5IjpbNzM0NTk5NzAyXX0=
 -->
