@@ -48,7 +48,7 @@ executeInAllGitDirs "COMMAND" ### REPLACE THIS
 ```
 Replace `COMMAND` with your command
 
-#### Example: Print Dirs
+#### Example: Print Paths
 ```bash
 function executeInAllGitDirs {
 	dirs=$(find . -maxdepth 1 -type d -execdir test -d {}/.git \; -prune -print 2>/dev/null)
@@ -110,5 +110,5 @@ git push --all
 git config --global branch.autosetupmerge always
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTQzNDM3NjM2MSwtMTc5MzYyMjg3OV19
+eyJoaXN0b3J5IjpbMTIwMDEzNjE4MywtMTc5MzYyMjg3OV19
 -->
