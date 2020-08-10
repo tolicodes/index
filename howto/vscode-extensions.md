@@ -1,0 +1,21 @@
+- Extensions
+- Debugger for Chrome
+- ESlint
+- Prettier
+- Gitlens
+- Visual Studio IntelliCode
+- Auto Close Tag
+- Bracket Pair Colorizer
+- Auto Import
+- Auto Rename Tag
+- Code Spellc Checker
+- Cucumber
+- Git Blame
+- JSON Parse and Stringify
+- Markdown All In One
+- NPM Intellisense
+- Prettify JSON
+- YAML
+<!--stackedit_data:
+eyJoaXN0b3J5IjpbLTI5ODk5MzQwOV19
+-->
