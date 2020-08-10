@@ -339,15 +339,14 @@ git clone git@github.com:tolicodes/principles.git
 git clone git@github.com:hoverinc/infragen.git
 git clone git@github.com:tolicodes/github-toolkit.git
 git clone git@github.com:tolicodes/zoomevents.git
+git clone git@github.com:tolicodes/index.git
+git clone git@github.com:tolicodes/infragen.git
 
 # Client repos
 git clone git@github.com:COVID-basic-needs/JS-frontend.git
 git clone git@github.com:TackleHunger/TackleHunger.git
 git clone git@github.com:tolicodes/erxes.git
 git clone git@github.com:tolicodes/erxes-api.git
-
-git clone git@github.com:tolicodes/index.git
-git clone git@github.com:tolicodes/infragen.git
 
 # Hover
 git clone git@github.com:hoverinc/design-pro-frontend.git
@@ -387,7 +386,7 @@ function executeInAllGitDirs {
 	done
 }
 
-executeInAllGitDirs "[[ \$(f) ]]"
+executeInAllGitDirs "[[ \$(find . -name package.json) ]]"
 ```
 
 ## Online Tools
@@ -444,11 +443,11 @@ executeInAllGitDirs "[[ \$(f) ]]"
 curl -s 'https://api.macapps.link/en/chrome-dropbox-drive-github-sequelpro-vscode-docker-sketch-iterm-1password-cyberduck-spotify-skype-slack-whatsapp-discord' | sh
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE2OTYzNzM2NjgsNTE1ODEyMTMwLDM4MD
-gwNTQ3MiwxNjM4MzQ5NTYzLC0xNDUyNzAyNzQyLC04ODY3OTM4
-NTksMTkzMzUzMjIwOCwtMTc3MzU5ODgwMCwyMTE2NTkzMjE4LD
-UxNTE3NjE4OSwxMzY5MzQ0ODIxLC0xODgxNzk2NTYsODA5OTUw
-ODMsMjkyMzAwMjI4LC0xMDIwNzk3NDQ2LC0yODY0Mzk0NDksMT
-I5MTAyMzE3OCwtNTAxOTEzNzAsLTE3MzQzMTE5OTQsLTM2NDI5
-NTk1OV19
+eyJoaXN0b3J5IjpbMzcyNTcxODczLDUxNTgxMjEzMCwzODA4MD
+U0NzIsMTYzODM0OTU2MywtMTQ1MjcwMjc0MiwtODg2NzkzODU5
+LDE5MzM1MzIyMDgsLTE3NzM1OTg4MDAsMjExNjU5MzIxOCw1MT
+UxNzYxODksMTM2OTM0NDgyMSwtMTg4MTc5NjU2LDgwOTk1MDgz
+LDI5MjMwMDIyOCwtMTAyMDc5NzQ0NiwtMjg2NDM5NDQ5LDEyOT
+EwMjMxNzgsLTUwMTkxMzcwLC0xNzM0MzExOTk0LC0zNjQyOTU5
+NTldfQ==
 -->
