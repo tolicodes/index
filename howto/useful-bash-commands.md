@@ -52,14 +52,25 @@ for dir in $dirs; do
 	cd $dir
     unclean=$(git status --porcelain)
     unpushed=$(git log --branches --not --remotes)
-    [[ $unclean || $unpushed $dir  eo $dir
+    [[ $unclean || $unpushed $dir  echo $dir
 	cd $originalPwd
 done
 ```
 
 
-### Push All Unpushed Repos
-d
+### Save Changes In All Uncomitted Repos
+```bash
+setopt sh_word_split # For zsh
+dirs=$(find . -maxdepth 1 -type d -execdir test -d {}/.git \; -prune -print 2>/dev/null)
+for dir in $dirs; do
+	originalPwd=$(pwd)
+	cd $dir
+    unclean=$(git status --porcelain)
+    unpushed=$(git log --branches --not --remotes)
+    [[ $unclean || $unpushed $dir ]] && echo $dir
+	cd $originalPwd
+done
+```
 
 ### Overwrite Origin
 ```
@@ -250,9 +261,9 @@ FUNCTIONNAME -f --action testing word
 ### iTerm
 - Split Vertically: Command+D
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNjM4ODk4MzU5LC04NDA0NzAwMTgsLTU0Nz
-AwNTA5MSwtNzgzMDQzNTQyLDExOTIwODEwOTAsMTMyNzUzNDEy
-MywxODkzODg3OTA0LC0xNzIwMjEwNjMxLC01NTcyOTcyMDUsLT
-UzMzcyNzA1NywtMTczNzAzMjY4OCw5NTg3NzY4MzgsMTMxMTQz
-MjQ2NV19
+eyJoaXN0b3J5IjpbNjYwNDc3NjUsLTg0MDQ3MDAxOCwtNTQ3MD
+A1MDkxLC03ODMwNDM1NDIsMTE5MjA4MTA5MCwxMzI3NTM0MTIz
+LDE4OTM4ODc5MDQsLTE3MjAyMTA2MzEsLTU1NzI5NzIwNSwtNT
+MzNzI3MDU3LC0xNzM3MDMyNjg4LDk1ODc3NjgzOCwxMzExNDMy
+NDY1XX0=
 -->
