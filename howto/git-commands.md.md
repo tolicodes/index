@@ -1,14 +1,32 @@
 ## Git
 ### List all remotes in directory
 ```bash
-for dir in *; do cd "" && git config --get remote.origin.url )
-done
+function executeInAllGitDirs {
+	dirs=$(find . -maxdepth 1 -type d -execdir test -d {}/.git \; -prune -print 2>/dev/null)
+	for dir in $dirs; do
+		originalPwd=$(pwd)
+		cd $dir
+		eval $1
+		cd $originalPwd
+	done
+}
+
+executeInAllGitDirs "git config --get remote.origin.url"
 ```
 
 ### Get All clone urls in directory
 ```bash
-for dir in ;do cd $echo "git clone $(git config --get remote.origin.url)" )
-done
+function executeInAllGitDirs {
+	dirs=$(find . -maxdepth 1 -type d -execdir test -d {}/.git \; -prune -print 2>/dev/null)
+	for dir in $dirs; do
+		originalPwd=$(pwd)
+		cd $dir
+		eval $1
+		cd $originalPwd
+	done
+}
+
+executeInAllGitDirs `git clone $(git config --get remote.origin.url)`
 ```
 
 ### Loop over All Git Repos in Folder
@@ -92,5 +110,5 @@ git push --all
 git config --global branch.autosetupmerge always
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbOTA3MDgyMjYxLC0xNzkzNjIyODc5XX0=
+eyJoaXN0b3J5IjpbLTQwNjE4NjEwMCwtMTc5MzYyMjg3OV19
 -->
