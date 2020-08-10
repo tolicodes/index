@@ -24,7 +24,7 @@ Takes forever to sync so...install it first
 
 brew cask install the-clock hubstaff rescuetime tower postman obs google-chrome dropbox google-backup-and-sync github sequel-pro visual-studio-code docker sketch iterm2 1password cyberduck spotify skype slack whatsapp discord
 
-brew cask install hubstaff rescuetime tower postman obs visual-studio-code docker sketch cyberduck spotify skype discord
+brew cask install hubstaff rescuetime tower postman obs  docker sketch cyberduck spotify skype discord
 ```
 
 Setup
@@ -439,7 +439,7 @@ done
 curl -s 'https://api.macapps.link/en/chrome-dropbox-drive-github-sequelpro-vscode-docker-sketch-iterm-1password-cyberduck-spotify-skype-slack-whatsapp-discord' | sh
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTc0MTgzNzI5OSw1MTU4MTIxMzAsMzgwOD
+eyJoaXN0b3J5IjpbMTE3MDgzNzU0MCw1MTU4MTIxMzAsMzgwOD
 A1NDcyLDE2MzgzNDk1NjMsLTE0NTI3MDI3NDIsLTg4Njc5Mzg1
 OSwxOTMzNTMyMjA4LC0xNzczNTk4ODAwLDIxMTY1OTMyMTgsNT
 E1MTc2MTg5LDEzNjkzNDQ4MjEsLTE4ODE3OTY1Niw4MDk5NTA4
