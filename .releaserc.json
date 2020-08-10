@@ -54,6 +54,11 @@
             {
               "type": "improvement",
               "section": "Improvement"
+            },
+            {
+              "type": "release",
+              "section": "Improvement",
+              "hidden": true
             }
           ]
         }
