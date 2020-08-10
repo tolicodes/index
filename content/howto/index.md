@@ -1,4 +1,4 @@
-# Howto
+# How To
 
 - [Setup Computer](./setup-computer.md)
 - [Useful Bash Command](./useful-bash-commands.md)
