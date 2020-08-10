@@ -149,13 +149,13 @@ npm i -g codefresh
 	- `rm ~/.zshrc && ln -s ~/Google\ Drive/ALL\ -\ Toli/Config\ Files/.zshrc && source ~/.zshrc`
 	- Install Powerline Fonts: 
 	
-    git clone https://github.com/powerline/fonts.git --depth=1
-	# install
-	cd fonts
-	./install.sh
-	# clean-up a bit
-	cd ..
-	rm -rf fonts
+	    git clone https://github.com/powerline/fonts.git --depth=1
+		# install
+		cd fonts
+		./install.sh
+		# clean-up a bit
+		cd ..
+		rm -rf fonts
 	
     - In Iterm go to Preferences->Profiles->Text->Fonts and select "Droid Sans Mono Dotted for Powerline"
 - [NVM](https://github.com/nvm-sh/nvm#installation-and-update) - 
@@ -295,22 +295,7 @@ com
 		- **password**: (Password sent via Cisco Meraki) - search in email 
 	
 ## Repos to Clone
-### Get RemotSave Unmerged Changes from Oold Ccomputer
-``` --or config --get remote.origin.url
-find . -type d -depth 1 -exec git --git-dir={}/.gitbash
-setopt sh_word_split # For zsh
-dirs=$(find . -maxdepth 1 -type d -execdir test -d {}/.git \; -prune -print 2>/dev/null)
-for dir in $dirs; do
-	originalPwd=$(pwd)
-	cd $dir
-    unclean=$(git status --wpork-tree=$PWD/{} config --get remote.origin.url \;
-
-find . -type d -depth 1 -exec "cd {} \; -exec && gitcelain)
-    unpushed=$(git log --branches --not --remotes)
-    [[ $unclean || $unpushed ]] && git add . && git commit -m "Uncommited Changes" && git push --all
-	cd $originalPwd
-done
-```
+### Save Unmerged changes on old computer
 
 ### Get unmerged changes from Old Computer
 ```bash
@@ -431,11 +416,11 @@ done
 curl -s 'https://api.macapps.link/en/chrome-dropbox-drive-github-sequelpro-vscode-docker-sketch-iterm-1password-cyberduck-spotify-skype-slack-whatsapp-discord' | sh
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE1NDA4NDU4NzQsNTE1ODEyMTMwLDM4MD
-gwNTQ3MiwxNjM4MzQ5NTYzLC0xNDUyNzAyNzQyLC04ODY3OTM4
-NTksMTkzMzUzMjIwOCwtMTc3MzU5ODgwMCwyMTE2NTkzMjE4LD
-UxNTE3NjE4OSwxMzY5MzQ0ODIxLC0xODgxNzk2NTYsODA5OTUw
-ODMsMjkyMzAwMjI4LC0xMDIwNzk3NDQ2LC0yODY0Mzk0NDksMT
-I5MTAyMzE3OCwtNTAxOTEzNzAsLTE3MzQzMTE5OTQsLTM2NDI5
-NTk1OV19
+eyJoaXN0b3J5IjpbOTQxNDk1MzUwLDUxNTgxMjEzMCwzODA4MD
+U0NzIsMTYzODM0OTU2MywtMTQ1MjcwMjc0MiwtODg2NzkzODU5
+LDE5MzM1MzIyMDgsLTE3NzM1OTg4MDAsMjExNjU5MzIxOCw1MT
+UxNzYxODksMTM2OTM0NDgyMSwtMTg4MTc5NjU2LDgwOTk1MDgz
+LDI5MjMwMDIyOCwtMTAyMDc5NzQ0NiwtMjg2NDM5NDQ5LDEyOT
+EwMjMxNzgsLTUwMTkxMzcwLC0xNzM0MzExOTk0LC0zNjQyOTU5
+NTldfQ==
 -->
