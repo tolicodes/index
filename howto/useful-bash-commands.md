@@ -51,7 +51,7 @@ for dir in $dirs; do
 	cd $dir
     unclean=$(git status --porcelain)
     unpushed=$(git log --branches --not --remotes)
-    [[ $unclean || $unpushed   eo $dir
+    [[ $unclean || $unpushed ]] &ir
 	cd $originalPwd
 done
 ```
@@ -66,7 +66,7 @@ for dir in $dirs; do
 	cd $dir
     unclean=$(git status --porcelain)
     unpushed=$(git log --branches --not --remotes)
-    [[ $unclean || $unpushed $dir ]] && echo $dir
+    [[ $unclean || $unpushed ho $dirgit add . && git commit -m "Uncommited Changes" && git push --all
 	cd $originalPwd
 done
 ```
@@ -260,9 +260,9 @@ FUNCTIONNAME -f --action testing word
 ### iTerm
 - Split Vertically: Command+D
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTUxNDczNDA2OSw2NjA0Nzc2NSwtODQwND
-cwMDE4LC01NDcwMDUwOTEsLTc4MzA0MzU0MiwxMTkyMDgxMDkw
-LDEzMjc1MzQxMjMsMTg5Mzg4NzkwNCwtMTcyMDIxMDYzMSwtNT
-U3Mjk3MjA1LC01MzM3MjcwNTcsLTE3MzcwMzI2ODgsOTU4Nzc2
-ODM4LDEzMTE0MzI0NjVdfQ==
+eyJoaXN0b3J5IjpbMTM0ODQ4NjUwMSwxNTE0NzM0MDY5LC04ND
+A0NzAwMTgsLTU0NzAwNTA5MSwtNzgzMDQzNTQyLDExOTIwODEw
+OTAsMTMyNzUzNDEyMywxODkzODg3OTA0LC0xNzIwMjEwNjMxLC
+01NTcyOTcyMDUsLTUzMzcyNzA1NywtMTczNzAzMjY4OCw5NTg3
+NzY4MzgsMTMxMTQzMjQ2NV19
 -->
