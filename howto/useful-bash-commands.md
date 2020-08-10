@@ -51,7 +51,7 @@ for dir in $dirs; do
 	originalPwd=$(pwd)
 	cd $dir
     unclean=$(git status --porcelain)
-    [ $unclean ] && echo $dir
+    [[ $unclean ]] && echo $dir
 	cd $originalPwd
 done
 ```
@@ -250,8 +250,8 @@ FUNCTIONNAME -f --action testing word
 ### iTerm
 - Split Vertically: Command+D
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE2MTkxNDkzNDEsLTc4MzA0MzU0MiwxMT
-kyMDgxMDkwLDEzMjc1MzQxMjMsMTg5Mzg4NzkwNCwtMTcyMDIx
-MDYzMSwtNTU3Mjk3MjA1LC01MzM3MjcwNTcsLTE3MzcwMzI2OD
-gsOTU4Nzc2ODM4LDEzMTE0MzI0NjVdfQ==
+eyJoaXN0b3J5IjpbODkxMDYyMzAxLC03ODMwNDM1NDIsMTE5Mj
+A4MTA5MCwxMzI3NTM0MTIzLDE4OTM4ODc5MDQsLTE3MjAyMTA2
+MzEsLTU1NzI5NzIwNSwtNTMzNzI3MDU3LC0xNzM3MDMyNjg4LD
+k1ODc3NjgzOCwxMzExNDMyNDY1XX0=
 -->
