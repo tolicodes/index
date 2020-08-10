@@ -156,7 +156,7 @@ cp -r ~/ToliCodes\ Dropbox/Anatoliy\ Zaslavskiy/ALL/dotfiles/* .
 
 You can also put this in a script and on a cron job to auto backup
 
-```
+```bash
 env EDITOR=nano crontab -e
 ```
 
@@ -183,7 +183,7 @@ git push --all
 git config --global branch.autosetupmerge always
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTU0NTYzOTk3MCwtMjEzNjkyOTU1OSwxNT
-Y2NzcxNjcwLDYwMDgyNTU0LDE0MDI1NTI0MTIsMTkwNTQ5NDU1
-NiwtMTUwMjk5ODk3MCw0NzYyMjA1NjJdfQ==
+eyJoaXN0b3J5IjpbLTE3NDUwMDY5NjYsLTIxMzY5Mjk1NTksMT
+U2Njc3MTY3MCw2MDA4MjU1NCwxNDAyNTUyNDEyLDE5MDU0OTQ1
+NTYsLTE1MDI5OTg5NzAsNDc2MjIwNTYyXX0=
 -->
