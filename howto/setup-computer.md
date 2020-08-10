@@ -309,6 +309,9 @@ function executeInAllGitDirs {
 executeInAllGitDirs "[[ \$(find . -name package.json) ]] && yarn"
 ```
 
+#### Copy DotFiles
+Check [this](https://github.com/tolicodes/index/blob/master/howto/git-commands.md#sync-dotfiles-in-all-git-repos)
+
 ## Online Tools
 - Code Storage
 	- GitHub - best experience, paid for private repos
@@ -378,8 +381,8 @@ curl -s 'https://api.macapps.link/en/chrome-dropbox-drive-github-sequelpro-vscod
 - [Brew](https://brew.sh/)
 - [OBS](https://obsproject.com/download)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE3NzMxNDIzMTgsODkxMDM4NzMzLDE1Nz
-k5MjQzNzAsNjE2NTM0NDYsMTM4NTY5ODczLC0xMDE3MDE0NjA4
-LDEwNTI2MjI1NDQsMTEyMjA4MzA0MSwtMzIwODA1MzY1LC0xMD
-czMTE5ODYwLDEwNTc1MDc1NDZdfQ==
+eyJoaXN0b3J5IjpbLTEzNjM0OTEwMzUsLTE3NzMxNDIzMTgsOD
+kxMDM4NzMzLDE1Nzk5MjQzNzAsNjE2NTM0NDYsMTM4NTY5ODcz
+LC0xMDE3MDE0NjA4LDEwNTI2MjI1NDQsMTEyMjA4MzA0MSwtMz
+IwODA1MzY1LC0xMDczMTE5ODYwLDEwNTc1MDc1NDZdfQ==
 -->
