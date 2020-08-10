@@ -1,3 +1,10 @@
+## [1.3.0](https://github.com/tolicodes/index/compare/v1.2.0...v1.3.0) (2020-08-10)
+
+
+### Features
+
+* **howto/setup-netlify-semantic-release-codefresh:** semantic Release, Netlify Deploy, Codefresh ([1aa4a61](https://github.com/tolicodes/index/commit/1aa4a6108ef8bf18ad14ac7745c092bad90f321a))
+
 ## [1.2.0](https://github.com/tolicodes/index/compare/v1.1.3...v1.2.0) (2020-08-10)
 
 
