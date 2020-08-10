@@ -106,7 +106,6 @@ npm login
 		- Command+Option+Right - right side
 		- Command+Option+Up - full screen
 	- Check Run as "Menu Application" in the main screen 
-
 - Slack
 	- Workspaces
 		- toli@tolicodes.com
@@ -450,7 +449,7 @@ executeInAllGitDirs "[[ \$(find . -name package.json) ]] && yarn"
 curl -s 'https://api.macapps.link/en/chrome-dropbox-drive-github-sequelpro-vscode-docker-sketch-iterm-1password-cyberduck-spotify-skype-slack-whatsapp-discord' | sh
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTM4NTY5ODczLC0xMDE3MDE0NjA4LDEwNT
-I2MjI1NDQsMTEyMjA4MzA0MSwtMzIwODA1MzY1LC0xMDczMTE5
-ODYwLDEwNTc1MDc1NDZdfQ==
+eyJoaXN0b3J5IjpbMTM3NzYyNDczOSwxMzg1Njk4NzMsLTEwMT
+cwMTQ2MDgsMTA1MjYyMjU0NCwxMTIyMDgzMDQxLC0zMjA4MDUz
+NjUsLTEwNzMxMTk4NjAsMTA1NzUwNzU0Nl19
 -->
