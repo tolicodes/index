@@ -124,7 +124,7 @@ for dir in $dirs; do
 	ignored=$(git status --ignored)
 	for file in $ignored; do
 		if [[ -f $file ]]; then
-			new_location="$dotfiles_path/$dir/$(dirname \"$file\")"
+			new_location="$dotfiles_path/$dir/$(dirname $file)"
 			mkdir -p $new_location
 			cp $file $new_location
 		fi
@@ -151,6 +151,6 @@ git push --all
 git config --global branch.autosetupmerge always
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjk5OTM3NjU0LDE5MDU0OTQ1NTYsLTE1MD
-I5OTg5NzAsNDc2MjIwNTYyXX0=
+eyJoaXN0b3J5IjpbLTgzOTk3NTQ5OCwxOTA1NDk0NTU2LC0xNT
+AyOTk4OTcwLDQ3NjIyMDU2Ml19
 -->
