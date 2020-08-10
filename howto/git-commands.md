@@ -111,7 +111,7 @@ executeInAllGitDirs "cd .. && rm -rf \$dir"
 dirs=$(find . -maxdepth 1 -type d -execdir test -d {}/.git \; -prune -print 2>/dev/null)
 
 # store dotfiles here
-mkdir dotfiles
+[[ ! -d dotfiles ]] && mkdir dotfiles
 dotfiles_path=$(cd dotfiles && pwd)
 
 for dir in $dirs; do
@@ -121,8 +121,8 @@ for dir in $dirs; do
 	for file in $ignored; do
 		if [[ -f $ignored ]]; then
 			new_location="$dotfiles_path/$dir/$(dirname \"$file\")"
-			mkdir -p $
-			cp $file
+			mkdir -p $new_location
+			cp $file $new_location
 		fi
 	done
 	cd $originalPwd
@@ -147,6 +147,6 @@ git push --all
 git config --global branch.autosetupmerge always
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE5MTk5MTYxNDIsMTkwNTQ5NDU1NiwtMT
-UwMjk5ODk3MCw0NzYyMjA1NjJdfQ==
+eyJoaXN0b3J5IjpbLTk2Njg3MDc1NCwxOTA1NDk0NTU2LC0xNT
+AyOTk4OTcwLDQ3NjIyMDU2Ml19
 -->
