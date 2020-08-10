@@ -35,6 +35,7 @@ executeInAllGitDirs "echo \"git clone \$(git config --get remote.origin.url)\""
 
 #### One Level Down
 ```bash
+setopt sh_word_split # For zsh
 function executeInAllGitDirs {
 	dirs=$(find . -maxdepth 1 -type d -execdir test -d {}/.git \; -prune -print 2>/dev/null)
 	for dir in $dirs; do
@@ -96,6 +97,7 @@ done
 
 ### Delete All Git Repos
 ```bash
+setopt sh_word_split # For zsh
 function executeInAllGitDirs {
 	dirs=$(find . -maxdepth 1 -type d -execdir test -d {}/.git \; -prune -print 2>/dev/null)
 	for dir in $dirs; do
@@ -127,6 +129,6 @@ git push --all
 git config --global branch.autosetupmerge always
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE5NDM0ODgzNzMsMTIwMDEzNjE4MywtMT
-c5MzYyMjg3OV19
+eyJoaXN0b3J5IjpbMTM1MTE3NTQwMywtMTk0MzQ4ODM3MywxMj
+AwMTM2MTgzLC0xNzkzNjIyODc5XX0=
 -->
