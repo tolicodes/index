@@ -26,7 +26,7 @@ function executeInAllDirs {
 	done
 }
 
-executeInAllDirs "pwd"
+executeInAllDirs "COMMAND" ### 
 
 ```
 Replace `COMMAND` with your command
@@ -89,5 +89,5 @@ git push --all
 git config --global branch.autosetupmerge always
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE3OTM2MjI4NzldfQ==
+eyJoaXN0b3J5IjpbMjEyMjc4NDM3OCwtMTc5MzYyMjg3OV19
 -->
