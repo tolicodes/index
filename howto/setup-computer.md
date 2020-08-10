@@ -53,7 +53,7 @@ npm config set scripts-prepend-node-path auto
 curl -o- -L https://yarnpkg.com/install.sh | bash
 
 # Firebase
-npm i -g firebase-cli
+npm i -g firebase-tools
 
 # lerna
 npm i -g lerna
@@ -386,9 +386,9 @@ curl -s 'https://api.macapps.link/en/chrome-dropbox-drive-github-sequelpro-vscod
 - [Brew](https://brew.sh/)
 - [OBS](https://obsproject.com/download)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE4NzUzODYzNDIsLTEzNjM0OTEwMzUsLT
-E3NzMxNDIzMTgsODkxMDM4NzMzLDE1Nzk5MjQzNzAsNjE2NTM0
-NDYsMTM4NTY5ODczLC0xMDE3MDE0NjA4LDEwNTI2MjI1NDQsMT
-EyMjA4MzA0MSwtMzIwODA1MzY1LC0xMDczMTE5ODYwLDEwNTc1
-MDc1NDZdfQ==
+eyJoaXN0b3J5IjpbMTM2NzkzMDg3LC0xODc1Mzg2MzQyLC0xMz
+YzNDkxMDM1LC0xNzczMTQyMzE4LDg5MTAzODczMywxNTc5OTI0
+MzcwLDYxNjUzNDQ2LDEzODU2OTg3MywtMTAxNzAxNDYwOCwxMD
+UyNjIyNTQ0LDExMjIwODMwNDEsLTMyMDgwNTM2NSwtMTA3MzEx
+OTg2MCwxMDU3NTA3NTQ2XX0=
 -->
