@@ -168,7 +168,7 @@ alias git-force-push=gfp
 # add, commit push
 function gacp() {
   git add .
-  git pull
+  git rebase
   [[ $1 ]] && git commit -m $1 || git commit
   git_set_upstream
   git-pull-push
@@ -178,7 +178,7 @@ alias git-add-commit-push=gacp
 # add, commit ammend, push
 function gacap() {
   git add .
-  git pull
+  git rebase
   HUSKY_SKIP_HOOKS=1 git commit --amend --no-edit # Needs to be run inline for some reason
   git_set_upstream
   git-pull-push -f
