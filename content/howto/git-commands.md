@@ -204,6 +204,75 @@ function git-stash-rebase () {
 }
 ```
 
+## Dealing With Upstream
+Sometimes there is no upstream set we can use these functions to set it:
+
+```bash
+# Get current branch name
+function current_branch() {
+  git branch | awk '/^\* / { print $2 }'
+}
+
+# Does the repo have an upstream set?
+function has_upstream() {
+  branch=$(test $1 && echo $1 || current_branch)
+  upstream=$(git ls-remote origin $branch)
+  test $upstream && echo "TRUE"
+}
+
+# The repo does not have an upstream set?
+function has_no_upstream() {
+  [[ ! $(has_upstream) ]]
+}
+
+# Sets upstream if there is no upstream to the current branch name
+function git_set_upstream() {
+  has_no_upstream && git push --set-upstream origin $(current_branch)
+}
+```
+
+## Add, Commit, Push
+```bash
+# Add, Commit, Push
+# usage: gacp (does a git commit) which may trigger a commit hook (like commitizen)
+# gacp Message (does a git commit -m "Message")
+# depends on: git_set_upstream, has_no_upstream, has_upstream, current_branch
+function gacp() {
+	# we want to stash and rebase before pulling so that we don't get conflicts (see Stash and Rebase)
+  git-stash-rebase $1 || { echo "fail" && return 1 }
+  git add .
+	# if we passed in a message we use it. Otherwise just git commit
+  [[ $1 ]] && git commit -m $1 || git commit
+  # we want to make sure there's an upstream. If not we set it (see Dealing with Upstream)
+	git_set_upstream
+  git push
+}
+alias git-add-commit-push=gacp
+```
+
+# Add, Commit Amend with No Message, Push
+If we want to amend the previous commit with no message
+
+```bash
+# Add, Commit Amend with No Message, Push
+# If we want to amend the previous commit with no message
+# depends on: git_set_upstream, has_no_upstream, has_upstream, current_branch
+function gacap() {
+  git-stash-rebase $1 || { echo "fail" && return 1 }
+  git add .
+	# If we are using commit hooks we want to ignore them
+	# This needs to be run inline for some reason (if we set
+	# HUSKY_SKIP_HOOKS elsewhere it does not work)
+	# no-edit is so that it doesn't ask for a message
+  HUSKY_SKIP_HOOKS=1 git commit --amend --no-edit
+	# we want to make sure there's an upstream. If not we set it (see Dealing with Upstream)
+	git_set_upstream
+	# We need to force push because we are rewriting history
+  git push -f
+}
+alias git-add-amend-commit-push=gacap
+```
+
 <!--stackedit_data:
 eyJoaXN0b3J5IjpbLTE3NDUwMDY5NjYsLTIxMzY5Mjk1NTksMT
 U2Njc3MTY3MCw2MDA4MjU1NCwxNDAyNTUyNDEyLDE5MDU0OTQ1
