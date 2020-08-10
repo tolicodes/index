@@ -97,6 +97,9 @@ npm login
 	- OBS->Preferences->Output->Record->Recording Path set to "/Users/toli/ToliCodes Dropbox/Anatoliy Zaslavskiy/ALL/Recordings"
 	- OBS->Preferences->Video Both resolutions to 1920x1200
 	- Setup Display recording + top left hand corner video scene
+		- Display Capture, 
+		- Edit->Transform->Fit to screen
+		- Di
 - Moom
     - Go to General, uncheck "Show preferences on launch", check "Launch automatically on login"
  	- Configure Moom Settings
@@ -448,7 +451,7 @@ executeInAllGitDirs "[[ \$(find . -name package.json) ]] && yarn"
 curl -s 'https://api.macapps.link/en/chrome-dropbox-drive-github-sequelpro-vscode-docker-sketch-iterm-1password-cyberduck-spotify-skype-slack-whatsapp-discord' | sh
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEwMTcwMTQ2MDgsMTA1MjYyMjU0NCwxMT
-IyMDgzMDQxLC0zMjA4MDUzNjUsLTEwNzMxMTk4NjAsMTA1NzUw
-NzU0Nl19
+eyJoaXN0b3J5IjpbMTk2OTQ5ODI1MiwtMTAxNzAxNDYwOCwxMD
+UyNjIyNTQ0LDExMjIwODMwNDEsLTMyMDgwNTM2NSwtMTA3MzEx
+OTg2MCwxMDU3NTA3NTQ2XX0=
 -->
