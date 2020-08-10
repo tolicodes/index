@@ -106,6 +106,8 @@ npm login
 		- Command+Option+Right - right side
 		- Command+Option+Up - full screen
 	- Check Run as "Menu Application" in the main screen 
+- Postman
+	- Sign in with toli@nycitt.com
 - Slack
 	- Workspaces
 		- toli@tolicodes.com
@@ -148,30 +150,18 @@ npm login
 	- Sign in using icloud
 - Numbers
 
-### Download 
-#### Installed By  Brew
+### Download  Links (In Case Something Breaks)
 - [Chrome](https://www.google.com/chrome/?brand=CHBD&gclid=CjwKCAiA8K7uBRBBEiwACOm4d-CR4CPqSUYJJhj8Fks_GWJeAjOJvcLZibwbbQTjiNl9CM1-1W5VgRoCXNkQAvD_BwE&gclsrc=aw.ds)
 - Cyberduck
 - [HubStaff](https://app.hubstaff.com/download)
 - [Docker](https://www.docker.com/products/docker-desktop)
 - [Google Drive](https://www.google.com/drive/download/)
 - [iTerm](https://www.iterm2.com/downloads.html)
-- CodeFresh CLI
-	- Get API Key From [here](https://g.codefresh.io/user/settings)
-
-	- Install CodeFresh CLI `npm i -g codefresh`
-	- Authenticate with key from previous step
-
-		  codefresh auth create-context --api-key KEY_GOES_HERE
-   - Go to "CodeFresh Registry Section" click generate and copy Docker login command and paste it in terminal
 - [RescueTime](https://www.rescuetime.com/get_rescuetime)
 com
 - [Sketch](https://sketchapp.com/get/)
 - [Spotify](https://www.spotify.com/us/download/other/)
 - [Visual Studio Code](https://code.visualstudio.com/)
-	- Open Vscode Command Exec (Command + Shift + P) and then type ">install code" and press "Enter". This will install `code`
-	- Go to Preferences->Settings->Type "font terminal" and paste "Droid Sans Mono Dotted for Powerline"
-	- Use "Settings Sync" extension to sync [these settings](https://gist.github.com/tolicodes/05e150802f12d1e3c4ccfbe997f8b43f) login with Github and check "Auto Download", "Auto Upload", "Force Download", "Force Upload"  and type "Download Settings" in Console. Press "Shift+Alt+D" to sync
 	- Extensions
 		- Debugger for Chrome
 		- ESlint
@@ -191,11 +181,6 @@ com
 		- Prettify JSON
 		- YAML
 - [Zoom](https://zoom.us/download)
-	- Settings->Recording
-		- Store recordings in Dropbox/ALL/Recordings
-		- Choose location to save the recording to after meetings ends
-		- Add timestamp
-		- Record video during screen sharing->Place video next to shared screen
 - [PostMan](https://www.getpostman.com/downloads/)
 - [Install Brew](https://brew.sh/)
 	`/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"`	
@@ -431,7 +416,7 @@ executeInAllGitDirs "[[ \$(find . -name package.json) ]] && yarn"
 curl -s 'https://api.macapps.link/en/chrome-dropbox-drive-github-sequelpro-vscode-docker-sketch-iterm-1password-cyberduck-spotify-skype-slack-whatsapp-discord' | sh
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbOTMzMDEwNTIwLDEzODU2OTg3MywtMTAxNz
-AxNDYwOCwxMDUyNjIyNTQ0LDExMjIwODMwNDEsLTMyMDgwNTM2
-NSwtMTA3MzExOTg2MCwxMDU3NTA3NTQ2XX0=
+eyJoaXN0b3J5IjpbMTkxOTIzNTU3NCwxMzg1Njk4NzMsLTEwMT
+cwMTQ2MDgsMTA1MjYyMjU0NCwxMTIyMDgzMDQxLC0zMjA4MDUz
+NjUsLTEwNzMxMTk4NjAsMTA1NzUwNzU0Nl19
 -->
