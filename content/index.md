@@ -2,6 +2,8 @@
 
 This is sort of a combination between a brain dump and an organization of Toli's life and plans.
 
+See the [changelog](./CHANGELOG.md)
+
 ## [Goals](./goals.md)
 
 My goals
