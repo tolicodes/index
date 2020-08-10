@@ -88,6 +88,8 @@ npm login
 - WhatsApp
 	- Open and log in using phone
 - The Clock
+- HubStaff
+	- Login as adz@nycitt.com
 - iTerm
 	- In Iterm go to Preferences->Profiles->Text->Fonts and select "Droid Sans Mono Dotted for Powerline"
 - Codefresh
@@ -151,6 +153,9 @@ npm login
 	- Slack
 	- Tower
 	- VSCode
+	- Github Desktop
+	- Zoom
+	- Postman
 - Symlink config files from Google Drive (download it directly if it's not synced and you want to start working). Internally it links `.ssh`
 	- `ln -s ~/Google\ Drive/ALL\ -\ Toli/Config\ Files/.zshrc && source ~/.zshrc`
 - AWS Setup (originally [here](https://hoverinc.atlassian.net/wiki/spaces/EN/pages/886440263/AWS+Multi-Account+access)
@@ -371,7 +376,7 @@ com
 - [Brew](https://brew.sh/)
 - [OBS](https://obsproject.com/download)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNjE2NTM0NDYsMTM4NTY5ODczLC0xMDE3MD
-E0NjA4LDEwNTI2MjI1NDQsMTEyMjA4MzA0MSwtMzIwODA1MzY1
-LC0xMDczMTE5ODYwLDEwNTc1MDc1NDZdfQ==
+eyJoaXN0b3J5IjpbMTcxNDk3MzA4NCw2MTY1MzQ0NiwxMzg1Nj
+k4NzMsLTEwMTcwMTQ2MDgsMTA1MjYyMjU0NCwxMTIyMDgzMDQx
+LC0zMjA4MDUzNjUsLTEwNzMxMTk4NjAsMTA1NzUwNzU0Nl19
 -->
