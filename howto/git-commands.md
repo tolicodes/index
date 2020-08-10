@@ -138,6 +138,8 @@ Copy the files to Google Drive:
 cp -r dotfiles ~/Google\ Drive/ALL\ -\ Toli/
 ```
 
+Wait for files to sync
+
 On new computer
 ```bash
 cp ~/Google\ Drive/ALL\ -\ Toli/dotfiles ~/Sites
@@ -161,6 +163,6 @@ git push --all
 git config --global branch.autosetupmerge always
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMzcxNTc2NTAxLDE5MDU0OTQ1NTYsLTE1MD
-I5OTg5NzAsNDc2MjIwNTYyXX0=
+eyJoaXN0b3J5IjpbMTQwMjU1MjQxMiwxOTA1NDk0NTU2LC0xNT
+AyOTk4OTcwLDQ3NjIyMDU2Ml19
 -->
