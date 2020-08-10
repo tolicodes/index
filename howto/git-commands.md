@@ -154,6 +154,17 @@ cp ~/Google\ Drive/ALL\ -\ Toli/dotfiles/* .
 cp -r ~/ToliCodes\ Dropbox/Anatoliy\ Zaslavskiy/ALL/dotfiles/* .
 ```
 
+You can also put this in a script and on a cron job to auto backup
+
+```
+env EDITOR=nano crontab -e
+```
+
+Paste:
+```
+*/10 * * * * ~/Sites/backupEnv.sh
+```
+
 ## Overwrite Origin
 ```bash
 git remote rm origin
@@ -172,7 +183,7 @@ git push --all
 git config --global branch.autosetupmerge always
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIxMzY5Mjk1NTksMTU2Njc3MTY3MCw2MD
-A4MjU1NCwxNDAyNTUyNDEyLDE5MDU0OTQ1NTYsLTE1MDI5OTg5
-NzAsNDc2MjIwNTYyXX0=
+eyJoaXN0b3J5IjpbLTU0NTYzOTk3MCwtMjEzNjkyOTU1OSwxNT
+Y2NzcxNjcwLDYwMDgyNTU0LDE0MDI1NTI0MTIsMTkwNTQ5NDU1
+NiwtMTUwMjk5ODk3MCw0NzYyMjA1NjJdfQ==
 -->
