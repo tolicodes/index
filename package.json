@@ -3,7 +3,8 @@
   "version": "1.0.0",
   "scripts": {
     "build": "eleventy --passthroughall --input content",
-    "serve": "yarn build --serve"
+    "serve": "yarn build --serve",
+    "release": "semantic-release"
   },
   "config": {
     "commitizen": {

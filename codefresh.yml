@@ -1,16 +1,30 @@
+version: "1.0"
 stages:
-  - "publish"
+  - "clone"
+  - "release"
 
 steps:
-  publish:
-    title: Publish packages
-    stage: "publish"
+  clone:
+    title: "Cloning repository"
+    type: "git-clone"
+    repo: "tolicodes/index"
+    revision: "${{CF_BRANCH}}"
+    git: "github"
+    stage: "clone"
+
+  release:
+    title: Release new version and add to changelog
+    stage: "release"
     type: freestyle
-    working_directory: "./<your project></your>"
+    working_directory: "./index"
     arguments:
       image: "node:latest"
       commands:
-        - yarn run publish
+        - ls
+        - yarn
+        # So it doesn't ask for fingerprint
+        - mkdir ~/.ssh/ && echo -e "Host github.com\n\tStrictHostKeyChecking no\n" > ~/.ssh/config
+        - yarn run release
     when:
       branch:
         only:

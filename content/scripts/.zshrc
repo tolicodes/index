@@ -168,7 +168,7 @@ alias git-force-push=gfp
 # add, commit push
 function gacp() {
   git add .
-  git commit -m $1
+  [[ $1 ]] && git commit -m $1 || git commit
   git_set_upstream
   git push
 }
