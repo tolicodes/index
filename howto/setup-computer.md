@@ -62,6 +62,7 @@ npm login
 	- Preferences->Security->Allow Touch ID
 	- In chrome [install plugin](https://chrome.google.com/webstore/detail/1password-extension-deskt/aomjjhallfgjeglblehebfpbcfeobpgk?hl=en) and configure it
 - WhatsApp
+	- Open and log in using phone
 - The Clock
 - iTerm
 	- In Iterm go to Preferences->Profiles->Text->Fonts and select "Droid Sans Mono Dotted for Powerline"
@@ -441,5 +442,5 @@ executeInAllGitDirs "[[ \$(find . -name package.json) ]] && yarn"
 curl -s 'https://api.macapps.link/en/chrome-dropbox-drive-github-sequelpro-vscode-docker-sketch-iterm-1password-cyberduck-spotify-skype-slack-whatsapp-discord' | sh
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjY2ODAzNzU3LDEwNTc1MDc1NDZdfQ==
+eyJoaXN0b3J5IjpbLTEwNzMxMTk4NjAsMTA1NzUwNzU0Nl19
 -->
