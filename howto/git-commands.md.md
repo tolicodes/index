@@ -1,6 +1,7 @@
 ## Git
 ### List all remotes in directory
 ```bash
+setopt sh_word_split # For zsh
 function executeInAllGitDirs {
 	dirs=$(find . -maxdepth 1 -type d -execdir test -d {}/.git \; -prune -print 2>/dev/null)
 	for dir in $dirs; do
@@ -16,6 +17,7 @@ executeInAllGitDirs "git config --get remote.origin.url"
 
 ### Get All clone urls in directory
 ```bash
+setopt sh_word_split # For zsh
 function executeInAllGitDirs {
 	dirs=$(find . -maxdepth 1 -type d -execdir test -d {}/.git \; -prune -print 2>/dev/null)
 	for dir in $dirs; do
@@ -50,6 +52,7 @@ Replace `COMMAND` with your command
 
 #### Example: Print Paths
 ```bash
+setopt sh_word_split # For zsh
 function executeInAllGitDirs {
 	dirs=$(find . -maxdepth 1 -type d -execdir test -d {}/.git \; -prune -print 2>/dev/null)
 	for dir in $dirs; do
@@ -124,6 +127,6 @@ git push --all
 git config --global branch.autosetupmerge always
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNDc2MjIwNTYyLDEyMDAxMzYxODMsLTE3OT
-M2MjI4NzldfQ==
+eyJoaXN0b3J5IjpbLTE5NDM0ODgzNzMsMTIwMDEzNjE4MywtMT
+c5MzYyMjg3OV19
 -->
