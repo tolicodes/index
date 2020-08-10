@@ -10,6 +10,8 @@ My goals
 
 List of all the projects I'm doing/thinking of doing
 
+## [HowTos](./howto/)
+
 ## [Articles, Works, and Podcasts](./articles-works-and-podcasts.md)
 
 ## [Speaking at Conferences](./speaking-at-conferences.md)
