@@ -132,12 +132,12 @@ npm login
 	- Sign in with toli@nycitt.com
 - Slack [Workspaces](./slack-workspaces)
 - Github
-	- 
+	- Drag everything in the `~Sites` folder onto the sreen
 
 
 ## Config
 - System Preferences -> Displays -> Scaled for More Space
-- Click On Battery -> Show Battery Percentage
+- Click On Top Bar -> Battery -> Show Battery Percentage
 - Go to System Preferences->Sound and check "Show volume in menu bar"
 - Create `~/Sites` and drag it into favorites
 - System Preferences -> Energy Saver -> Power Adapter -> Turn Display Off after "Never", Uncheck "Put harddisks to sleep", uncheck "Enable power nap"
@@ -371,7 +371,7 @@ com
 - [Brew](https://brew.sh/)
 - [OBS](https://obsproject.com/download)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTA1ODc4MDg3OCwxMzg1Njk4NzMsLTEwMT
-cwMTQ2MDgsMTA1MjYyMjU0NCwxMTIyMDgzMDQxLC0zMjA4MDUz
-NjUsLTEwNzMxMTk4NjAsMTA1NzUwNzU0Nl19
+eyJoaXN0b3J5IjpbNjE2NTM0NDYsMTM4NTY5ODczLC0xMDE3MD
+E0NjA4LDEwNTI2MjI1NDQsMTEyMjA4MzA0MSwtMzIwODA1MzY1
+LC0xMDczMTE5ODYwLDEwNTc1MDc1NDZdfQ==
 -->
