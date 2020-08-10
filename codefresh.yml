@@ -26,6 +26,7 @@ steps:
         - yarn semantic-release
         - npm install netlify-cli -g
         - yarn run release
+        - yarn build
         - netlify deploy --prod
     when:
       branch:
