@@ -152,7 +152,6 @@ npm login
 
 ### Download  Links (In Case Something Breaks)
 - [Chrome](https://www.google.com/chrome/?brand=CHBD&gclid=CjwKCAiA8K7uBRBBEiwACOm4d-CR4CPqSUYJJhj8Fks_GWJeAjOJvcLZibwbbQTjiNl9CM1-1W5VgRoCXNkQAvD_BwE&gclsrc=aw.ds)
-- Cyberduck
 - [HubStaff](https://app.hubstaff.com/download)
 - [Docker](https://www.docker.com/products/docker-desktop)
 - [Google Drive](https://www.google.com/drive/download/)
@@ -162,39 +161,10 @@ com
 - [Sketch](https://sketchapp.com/get/)
 - [Spotify](https://www.spotify.com/us/download/other/)
 - [Visual Studio Code](https://code.visualstudio.com/)
-	- Extensions
-		- Debugger for Chrome
-		- ESlint
-		- Prettier
-		- Gitlens
-		- Visual Studio IntelliCode
-		- Auto Close Tag
-		- Bracket Pair Colorizer
-		- Auto Import
-		- Auto Rename Tag
-		- Code Spellc Checker
-		- Cucumber
-		- Git Blame
-		- JSON Parse and Stringify
-		- Markdown All In One
-		- NPM Intellisense
-		- Prettify JSON
-		- YAML
 - [Zoom](https://zoom.us/download)
 - [PostMan](https://www.getpostman.com/downloads/)
-- [Install Brew](https://brew.sh/)
-	`/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"`	
-- Install `jq`
-	`brew install jq`
-- Install `hub`
-	`brew install hub`
--[Install OBS](https://obsproject.com/download)
-	- OBS->Preferences->Output->Recording->Recording Format select "mp4"
-	- OBS->Preferences->Output->Record->Recording Path set to "/Users/toli/ToliCodes Dropbox/Anatoliy Zaslavskiy/ALL/Recordings"
-	- OBS->Preferences->Video Both resolutions to 1920x1200
-	- Setup Display recording + top left hand corner video scene
-- Log into npm
-	`npm login`
+- [Brew](https://brew.sh/)
+- [OBS](https://obsproject.com/download)
 
 ## Config
 - System Preferences -> Displays -> Scaled for More Space
@@ -416,7 +386,7 @@ executeInAllGitDirs "[[ \$(find . -name package.json) ]] && yarn"
 curl -s 'https://api.macapps.link/en/chrome-dropbox-drive-github-sequelpro-vscode-docker-sketch-iterm-1password-cyberduck-spotify-skype-slack-whatsapp-discord' | sh
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTkxOTIzNTU3NCwxMzg1Njk4NzMsLTEwMT
+eyJoaXN0b3J5IjpbMTMzNzU1OTA3NiwxMzg1Njk4NzMsLTEwMT
 cwMTQ2MDgsMTA1MjYyMjU0NCwxMTIyMDgzMDQxLC0zMjA4MDUz
 NjUsLTEwNzMxMTk4NjAsMTA1NzUwNzU0Nl19
 -->
