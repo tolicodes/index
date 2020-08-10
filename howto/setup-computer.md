@@ -79,6 +79,71 @@ npm login
 - Numbers
 
 
+### Clone on new computer
+```bash
+cd ~/Sites
+
+# Personal Repos
+git clone git@github.com:tolicodes/node-cli-toolkit.git
+git clone git@github.com:tolicodes/activity-brainstorm.git
+git clone git@github.com:tolicodes/node-api-toolkit.git
+git clone git@github.com:tolicodes/dropbox-photo-viewer.git
+git clone git@github.com:tolicodes/souleclipse.us.git
+git clone git@github.com:tolicodes/principles.git
+git clone git@github.com:hoverinc/infragen.git
+git clone git@github.com:tolicodes/github-toolkit.git
+git clone git@github.com:tolicodes/zoomevents.git
+git clone git@github.com:tolicodes/index.git
+git clone git@github.com:tolicodes/infragen.git
+
+# Client repos
+git clone git@github.com:COVID-basic-needs/JS-frontend.git
+git clone git@github.com:TackleHunger/TackleHunger.git
+git clone git@github.com:tolicodes/erxes.git
+git clone git@github.com:tolicodes/erxes-api.git
+
+# Hover
+git clone git@github.com:hoverinc/design-pro-frontend.git
+git clone git@github.com:hoverinc/ks8-applications.git
+git clone git@github.com:hoverinc/website.git
+git clone git@github.com:hoverinc/developers.hover.to.git
+git clone git@github.com:hoverinc/hoverctl.git
+git clone git@github.com:hoverinc/cd-tools.git
+git clone git@github.com:hoverinc/machete.git
+git clone git@github.com:hoverinc/org_analytics.git
+git clone git@github.com:hoverinc/hyperion.git
+git clone git@github.com:hoverinc/billing-frontend.git
+git clone git@github.com:hoverinc/codefresh_qa.git
+git clone git@github.com:hoverinc/design-tokens.git
+git clone git@github.com:hoverinc/engineering.git
+git clone git@github.com:hoverinc/hover-javascript.git
+git clone git@github.com:hoverinc/picklejs.git
+git clone git@github.com:hoverinc/webapps.git
+git clone git@github.com:hoverinc/codefresh-test.git
+git clone git@github.com:hoverinc/rfc.git
+git clone git@github.com:hoverinc/developers.hover.to.git
+git clone git@github.com:hoverinc/front-end-fastify-server.git
+git clone git@github.com:hoverinc/hover-cli.git
+git clone git@github.com:hoverinc/developers.hover.to.git
+git clone git@github.com:tolicodes/public-notes.git
+```
+
+#### Yarn everything
+```bash
+setopt sh_word_split # For zsh
+function executeInAllGitDirs {
+	dirs=$(find . -maxdepth 1 -type d -execdir test -d {}/.git \; -prune -print 2>/dev/null)
+	for dir in $dirs; do
+		originalPwd=$(pwd)
+		cd $dir
+		eval $1
+		cd $originalPwd
+	done
+}
+
+executeInAllGitDirs "[[ \$(find . -name package.json) ]] && yarn"
+```
+
 ### Manual Setup
 - 1Password
 	- Open on login
@@ -135,8 +200,9 @@ npm login
 	- Sign in with toli@nycitt.com
 - Slack [Workspaces](./slack-workspaces)
 - Github
-	- Drag everything in the `~Sites` folder onto the sreen
-
+	- Drag everything in the `~Sites` folder onto the screen
+- Docker
+	- Open and accept permissions
 
 ## Config
 - System Preferences -> Displays -> Scaled for More Space
@@ -311,7 +377,7 @@ com
 - [Brew](https://brew.sh/)
 - [OBS](https://obsproject.com/download)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTEwMzE5ODQ1MSw2MTY1MzQ0NiwxMzg1Nj
+eyJoaXN0b3J5IjpbLTQ2ODUyMDU5OCw2MTY1MzQ0NiwxMzg1Nj
 k4NzMsLTEwMTcwMTQ2MDgsMTA1MjYyMjU0NCwxMTIyMDgzMDQx
 LC0zMjA4MDUzNjUsLTEwNzMxMTk4NjAsMTA1NzUwNzU0Nl19
 -->
