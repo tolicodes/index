@@ -81,7 +81,8 @@ npm login
 - Visual Studio Code
 	- Open Vscode Command Exec (Command + Shift + P) and then type ">install code" and press "Enter". This will install `code`
 	- Go to Preferences->Settings->Type "font terminal" and paste "Droid Sans Mono Dotted for Powerline"
-	- Use "Settings Sync" extension to sync [these settings](https://gist.github.com/tolicodes/05e150802f12d1e3c4ccfbe997f8b43f) login with Github and check "Auto Download", "Auto Upload", "Force Download", "Force Upload"  and type "Download Settings" in Console. Press "Shift+Alt+D" to sync
+	- Install "Settings Sync" extension 
+	- Use these settings to sync [these settings](https://gist.github.com/tolicodes/05e150802f12d1e3c4ccfbe997f8b43f) login with Github and check "Auto Download", "Auto Upload", "Force Download", "Force Upload"  and type "Download Settings" in Console. Press "Shift+Alt+D" to sync
 - Zoom	- Settings->Recording
 	- Store recordings in Dropbox/ALL/Recordings
 	- Choose location to save the recording to after meetings ends
@@ -443,6 +444,7 @@ executeInAllGitDirs "[[ \$(find . -name package.json) ]] && yarn"
 curl -s 'https://api.macapps.link/en/chrome-dropbox-drive-github-sequelpro-vscode-docker-sketch-iterm-1password-cyberduck-spotify-skype-slack-whatsapp-discord' | sh
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTA1MjYyMjU0NCwxMTIyMDgzMDQxLC0zMj
-A4MDUzNjUsLTEwNzMxMTk4NjAsMTA1NzUwNzU0Nl19
+eyJoaXN0b3J5IjpbLTE3NDQ2MzE5ODYsMTA1MjYyMjU0NCwxMT
+IyMDgzMDQxLC0zMjA4MDUzNjUsLTEwNzMxMTk4NjAsMTA1NzUw
+NzU0Nl19
 -->
