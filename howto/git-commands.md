@@ -93,6 +93,8 @@ done
 
 ## Delete All Git Repos
 ```bash
+setopt sh_word_split # For zsh
+
 function executeInAllGitDirs {
 	dirs=$(find . -maxdepth 1 -type d -execdir test -d {}/.git \; -prune -print 2>/dev/null)
 	for dir in $dirs; do
@@ -108,6 +110,8 @@ executeInAllGitDirs "cd .. && rm -rf \$dir"
 
 ## Sync dotfiles in All Git Repos
 ```bash
+setopt sh_word_split # For zsh
+
 dirs=$(find . -maxdepth 1 -type d -execdir test -d {}/.git \; -prune -print 2>/dev/null)
 
 # store dotfiles here
@@ -119,7 +123,7 @@ for dir in $dirs; do
 	cd $dir
 	ignored=$(git status --ignored)
 	for file in $ignored; do
-		if [[ -f $ignored ]]; then
+		if [[ -f $file ]]; then
 			new_location="$dotfiles_path/$dir/$(dirname \"$file\")"
 			mkdir -p $new_location
 			cp $file $new_location
@@ -147,6 +151,6 @@ git push --all
 git config --global branch.autosetupmerge always
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTk2Njg3MDc1NCwxOTA1NDk0NTU2LC0xNT
-AyOTk4OTcwLDQ3NjIyMDU2Ml19
+eyJoaXN0b3J5IjpbMjk5OTM3NjU0LDE5MDU0OTQ1NTYsLTE1MD
+I5OTg5NzAsNDc2MjIwNTYyXX0=
 -->
