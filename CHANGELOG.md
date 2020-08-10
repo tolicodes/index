@@ -1,3 +1,10 @@
+## [1.5.0](https://github.com/tolicodes/index/compare/v1.4.0...v1.5.0) (2020-08-10)
+
+
+### Features
+
+* **howto/git-commands:** added Add, Commit Amend with No Message, Push, and  Add, Commit, Push ([2681ec0](https://github.com/tolicodes/index/commit/2681ec00481321c5d3c515f717dda1613e799c86))
+
 ## [1.4.0](https://github.com/tolicodes/index/compare/v1.3.2...v1.4.0) (2020-08-10)
 
 
