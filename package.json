@@ -2,8 +2,7 @@
   "name": "index",
   "version": "1.0.0",
   "scripts": {
-    "sync-packages": "syncpack fix-mismatches",
-    "publish": "yarn run sync-packages && lerna run build && lerna exec --concurrency 1 -- npx --no-install semantic-release -e semantic-release-monorepo"
+    "build": "eleventy --passthroughall --input content"
   },
   "config": {
     "commitizen": {
@@ -29,5 +28,9 @@
     "semantic-release": "^17.0.7",
     "semantic-release-monorepo": "^7.0.2",
     "syncpack": "^5.0.1"
+  },
+  "dependencies": {
+    "markdown-it": "^11.0.0",
+    "markdown-it-replace-link": "^1.1.0"
   }
 }

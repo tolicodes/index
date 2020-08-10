@@ -6,7 +6,7 @@ This is sort of a combination between a brain dump and an organization of Toli's
 
 My goals
 
-## [Projects](projects/index.md)
+## [Projects](./projects)
 
 List of all the projects I'm doing/thinking of doing
 
