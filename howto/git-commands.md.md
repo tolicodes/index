@@ -103,7 +103,7 @@ function executeInAllGitDirs {
 	done
 }
 
-executeInAllGitDirs "rm -rf ." 
+executeInAllGitDirs "cd .. && rm -rf \$dir" 
 ```
 
 ### Overwrite Origin
@@ -124,6 +124,6 @@ git push --all
 git config --global branch.autosetupmerge always
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTExNzc0NzE2NjYsMTIwMDEzNjE4MywtMT
-c5MzYyMjg3OV19
+eyJoaXN0b3J5IjpbNDc2MjIwNTYyLDEyMDAxMzYxODMsLTE3OT
+M2MjI4NzldfQ==
 -->
