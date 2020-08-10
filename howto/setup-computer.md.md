@@ -386,7 +386,7 @@ function executeInAllGitDirs {
 	done
 }
 
-executeInAllGitDirs "[[ \$(find . -name package.json) ]]"
+executeInAllGitDirs "[[ \$(find . -name package.json) ]] && yarn"
 ```
 
 ## Online Tools
@@ -443,7 +443,7 @@ executeInAllGitDirs "[[ \$(find . -name package.json) ]]"
 curl -s 'https://api.macapps.link/en/chrome-dropbox-drive-github-sequelpro-vscode-docker-sketch-iterm-1password-cyberduck-spotify-skype-slack-whatsapp-discord' | sh
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMzcyNTcxODczLDUxNTgxMjEzMCwzODA4MD
+eyJoaXN0b3J5IjpbMTYyMTc4MTQ5LDUxNTgxMjEzMCwzODA4MD
 U0NzIsMTYzODM0OTU2MywtMTQ1MjcwMjc0MiwtODg2NzkzODU5
 LDE5MzM1MzIyMDgsLTE3NzM1OTg4MDAsMjExNjU5MzIxOCw1MT
 UxNzYxODksMTM2OTM0NDgyMSwtMTg4MTc5NjU2LDgwOTk1MDgz
