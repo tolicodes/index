@@ -1,10 +1,12 @@
 # My Setup
 ## Software
 ### Install Google Drive Sync and Dropbox
-These are automatically installed by 
+These are automatically installed by:
 ```
 curl -s https://ai.maslikenchromedropbox-drive' | sh
 ```
+
+We need ssh keys so let's start syncing
 
 Takes forever to sync so...install it first
 - [Google Drive](https://www.google.com/drive/download/)
@@ -15,9 +17,12 @@ Takes forever to sync so...install it first
    - Choose "Selective Sync" and only sync "ALL->Recordings"
    - Drag `ALL/Recordings` to Finder
 
-brewas stahubsecetmoerstmaaelr csk insatco strscuetime towr stman obs google-chrome dropbox google-backup-and-sync gihub sequel-pro visual-studiocodedockersketchiterm1passwordcyberduckspotifyskypeslackwhatsappdiscord
-brew cask install hubstrscuetime towor stman obs google-chrome dropbox google-backup-and-sync gihub sequel-pro visual-studiocodedockersketchiterm1passwordcyberduckspotifyskypeslackwhatsappdiscord
-brew install nvm yarn jq hub
+
+### HomeBrew
+```bash
+brew cask install the-clock hubstaff rescuetime tower postman obs google-chrome dropbox google-backup-and-sync github sequel-pro visual-studio-code docker sketch iterm2 1password cyberduck spotify skype slack whatsapp discord
+
+brew cask install hubstaff rescuetime tower postman obs sequel-pro visual-studio-code docker sketch cyberduck spotify skype discord
 ```
 
 Setup
@@ -426,11 +431,11 @@ done
 curl -s 'https://api.macapps.link/en/chrome-dropbox-drive-github-sequelpro-vscode-docker-sketch-iterm-1password-cyberduck-spotify-skype-slack-whatsapp-discord' | sh
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNTE1ODEyMTMwLDM4MDgwNTQ3MiwxNjM4Mz
-Q5NTYzLC0xNDUyNzAyNzQyLC04ODY3OTM4NTksMTkzMzUzMjIw
-OCwtMTc3MzU5ODgwMCwyMTE2NTkzMjE4LDUxNTE3NjE4OSwxMz
-Y5MzQ0ODIxLC0xODgxNzk2NTYsODA5OTUwODMsMjkyMzAwMjI4
-LC0xMDIwNzk3NDQ2LC0yODY0Mzk0NDksMTI5MTAyMzE3OCwtNT
-AxOTEzNzAsLTE3MzQzMTE5OTQsLTM2NDI5NTk1OSw2MDUxNzYy
-MjNdfQ==
+eyJoaXN0b3J5IjpbLTE5MjY2Mzk4MzQsNTE1ODEyMTMwLDM4MD
+gwNTQ3MiwxNjM4MzQ5NTYzLC0xNDUyNzAyNzQyLC04ODY3OTM4
+NTksMTkzMzUzMjIwOCwtMTc3MzU5ODgwMCwyMTE2NTkzMjE4LD
+UxNTE3NjE4OSwxMzY5MzQ0ODIxLC0xODgxNzk2NTYsODA5OTUw
+ODMsMjkyMzAwMjI4LC0xMDIwNzk3NDQ2LC0yODY0Mzk0NDksMT
+I5MTAyMzE3OCwtNTAxOTEzNzAsLTE3MzQzMTE5OTQsLTM2NDI5
+NTk1OV19
 -->
