@@ -293,7 +293,7 @@ com
 ## Repos to Clone
 ### Get RemotSave Unmerged Changes from Oold Ccomputer
 ``` --or config --get remote.origin.url
-find . -type d -depth 1 -exec git --git-dir={}/.gitbash
+find . -type d -depth 1 -exec git --git-dir={}/.git
 setopt sh_word_split # For zsh
 dirs=$(find . -maxdepth 1 -type d -execdir test -d {}/.git \; -prune -print 2>/dev/null)
 for dir in $dirs; do
@@ -308,7 +308,7 @@ find . -type d -depth 1 -exec "cd {} \; -exec && gitcelain)
 done
 ```
 
-### es from ld omputer
+### Get unmerged changes from Old Computer
 ```bash
 find . -type d -depth 1 -exec git --git-dir={}/.git --work-tree=$PWD/{} config --get remote.origin.url  \; -exec&& cd .." \;
 ```
@@ -427,11 +427,11 @@ done
 curl -s 'https://api.macapps.link/en/chrome-dropbox-drive-github-sequelpro-vscode-docker-sketch-iterm-1password-cyberduck-spotify-skype-slack-whatsapp-discord' | sh
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjA1NjgyNTA2NiwxNjM4MzQ5NTYzLC0xND
-UyNzAyNzQyLC04ODY3OTM4NTksMTkzMzUzMjIwOCwtMTc3MzU5
-ODgwMCwyMTE2NTkzMjE4LDUxNTE3NjE4OSwxMzY5MzQ0ODIxLC
-0xODgxNzk2NTYsODA5OTUwODMsMjkyMzAwMjI4LC0xMDIwNzk3
-NDQ2LC0yODY0Mzk0NDksMTI5MTAyMzE3OCwtNTAxOTEzNzAsLT
-E3MzQzMTE5OTQsLTM2NDI5NTk1OSw2MDUxNzYyMjMsNjAzMzMy
-NDVdfQ==
+eyJoaXN0b3J5IjpbMzgwODA1NDcyLDE2MzgzNDk1NjMsLTE0NT
+I3MDI3NDIsLTg4Njc5Mzg1OSwxOTMzNTMyMjA4LC0xNzczNTk4
+ODAwLDIxMTY1OTMyMTgsNTE1MTc2MTg5LDEzNjkzNDQ4MjEsLT
+E4ODE3OTY1Niw4MDk5NTA4MywyOTIzMDAyMjgsLTEwMjA3OTc0
+NDYsLTI4NjQzOTQ0OSwxMjkxMDIzMTc4LC01MDE5MTM3MCwtMT
+czNDMxMTk5NCwtMzY0Mjk1OTU5LDYwNTE3NjIyMyw2MDMzMzI0
+NV19
 -->
