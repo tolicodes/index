@@ -88,18 +88,6 @@ npm login
 	- OBS->Preferences->Output->Record->Recording Path set to "/Users/toli/ToliCodes Dropbox/Anatoliy Zaslavskiy/ALL/Recordings"
 	- OBS->Preferences->Video Both resolutions to 1920x1200
 	- Setup Display recording + top left hand corner video scene
-
-### App Store
-
-#### Needs install
-- Amphetamine
-- SpeedTest
-- Duplicate Finder Remover
-	- Preferences->Upgrade to Pro->Restore
-- Be Focused Pro
-	- Open Settings and Log In (adz@nycit.com)
-	- Launch at Startup
-- Giphy Capture
 - Moom
     - Go to General, uncheck "Show preferences on launch", check "Launch automatically on login"
  	- Configure Moom Settings
@@ -107,6 +95,18 @@ npm login
 		- Command+Option+Right - right side
 		- Command+Option+Up - full screen
 	- Check Run as "Menu Application" in the main screen 
+### App Store
+
+#### Needs install
+- Amphetamine
+- SpeedTest
+- Duplicate File Remover
+	- Preferences->Upgrade to Pro->Restore
+- Be Focused Pro
+	- Open Settings and Log In (adz@nycit.com)
+	- Launch at Startup
+- Giphy Capture
+
 - XCode
 	- Open Xcode and agree to license agreement
 	- Install command line tools `xcode-select --install`
@@ -441,5 +441,5 @@ executeInAllGitDirs "[[ \$(find . -name package.json) ]] && yarn"
 curl -s 'https://api.macapps.link/en/chrome-dropbox-drive-github-sequelpro-vscode-docker-sketch-iterm-1password-cyberduck-spotify-skype-slack-whatsapp-discord' | sh
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTY0MTI3MzU0MV19
+eyJoaXN0b3J5IjpbMTc5MTE1NzYzNV19
 -->
