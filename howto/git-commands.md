@@ -110,8 +110,8 @@ executeInAllGitDirs "cd .. && rm -rf \$dir"
 ```bash
 dirs=$(find . -maxdepth 1 -type d -execdir test -d {}/.git \; -prune -print 2>/dev/null)
 
+# store dotfiles here
 mkdir dotfiles
-touch dotfiles/index.
 
 for dir in $dirs; do
 	originalPwd=$(pwd)
@@ -119,7 +119,8 @@ for dir in $dirs; do
 	ignored=$(git status --ignored)
 	for file in $ignored; do
 		if [[ -f $ignored ]]; then
-			..
+			```
+mkdir -p $(dirname "$FILENAME") && touch "$FILENAME"
 		fi
 	done
 	cd $originalPwd
@@ -144,5 +145,6 @@ git push --all
 git config --global branch.autosetupmerge always
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE1MDI5OTg5NzAsNDc2MjIwNTYyXX0=
+eyJoaXN0b3J5IjpbLTE5MDY1OTg1OTgsLTE1MDI5OTg5NzAsND
+c2MjIwNTYyXX0=
 -->
