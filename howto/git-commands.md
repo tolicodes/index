@@ -112,7 +112,7 @@ dirs=$(find . -maxdepth 1 -type d -execdir test -d {}/.git \; -prune -print 2>/d
 
 # store dotfiles here
 mkdir dotfiles
-dotfiles_path=$(echo "$(cd "$(dirname "$1")"; pwd -P)")
+dotfiles_path=$(cd dotfiles && pwd)
 
 for dir in $dirs; do
 	originalPwd=$(pwd)
@@ -146,6 +146,6 @@ git push --all
 git config --global branch.autosetupmerge always
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTg0Mjc4NjU5NCwxOTA1NDk0NTU2LC0xNT
-AyOTk4OTcwLDQ3NjIyMDU2Ml19
+eyJoaXN0b3J5IjpbLTE1MjE2NDIzOTIsMTkwNTQ5NDU1NiwtMT
+UwMjk5ODk3MCw0NzYyMjA1NjJdfQ==
 -->
