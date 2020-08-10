@@ -1,8 +1,6 @@
-```
-##### Symlink #####
-
+```bash
+##### Symlink Config #####
 rm -rf ~/.ssh
-
 ln -s ~/Google\ Drive/ALL\ -\ Toli/Config\ Files/.ssh ~/.ssh
 
   
@@ -502,5 +500,5 @@ export AWS_SESSION_TTL=12h
 export AWS_ASSUME_ROLE_TTL=12h
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTU4NjY4NDcwNV19
+eyJoaXN0b3J5IjpbLTExMzQ3ODIzNTddfQ==
 -->
