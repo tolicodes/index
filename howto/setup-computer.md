@@ -124,7 +124,12 @@ npm login
 			- [1124 Fell1124-fell.slack.com](https://app.slack.com/t/1124-fell/login/z-app-586439096176-1290453447346-fa656e5e56b763e03cb8a7bd04f9583393980b57e1c6f63febb1996c8ba64424)
 			- [KissThisWorldkissthisworld.slack.com](https://app.slack.com/t/kissthisworld/login/z-app-805944651956-1283722996166-4a15073dd230f6c5f9f8a06e402d043b1511874c0866770a0486438f7b750566)
 			- [sexhackhackathon20sexhackhackathon20.slack.com](https://app.slack.com/t/sexhackhackathon20/login/z-app-1049003326133-1290659590083-47db4a3efa62431e05e9f06ea4250775b99e8c0f9e52c1b06b2a853bbee09dc6)
-			- 
+
+#### Manual Downloads
+- [Tower](https://www.git-tower.com/download-TO2M)
+	- License in 1Password
+	- Choose Default to clone to: `~/Sites`
+
 ### App Store
 
 #### Needs install
@@ -151,26 +156,6 @@ npm login
 - [Docker](https://www.docker.com/products/docker-desktop)
 - [Google Drive](https://www.google.com/drive/download/)
 - [iTerm](https://www.iterm2.com/downloads.html)
-	- [https://github.com/robbyrussell/oh-my-zsh](https://github.com/robbyrussell/oh-my-zsh)
-	- `sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"`
-	- `rm ~/.zshrc && ln -s ~/Google\ Drive/ALL\ -\ Toli/Config\ Files/.zshrc && source ~/.zshrc`
-	- Install Powerline Fonts: 
-	
-	    git clone https://github.com/powerline/fonts.git --depth=1
-		# install
-		cd fonts
-		./install.sh
-		# clean-up a bit
-		cd ..
-		rm -rf fonts
-	
-    - In Iterm go to Preferences->Profiles->Text->Fonts and select "Droid Sans Mono Dotted for Powerline"
-- [NVM](https://github.com/nvm-sh/nvm#installation-and-update) - 
-
-	  curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.35.1/install.sh | bash
-	  source ~/.zshrc
-	  nvm install 12
-- Install yarn `
 - CodeFresh CLI
 	- Get API Key From [here](https://g.codefresh.io/user/settings)
 
@@ -183,9 +168,6 @@ npm login
 com
 - [Sketch](https://sketchapp.com/get/)
 - [Spotify](https://www.spotify.com/us/download/other/)
-- [Tower](https://www.git-tower.com/download-TO2M)
-	- License in 1Password
-	- Choose Default to clone to: `~/Sites`
 - [Visual Studio Code](https://code.visualstudio.com/)
 	- Open Vscode Command Exec (Command + Shift + P) and then type ">install code" and press "Enter". This will install `code`
 	- Go to Preferences->Settings->Type "font terminal" and paste "Droid Sans Mono Dotted for Powerline"
@@ -449,7 +431,7 @@ executeInAllGitDirs "[[ \$(find . -name package.json) ]] && yarn"
 curl -s 'https://api.macapps.link/en/chrome-dropbox-drive-github-sequelpro-vscode-docker-sketch-iterm-1password-cyberduck-spotify-skype-slack-whatsapp-discord' | sh
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTM3NzYyNDczOSwxMzg1Njk4NzMsLTEwMT
-cwMTQ2MDgsMTA1MjYyMjU0NCwxMTIyMDgzMDQxLC0zMjA4MDUz
-NjUsLTEwNzMxMTk4NjAsMTA1NzUwNzU0Nl19
+eyJoaXN0b3J5IjpbOTMzMDEwNTIwLDEzODU2OTg3MywtMTAxNz
+AxNDYwOCwxMDUyNjIyNTQ0LDExMjIwODMwNDEsLTMyMDgwNTM2
+NSwtMTA3MzExOTg2MCwxMDU3NTA3NTQ2XX0=
 -->
