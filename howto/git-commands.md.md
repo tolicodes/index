@@ -70,6 +70,24 @@ for dir in $dirs; do
 	cd $originalPwd
 done
 ```
+
+### Overwrite Origin
+```bash
+git remote rm origin
+git remote add origin ORIGIN
+git config master.remote origin
+git config master.merge refs/heads/master
+```
+
+### Push All Branches
+```bash
+git push --all
+```
+
+### No Need to set upstream branch
+```bash
+git config --global branch.autosetupmerge always
+```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE1MzA3MjU1NzVdfQ==
+eyJoaXN0b3J5IjpbMTc1NDUyMDQ3N119
 -->
