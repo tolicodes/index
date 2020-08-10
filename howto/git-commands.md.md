@@ -91,7 +91,20 @@ for dir in $dirs; do
 done
 ```
 
-### Delete Old Git Repo
+### Delete All Git Repos
+```bash
+function executeInAllGitDirs {
+	dirs=$(find . -maxdepth 1 -type d -execdir test -d {}/.git \; -prune -print 2>/dev/null)
+	for dir in $dirs; do
+		originalPwd=$(pwd)
+		cd $dir
+		eval $1
+		cd $originalPwd
+	done
+}
+
+executeInAllGitDirs "rm -rf ." 
+```
 
 ### Overwrite Origin
 ```bash
@@ -111,6 +124,6 @@ git push --all
 git config --global branch.autosetupmerge always
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjM0NTExMDg5LDEyMDAxMzYxODMsLTE3OT
-M2MjI4NzldfQ==
+eyJoaXN0b3J5IjpbLTExNzc0NzE2NjYsMTIwMDEzNjE4MywtMT
+c5MzYyMjg3OV19
 -->
