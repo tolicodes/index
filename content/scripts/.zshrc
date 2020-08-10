@@ -156,12 +156,12 @@ function gpp() {
   git pull
   git push
 }
-alias git-push-pull=gpp
+alias git-pull-push=gpp
 
 # git force push
 function gfp() { 
   git_set_upstream
-  git push -f
+  git-pull-push -f
 }
 alias git-force-push=gfp
 
@@ -170,7 +170,7 @@ function gacp() {
   git add .
   [[ $1 ]] && git commit -m $1 || git commit
   git_set_upstream
-  git push
+  git-pull-push
 }
 alias git-add-commit-push=gacp
 
@@ -179,7 +179,7 @@ function gacap() {
   git add .
   HUSKY_SKIP_HOOKS=1 git commit --amend --no-edit # Needs to be run inline for some reason
   git_set_upstream
-  git push -f
+  git-pull-push -f
 }
 alias git-add-amend-commit-push=gacap
 
