@@ -1,5 +1,5 @@
-## Git
-### List all remotes in directory
+# Git
+## List all remotes in directory
 ```bash
 function executeInAllGitDirs {
 	dirs=$(find . -maxdepth 1 -type d -execdir test -d {}/.git \; -prune -print 2>/dev/null)
@@ -14,7 +14,7 @@ function executeInAllGitDirs {
 executeInAllGitDirs "git config --get remote.origin.url"
 ```
 
-### Get All clone urls in directory
+## Get All clone urls in directory
 ```bash
 function executeInAllGitDirs {
 	dirs=$(find . -maxdepth 1 -type d -execdir test -d {}/.git \; -prune -print 2>/dev/null)
@@ -48,7 +48,7 @@ executeInAllGitDirs "COMMAND" ### REPLACE THIS
 ```
 Replace `COMMAND` with your command
 
-#### Example: Print Paths
+### Example: Print Paths
 ```bash
 function executeInAllGitDirs {
 	dirs=$(find . -maxdepth 1 -type d -execdir test -d {}/.git \; -prune -print 2>/dev/null)
@@ -63,7 +63,7 @@ function executeInAllGitDirs {
 executeInAllGitDirs "pwd" 
 ```
 
-### Get All Unmerged Changed In Repos
+## Get All Unmerged Changed In Repos
 ```bash
 setopt sh_word_split # For zsh
 dirs=$(find . -maxdepth 1 -type d -execdir test -d {}/.git \; -prune -print 2>/dev/null)
@@ -77,7 +77,7 @@ for dir in $dirs; do
 done
 ```
 
-### Save Changes In All Uncomitted Repos
+## Save Changes In All Uncommitted Repos
 ```bash
 setopt sh_word_split # For zsh
 dirs=$(find . -maxdepth 1 -type d -execdir test -d {}/.git \; -prune -print 2>/dev/null)
@@ -91,7 +91,7 @@ for dir in $dirs; do
 done
 ```
 
-### Delete All Git Repos
+## Delete All Git Repos
 ```bash
 function executeInAllGitDirs {
 	dirs=$(find . -maxdepth 1 -type d -execdir test -d {}/.git \; -prune -print 2>/dev/null)
@@ -106,7 +106,22 @@ function executeInAllGitDirs {
 executeInAllGitDirs "cd .. && rm -rf \$dir" 
 ```
 
-### Overwrite Origin
+## Sync dotfiles in All Git Repos
+```bash
+function executeInAllGitDirs {
+	dirs=$(find . -maxdepth 1 -type d -execdir test -d {}/.git \; -prune -print 2>/dev/null)
+	for dir in $dirs; do
+		originalPwd=$(pwd)
+		cd $dir
+		eval $1
+		cd $originalPwd
+	done
+}
+
+executeInAllGitDirs "" 
+```
+
+## Overwrite Origin
 ```bash
 git remote rm origin
 git remote add origin ORIGIN
@@ -114,15 +129,15 @@ git config master.remote origin
 git config master.merge refs/heads/master
 ```
 
-### Push All Branches
+## Push All Branches
 ```bash
 git push --all
 ```
 
-### No Need to set upstream branch
+## No Need to set upstream branch
 ```bash
 git config --global branch.autosetupmerge always
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNDc2MjIwNTYyXX0=
+eyJoaXN0b3J5IjpbLTgzMjAzNTM0NSw0NzYyMjA1NjJdfQ==
 -->
