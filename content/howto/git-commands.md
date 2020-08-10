@@ -182,6 +182,28 @@ git push --all
 ```bash
 git config --global branch.autosetupmerge always
 ```
+
+## Stash and Rebase
+Before rebasing you need to stash. Then you reapply the stash.
+In case there is a rebase conflict, you want to correct that conflict
+and then continue (it will do a `git add .` and `git rebase --continue`
+for you)
+
+```bash
+# Get current branch name
+function current_branch() {
+  git branch | awk '/^\* / { print $2 }'
+}
+
+function git-stash-rebase () {
+  [[ $1 == '-r' ]] && \
+    git add . && git rebase --continue || \
+    { git stash --include-untracked && \
+      { git fetch && git rebase origin/$(current_branch) || { echo "Merge files then run gacap -r" && return 1 } } && \
+      git stash apply || { echo "Merge files then run gacap -r" && return 1 } }
+}
+```
+
 <!--stackedit_data:
 eyJoaXN0b3J5IjpbLTE3NDUwMDY5NjYsLTIxMzY5Mjk1NTksMT
 U2Njc3MTY3MCw2MDA4MjU1NCwxNDAyNTUyNDEyLDE5MDU0OTQ1
