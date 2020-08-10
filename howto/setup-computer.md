@@ -33,7 +33,6 @@ Setup
 rm ~/.zshrc && ln -s ~/Google\ Drive/ALL\ -\ Toli/Config\ Files/.zshrc && source ~/.zshrc
 
 # powerline fonts
-
 git clone https://github.com/powerline/fonts.git --depth=1
 cd fonts
 ./install.sh
@@ -44,7 +43,7 @@ rm -rf fonts
 nvm install 12
 
 # Install yarn
-curl -o- -L https://yarnpkg.com/install.sh | bash`
+curl -o- -L https://yarnpkg.com/install.sh | bash
 
 # lerna
 npm i -g lerna
@@ -442,5 +441,5 @@ executeInAllGitDirs "[[ \$(find . -name package.json) ]] && yarn"
 curl -s 'https://api.macapps.link/en/chrome-dropbox-drive-github-sequelpro-vscode-docker-sketch-iterm-1password-cyberduck-spotify-skype-slack-whatsapp-discord' | sh
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTQwNDIyODcxMSwxMDU3NTA3NTQ2XX0=
+eyJoaXN0b3J5IjpbMjY2ODAzNzU3LDEwNTc1MDc1NDZdfQ==
 -->
