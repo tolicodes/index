@@ -1,3 +1,42 @@
+## [1.4.0](https://github.com/tolicodes/index/compare/v1.3.2...v1.4.0) (2020-08-10)
+
+
+### Features
+
+* **howto/git-commands:** git-stash-rebase ([11a9630](https://github.com/tolicodes/index/commit/11a9630d541bf736677ac33cda8fbc9d975cffab))
+* **scripts/.zshrc:** updated zsh scripts to do rebasing ([6d6e900](https://github.com/tolicodes/index/commit/6d6e900da6802af5a4d11c4b691922280e11e6aa))
+
+
+### Continuous Integration
+
+* **codefresh:** clean up codefresh ([d00c80b](https://github.com/tolicodes/index/commit/d00c80bc0d591fd011fdf6539a2d32b8d4aeb8df))
+* **codefresh:** clean up codefresh ([ad5e23b](https://github.com/tolicodes/index/commit/ad5e23bcf51e1afb9fc8b703d6731ecd4502b4e4))
+* **semantic-release:** hide release commits ([243c29b](https://github.com/tolicodes/index/commit/243c29bc0bfed853aca0f30d67abd7fe821a369e))
+
+
+### Miscellaneous Chores
+
+* **test:** test ([744720d](https://github.com/tolicodes/index/commit/744720d963c44d9d7d37fb0b195b473728a42fe6))
+* **test:** test ([53899a7](https://github.com/tolicodes/index/commit/53899a7047f45b15d9aff5a54c924795140789ca))
+* **test:** test ([af6e9e6](https://github.com/tolicodes/index/commit/af6e9e632b9b12d027ff17fdf297b56c9c57d4fa))
+* **test:** test ([e74ffb2](https://github.com/tolicodes/index/commit/e74ffb2c777e6dc92d5a6240e42ea8ddc0f5a019))
+* **test:** test ([f13f75c](https://github.com/tolicodes/index/commit/f13f75c0e67caabef42c7f0e825c1840028b9ad1))
+* **test:** test ([4d6b1d6](https://github.com/tolicodes/index/commit/4d6b1d6c21a95edf677b627d962c394e011a7778))
+* **test:** test ([fe4df4a](https://github.com/tolicodes/index/commit/fe4df4ab2bd20c736a12f279296c4fc4f124d8af))
+* **test:** test ([b69abd6](https://github.com/tolicodes/index/commit/b69abd6d25f5fd7d23c93cc4698887076bd64335))
+
+
+### Tests
+
+* **test:** test ([e821724](https://github.com/tolicodes/index/commit/e8217241420b1c06e2988becc81db32b8176be83))
+* **test:** test ([cdc5a84](https://github.com/tolicodes/index/commit/cdc5a841f9d0cabd433fb61e3e07001d21f6098b))
+* **test:** test ([38edacb](https://github.com/tolicodes/index/commit/38edacb80d655ec6951d4e4b5b056b975b57bc27))
+* **test:** test ([231ffb3](https://github.com/tolicodes/index/commit/231ffb31a260e63054d393189fead99c746aa91d))
+* **test:** test ([c8689be](https://github.com/tolicodes/index/commit/c8689be03bd5bef40ddef00855e24bfb4eacaa79))
+* **test:** test ([54adf58](https://github.com/tolicodes/index/commit/54adf58e22abbd06c29176589cfd90f8bfc9e96c))
+* **test:** test ([7a21e9c](https://github.com/tolicodes/index/commit/7a21e9cb3132aadb250a81c603470e9ac3ddec6f))
+* **test:** test ([086a3da](https://github.com/tolicodes/index/commit/086a3dab022e0f625bd6454c8b064df67e2c4727))
+
 ### [1.3.2](https://github.com/tolicodes/index/compare/v1.3.1...v1.3.2) (2020-08-10)
 
 
