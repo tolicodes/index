@@ -67,7 +67,7 @@ npm login
 - iTerm
 	- In Iterm go to Preferences->Profiles->Text->Fonts and select "Droid Sans Mono Dotted for Powerline"
 - Codefresh
-	- Get API Key From [here](https://g.codefresh.io/user/settings) bottom
+	- Get API Key From [here](https://g.codefresh.io/user/settings) bottom. Log in using google account (toli@nycitt.com)
 	- Authenticate with key from previous step
 
 		  codefresh auth create-context --api-key KEY_GOES_HERE
@@ -441,6 +441,6 @@ executeInAllGitDirs "[[ \$(find . -name package.json) ]] && yarn"
 curl -s 'https://api.macapps.link/en/chrome-dropbox-drive-github-sequelpro-vscode-docker-sketch-iterm-1password-cyberduck-spotify-skype-slack-whatsapp-discord' | sh
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTMyMDgwNTM2NSwtMTA3MzExOTg2MCwxMD
-U3NTA3NTQ2XX0=
+eyJoaXN0b3J5IjpbMTEyMjA4MzA0MSwtMzIwODA1MzY1LC0xMD
+czMTE5ODYwLDEwNTc1MDc1NDZdfQ==
 -->
