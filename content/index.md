@@ -12,7 +12,16 @@ List of all the projects I'm doing/thinking of doing
 
 ## [HowTos](./howto/)
 
-## [Articles, Works, and Podcasts](./articles-works-and-podcasts.md)
+## Content
+Content I've created. Articles, Work, Podcasts
+* [Articles, Works, and Podcasts](./content/)
+* [Poems](./content/poems.md)
+
+## [App Ideas](./app-ideas)
+Ideas for apps I have
+
+## [Code Scratchpad](./code-scratchpad)
+When I have a random code idea I put it here
 
 ## [Speaking at Conferences](./speaking-at-conferences.md)
 
@@ -25,3 +34,12 @@ These are problems I face (technical and non technical) with some ideas on how t
 ## [Buy](./buy.md)
 
 Stuff I'd like to buy
+
+## [Diary](./diary)
+My (not so) private diary
+
+## [Scripts](./scripts)
+A collection of scripts I wrote
+
+## [Workbooks](./workbooks)
+My responses to self work I've done
