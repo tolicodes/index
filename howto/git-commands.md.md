@@ -63,7 +63,7 @@ function executeInAllGitDirs {
 executeInAllGitDirs "pwd" 
 ```
 
-### Get All Unmerged Changed In Repo
+### Get All Unmerged Changed In Repos
 ```bash
 setopt sh_word_split # For zsh
 dirs=$(find . -maxdepth 1 -type d -execdir test -d {}/.git \; -prune -print 2>/dev/null)
@@ -110,5 +110,6 @@ git push --all
 git config --global branch.autosetupmerge always
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTIwMDEzNjE4MywtMTc5MzYyMjg3OV19
+eyJoaXN0b3J5IjpbNTQyODg2NzU4LDEyMDAxMzYxODMsLTE3OT
+M2MjI4NzldfQ==
 -->
