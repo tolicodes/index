@@ -40,10 +40,14 @@ cd ..
 rm -rf fonts
 
 # nvm
+https://raw.githubusercontent.com/creationix/nvm/v0.34.0/install.sh | bash
+source ~/.zshrc
 nvm install 12
 
 # Install yarn
 curl -o- -L https://yarnpkg.com/install.sh | bash
+
+
 
 # lerna
 npm i -g lerna
@@ -441,6 +445,6 @@ executeInAllGitDirs "[[ \$(find . -name package.json) ]] && yarn"
 curl -s 'https://api.macapps.link/en/chrome-dropbox-drive-github-sequelpro-vscode-docker-sketch-iterm-1password-cyberduck-spotify-skype-slack-whatsapp-discord' | sh
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTEyMjA4MzA0MSwtMzIwODA1MzY1LC0xMD
-czMTE5ODYwLDEwNTc1MDc1NDZdfQ==
+eyJoaXN0b3J5IjpbMTQ1OTAyMzYwNCwxMTIyMDgzMDQxLC0zMj
+A4MDUzNjUsLTEwNzMxMTk4NjAsMTA1NzUwNzU0Nl19
 -->
