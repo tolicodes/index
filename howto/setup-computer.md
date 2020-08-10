@@ -22,7 +22,7 @@ Takes forever to sync so...install it first
 ```bash
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"
 
-brew cask install the-clock hubstaff rescuetime tower postman obs google-chrome dropbox google-backup-and-sync github sequel-pro visual-studio-code docker sketch iterm2 1password cyberduck spotify skype slack whatsapp discord
+brew cask install the-clock hubstaff rescuetime tower postman obs google-chrome dropbox google-backup-and-sync github sequel-pro visual-studio-code docker sketch iterm2 1password cyberduck spotify skype slack whatsapp discord moom
 
 brew cask install hubstaff rescuetime tower postman obs    spotify skype discord
 ```
@@ -95,23 +95,7 @@ npm login
 		- Command+Option+Right - right side
 		- Command+Option+Up - full screen
 	- Check Run as "Menu Application" in the main screen 
-### App Store
 
-#### Needs install
-- Amphetamine
-- SpeedTest
-- Duplicate File Remover
-	- Preferences->Upgrade to Pro->Restore
-- Be Focused Pro
-	- Open Settings and Log In (adz@nycit.com)
-	- Launch at Startup
-- Giphy Capture
-
-- XCode
-	- Open Xcode and agree to license agreement
-	- Install command line tools `xcode-select --install`
-- DayOne
-	- Sign in using icloud
 - Slack
 	- Workspaces
 		- toli@tolicodes.com
@@ -130,9 +114,26 @@ npm login
 			- [1124 Fell1124-fell.slack.com](https://app.slack.com/t/1124-fell/login/z-app-586439096176-1290453447346-fa656e5e56b763e03cb8a7bd04f9583393980b57e1c6f63febb1996c8ba64424)
 			- [KissThisWorldkissthisworld.slack.com](https://app.slack.com/t/kissthisworld/login/z-app-805944651956-1283722996166-4a15073dd230f6c5f9f8a06e402d043b1511874c0866770a0486438f7b750566)
 			- [sexhackhackathon20sexhackhackathon20.slack.com](https://app.slack.com/t/sexhackhackathon20/login/z-app-1049003326133-1290659590083-47db4a3efa62431e05e9f06ea4250775b99e8c0f9e52c1b06b2a853bbee09dc6)
+			- 
+### App Store
+
+#### Needs install
+- Amphetamine
+- SpeedTest
+- Duplicate File Remover
+	- Preferences->Upgrade to Pro->Restore
+- Be Focused Pro
+	- Open Settings and Log In (adz@nycit.com)
+	- Launch at Startup
+- Giphy Capture
+- XCode
+	- Open Xcode and agree to license agreement
+	- Install command line tools `xcode-select --install`
+- DayOne
+	- Sign in using icloud
 - Numbers
 
-### Download
+### Download 
 
 #### Installed By  Brew
 - [Chrome](https://www.google.com/chrome/?brand=CHBD&gclid=CjwKCAiA8K7uBRBBEiwACOm4d-CR4CPqSUYJJhj8Fks_GWJeAjOJvcLZibwbbQTjiNl9CM1-1W5VgRoCXNkQAvD_BwE&gclsrc=aw.ds)
@@ -441,5 +442,5 @@ executeInAllGitDirs "[[ \$(find . -name package.json) ]] && yarn"
 curl -s 'https://api.macapps.link/en/chrome-dropbox-drive-github-sequelpro-vscode-docker-sketch-iterm-1password-cyberduck-spotify-skype-slack-whatsapp-discord' | sh
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTc5MTE1NzYzNV19
+eyJoaXN0b3J5IjpbLTEyNzczNjAwNjhdfQ==
 -->
