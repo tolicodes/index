@@ -22,7 +22,7 @@ Takes forever to sync so...install it first
 ```bash
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"
 
-brew cask install the-clock hubstaff rescuetime tower postman obs google-chrome dropbox google-backup-and-sync github sequel-pro visual-studio-code docker sketch iterm2 1password cyberduck spotify skype slack whatsapp discord moom
+brew cask install the-clock hubstaff rescuetime tower postman obs google-chrome dropbox google-backup-and-sync github sequel-pro visual-studio-code docker sketch iterm2 1password cyberduck spotify skype slack whatsapp discord moom zoom
 
 brew install nvm yarn jq hub
 ```
@@ -447,7 +447,7 @@ executeInAllGitDirs "[[ \$(find . -name package.json) ]] && yarn"
 curl -s 'https://api.macapps.link/en/chrome-dropbox-drive-github-sequelpro-vscode-docker-sketch-iterm-1password-cyberduck-spotify-skype-slack-whatsapp-discord' | sh
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTQ4NDcxNDQ2NSwxMDUyNjIyNTQ0LDExMj
-IwODMwNDEsLTMyMDgwNTM2NSwtMTA3MzExOTg2MCwxMDU3NTA3
-NTQ2XX0=
+eyJoaXN0b3J5IjpbLTE2MjYzODEyMTgsMTA1MjYyMjU0NCwxMT
+IyMDgzMDQxLC0zMjA4MDUzNjUsLTEwNzMxMTk4NjAsMTA1NzUw
+NzU0Nl19
 -->
