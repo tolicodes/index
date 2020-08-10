@@ -4,7 +4,7 @@
   "scripts": {
     "build": "eleventy --passthroughall --input content",
     "serve": "yarn build --serve",
-    "release": "semantic-release"
+    "release": "cp CHANGELOG.md content && semantic-release"
   },
   "config": {
     "commitizen": {
