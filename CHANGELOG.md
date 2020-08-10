@@ -1,3 +1,22 @@
+### [1.1.3](https://github.com/tolicodes/index/compare/v1.1.2...v1.1.3) (2020-08-10)
+
+
+### Bug Fixes
+
+* **test:** test commit ([0e77645](https://github.com/tolicodes/index/commit/0e776459f004d6343aa578ec0690e870a68d2dea))
+
+
+### Documentation
+
+* **index:** added changelog link to front page ([3f1b66f](https://github.com/tolicodes/index/commit/3f1b66fb58a1876f213604c556c65450f7440d46))
+* **readme:** got rid of test ([b131570](https://github.com/tolicodes/index/commit/b131570bbf63c29bcffed8d86aff0806123529a1))
+
+
+### Build System
+
+* **changelog:** add changelog to content ([9e41b0b](https://github.com/tolicodes/index/commit/9e41b0ba52a1e1b13b4d00d83d4b1fe36f4e8d79))
+* **changelog:** add changelog to content ([ddb3527](https://github.com/tolicodes/index/commit/ddb352764883a2ffc92bd5bc205fc8ebaecdc9ed))
+
 ### [1.1.2](https://github.com/tolicodes/index/compare/v1.1.1...v1.1.2) (2020-08-10)
 
 
