@@ -1,3 +1,15 @@
+### [1.3.2](https://github.com/tolicodes/index/compare/v1.3.1...v1.3.2) (2020-08-10)
+
+
+### Bug Fixes
+
+* **index:** spelling error ([8b3b99c](https://github.com/tolicodes/index/commit/8b3b99cfc7dd988cabc002e9b4f8350db35ae5a8))
+
+
+### Miscellaneous Chores
+
+* **release:** 1.3.1 [skip ci] ([9c0760e](https://github.com/tolicodes/index/commit/9c0760eb50b8e61c7232b8f797a55326121c6005))
+
 ### [1.3.1](https://github.com/tolicodes/index/compare/v1.3.0...v1.3.1) (2020-08-10)
 
 
