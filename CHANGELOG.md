@@ -1,3 +1,10 @@
+# [1.1.0](https://github.com/tolicodes/index/compare/v1.0.0...v1.1.0) (2020-08-10)
+
+
+### Features
+
+* **zshrc:** added pull to all pushes ([d4b86b5](https://github.com/tolicodes/index/commit/d4b86b5d4bfd8e4cdfecffd6928ea74ce6c3ea90))
+
 # 1.0.0 (2020-08-10)
 
 
