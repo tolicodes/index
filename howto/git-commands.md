@@ -135,7 +135,14 @@ done
 
 Copy the files to Google Drive:
 ```bash
-cp -r dotfiles ~/Google\ Drive/ALL\ -\Toli/dotfiles
+cp -r dotfiles ~/Google\ Drive/ALL\ -\ Toli/
+```
+
+On new computer
+```bash
+cp ~/Google\ Drive/ALL\ -\ Toli/dotfiles ~/Sites
+```
+
 ## Overwrite Origin
 ```bash
 git remote rm origin
@@ -154,6 +161,6 @@ git push --all
 git config --global branch.autosetupmerge always
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNDgzOTIxMDg1LDE5MDU0OTQ1NTYsLTE1MD
+eyJoaXN0b3J5IjpbMzcxNTc2NTAxLDE5MDU0OTQ1NTYsLTE1MD
 I5OTg5NzAsNDc2MjIwNTYyXX0=
 -->
