@@ -7,7 +7,7 @@ steps:
   clone:
     title: "Cloning repository"
     type: "git-clone"
-    repo: "tolicodes/index"
+    repo: "${{CF_REPO_OWNER}}/${{CF_REPO_NAME}}"
     revision: "${{CF_BRANCH}}"
     git: "github"
     stage: "clone"
@@ -16,17 +16,17 @@ steps:
     title: Release new version and add to changelog
     stage: "release"
     type: freestyle
-    working_directory: "./index"
+    working_directory: "./${{CF_REPO_NAME}}"
     arguments:
       image: "node:latest"
       commands:
         - yarn
         # So it doesn't ask for fingerprint
         - mkdir ~/.ssh/ && echo -e "Host github.com\n\tStrictHostKeyChecking no\n" > ~/.ssh/config
+        - yarn semantic-release
+        - npm install netlify-cli -g
         - yarn run release
-        # trigger netlify deploy
-        - echo $NETLIFY_DEPLOY_HOOK
-        - curl -X POST -d {} $NETLIFY_DEPLOY_HOOK
+        - netlify deploy --prod
     when:
       branch:
         only:
