@@ -2,25 +2,6 @@
 
 [Git Commands](./git-commands)
 
-
-### Overwrite Origin
-```
-git remote rm origin
-git remote add origin ORIGIN
-git config master.remote origin
-git config master.merge refs/heads/master
-```
-
-### Push All Branches
-```
-git push --all
-```
-
-### No Need to set upstream branch
-```
-git config --global branch.autosetupmerge always
-```
-
 ## General
 ### Loop over directory and execute command
 #### Recursive
@@ -192,9 +173,9 @@ FUNCTIONNAME -f --action testing word
 ### iTerm
 - Split Vertically: Command+D
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTcwMjY2Mjg5MywxMzQ4NDg2NTAxLDE1MT
-Q3MzQwNjksLTg0MDQ3MDAxOCwtNTQ3MDA1MDkxLC03ODMwNDM1
-NDIsMTE5MjA4MTA5MCwxMzI3NTM0MTIzLDE4OTM4ODc5MDQsLT
-E3MjAyMTA2MzEsLTU1NzI5NzIwNSwtNTMzNzI3MDU3LC0xNzM3
-MDMyNjg4LDk1ODc3NjgzOCwxMzExNDMyNDY1XX0=
+eyJoaXN0b3J5IjpbMTUxNzcwNjYzLDEzNDg0ODY1MDEsMTUxND
+czNDA2OSwtODQwNDcwMDE4LC01NDcwMDUwOTEsLTc4MzA0MzU0
+MiwxMTkyMDgxMDkwLDEzMjc1MzQxMjMsMTg5Mzg4NzkwNCwtMT
+cyMDIxMDYzMSwtNTU3Mjk3MjA1LC01MzM3MjcwNTcsLTE3Mzcw
+MzI2ODgsOTU4Nzc2ODM4LDEzMTE0MzI0NjVdfQ==
 -->
