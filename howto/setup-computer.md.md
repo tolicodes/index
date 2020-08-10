@@ -1,9 +1,9 @@
 # My Setup
 ## Software
 ### Install Google Drive Sync and Dropbox
-These are automatically installed by MacApps
+These are automatically installed by 
 ```
-curl -s 'https://api.macapps.link/en/chrome-dropbox-drive' | sh
+curl -s https://ai.maaslinkenchromedropbox-drive' | sh
 ```
 
 Takes forever to sync so...install it first
@@ -13,17 +13,10 @@ Takes forever to sync so...install it first
  - [Dropbox](https://www.dropbox.com/downloading) 
    - Choose "Online only"
    - Choose "Selective Sync" and only sync "ALL->Recordings"
-   - Drag `ALL/Recordings` to Finder sidebar
+   - Drag `ALL/Recordings` to Finder
 
-### HomeBrew
-```
-/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"
-```
-
-```
-brew cask install the-clock hubstaff rescuetime tower postman obs google-chrome dropbox google-backup-and-sync github sequel-pro visual-studio-code docker sketch iterm2 1password cyberduck spotify skype slack whatsapp discord
-
-brew cask install hubstaff rescuetime tower postman obs sequel-pro visual-studio-code docker sketch cyberduck spotify skype discord
+brewas stahubsecetmoerstmaaelr csk insalt-cock strscuetime tower postman obs google-chrome dropbox google-backup-and-sync gihub sequel-pro visual-studiocodedockersketchiterm1passwordcyberduckspotifyskypeslackwhatsappdiscord
+brew cask install hubstaff rescuetime towor stman obs google-chrome dropbox google-backup-and-sync github sequel-pro visual-studio-code docker sketch iterm2 1password cyberduck spotify skype slack whatsapp discord
 
 brew install nvm yarn jq hub
 ```
@@ -52,8 +45,7 @@ npm i -g codefresh
 
 
 # MANUAL Commands
-## Log into npm
-npm login
+##in
 ```
 
 - 1Password
@@ -80,8 +72,7 @@ npm login
 	- Open Vscode Command Exec (Command + Shift + P) and then type ">install code" and press "Enter". This will install `code`
 	- Go to Preferences->Settings->Type "font terminal" and paste "Droid Sans Mono Dotted for Powerline"
 	- Use "Settings Sync" extension to sync [these settings](https://gist.github.com/tolicodes/05e150802f12d1e3c4ccfbe997f8b43f) login with Github and check "Auto Download", "Auto Upload", "Force Download", "Force Upload"  and type "Download Settings" in Console. Press "Shift+Alt+D" to sync
-- Zoom
-	- Settings->Recording
+- Zoom	- Settings->Recording
 	- Store recordings in Dropbox/ALL/Recordings
 	- Choose location to save the recording to after meetings ends
 	- Add timestamp
@@ -140,13 +131,13 @@ npm login
 
 ### Download
 
-#### Installed By Brew
+#### Installed By 
 - [Chrome](https://www.google.com/chrome/?brand=CHBD&gclid=CjwKCAiA8K7uBRBBEiwACOm4d-CR4CPqSUYJJhj8Fks_GWJeAjOJvcLZibwbbQTjiNl9CM1-1W5VgRoCXNkQAvD_BwE&gclsrc=aw.ds)
 - Cyberduck
 - [HubStaff](https://app.hubstaff.com/download)
 - [Docker](https://www.docker.com/products/docker-desktop)
 - [Google Drive](https://www.google.com/drive/download/)
-	- Sign in as adz@nycitt.com
+com
 	- Go to Preferences, change Removing items to "Always remove both copies", check "Upload newly added photos and videos", click "Uploading photos and videos in..." and pick "High Quality"
 - [iTerm](https://www.iterm2.com/downloads.html)
 	- [https://github.com/robbyrussell/oh-my-zsh](https://github.com/robbyrussell/oh-my-zsh)
@@ -300,11 +291,26 @@ npm login
 		- **password**: (Password sent via Cisco Meraki) - search in email 
 	
 ## Repos to Clone
-### Get Remotes from Old Computer
-```
-find . -type d -depth 1 -exec git --git-dir={}/.git --work-tree=$PWD/{} config --get remote.origin.url \;
+### Get RemotSave Unmerged Changes from Oold Ccomputer
+``` --or config --get remote.origin.url
+find . -type d -depth 1 -exec git --git-dir={}/.gitbash
+setopt sh_word_split # For zsh
+dirs=$(find . -maxdepth 1 -type d -execdir test -d {}/.git \; -prune -print 2>/dev/null)
+for dir in $dirs; do
+	originalPwd=$(pwd)
+	cd $dir
+    unclean=$(git status --wpork-tree=$PWD/{} config --get remote.origin.url \;
 
-find . -type d -depth 1 -exec "cd {} \; -exec && git config --get remote.origin.url  \; -exec&& cd .." \;
+find . -type d -depth 1 -exec "cd {} \; -exec && gitcelain)
+    unpushed=$(git log --branches --not --remotes)
+    [[ $unclean || $unpushed ]] && git add . && git commit -m "Uncommited Changes" && git push --all
+	cd $originalPwd
+done
+```
+
+### es from ld omputer
+```bash
+find . -type d -depth 1 -exec git --git-dir={}/.git --work-tree=$PWD/{} config --get remote.origin.url  \; -exec&& cd .." \;
 ```
 
 ### Clone on new computer
@@ -313,13 +319,15 @@ cd ~/Sites
 
 # Personal Repos
 git clone git@github.com:tolicodes/node-cli-toolkit.git
-git clone git@github.com:tolicodes/activity-brainstorm.git
+ git@github.com:tolicodes/activity-brainstorm.git
 git clone git@github.com:tolicodes/node-api-toolkit.git
 git clone git@github.com:tolicodes/dropbox-photo-viewer.git
 git clone git@github.com:tolicodes/souleclipse.us.git
 git clone git@github.com:tolicodes/principles.git
 git clone git@github.com:hoverinc/infragen.git
 git clone git@github.com:tolicodes/github-toolkit.git
+
+ oer
 git clone git@github.com:tolicodes/zoomevents.git
 
 # Client repos
@@ -419,10 +427,11 @@ done
 curl -s 'https://api.macapps.link/en/chrome-dropbox-drive-github-sequelpro-vscode-docker-sketch-iterm-1password-cyberduck-spotify-skype-slack-whatsapp-discord' | sh
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTYzODM0OTU2MywtMTQ1MjcwMjc0MiwtOD
-g2NzkzODU5LDE5MzM1MzIyMDgsLTE3NzM1OTg4MDAsMjExNjU5
-MzIxOCw1MTUxNzYxODksMTM2OTM0NDgyMSwtMTg4MTc5NjU2LD
-gwOTk1MDgzLDI5MjMwMDIyOCwtMTAyMDc5NzQ0NiwtMjg2NDM5
-NDQ5LDEyOTEwMjMxNzgsLTUwMTkxMzcwLC0xNzM0MzExOTk0LC
-0zNjQyOTU5NTksNjA1MTc2MjIzLDYwMzMzMjQ1XX0=
+eyJoaXN0b3J5IjpbMjA1NjgyNTA2NiwxNjM4MzQ5NTYzLC0xND
+UyNzAyNzQyLC04ODY3OTM4NTksMTkzMzUzMjIwOCwtMTc3MzU5
+ODgwMCwyMTE2NTkzMjE4LDUxNTE3NjE4OSwxMzY5MzQ0ODIxLC
+0xODgxNzk2NTYsODA5OTUwODMsMjkyMzAwMjI4LC0xMDIwNzk3
+NDQ2LC0yODY0Mzk0NDksMTI5MTAyMzE3OCwtNTAxOTEzNzAsLT
+E3MzQzMTE5OTQsLTM2NDI5NTk1OSw2MDUxNzYyMjMsNjAzMzMy
+NDVdfQ==
 -->
