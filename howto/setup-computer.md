@@ -24,10 +24,10 @@ Takes forever to sync so...install it first
 
 brew cask install the-clock hubstaff rescuetime tower postman obs google-chrome dropbox google-backup-and-sync github sequel-pro visual-studio-code docker sketch iterm2 1password cyberduck spotify skype slack whatsapp discord moom zoom
 
-brew install nvm yarn jq hub
+brew install yarn jq hub
 ```
 
-Setup
+### Command Line setup
 ```bash
 # Setting up zsh
 rm ~/.zshrc && ln -s ~/Google\ Drive/ALL\ -\ Toli/Config\ Files/.zshrc && source ~/.zshrc
@@ -57,7 +57,29 @@ npm i -g codefresh
 npm login
 ```
 
-#### Manual Setup
+### Manual Downloads
+- [Tower](https://www.git-tower.com/download-TO2M)
+	- License in 1Password
+	- Choose Default to clone to: `~/Sites`
+
+### App Store
+- Amphetamine
+- SpeedTest
+- Duplicate File Remover
+	- Preferences->Upgrade to Pro->Restore
+- Be Focused Pro
+	- Open Settings and Log In (adz@nycit.com)
+	- Launch at Startup
+- Giphy Capture
+- XCode
+	- Open Xcode and agree to license agreement
+	- Install command line tools `xcode-select --install`
+- DayOne
+	- Sign in using icloud
+- Numbers
+
+
+### Manual Setup
 - 1Password
 	- Open on login
 	- Configure using iphone
@@ -109,29 +131,6 @@ npm login
 - Postman
 	- Sign in with toli@nycitt.com
 - Slack [Workspaces](./slack-workspaces)
-
-#### Manual Downloads
-- [Tower](https://www.git-tower.com/download-TO2M)
-	- License in 1Password
-	- Choose Default to clone to: `~/Sites`
-
-### App Store
-
-#### Needs install
-- Amphetamine
-- SpeedTest
-- Duplicate File Remover
-	- Preferences->Upgrade to Pro->Restore
-- Be Focused Pro
-	- Open Settings and Log In (adz@nycit.com)
-	- Launch at Startup
-- Giphy Capture
-- XCode
-	- Open Xcode and agree to license agreement
-	- Install command line tools `xcode-select --install`
-- DayOne
-	- Sign in using icloud
-- Numbers
 
 
 ## Config
@@ -370,7 +369,7 @@ com
 - [Brew](https://brew.sh/)
 - [OBS](https://obsproject.com/download)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTY3NjM0NzE1NywxMzg1Njk4NzMsLTEwMT
+eyJoaXN0b3J5IjpbMTQxMjE3NzM3NiwxMzg1Njk4NzMsLTEwMT
 cwMTQ2MDgsMTA1MjYyMjU0NCwxMTIyMDgzMDQxLC0zMjA4MDUz
 NjUsLTEwNzMxMTk4NjAsMTA1NzUwNzU0Nl19
 -->
