@@ -1,3 +1,23 @@
+### [1.3.1](https://github.com/tolicodes/index/compare/v1.3.0...v1.3.1) (2020-08-10)
+
+
+### Bug Fixes
+
+* **index:** added header to index ([b052d9b](https://github.com/tolicodes/index/commit/b052d9b38ce83fa330560537a1386a32e348403d))
+
+
+### Miscellaneous Chores
+
+* **test:** test ([c34f8d0](https://github.com/tolicodes/index/commit/c34f8d041f6cbf991456ae6ef41ae50d4400937d))
+* **test:** test ([e347843](https://github.com/tolicodes/index/commit/e347843efb134208f340b5424145863e9e83e6ce))
+
+
+### Continuous Integration
+
+* **codefresh:** added build ([c62e11f](https://github.com/tolicodes/index/commit/c62e11f610d1f39ec096c7f5c880ee34cedf2073))
+* **codefresh:** added build ([c38ec4e](https://github.com/tolicodes/index/commit/c38ec4eb5f68f43bc4a6d5350a9fe2e7fc8b53f8))
+* **codefresh:** fix build ([34e535a](https://github.com/tolicodes/index/commit/34e535a4e463de448784e0ad57e1aefdac272ec8))
+
 ## [1.3.0](https://github.com/tolicodes/index/compare/v1.2.0...v1.3.0) (2020-08-10)
 
 
