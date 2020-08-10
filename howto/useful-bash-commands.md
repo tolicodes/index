@@ -50,9 +50,8 @@ dirs=$(find . -maxdepth 1 -type d -execdir test -d {}/.git \; -prune -print 2>/d
 for dir in $dirs; do
 	originalPwd=$(pwd)
 	cd $dir
-    unmerged=$(git branch --no-merged)
-    unadded=$(`expr `git status --porcelain 2>/dev/null| grep "^??" | wc -l`)
-    [ $unmerged ] && echo $dir
+    unclean=$(git status --porcelain)
+    [ $unclean ] && echo $dir
 	cd $originalPwd
 done
 ```
@@ -251,8 +250,8 @@ FUNCTIONNAME -f --action testing word
 ### iTerm
 - Split Vertically: Command+D
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTc4MzA0MzU0MiwxMTkyMDgxMDkwLDEzMj
-c1MzQxMjMsMTg5Mzg4NzkwNCwtMTcyMDIxMDYzMSwtNTU3Mjk3
-MjA1LC01MzM3MjcwNTcsLTE3MzcwMzI2ODgsOTU4Nzc2ODM4LD
-EzMTE0MzI0NjVdfQ==
+eyJoaXN0b3J5IjpbLTE2MTkxNDkzNDEsLTc4MzA0MzU0MiwxMT
+kyMDgxMDkwLDEzMjc1MzQxMjMsMTg5Mzg4NzkwNCwtMTcyMDIx
+MDYzMSwtNTU3Mjk3MjA1LC01MzM3MjcwNTcsLTE3MzcwMzI2OD
+gsOTU4Nzc2ODM4LDEzMTE0MzI0NjVdfQ==
 -->
