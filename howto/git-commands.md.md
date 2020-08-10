@@ -26,7 +26,7 @@ function executeInAllGitDirs {
 	done
 }
 
-executeInAllGitDirs `git clone $(git config --get remote.origin.url)`
+executeInAllGitDirs "git clone $(git config --get remote.origin.url)"
 ```
 
 ### Loop over All Git Repos in Folder
@@ -110,5 +110,6 @@ git push --all
 git config --global branch.autosetupmerge always
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTQwNjE4NjEwMCwtMTc5MzYyMjg3OV19
+eyJoaXN0b3J5IjpbLTIwNDEwOTQ5MzQsLTE3OTM2MjI4NzldfQ
+==
 -->
