@@ -367,7 +367,6 @@ curl -s 'https://api.macapps.link/en/chrome-dropbox-drive-github-sequelpro-vscod
 - [Google Drive](https://www.google.com/drive/download/)
 - [iTerm](https://www.iterm2.com/downloads.html)
 - [RescueTime](https://www.rescuetime.com/get_rescuetime)
-com
 - [Sketch](https://sketchapp.com/get/)
 - [Spotify](https://www.spotify.com/us/download/other/)
 - [Visual Studio Code](https://code.visualstudio.com/)
@@ -376,7 +375,8 @@ com
 - [Brew](https://brew.sh/)
 - [OBS](https://obsproject.com/download)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTU3OTkyNDM3MCw2MTY1MzQ0NiwxMzg1Nj
-k4NzMsLTEwMTcwMTQ2MDgsMTA1MjYyMjU0NCwxMTIyMDgzMDQx
-LC0zMjA4MDUzNjUsLTEwNzMxMTk4NjAsMTA1NzUwNzU0Nl19
+eyJoaXN0b3J5IjpbODkxMDM4NzMzLDE1Nzk5MjQzNzAsNjE2NT
+M0NDYsMTM4NTY5ODczLC0xMDE3MDE0NjA4LDEwNTI2MjI1NDQs
+MTEyMjA4MzA0MSwtMzIwODA1MzY1LC0xMDczMTE5ODYwLDEwNT
+c1MDc1NDZdfQ==
 -->
