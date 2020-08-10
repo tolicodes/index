@@ -111,7 +111,7 @@ executeInAllGitDirs "cd .. && rm -rf \$dir"
 dirs=$(find . -maxdepth 1 -type d -execdir test -d {}/.git \; -prune -print 2>/dev/null)
 
 mkdir dotfiles
-mkdir f
+touch dotfiles/index.
 
 for dir in $dirs; do
 	originalPwd=$(pwd)
@@ -144,5 +144,5 @@ git push --all
 git config --global branch.autosetupmerge always
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNjU2ODkxOTE3LDQ3NjIyMDU2Ml19
+eyJoaXN0b3J5IjpbLTE1MDI5OTg5NzAsNDc2MjIwNTYyXX0=
 -->
