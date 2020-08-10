@@ -170,6 +170,7 @@ com
 - System Preferences -> Displays -> Scaled for More Space
 - Click On Battery -> Show Battery Percentage
 - Go to System Preferences->Sound and check "Show volume in menu bar"
+- Create `~/Sites` and drag
 - System Preferences -> Energy Saver -> Power Adapter -> Turn Display Off after "Never", Uncheck "Put harddisks to sleep", uncheck "Enable power nap"
 - Get rid of all the icons you don't use on the bottom bar
 - Keep the following in the bottom bar
@@ -181,7 +182,6 @@ com
 	- Slack
 	- Tower
 	- VSCode
-- Create `~/Sites` directory and drag it into favorites in finder
 - Symlink config files from Google Drive (download it directly if it's not synced and you want to start working). Internally it links `.ssh`
 	- `ln -s ~/Google\ Drive/ALL\ -\ Toli/Config\ Files/.zshrc && source ~/.zshrc`
 - AWS Setup (originally [here](https://hoverinc.atlassian.net/wiki/spaces/EN/pages/886440263/AWS+Multi-Account+access)
@@ -379,14 +379,14 @@ executeInAllGitDirs "[[ \$(find . -name package.json) ]] && yarn"
 - create-react-native-app
 - Expo
 
-## Depracated
+## Deprecated
 
 ### MacApps
 ```
 curl -s 'https://api.macapps.link/en/chrome-dropbox-drive-github-sequelpro-vscode-docker-sketch-iterm-1password-cyberduck-spotify-skype-slack-whatsapp-discord' | sh
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTMzNzU1OTA3NiwxMzg1Njk4NzMsLTEwMT
-cwMTQ2MDgsMTA1MjYyMjU0NCwxMTIyMDgzMDQxLC0zMjA4MDUz
-NjUsLTEwNzMxMTk4NjAsMTA1NzUwNzU0Nl19
+eyJoaXN0b3J5IjpbNjg1NjY1ODYwLDEzODU2OTg3MywtMTAxNz
+AxNDYwOCwxMDUyNjIyNTQ0LDExMjIwODMwNDEsLTMyMDgwNTM2
+NSwtMTA3MzExOTg2MCwxMDU3NTA3NTQ2XX0=
 -->
