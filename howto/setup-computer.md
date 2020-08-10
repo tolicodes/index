@@ -46,9 +46,14 @@ rm -rf fonts
 https://raw.githubusercontent.com/creationix/nvm/v0.34.0/install.sh | bash
 source ~/.zshrc
 nvm install 12
+# mismatch in nvm
+npm config set scripts-prepend-node-path auto
 
 # Install yarn
 curl -o- -L https://yarnpkg.com/install.sh | bash
+
+# Firebase
+npm i -g firebase-cli
 
 # lerna
 npm i -g lerna
@@ -381,8 +386,9 @@ curl -s 'https://api.macapps.link/en/chrome-dropbox-drive-github-sequelpro-vscod
 - [Brew](https://brew.sh/)
 - [OBS](https://obsproject.com/download)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEzNjM0OTEwMzUsLTE3NzMxNDIzMTgsOD
-kxMDM4NzMzLDE1Nzk5MjQzNzAsNjE2NTM0NDYsMTM4NTY5ODcz
-LC0xMDE3MDE0NjA4LDEwNTI2MjI1NDQsMTEyMjA4MzA0MSwtMz
-IwODA1MzY1LC0xMDczMTE5ODYwLDEwNTc1MDc1NDZdfQ==
+eyJoaXN0b3J5IjpbLTE4NzUzODYzNDIsLTEzNjM0OTEwMzUsLT
+E3NzMxNDIzMTgsODkxMDM4NzMzLDE1Nzk5MjQzNzAsNjE2NTM0
+NDYsMTM4NTY5ODczLC0xMDE3MDE0NjA4LDEwNTI2MjI1NDQsMT
+EyMjA4MzA0MSwtMzIwODA1MzY1LC0xMDczMTE5ODYwLDEwNTc1
+MDc1NDZdfQ==
 -->
