@@ -1,75 +1,7 @@
 ## Git
-### List all remotes in directory
-```bash
-for dir in ;do cd "" && git config --get remote.origin.url )
-done
-```
 
-### Get All clone urls in directory
-```bash
-for dir in ;do cd $echo "git clone $(git config --get remote.origin.url)" )
-done
-```
+[Git Commands](./git-commands)
 
-### Loop over All Git Repos in Folder
-
-#### One Level Down
-```bash
-function executeInAllDirs {
-    
-	dirs=$(find . -maxdepth 1 -type d -execdir test -d {}/.git \; -prune -print 2>/dev/null)
-	for dir in $dirs; do
-		originalPwd=$(pwd)
-		cd $dir
-		eval $1
-		cd $originalPwd
-	done
-}
-
-executeInAllDirs "pwd"
-
-```
-Replace `COMMAND` with your command
-
-#### Example
-```bash
-dirs=$(find . -maxdepth 1 -type d -execdir test -d {}/.git \; -prune -print 2>/dev/null)
-for dir in $dirs; do
-	originalPwd=$(pwd)
-	cd $dir
-	pwd ### REPLACE THIS
-	cd $originalPwd
-done
-```
-
-### Get All npued Rep
-```bash
-setopt sh_word_split # For zsh
-dirs=$(find . -maxdepth 1 -type d -execdir test -d {}/.git \; -prune -print 2>/dev/null)
-for dir in $dirs; do
-	originalPwd=$(pwd)
-	cd $dir
-    unclean=$(git status --porcelain)
-    unpushed=$(git log --branches --not --remotes)
-    [[ $unclean || $unpushed ]] &ir
-	cd $originalPwd
-done
-```
-
-
-### Save Changes In All Uncomitted Repos
-```bash
-setopt sh_word_split # For zsh
-dirs=$(find . -maxdepth 1 -type d -execdir test -d {}/.git \; -prune -print 2>/dev/null)
-for dir in $dirs; do
-	originalPwd=$(pwd)
-	cd $dir
-    unclean=$(git status --porcelain)
-    unpushed=$(git log --branches --not --remotes)
-    [[ $unclean || $unpushed ho $dirgit add . && git commit -m "Uncommited Changes" && git push --all
-	cd $originalPwd
-done
-```
 
 ### Overwrite Origin
 ```
@@ -260,9 +192,9 @@ FUNCTIONNAME -f --action testing word
 ### iTerm
 - Split Vertically: Command+D
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTM0ODQ4NjUwMSwxNTE0NzM0MDY5LC04ND
-A0NzAwMTgsLTU0NzAwNTA5MSwtNzgzMDQzNTQyLDExOTIwODEw
-OTAsMTMyNzUzNDEyMywxODkzODg3OTA0LC0xNzIwMjEwNjMxLC
-01NTcyOTcyMDUsLTUzMzcyNzA1NywtMTczNzAzMjY4OCw5NTg3
-NzY4MzgsMTMxMTQzMjQ2NV19
+eyJoaXN0b3J5IjpbMTcwMjY2Mjg5MywxMzQ4NDg2NTAxLDE1MT
+Q3MzQwNjksLTg0MDQ3MDAxOCwtNTQ3MDA1MDkxLC03ODMwNDM1
+NDIsMTE5MjA4MTA5MCwxMzI3NTM0MTIzLDE4OTM4ODc5MDQsLT
+E3MjAyMTA2MzEsLTU1NzI5NzIwNSwtNTMzNzI3MDU3LC0xNzM3
+MDMyNjg4LDk1ODc3NjgzOCwxMzExNDMyNDY1XX0=
 -->
