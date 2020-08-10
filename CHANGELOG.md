@@ -1,3 +1,23 @@
+## [1.2.0](https://github.com/tolicodes/index/compare/v1.1.3...v1.2.0) (2020-08-10)
+
+
+### Features
+
+* **howto/setup-netlify-semantic-release-codefresh:** semantic Release, Netlify Deploy, Codefresh ([b5c51c8](https://github.com/tolicodes/index/commit/b5c51c892c9b4df7721a078122475c41e9ab34d5))
+
+
+### Build System
+
+* **codefresh:** codefresh trigger netlify build ([5fdc0ad](https://github.com/tolicodes/index/commit/5fdc0adb3822bb5e2afb6d4c56a65e9538b65589))
+* **codefresh:** made netlify deploy hook a variable ([0291798](https://github.com/tolicodes/index/commit/0291798e780d4f9619d0953ac6045813b7fce381))
+* **codefresh:** made netlify deploy hook a variable ([38fa2a0](https://github.com/tolicodes/index/commit/38fa2a0f6e26b55f37d1aa68f5682e0cd6a6ecb5))
+* **merging:** merging ([a7e8fa7](https://github.com/tolicodes/index/commit/a7e8fa7904f67826ffa69b1a23f6df09a58173f7))
+
+
+### Documentation
+
+* **readme:** helpful links added ([543f321](https://github.com/tolicodes/index/commit/543f321c3622aab1204280db57daeaee7b7342ff))
+
 ### [1.1.3](https://github.com/tolicodes/index/compare/v1.1.2...v1.1.3) (2020-08-10)
 
 
