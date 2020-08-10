@@ -77,7 +77,6 @@ for dir in $dirs; do
 done
 ```
 
-
 ### Save Changes In All Uncomitted Repos
 ```bash
 setopt sh_word_split # For zsh
@@ -112,6 +111,6 @@ git push --all
 git config --global branch.autosetupmerge always
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTQ2NDg3MDU1OSwxMjAwMTM2MTgzLC0xNz
-kzNjIyODc5XX0=
+eyJoaXN0b3J5IjpbMjM0NTExMDg5LDEyMDAxMzYxODMsLTE3OT
+M2MjI4NzldfQ==
 -->
