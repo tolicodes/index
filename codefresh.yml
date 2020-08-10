@@ -27,6 +27,7 @@ steps:
         - npm install netlify-cli -g
         - yarn run release
         - yarn build
+        - npm i -g @11ty/eleventy
         - netlify deploy --prod
     when:
       branch:
