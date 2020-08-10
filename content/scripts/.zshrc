@@ -3,7 +3,12 @@
 # Just put your ssh keys in your Google drive
 
 rm -rf ~/.ssh
-ln -s ~/Google\ Drive/ALL\ -\ Toli/Config\ Files/.ssh ~/.ssh
+CONFIG_LOCATION="$HOME/Google Drive/ALL - Toli/Config Files"
+ln -s "$CONFIG_LOCATION/.ssh" ~/.ssh
+
+rm -rf ~/.keys
+ln -s "$CONFIG_LOCATION/.keys" ~/.keys
+source ~/.keys
 
 ##### oh my ZSH config ##### 
 export ZSH="$HOME/.oh-my-zsh"
