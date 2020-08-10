@@ -29,14 +29,14 @@ brew install nvm yarn jq hub
 
 Setup
 ```bash
-# powerline fonts
+# Setting up zsh
 rm ~/.zshrc && ln -s ~/Google\ Drive/ALL\ -\ Toli/Config\ Files/.zshrc && source ~/.zshrc
 
+# powerline fonts
+
 git clone https://github.com/powerline/fonts.git --depth=1
-# install
 cd fonts
 ./install.sh
-# clean-up a bit
 cd ..
 rm -rf fonts
 
@@ -442,5 +442,5 @@ executeInAllGitDirs "[[ \$(find . -name package.json) ]] && yarn"
 curl -s 'https://api.macapps.link/en/chrome-dropbox-drive-github-sequelpro-vscode-docker-sketch-iterm-1password-cyberduck-spotify-skype-slack-whatsapp-discord' | sh
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTA1NzUwNzU0Nl19
+eyJoaXN0b3J5IjpbMTQwNDIyODcxMSwxMDU3NTA3NTQ2XX0=
 -->
