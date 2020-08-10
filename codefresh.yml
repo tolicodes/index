@@ -20,11 +20,12 @@ steps:
     arguments:
       image: "node:latest"
       commands:
-        - ls
         - yarn
         # So it doesn't ask for fingerprint
         - mkdir ~/.ssh/ && echo -e "Host github.com\n\tStrictHostKeyChecking no\n" > ~/.ssh/config
         - yarn run release
+        # trigger netlify deploy
+        - curl -X POST -d {} https://api.netlify.com/build_hooks/5f31aaf53ccf49752d5dce52
     when:
       branch:
         only:
