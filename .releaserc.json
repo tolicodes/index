@@ -49,7 +49,8 @@
             },
             {
               "type": "ci",
-              "section": "Continuous Integration"
+              "section": "Continuous Integration",
+              "hidden": false
             },
             {
               "type": "improvement",
