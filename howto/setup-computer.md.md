@@ -377,12 +377,20 @@ git clone git@github.com:hoverinc/hover-cli.git
 git clone git@github.com:hoverinc/developers.hover.to.git
 git clone git@github.com:tolicodes/public-notes.git
 ```
-
+#### 
 Yarn everything
-```
-for f in ~/Sites/*
-	do cd $f && yarn 
-done
+```bash
+function executeInAllGitDirs {
+	dirs=$(find . -maxdepth 1 -type d -execdir test -d {}/.git \; -prune -print 2>/dev/null)
+	for dir in $dirs; do
+		originalPwd=$(pwd)
+		cd $dir
+		eval $1
+		cd $originalPwd
+	done
+}
+
+executeInAllGitDirs "find "
 ```
 
 ## Online Tools
@@ -439,11 +447,11 @@ done
 curl -s 'https://api.macapps.link/en/chrome-dropbox-drive-github-sequelpro-vscode-docker-sketch-iterm-1password-cyberduck-spotify-skype-slack-whatsapp-discord' | sh
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTE3MDgzNzU0MCw1MTU4MTIxMzAsMzgwOD
-A1NDcyLDE2MzgzNDk1NjMsLTE0NTI3MDI3NDIsLTg4Njc5Mzg1
-OSwxOTMzNTMyMjA4LC0xNzczNTk4ODAwLDIxMTY1OTMyMTgsNT
-E1MTc2MTg5LDEzNjkzNDQ4MjEsLTE4ODE3OTY1Niw4MDk5NTA4
-MywyOTIzMDAyMjgsLTEwMjA3OTc0NDYsLTI4NjQzOTQ0OSwxMj
-kxMDIzMTc4LC01MDE5MTM3MCwtMTczNDMxMTk5NCwtMzY0Mjk1
-OTU5XX0=
+eyJoaXN0b3J5IjpbLTEyNjIyODc4MjcsNTE1ODEyMTMwLDM4MD
+gwNTQ3MiwxNjM4MzQ5NTYzLC0xNDUyNzAyNzQyLC04ODY3OTM4
+NTksMTkzMzUzMjIwOCwtMTc3MzU5ODgwMCwyMTE2NTkzMjE4LD
+UxNTE3NjE4OSwxMzY5MzQ0ODIxLC0xODgxNzk2NTYsODA5OTUw
+ODMsMjkyMzAwMjI4LC0xMDIwNzk3NDQ2LC0yODY0Mzk0NDksMT
+I5MTAyMzE3OCwtNTAxOTEzNzAsLTE3MzQzMTE5OTQsLTM2NDI5
+NTk1OV19
 -->
