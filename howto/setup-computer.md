@@ -63,6 +63,7 @@ npm i -g codefresh
 
 # MANUAL Commands
 npm login
+firebase login
 ```
 
 ### Manual Downloads
@@ -386,9 +387,9 @@ curl -s 'https://api.macapps.link/en/chrome-dropbox-drive-github-sequelpro-vscod
 - [Brew](https://brew.sh/)
 - [OBS](https://obsproject.com/download)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTM2NzkzMDg3LC0xODc1Mzg2MzQyLC0xMz
-YzNDkxMDM1LC0xNzczMTQyMzE4LDg5MTAzODczMywxNTc5OTI0
-MzcwLDYxNjUzNDQ2LDEzODU2OTg3MywtMTAxNzAxNDYwOCwxMD
-UyNjIyNTQ0LDExMjIwODMwNDEsLTMyMDgwNTM2NSwtMTA3MzEx
-OTg2MCwxMDU3NTA3NTQ2XX0=
+eyJoaXN0b3J5IjpbMTM1NDY0NTUzMywtMTg3NTM4NjM0MiwtMT
+M2MzQ5MTAzNSwtMTc3MzE0MjMxOCw4OTEwMzg3MzMsMTU3OTky
+NDM3MCw2MTY1MzQ0NiwxMzg1Njk4NzMsLTEwMTcwMTQ2MDgsMT
+A1MjYyMjU0NCwxMTIyMDgzMDQxLC0zMjA4MDUzNjUsLTEwNzMx
+MTk4NjAsMTA1NzUwNzU0Nl19
 -->
