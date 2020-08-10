@@ -57,6 +57,9 @@ for dir in $dirs; do
 done
 ```
 
+### Push All Unpushed Repos
+
+
 ### Overwrite Origin
 ```
 git remote rm origin
@@ -246,8 +249,8 @@ FUNCTIONNAME -f --action testing word
 ### iTerm
 - Split Vertically: Command+D
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIwMTg4MDE1ODMsLTU0NzAwNTA5MSwtNz
-gzMDQzNTQyLDExOTIwODEwOTAsMTMyNzUzNDEyMywxODkzODg3
-OTA0LC0xNzIwMjEwNjMxLC01NTcyOTcyMDUsLTUzMzcyNzA1Ny
-wtMTczNzAzMjY4OCw5NTg3NzY4MzgsMTMxMTQzMjQ2NV19
+eyJoaXN0b3J5IjpbLTg0MDQ3MDAxOCwtNTQ3MDA1MDkxLC03OD
+MwNDM1NDIsMTE5MjA4MTA5MCwxMzI3NTM0MTIzLDE4OTM4ODc5
+MDQsLTE3MjAyMTA2MzEsLTU1NzI5NzIwNSwtNTMzNzI3MDU3LC
+0xNzM3MDMyNjg4LDk1ODc3NjgzOCwxMzExNDMyNDY1XX0=
 -->
