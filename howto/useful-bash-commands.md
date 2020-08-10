@@ -1,15 +1,14 @@
 ## Git
 ### List all remotes in directory
 ```bash
-for dir in *; do
-  ( cd "${dir%/*}" && git config --get remote.origin.url )
+for dir in *;do cd "" && git config --get remote.origin.url )
 done
 ```
 
 ### Get All clone urls in directory
 ```bash
-for dir in *; do
-  ( cd "${dir%/*}" && echo "git clone $(git config --get remote.origin.url)" )
+for dir in ; do
+  ( cd $dir/  echo "git clone $(git config --get remote.origin.url)" )
 done
 ```
 
@@ -44,21 +43,23 @@ for dir in $dirs; do
 done
 ```
 
-### Get All Unpushed Repos
+### Get All npused Repo
 ```bash
+setopt sh_word_split # For zsh
 dirs=$(find . -maxdepth 1 -type d -execdir test -d {}/.git \; -prune -print 2>/dev/null)
 for dir in $dirs; do
 	originalPwd=$(pwd)
 	cd $dir
     unclean=$(git status --porcelain)
     unpushed=$(git log --branches --not --remotes)
-    [[ $unclean || $unpushed ]] && echo $dir
+    [[ $unclean || $unpushed $dir  eo $dir
 	cd $originalPwd
 done
 ```
 
-### Push All Unpushed Repos
 
+### Push All Unpushed Repos
+d
 
 ### Overwrite Origin
 ```
@@ -249,8 +250,9 @@ FUNCTIONNAME -f --action testing word
 ### iTerm
 - Split Vertically: Command+D
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTg0MDQ3MDAxOCwtNTQ3MDA1MDkxLC03OD
-MwNDM1NDIsMTE5MjA4MTA5MCwxMzI3NTM0MTIzLDE4OTM4ODc5
-MDQsLTE3MjAyMTA2MzEsLTU1NzI5NzIwNSwtNTMzNzI3MDU3LC
-0xNzM3MDMyNjg4LDk1ODc3NjgzOCwxMzExNDMyNDY1XX0=
+eyJoaXN0b3J5IjpbNjM4ODk4MzU5LC04NDA0NzAwMTgsLTU0Nz
+AwNTA5MSwtNzgzMDQzNTQyLDExOTIwODEwOTAsMTMyNzUzNDEy
+MywxODkzODg3OTA0LC0xNzIwMjEwNjMxLC01NTcyOTcyMDUsLT
+UzMzcyNzA1NywtMTczNzAzMjY4OCw5NTg3NzY4MzgsMTMxMTQz
+MjQ2NV19
 -->
