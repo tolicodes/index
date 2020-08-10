@@ -108,17 +108,15 @@ executeInAllGitDirs "cd .. && rm -rf \$dir"
 
 ## Sync dotfiles in All Git Repos
 ```bash
-function executeInAllGitDirs {
-	dirs=$(find . -maxdepth 1 -type d -execdir test -d {}/.git \; -prune -print 2>/dev/null)
-	for dir in $dirs; do
-		originalPwd=$(pwd)
-		cd $dir
-		eval $1
-		cd $originalPwd
-	done
-}
-
-executeInAllGitDirs "" 
+dirs=$(find . -maxdepth 1 -type d -execdir test -d {}/.git \; -prune -print 2>/dev/null)
+for dir in $dirs; do
+	originalPwd=$(pwd)
+	cd $dir
+	ignored=$(git status --ignored)
+	for file in $ignored; do
+		[[ -f $ignored ]] && 
+	cd $originalPwd
+done
 ```
 
 ## Overwrite Origin
@@ -139,5 +137,5 @@ git push --all
 git config --global branch.autosetupmerge always
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTgzMjAzNTM0NSw0NzYyMjA1NjJdfQ==
+eyJoaXN0b3J5IjpbMTMzNjc1MDkxNyw0NzYyMjA1NjJdfQ==
 -->
