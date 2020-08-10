@@ -165,23 +165,31 @@ function gfp() {
 }
 alias git-force-push=gfp
 
+function git-stash-rebase () {
+  [[ $1 == '-r' ]] && \
+    git add . && git rebase --continue || \
+    { git stash --include-untracked && \
+      { git fetch && git rebase origin/$(current_branch) || { echo "Merge files then run gacap -r" && return 1 } } && \
+      git stash apply || { echo "Merge files then run gacap -r" && return 1 } }
+}
+
 # add, commit push
 function gacp() {
+  git-stash-rebase $1 || { echo "fail" && return 1 }
   git add .
-  git rebase
   [[ $1 ]] && git commit -m $1 || git commit
   git_set_upstream
-  git-pull-push
+  git push
 }
 alias git-add-commit-push=gacp
 
 # add, commit ammend, push
 function gacap() {
+  git-stash-rebase $1 || { echo "fail" && return 1 }
   git add .
-  git rebase
   HUSKY_SKIP_HOOKS=1 git commit --amend --no-edit # Needs to be run inline for some reason
   git_set_upstream
-  git-pull-push -f
+  git push -f
 }
 alias git-add-amend-commit-push=gacap
 
