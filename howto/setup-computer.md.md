@@ -390,7 +390,7 @@ function executeInAllGitDirs {
 	done
 }
 
-executeInAllGitDirs "find "
+executeInAllGitDirs "[[ \$(f) ]]"
 ```
 
 ## Online Tools
@@ -447,7 +447,7 @@ executeInAllGitDirs "find "
 curl -s 'https://api.macapps.link/en/chrome-dropbox-drive-github-sequelpro-vscode-docker-sketch-iterm-1password-cyberduck-spotify-skype-slack-whatsapp-discord' | sh
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEyNjIyODc4MjcsNTE1ODEyMTMwLDM4MD
+eyJoaXN0b3J5IjpbLTEyNDY3MjkyODMsNTE1ODEyMTMwLDM4MD
 gwNTQ3MiwxNjM4MzQ5NTYzLC0xNDUyNzAyNzQyLC04ODY3OTM4
 NTksMTkzMzUzMjIwOCwtMTc3MzU5ODgwMCwyMTE2NTkzMjE4LD
 UxNTE3NjE4OSwxMzY5MzQ0ODIxLC0xODgxNzk2NTYsODA5OTUw
