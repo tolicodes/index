@@ -1,3 +1,16 @@
+### [1.1.2](https://github.com/tolicodes/index/compare/v1.1.1...v1.1.2) (2020-08-10)
+
+
+### Bug Fixes
+
+* **zshrc:** pull before committing ([756175c](https://github.com/tolicodes/index/commit/756175cac402e2f5ee13aab8087df9a92a8899a5))
+
+
+### Build System
+
+* **semantic-relase:** switched to conventional commits ([96e0ca0](https://github.com/tolicodes/index/commit/96e0ca0133b5fa102d776c209b7cb72f8508442e))
+* **semantic-release:** added conventional commit package ([1460d6d](https://github.com/tolicodes/index/commit/1460d6d53ec99f04508478410eb8974cd9454a29))
+
 ## [1.1.1](https://github.com/tolicodes/index/compare/v1.1.0...v1.1.1) (2020-08-10)
 
 # [1.1.0](https://github.com/tolicodes/index/compare/v1.0.0...v1.1.0) (2020-08-10)
