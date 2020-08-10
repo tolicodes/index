@@ -24,11 +24,11 @@ Takes forever to sync so...install it first
 
 brew cask install the-clock hubstaff rescuetime tower postman obs google-chrome dropbox google-backup-and-sync github sequel-pro visual-studio-code docker sketch iterm2 1password cyberduck spotify skype slack whatsapp discord
 
-brew cask install hubstaff rescuetime tower postman obs  docker sketch cyberduck spotify skype discord
+brew cask install hubstaff rescuetime tower postman obs   sketch cyberduck spotify skype discord
 ```
 
 Setup
-```
+```bash
 # powerline fonts
 rm ~/.zshrc && ln -s ~/Google\ Drive/ALL\ -\ Toli/Config\ Files/.zshrc && source ~/.zshrc
 
@@ -326,29 +326,26 @@ executeInAllGitDirs "echo \"git clone \$(git config --get remote.origin.url)\""
 
 
 ### Clone on new computer
-```
+```bash
 cd ~/Sites
 
 # Personal Repos
 git clone git@github.com:tolicodes/node-cli-toolkit.git
- git@github.com:tolicodes/activity-brainstorm.git
+git clone git@github.com:tolicodes/activity-brainstorm.git
 git clone git@github.com:tolicodes/node-api-toolkit.git
- git@github.com:tolicodes/dropbox-photo-viewer.git
+git clone git@github.com:tolicodes/dropbox-photo-viewer.git
 git clone git@github.com:tolicodes/souleclipse.us.git
 git clone git@github.com:tolicodes/principles.git
 git clone git@github.com:hoverinc/infragen.git
 git clone git@github.com:tolicodes/github-toolkit.git
-
- oer
 git clone git@github.com:tolicodes/zoomevents.git
 
 # Client repos
 git clone git@github.com:COVID-basic-needs/JS-frontend.git
 git clone git@github.com:TackleHunger/TackleHunger.git
 git clone git@github.com:tolicodes/erxes.git
-git clone https://github.com/tolicodes/erxes-api
+git clone git@github.com:tolicodes/erxes-api.git
 
-git clone https://github.com/tolicodes/hover-index
 git clone git@github.com:tolicodes/index.git
 git clone git@github.com:tolicodes/infragen.git
 
@@ -447,7 +444,7 @@ executeInAllGitDirs "[[ \$(f) ]]"
 curl -s 'https://api.macapps.link/en/chrome-dropbox-drive-github-sequelpro-vscode-docker-sketch-iterm-1password-cyberduck-spotify-skype-slack-whatsapp-discord' | sh
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEyNDY3MjkyODMsNTE1ODEyMTMwLDM4MD
+eyJoaXN0b3J5IjpbLTE2OTYzNzM2NjgsNTE1ODEyMTMwLDM4MD
 gwNTQ3MiwxNjM4MzQ5NTYzLC0xNDUyNzAyNzQyLC04ODY3OTM4
 NTksMTkzMzUzMjIwOCwtMTc3MzU5ODgwMCwyMTE2NTkzMjE4LD
 UxNTE3NjE4OSwxMzY5MzQ0ODIxLC0xODgxNzk2NTYsODA5OTUw
