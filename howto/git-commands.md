@@ -149,9 +149,9 @@ Wait for files to sync
 
 On new computer
 ```bash
-cp ~/Google\ Drive/ALL\ -\ Toli/dotfiles ~/Sites
+cp ~/Google\ Drive/ALL\ -\ Toli/dotfiles/* .
 
-cp -r ~/ToliCodes\ Dropbox/Anatoliy\ Zaslavskiy/ALL/dotfiles dotfiles
+cp -r ~/ToliCodes\ Dropbox/Anatoliy\ Zaslavskiy/ALL/dotfiles/* .
 ```
 
 ## Overwrite Origin
@@ -172,7 +172,7 @@ git push --all
 git config --global branch.autosetupmerge always
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTU2Njc3MTY3MCw2MDA4MjU1NCwxNDAyNT
-UyNDEyLDE5MDU0OTQ1NTYsLTE1MDI5OTg5NzAsNDc2MjIwNTYy
-XX0=
+eyJoaXN0b3J5IjpbLTIxMzY5Mjk1NTksMTU2Njc3MTY3MCw2MD
+A4MjU1NCwxNDAyNTUyNDEyLDE5MDU0OTQ1NTYsLTE1MDI5OTg5
+NzAsNDc2MjIwNTYyXX0=
 -->
