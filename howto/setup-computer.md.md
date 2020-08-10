@@ -296,11 +296,37 @@ com
 	
 ## Repos to Clone
 ### Save Unmerged changes on old computer
-
-### Get unmerged changes from Old Computer
 ```bash
-find . -type d -depth 1 -exec git --git-dir={}/.git --work-tree=$PWD/{} config --get remote.origin.url  \; -exec&& cd .." \;
+setopt sh_word_split # For zsh
+dirs=$(find . -maxdepth 1 -type d -execdir test -d {}/.git \; -prune -print 2>/dev/null)
+for dir in $dirs; do
+	originalPwd=$(pwd)
+	cd $dir
+    unclean=$(git status --porcelain)
+    unpushed=$(git log --branches --not --remotes)
+    [[ $unclean || $unpushed ]] && git add . && git commit -m "Uncommited Changes" && git push --all
+	cd $originalPwd
+done
 ```
+
+### Get Repos From Old Computer
+```bash
+function executeInAllGitDirs {
+	dirs=$(find . -maxdepth 1 -type d -execdir test -d {}/.git \; -prune -print 2>/dev/null)
+	for dir in $dirs; do
+		originalPwd=$(pwd)
+		cd $dir
+		eval $1
+		cd $originalPwd
+	done
+}
+
+executeInAllGitDirs "echo \"git clone \$(git config --get remote.origin.url)\""
+```
+
+
+### Delete All Git Repos
+
 
 ### Clone on new computer
 ```
@@ -416,11 +442,11 @@ done
 curl -s 'https://api.macapps.link/en/chrome-dropbox-drive-github-sequelpro-vscode-docker-sketch-iterm-1password-cyberduck-spotify-skype-slack-whatsapp-discord' | sh
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbOTQxNDk1MzUwLDUxNTgxMjEzMCwzODA4MD
-U0NzIsMTYzODM0OTU2MywtMTQ1MjcwMjc0MiwtODg2NzkzODU5
-LDE5MzM1MzIyMDgsLTE3NzM1OTg4MDAsMjExNjU5MzIxOCw1MT
-UxNzYxODksMTM2OTM0NDgyMSwtMTg4MTc5NjU2LDgwOTk1MDgz
-LDI5MjMwMDIyOCwtMTAyMDc5NzQ0NiwtMjg2NDM5NDQ5LDEyOT
-EwMjMxNzgsLTUwMTkxMzcwLC0xNzM0MzExOTk0LC0zNjQyOTU5
-NTldfQ==
+eyJoaXN0b3J5IjpbLTc3NDgxMjU0NSw1MTU4MTIxMzAsMzgwOD
+A1NDcyLDE2MzgzNDk1NjMsLTE0NTI3MDI3NDIsLTg4Njc5Mzg1
+OSwxOTMzNTMyMjA4LC0xNzczNTk4ODAwLDIxMTY1OTMyMTgsNT
+E1MTc2MTg5LDEzNjkzNDQ4MjEsLTE4ODE3OTY1Niw4MDk5NTA4
+MywyOTIzMDAyMjgsLTEwMjA3OTc0NDYsLTI4NjQzOTQ0OSwxMj
+kxMDIzMTc4LC01MDE5MTM3MCwtMTczNDMxMTk5NCwtMzY0Mjk1
+OTU5XX0=
 -->
