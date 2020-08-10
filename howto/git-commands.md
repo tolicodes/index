@@ -135,6 +135,10 @@ done
 
 Copy the files to Google Drive:
 ```bash
+# NYC ITT acct
+cp -r dotfiles ~/Google\ Drive\ \(adz@nycitt.com\)/ALL\ -\ Toli/
+
+# ToliCodes
 cp -r dotfiles ~/Google\ Drive/ALL\ -\ Toli/
 ```
 
@@ -163,6 +167,6 @@ git push --all
 git config --global branch.autosetupmerge always
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTQwMjU1MjQxMiwxOTA1NDk0NTU2LC0xNT
-AyOTk4OTcwLDQ3NjIyMDU2Ml19
+eyJoaXN0b3J5IjpbNjAwODI1NTQsMTQwMjU1MjQxMiwxOTA1ND
+k0NTU2LC0xNTAyOTk4OTcwLDQ3NjIyMDU2Ml19
 -->
