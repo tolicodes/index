@@ -325,9 +325,6 @@ executeInAllGitDirs "echo \"git clone \$(git config --get remote.origin.url)\""
 ```
 
 
-### Delete All Git Repos
-
-
 ### Clone on new computer
 ```
 cd ~/Sites
@@ -442,7 +439,7 @@ done
 curl -s 'https://api.macapps.link/en/chrome-dropbox-drive-github-sequelpro-vscode-docker-sketch-iterm-1password-cyberduck-spotify-skype-slack-whatsapp-discord' | sh
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTc3NDgxMjU0NSw1MTU4MTIxMzAsMzgwOD
+eyJoaXN0b3J5IjpbLTc0MTgzNzI5OSw1MTU4MTIxMzAsMzgwOD
 A1NDcyLDE2MzgzNDk1NjMsLTE0NTI3MDI3NDIsLTg4Njc5Mzg1
 OSwxOTMzNTMyMjA4LC0xNzczNTk4ODAwLDIxMTY1OTMyMTgsNT
 E1MTc2MTg5LDEzNjkzNDQ4MjEsLTE4ODE3OTY1Niw4MDk5NTA4
