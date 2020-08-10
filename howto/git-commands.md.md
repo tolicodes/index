@@ -42,7 +42,7 @@ for dir in $dirs; do
 done
 ```
 
-### Get All Unmerged Rep
+### Get All Unmerged Changed In Repo
 ```bash
 setopt sh_word_split # For zsh
 dirs=$(find . -maxdepth 1 -type d -execdir test -d {}/.git \; -prune -print 2>/dev/null)
@@ -89,5 +89,5 @@ git push --all
 git config --global branch.autosetupmerge always
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTc1NDUyMDQ3N119
+eyJoaXN0b3J5IjpbLTE3OTM2MjI4NzldfQ==
 -->
