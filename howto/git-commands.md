@@ -109,12 +109,19 @@ executeInAllGitDirs "cd .. && rm -rf \$dir"
 ## Sync dotfiles in All Git Repos
 ```bash
 dirs=$(find . -maxdepth 1 -type d -execdir test -d {}/.git \; -prune -print 2>/dev/null)
+
+mkdir dotfiles
+mkdir f
+
 for dir in $dirs; do
 	originalPwd=$(pwd)
 	cd $dir
 	ignored=$(git status --ignored)
 	for file in $ignored; do
-		[[ -f $ignored ]] && 
+		if [[ -f $ignored ]]; then
+			..
+		fi
+	done
 	cd $originalPwd
 done
 ```
@@ -137,5 +144,5 @@ git push --all
 git config --global branch.autosetupmerge always
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTMzNjc1MDkxNyw0NzYyMjA1NjJdfQ==
+eyJoaXN0b3J5IjpbNjU2ODkxOTE3LDQ3NjIyMDU2Ml19
 -->
