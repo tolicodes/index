@@ -29,7 +29,7 @@ steps:
         - yarn run release
         - yarn build
         - yarn run netlify deploy --prod
-    environment:
+    environment: 
         - CI=true
     when:
       branch:
