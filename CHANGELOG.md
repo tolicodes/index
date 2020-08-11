@@ -1,3 +1,15 @@
+### [1.5.3](https://github.com/tolicodes/index/compare/v1.5.2...v1.5.3) (2020-08-11)
+
+
+### Bug Fixes
+
+* **howto/setup-netlify-semantic-release-codefresh:** updated yml ([cfd53e8](https://github.com/tolicodes/index/commit/cfd53e8ee897c59b2b562d22520f7cd9ca327777))
+
+
+### Continuous Integration
+
+* **codefresh:** speed up yarn ([a46bcb5](https://github.com/tolicodes/index/commit/a46bcb5c726a14586e306fdf6a36ed6aa32ce0ff))
+
 ### [1.5.2](https://github.com/tolicodes/index/compare/v1.5.1...v1.5.2) (2020-08-11)
 
 
