@@ -4,7 +4,7 @@ I had to:
 
 Create a `.eleventy.js` file in the root
 
-```
+```js
 module.exports = function (eleventyConfig) {
   const markdownIt = require('markdown-it')({
     replaceLink: function (link) {
@@ -17,18 +17,18 @@ module.exports = function (eleventyConfig) {
 ```
 
 Install the markdown packages
-```
+
+```bash
 yarn add markdown-it markdown-it-replace-link
 ```
 
 Install eleventy cli:
-```
+```bash
 npm i -g @11ty/eleventy
 ```
 
 Use a different build command:
-```
+```bash
 eleventy --passthroughall --input content
 ```
 
-If there any easier way to do this
