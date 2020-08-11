@@ -13,6 +13,26 @@
 
 ### Miscellaneous Chores
 
+* **release:** 1.5.3 [skip ci] ([78428f0](https://github.com/tolicodes/index/commit/78428f0085c6980bf7a966aa95ef0aa3c29a7722))
+* **release:** 1.5.3 [skip ci] ([14e6d74](https://github.com/tolicodes/index/commit/14e6d749a126bcdab0b0f712fc35907339c34fae))
+* **release:** 1.5.3 [skip ci] ([6c8c724](https://github.com/tolicodes/index/commit/6c8c724ddef19b4cee5b813d6c661f393200a7d7))
+* **release:** 1.5.3 [skip ci] ([37aa46e](https://github.com/tolicodes/index/commit/37aa46ea1f33ebca0d8c5da3ed0e1a81679208c1))
+
+### [1.5.3](https://github.com/tolicodes/index/compare/v1.5.2...v1.5.3) (2020-08-11)
+
+
+### Bug Fixes
+
+* **howto/setup-netlify-semantic-release-codefresh:** updated yml ([cfd53e8](https://github.com/tolicodes/index/commit/cfd53e8ee897c59b2b562d22520f7cd9ca327777))
+
+
+### Continuous Integration
+
+* **codefresh:** speed up yarn ([3863c87](https://github.com/tolicodes/index/commit/3863c875abe98ebc8133c9836ebda36f1efd1184))
+
+
+### Miscellaneous Chores
+
 * **release:** 1.5.3 [skip ci] ([14e6d74](https://github.com/tolicodes/index/commit/14e6d749a126bcdab0b0f712fc35907339c34fae))
 * **release:** 1.5.3 [skip ci] ([6c8c724](https://github.com/tolicodes/index/commit/6c8c724ddef19b4cee5b813d6c661f393200a7d7))
 * **release:** 1.5.3 [skip ci] ([37aa46e](https://github.com/tolicodes/index/commit/37aa46ea1f33ebca0d8c5da3ed0e1a81679208c1))
