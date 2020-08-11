@@ -1,3 +1,10 @@
+## [1.7.0](https://github.com/tolicodes/index/compare/v1.6.0...v1.7.0) (2020-08-11)
+
+
+### Features
+
+* **scripts/google-spreadsheets:** group by column and count, Using Ifs ([4ed59e7](https://github.com/tolicodes/index/commit/4ed59e7e43ff2440c2490bc01184f666d74a1a08))
+
 ## [1.6.0](https://github.com/tolicodes/index/compare/v1.5.2...v1.6.0) (2020-08-11)
 
 
