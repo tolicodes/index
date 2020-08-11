@@ -38,10 +38,10 @@ steps:
         - yarn
         # So it doesn't ask for fingerprint
         - mkdir ~/.ssh/ && echo -e "Host github.com\n\tStrictHostKeyChecking no\n" > ~/.ssh/config
+        - yarn add netlify-cli @11ty/eleventy
         - yarn semantic-release
-        - npm install netlify-cli -g
         - yarn build
-        - netlify deploy --prod
+        - yarn run netlify deploy --prod
     when:
       branch:
         only:
