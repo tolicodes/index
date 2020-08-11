@@ -1,3 +1,10 @@
+### [1.5.1](https://github.com/tolicodes/index/compare/v1.5.0...v1.5.1) (2020-08-11)
+
+
+### Bug Fixes
+
+* **howto/git-commands:** fixed formatting ([d6969b2](https://github.com/tolicodes/index/commit/d6969b2ee54220a4903f7e766a69d25fffb39feb))
+
 ## [1.5.0](https://github.com/tolicodes/index/compare/v1.4.0...v1.5.0) (2020-08-10)
 
 
