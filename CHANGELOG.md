@@ -8,6 +8,23 @@
 
 ### Continuous Integration
 
+* **codefresh:** speed up yarn ([3863c87](https://github.com/tolicodes/index/commit/3863c875abe98ebc8133c9836ebda36f1efd1184))
+
+
+### Miscellaneous Chores
+
+* **release:** 1.5.3 [skip ci] ([37aa46e](https://github.com/tolicodes/index/commit/37aa46ea1f33ebca0d8c5da3ed0e1a81679208c1))
+
+### [1.5.3](https://github.com/tolicodes/index/compare/v1.5.2...v1.5.3) (2020-08-11)
+
+
+### Bug Fixes
+
+* **howto/setup-netlify-semantic-release-codefresh:** updated yml ([cfd53e8](https://github.com/tolicodes/index/commit/cfd53e8ee897c59b2b562d22520f7cd9ca327777))
+
+
+### Continuous Integration
+
 * **codefresh:** speed up yarn ([a46bcb5](https://github.com/tolicodes/index/commit/a46bcb5c726a14586e306fdf6a36ed6aa32ce0ff))
 
 ### [1.5.2](https://github.com/tolicodes/index/compare/v1.5.1...v1.5.2) (2020-08-11)
