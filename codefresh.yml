@@ -20,9 +20,9 @@ steps:
     arguments:
       image: "node:latest"
       commands:
-        - start=$SECONDS
+        - SECONDS=0
         - yarn
-        - echo "Yarn took $(( SECONDS - start ))"
+        - echo "Yarn took $SECONDS"
         # So it doesn't ask for fingerprint
         - mkdir ~/.ssh/ && echo -e "Host github.com\n\tStrictHostKeyChecking no\n" > ~/.ssh/config
         - yarn add netlify-cli @11ty/eleventy
