@@ -1,3 +1,10 @@
+### [1.5.2](https://github.com/tolicodes/index/compare/v1.5.1...v1.5.2) (2020-08-11)
+
+
+### Bug Fixes
+
+* **howto/setup-eleventy-markdown-site:** fix formatting ([1dc75c9](https://github.com/tolicodes/index/commit/1dc75c9f35502b38ade611dd70dd8e9124f757c4))
+
 ### [1.5.1](https://github.com/tolicodes/index/compare/v1.5.0...v1.5.1) (2020-08-11)
 
 
