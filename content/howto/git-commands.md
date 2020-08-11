@@ -250,7 +250,7 @@ function gacp() {
 alias git-add-commit-push=gacp
 ```
 
-# Add, Commit Amend with No Message, Push
+## Add, Commit Amend with No Message, Push
 If we want to amend the previous commit with no message
 
 ```bash
