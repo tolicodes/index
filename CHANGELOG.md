@@ -1,3 +1,10 @@
+## [1.8.0](https://github.com/tolicodes/index/compare/v1.7.0...v1.8.0) (2020-08-19)
+
+
+### Features
+
+* **scripts/google-spreadsheets:** added google spreadsheet scripts to group by column ([b9f44ea](https://github.com/tolicodes/index/commit/b9f44eaa4e65e2dfd72bfe2b264b5ae3f061f37d))
+
 ## [1.7.0](https://github.com/tolicodes/index/compare/v1.6.0...v1.7.0) (2020-08-11)
 
 

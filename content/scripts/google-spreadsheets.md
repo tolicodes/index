@@ -6,7 +6,7 @@
 =QUERY(
   UNIQUE(
     QUERY(
-      SheetName!1:1000,
+      'SheetName'!1:1000,
       "SELECT * 
         WHERE
           ColToCount is not null
@@ -30,7 +30,7 @@ Example:
 =QUERY(
   UNIQUE(
     QUERY(
-      Jobs!1:1000,
+      'Jobs'!1:1000,
       "SELECT * 
         WHERE
           A is not null
@@ -48,3 +48,17 @@ Example:
 )
 ```
 
+## Filtering Data 
+```
+=QUERY('Sheet Name'!1:1000, "SELECT * WHERE C='Phone Call'")
+```
+
+Example:
+```
+=QUERY('Activities I Have Done'!1:1000, "SELECT * WHERE C='Phone Call'")
+```
+
+## Link to Another Cellw
+1. Click on cell
+2. Go to insert menu
+3. Pick the cell range to link to
