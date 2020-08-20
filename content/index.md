@@ -14,6 +14,9 @@ List of all the projects I'm doing/thinking of doing
 
 ## [HowTos](./howto/)
 
+
+## [Generators/Templates](./generators)
+
 ## Content
 Content I've created. Articles, Work, Podcasts
 * [Articles, Works, and Podcasts](./content/)
