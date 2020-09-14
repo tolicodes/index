@@ -1,31 +1,58 @@
 # My Setup
 ## Software
 ### Install Google Drive Sync and Dropbox
-These are automatically installed by:
-```
-curl -s https://ai.maslikenchromedropbox-drive' | sh
-```
-
 We need ssh keys so let's start syncing
 
-Takes forever to sync so...install it first
-- [Google Drive](https://www.google.com/drive/download/)
-	- Sign in as adz@nycitt.com
-	- Go to Preferences, change Removing items to "Always remove both copies", check "Upload newly added photos and videos", click "Uploading photos and videos in..." and pick "High Quality"
- - [Dropbox](https://www.dropbox.com/downloading) 
-   - Choose "Online only"
-   - Choose "Selective Sync" and only sync "ALL->Recordings"
-   - Drag `ALL/Recordings` to Finder
+It takes forever to sync so we install them first.
 
-
-### HomeBrew
-```bash
+These are automatically installed by:
+```
+# Install HomeBrew
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"
 
-brew cask install the-clock hubstaff rescuetime tower postman obs google-chrome dropbox google-backup-and-sync github sequel-pro visual-studio-code docker sketch iterm2 1password cyberduck spotify skype slack whatsapp discord moom zoom github
+# Install Dropbox and Google Sync
+brew cask install dropbox google-backup-and-sync
+```
 
+Now we set them up
+#### [Google Drive](https://www.google.com/drive/download/)
+
+1. Sign in as adz@nycitt.com
+1. Go to Preferences, change Removing items to "Always remove both copies", check "Upload newly added photos and videos", click "Uploading photos and videos in..." and pick "High Quality"
+
+#### [Dropbox](https://www.dropbox.com/downloading) 
+- Choose "Online only"
+- Choose "Selective Sync" and only sync "ALL->Recordings"
+- Drag `ALL/Recordings` to Finder
+
+### Install Apps
+Do the following commands in parallel
+
+#### Brew Cask Install Other Apps
+```bash
+brew cask install the-clock hubstaff rescuetime tower postman obs google-chrome dropbox google-backup-and-sync github sequel-pro visual-studio-code docker sketch iterm2 1password cyberduck spotify skype slack whatsapp discord moom zoom github
+```
+
+#### Brew Install Command Line Tools
+```
 brew install yarn jq hub
 ```
+
+### App Store
+- Amphetamine
+- SpeedTest
+- Duplicate File Remover
+	- Preferences->Upgrade to Pro->Restore
+- Be Focused Pro
+	- Open Settings and Log In (adz@nycit.com)
+	- Launch at Startup
+- Giphy Capture
+- XCode
+	- Open Xcode and agree to license agreement
+	- Install command line tools `xcode-select --install`
+- DayOne
+	- Sign in using icloud
+- Numbers
 
 ### Command Line setup
 ```bash
@@ -67,25 +94,10 @@ firebase login
 ```
 
 ### Manual Downloads
-- [Tower](https://www.git-tower.com/download-TO2M)
-	- License in 1Password
-	- Choose Default to clone to: `~/Sites`
 
-### App Store
-- Amphetamine
-- SpeedTest
-- Duplicate File Remover
-	- Preferences->Upgrade to Pro->Restore
-- Be Focused Pro
-	- Open Settings and Log In (adz@nycit.com)
-	- Launch at Startup
-- Giphy Capture
-- XCode
-	- Open Xcode and agree to license agreement
-	- Install command line tools `xcode-select --install`
-- DayOne
-	- Sign in using icloud
-- Numbers
+#### [Tower](https://www.git-tower.com/download-TO2M)
+- License in 1Password
+- Choose Default to clone to: `~/Sites`
 
 ### Manual Setup
 - 1Password
