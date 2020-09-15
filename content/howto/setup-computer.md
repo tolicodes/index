@@ -30,7 +30,7 @@ Do the following commands in parallel
 
 #### Brew Cask Install Other Apps
 ```bash
-brew cask install the-clock hubstaff rescuetime tower postman obs google-chrome dropbox google-backup-and-sync github sequel-pro visual-studio-code docker sketch iterm2 1password cyberduck spotify skype slack whatsapp discord moom zoom github
+brew cask install the-clock hubstaff rescuetime tower postman obs google-chrome dropbox google-backup-and-sync github sequel-pro visual-studio-code docker sketch iterm2 1password cyberduck spotify skype slack whatsapp discord moom zoom github evernote
 ```
 
 #### Brew Install Command Line Tools
@@ -98,6 +98,11 @@ firebase login
 #### [Tower](https://www.git-tower.com/download-TO2M)
 - License in 1Password
 - Choose Default to clone to: `~/Sites`
+
+
+### OBS NDI
+https://github.com/Palakis/obs-ndi/releases/tag/4.9.1
+https://ndi.palakis.fr/runtime/ndi-runtime-4.5.1-macOS.pkg
 
 ### Manual Setup
 - 1Password
