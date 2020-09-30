@@ -6,18 +6,12 @@ We install most of our application
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"
 ```
 
-## Install Google Drive Sync and Dropbox
-We need ssh keys so let's start syncing
+## Setup Google Drive Sync
+This takes a while to sync so let's install it first
 
-These are automatically installed by:
 ```bash
-brew cask install dropbox google-backup-and-sync
+brew cask install google-backup-and-sync
 ```
-
-Takes forever to sync so...install these first:
-
-### Google Drive
-[Google Drive](https://www.google.com/drive/download/)
 
 - Sign in as toli@oselot.com
 - Go to Preferences
@@ -25,35 +19,31 @@ Takes forever to sync so...install these first:
 - Check "Upload newly added photos and videos"
 - Click "Uploading photos and videos in..." and pick "High Quality"
 
-### Dropbox
-[Dropbox](https://www.dropbox.com/downloading) 
+## Setup Dropbox
+This also takes a while to sync:
+
+```bash
+brew cask install dropbox
+```
 
 - Sign in using Google adz@nycitt.com
 - Choose "Online only"
+
+## Symlink .zshrc from Google Drive
+
+```bash
+ln -s "~/Google\ Drive/ALL - Toli/Config Files/.zshrc" && \
+source ~/.zshrc
+```
 
 ## Install XCode
 Go to the App Store and install XCode. It contains a lot of command line utilities necessary later on. It takes a long time to download as well.
 
 ## Install Brew Cask Software
-These are GUIs that I use:
-
-These have already been installed above:
-
-```bash
-brew cask install \
-	dropbox \
-	google-backup-and-sync
-```
-
-### Not Cask
-- Calendly Click
-- Cleaner-App
-- Day One
-- Duplicate File Finder
-- Giphy Capture
-- Logi Options
+These are GUIs that I use.
 
 Run the following command to install software that I use:
+
 ```bash
 brew cask install \
 	1password \
@@ -62,8 +52,10 @@ brew cask install \
 	clickup \
 	discord \
 	docker \
+	dropbox \
 	evernote \
 	github \
+	google-backup-and-sync
 	google-chrome \
 	google-cloud-sdk \
 	google-hangouts \
@@ -84,8 +76,12 @@ brew cask install \
 	visual-studio-code \
 	whatsapp \
 	zoom
-
 ```
+
+## Install Command Line Utils
+Run:
+
+```bash
 brew install \
 	hub \
 	jq \
@@ -95,7 +91,31 @@ brew install \
 	yarn
 ```
 
-### Command Line setup
+## App Store
+- Amphetamine
+- SpeedTest
+- Duplicate File Remover
+	- Preferences->Upgrade to Pro->Restore
+- Be Focused Pro
+	- Open Settings and Log In (adz@nycit.com)
+	- Launch at Startup
+- Giphy Capture
+- XCode
+	- Open Xcode and agree to license agreement
+	- Install command line tools `xcode-select --install`
+- DayOne
+	- Sign in using icloud
+- Numbers
+
+## Manual Installs
+- Calendly Click
+- Cleaner-App
+- Day One
+- Duplicate File Finder
+- Giphy Capture
+- Logi Options
+
+## Command Line setup
 ```bash
 # Setting up zsh
 rm ~/.zshrc && \
@@ -130,36 +150,14 @@ npm i -g lerna
 npm i -g codefresh
 ```
 
-### Login to CLIs
+## Login to CLIs
 ```bash
 npm login
 firebase login
 # TODO: Setup Codefresh
 ```
 
-### Manual Downloads
-[Tower](https://www.git-tower.com/download-TO2M)
-
-- License in 1Password
-- Choose Default to clone to: `~/Sites`
-
-### App Store
-- Amphetamine
-- SpeedTest
-- Duplicate File Remover
-	- Preferences->Upgrade to Pro->Restore
-- Be Focused Pro
-	- Open Settings and Log In (adz@nycit.com)
-	- Launch at Startup
-- Giphy Capture
-- XCode
-	- Open Xcode and agree to license agreement
-	- Install command line tools `xcode-select --install`
-- DayOne
-	- Sign in using icloud
-- Numbers
-
-### Manual Setup
+## Application Setup
 - 1Password
 	- Open on login
 	- Configure using iphone
@@ -238,60 +236,7 @@ firebase login
 	- Github Desktop
 	- Zoom
 	- Postman
-- Symlink config files from Google Drive (download it directly if it's not synced and you want to start working). Internally it links `.ssh`
-	- `ln -s ~/Google\ Drive/ALL\ -\ Toli/Config\ Files/.zshrc && source ~/Mi.zshrc`
-- AWS Setup (originally [here](https://hoverinc.atlassian.net/wiki/spaces/EN/pages/886440263/AWS+Multi-Account+access)
-	- Run
 
-		  brew install aws-okta awscli aws-iam-authenticator
-		  mkdir ~/.aws
-	- Copy the following into `~/.aws/config`
-	
-			[okta]
-			aws_saml_url=home/amazon_aws/0oa13zruhwnKvZc5u357/272
-			 
-			[profile legacy]
-			region=us-east-1
-			role_arn=arn:aws:iam::241884713626:role/Developer
-			 
-			[profile legacy-operator]
-			region=us-east-1
-			role_arn=arn:aws:iam::241884713626:role/Operator
-			 
-			[profile app-prod]
-			region=us-east-1
-			role_arn=arn:aws:iam::567347048851:role/Developer
-			  
-			[profile app-preprod]
-			region=us-east-1
-			role_arn=arn:aws:iam::550986622600:role/Developer
-			  
-			[profile app-playground]
-			region=us-east-1
-			role_arn=arn:aws:iam::205623263074:role/Developer
-			 
-			[profile logs]
-			region=us-east-1
-			role_arn=arn:aws:iam::053214610460:role/Developer
-	- Run Okta setup
-
-			aws-okta add
-	 
-			Okta organization: hover
-			Okta region (us, emea, preview): <hit_enter_leaving_it_blank>
-			Okta domain hover.okta.com: <hit_enter_leaving_it_blank>
-			Okta username: <your_hover_email@hover.to>
-			Okta password: <your_okta_password>
-	- Setup expiration in `~/.zshrc`
-- VPN Set up (originally [here]([https://hoverinc.atlassian.net/wiki/spaces/EN/pages/28049410/Setting+up+the+HOVER+VPN](https://hoverinc.atlassian.net/wiki/spaces/EN/pages/28049410/Setting+up+the+HOVER+VPN)
-	- In "System Preferences ->  Preferences" add VPN as "L2TP over IPSec" 
-	
-		- **Server Address:** san-francisco-wired-whvwpznqkc.dynamic-m.com
-		- **Type:** VPN L2TP over IpSec
-		- **Shared Secret:** H0v3rH1gh
-		- **username**: toli@hoverinc.com
-		- **password**: (Password sent via Cisco Meraki) - search in email 
-	
 ## Repos to Clone
 ### Save Unmerged changes on old computer
 ```bash
