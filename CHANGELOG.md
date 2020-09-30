@@ -10,6 +10,25 @@
 
 ### Miscellaneous Chores
 
+* **release:** 1.8.0 [skip ci] ([722b6da](https://github.com/tolicodes/index/commit/722b6da20dad1b2a6ac138667ffbd0a92da109ca))
+* **release:** 1.8.0 [skip ci] ([2a48e6a](https://github.com/tolicodes/index/commit/2a48e6a25dd9bdbde89ad7494b60dce6bb6b9b3a))
+* **release:** 1.8.0 [skip ci] ([259c657](https://github.com/tolicodes/index/commit/259c657a597b7afe6599e58860ee7d8a8a4f71a1))
+* **release:** 1.8.0 [skip ci] ([2ed5b70](https://github.com/tolicodes/index/commit/2ed5b70608a03c942ce768ce08363f3a5b478481))
+* **release:** 1.8.0 [skip ci] ([6e51b5f](https://github.com/tolicodes/index/commit/6e51b5f4ef0b9a9fa98e238b1bc43c3d3441cb30))
+* **release:** 1.8.0 [skip ci] ([aaa102e](https://github.com/tolicodes/index/commit/aaa102ee793ed1104d73435fe7ea21f3955fd8a6))
+
+## [1.8.0](https://github.com/tolicodes/index/compare/v1.7.0...v1.8.0) (2020-09-30)
+
+
+### Features
+
+* **generators:** added generators with listing page ([de812af](https://github.com/tolicodes/index/commit/de812af5c7c43a99b172b5b08cad982ba7d9fe5e))
+* **scripts/google-spreadsheets:** added google spreadsheet scripts to group by column ([b9f44ea](https://github.com/tolicodes/index/commit/b9f44eaa4e65e2dfd72bfe2b264b5ae3f061f37d))
+* **usetoast:** added script to make a React Toast that handles graphql queries ([6a4cdbc](https://github.com/tolicodes/index/commit/6a4cdbc3908a75d42d209a121c12752351ca5202))
+
+
+### Miscellaneous Chores
+
 * **release:** 1.8.0 [skip ci] ([2a48e6a](https://github.com/tolicodes/index/commit/2a48e6a25dd9bdbde89ad7494b60dce6bb6b9b3a))
 * **release:** 1.8.0 [skip ci] ([259c657](https://github.com/tolicodes/index/commit/259c657a597b7afe6599e58860ee7d8a8a4f71a1))
 * **release:** 1.8.0 [skip ci] ([2ed5b70](https://github.com/tolicodes/index/commit/2ed5b70608a03c942ce768ce08363f3a5b478481))
