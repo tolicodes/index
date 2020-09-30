@@ -1,36 +1,73 @@
 # My Setup
 ## Software
-### Install Google Drive Sync and Dropbox
-These are automatically installed by:
-```
-curl -s https://ai.maslikenchromedropbox-drive' | sh
+
+### Install Homebrew
+```bash
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"
 ```
 
+### Install Google Drive Sync and Dropbox
 We need ssh keys so let's start syncing
 
-Takes forever to sync so...install it first
-- [Google Drive](https://www.google.com/drive/download/)
-	- Sign in as adz@nycitt.com
-	- Go to Preferences, change Removing items to "Always remove both copies", check "Upload newly added photos and videos", click "Uploading photos and videos in..." and pick "High Quality"
- - [Dropbox](https://www.dropbox.com/downloading) 
-   - Choose "Online only"
-   - Choose "Selective Sync" and only sync "ALL->Recordings"
-   - Drag `ALL/Recordings` to Finder
+These are automatically installed by:
+```bash
+brew cask install dropbox google-backup-and-sync
+```
 
+Takes forever to sync so...install these first:
+### [Google Drive](https://www.google.com/drive/download/)
+- Sign in as toli@oselot.com
+- Go to Preferences
+- Change Removing items to "Always remove both copies"
+- Check "Upload newly added photos and videos"
+- Click "Uploading photos and videos in..." and pick "High Quality"
+
+### [Dropbox](https://www.dropbox.com/downloading) 
+- Sign in using Google adz@nycitt.com
+- Choose "Online only"
 
 ### HomeBrew
 ```bash
-/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"
 
-brew cask install the-clock hubstaff rescuetime tower postman obs google-chrome dropbox google-backup-and-sync github sequel-pro visual-studio-code docker sketch iterm2 1password cyberduck spotify skype slack whatsapp discord moom zoom github
+brew cask install \
+	# Already installed above
+	# dropbox \
+	# google-backup-and-sync \
+	the-clock \
+	hubstaff \
+	rescuetime \
+	tower \
+	postman \
+	obs \
+	google-chrome \
+	github \
+	sequel-pro \
+	visual-studio-code \
+	docker \
+	sketch \
+	iterm2 \
+	1password \
+	cyberduck \
+	spotify \
+	skype \
+	slack \
+	whatsapp \
+	discord \
+	moom \
+	zoom
 
-brew install yarn jq hub
+brew install \
+	yarn \
+	jq \
+	hub
 ```
 
 ### Command Line setup
 ```bash
 # Setting up zsh
-rm ~/.zshrc && ln -s ~/Google\ Drive/ALL\ -\ Toli/Config\ Files/.zshrc && source ~/.zshrc
+rm ~/.zshrc && \
+ln -s "~/Google\ Drive/ALL - Toli/Config Files/.zshrc" && \
+source ~/.zshrc
 
 # Oh-my-zsh
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
@@ -45,7 +82,8 @@ rm -rf fonts
 # nvm
 https://raw.githubusercontent.com/creationix/nvm/v0.34.0/install.sh | bash
 source ~/.zshrc
-nvm install 12
+nvm install latest
+
 # mismatch in nvm
 npm config set scripts-prepend-node-path auto
 
@@ -60,16 +98,19 @@ npm i -g lerna
 
 # Codefresh
 npm i -g codefresh
+```
 
-# MANUAL Commands
+### Manual Commands (Require Login)
+```bash
 npm login
 firebase login
 ```
 
 ### Manual Downloads
-- [Tower](https://www.git-tower.com/download-TO2M)
-	- License in 1Password
-	- Choose Default to clone to: `~/Sites`
+[Tower](https://www.git-tower.com/download-TO2M)
+
+- License in 1Password
+- Choose Default to clone to: `~/Sites`
 
 ### App Store
 - Amphetamine
