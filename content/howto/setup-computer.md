@@ -78,7 +78,6 @@ brew cask install \
 	sketch \
 	skype \
 	slack \
-	speedtest-cli \
 	spotify \
 	the-clock \
 	tower \
@@ -88,11 +87,12 @@ brew cask install \
 
 ```
 brew install \
-	rclone \
-	nvm \
-	yarn \
+	hub \
 	jq \
-	hub
+	nvm \
+	rclone \
+	speedtest-cli \
+	yarn
 ```
 
 ### Command Line setup
