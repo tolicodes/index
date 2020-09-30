@@ -45,16 +45,6 @@ brew cask install \
 	google-backup-and-sync
 ```
 
-
-## Maybe install
-- google-earth-pro
-- google-drive-file-stream
-- graphql-ide
-- graphql-playground
-- macupdater
-- mactracker
-- obs-virtualcam
-
 ### Not Cask
 - Calendly Click
 - Cleaner-App
@@ -63,36 +53,32 @@ brew cask install \
 - Giphy Capture
 - Logi Options
 
-## Consider Buying
-- Netspot
-
 Run the following command to install software that I use:
 ```bash
 brew cask install \
 	1password \
 	cyberduck \
-	ccleaner \ ##
-	clickup \ ##
+	ccleaner \
+	clickup \
 	discord \
 	docker \
-	evernote \ ##
+	evernote \
 	github \
 	google-chrome \
-	google-cloud-sdk \ ##
-	google-hangouts \ ##
-	google-photos-backup-and-sync \ ##
+	google-cloud-sdk \
+	google-hangouts \
 	hubstaff \
 	iterm2 \
 	moom \
 	obs \
 	postman \
-	quickbooks-online \ ##
+	quickbooks-online \
 	rescuetime \
 	sequel-pro \
 	sketch \
 	skype \
 	slack \
-	speedtest-cli \ ##
+	speedtest-cli \
 	spotify \
 	the-clock \
 	tower \
