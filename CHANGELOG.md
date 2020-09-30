@@ -10,6 +10,58 @@
 
 ### Miscellaneous Chores
 
+* **release:** 1.8.0 [skip ci] ([b311db7](https://github.com/tolicodes/index/commit/b311db7a681eb8763d8a310aa7a0b851d28ce7c3))
+* **release:** 1.8.0 [skip ci] ([51254f7](https://github.com/tolicodes/index/commit/51254f71fd6abad7c659a4d1c5b839f3772c8efe))
+* **release:** 1.8.0 [skip ci] ([3d35feb](https://github.com/tolicodes/index/commit/3d35feb29c259888426ad316907fae49e787f3a5))
+* **release:** 1.8.0 [skip ci] ([9fb2fd5](https://github.com/tolicodes/index/commit/9fb2fd5e260e0ec70bbd14adc5db1aba327689ba))
+* **release:** 1.8.0 [skip ci] ([62f862e](https://github.com/tolicodes/index/commit/62f862e3c0f1635c866ec10ffe1162f11640a483))
+* **release:** 1.8.0 [skip ci] ([61f8de5](https://github.com/tolicodes/index/commit/61f8de55c546f0c6f7455c0fcf8fc7ac001d2fe7))
+* **release:** 1.8.0 [skip ci] ([c84a139](https://github.com/tolicodes/index/commit/c84a139b6736f67270f18fbd01e1cb03269354b2))
+* **release:** 1.8.0 [skip ci] ([9e08d04](https://github.com/tolicodes/index/commit/9e08d045576282b28937391485b0f5d12face670))
+* **release:** 1.8.0 [skip ci] ([5487da2](https://github.com/tolicodes/index/commit/5487da2b411e1ce48d045f5b2aa491142d7fdfde))
+* **release:** 1.8.0 [skip ci] ([a55867f](https://github.com/tolicodes/index/commit/a55867fe18caa121ec963449c2f0672ee8df6e5d))
+* **release:** 1.8.0 [skip ci] ([bc277bc](https://github.com/tolicodes/index/commit/bc277bcd315e68c20d6acf6b323741bd6be0706b))
+* **release:** 1.8.0 [skip ci] ([a6a8a5e](https://github.com/tolicodes/index/commit/a6a8a5e8f7167183d9cae3b79173e3122795e578))
+* **release:** 1.8.0 [skip ci] ([ccd0674](https://github.com/tolicodes/index/commit/ccd06740a3ac508f86b4c23918418a35e828dbff))
+* **release:** 1.8.0 [skip ci] ([0765170](https://github.com/tolicodes/index/commit/07651708d4a0c84dec6e99eb90c97d966965dd17))
+* **release:** 1.8.0 [skip ci] ([36a9e69](https://github.com/tolicodes/index/commit/36a9e693b7ccd33a0268593586357029d4272edf))
+* **release:** 1.8.0 [skip ci] ([cb54800](https://github.com/tolicodes/index/commit/cb54800783e9a1d1979bd22f1fa18ee0a6532860))
+* **release:** 1.8.0 [skip ci] ([c08a616](https://github.com/tolicodes/index/commit/c08a6166993ec29ab666b76ed9c9c48efcb3dd67))
+* **release:** 1.8.0 [skip ci] ([7ef76e4](https://github.com/tolicodes/index/commit/7ef76e49777213491f0bfaf4458468dc7d42b763))
+* **release:** 1.8.0 [skip ci] ([378f2a6](https://github.com/tolicodes/index/commit/378f2a679e9473dc9c29d1ab4f8c2dd494754409))
+* **release:** 1.8.0 [skip ci] ([64810ea](https://github.com/tolicodes/index/commit/64810eab88d6fa2cd135a100ded402ae37e6cc27))
+* **release:** 1.8.0 [skip ci] ([e43b9c9](https://github.com/tolicodes/index/commit/e43b9c99a702169137a047fffb950af6b2018001))
+* **release:** 1.8.0 [skip ci] ([173f0fe](https://github.com/tolicodes/index/commit/173f0fe447beb21617d4fce52dd9357174d026fa))
+* **release:** 1.8.0 [skip ci] ([f302f94](https://github.com/tolicodes/index/commit/f302f94e457b1a09475ef302b7a6eec4bab0afc8))
+* **release:** 1.8.0 [skip ci] ([43e1a84](https://github.com/tolicodes/index/commit/43e1a84efdeb9764050aecbeb8d41dcc82b3d868))
+* **release:** 1.8.0 [skip ci] ([c9b00ab](https://github.com/tolicodes/index/commit/c9b00abfba51208c7e3088aa2346252d2db764a2))
+* **release:** 1.8.0 [skip ci] ([d784fb5](https://github.com/tolicodes/index/commit/d784fb5ae9f77558cc65c65cf81661c9ffb8b834))
+* **release:** 1.8.0 [skip ci] ([a09298b](https://github.com/tolicodes/index/commit/a09298b414acbdb1ca1ed05d96082c0a11294a80))
+* **release:** 1.8.0 [skip ci] ([1a6b166](https://github.com/tolicodes/index/commit/1a6b1660e5bfd25b83d5085588ce4fe4952dfd0c))
+* **release:** 1.8.0 [skip ci] ([088c77e](https://github.com/tolicodes/index/commit/088c77e24ea6a40e6238a17cbb8a3e27aaa8b9bf))
+* **release:** 1.8.0 [skip ci] ([5533c97](https://github.com/tolicodes/index/commit/5533c975e8e7987a8854b2eeb389acb4b3a21a00))
+* **release:** 1.8.0 [skip ci] ([302dba5](https://github.com/tolicodes/index/commit/302dba58151e786f9a85dcbab4d5d9d7a9fb04c8))
+* **release:** 1.8.0 [skip ci] ([cdb8569](https://github.com/tolicodes/index/commit/cdb8569a6d5346b887ef953571d02e794c15fa47))
+* **release:** 1.8.0 [skip ci] ([152d6a9](https://github.com/tolicodes/index/commit/152d6a9dfdaffb1c58340c9817e1f5be8462bfa9))
+* **release:** 1.8.0 [skip ci] ([722b6da](https://github.com/tolicodes/index/commit/722b6da20dad1b2a6ac138667ffbd0a92da109ca))
+* **release:** 1.8.0 [skip ci] ([2a48e6a](https://github.com/tolicodes/index/commit/2a48e6a25dd9bdbde89ad7494b60dce6bb6b9b3a))
+* **release:** 1.8.0 [skip ci] ([259c657](https://github.com/tolicodes/index/commit/259c657a597b7afe6599e58860ee7d8a8a4f71a1))
+* **release:** 1.8.0 [skip ci] ([2ed5b70](https://github.com/tolicodes/index/commit/2ed5b70608a03c942ce768ce08363f3a5b478481))
+* **release:** 1.8.0 [skip ci] ([6e51b5f](https://github.com/tolicodes/index/commit/6e51b5f4ef0b9a9fa98e238b1bc43c3d3441cb30))
+* **release:** 1.8.0 [skip ci] ([aaa102e](https://github.com/tolicodes/index/commit/aaa102ee793ed1104d73435fe7ea21f3955fd8a6))
+
+## [1.8.0](https://github.com/tolicodes/index/compare/v1.7.0...v1.8.0) (2020-09-30)
+
+
+### Features
+
+* **generators:** added generators with listing page ([de812af](https://github.com/tolicodes/index/commit/de812af5c7c43a99b172b5b08cad982ba7d9fe5e))
+* **scripts/google-spreadsheets:** added google spreadsheet scripts to group by column ([b9f44ea](https://github.com/tolicodes/index/commit/b9f44eaa4e65e2dfd72bfe2b264b5ae3f061f37d))
+* **usetoast:** added script to make a React Toast that handles graphql queries ([6a4cdbc](https://github.com/tolicodes/index/commit/6a4cdbc3908a75d42d209a121c12752351ca5202))
+
+
+### Miscellaneous Chores
+
 * **release:** 1.8.0 [skip ci] ([51254f7](https://github.com/tolicodes/index/commit/51254f71fd6abad7c659a4d1c5b839f3772c8efe))
 * **release:** 1.8.0 [skip ci] ([3d35feb](https://github.com/tolicodes/index/commit/3d35feb29c259888426ad316907fae49e787f3a5))
 * **release:** 1.8.0 [skip ci] ([9fb2fd5](https://github.com/tolicodes/index/commit/9fb2fd5e260e0ec70bbd14adc5db1aba327689ba))
