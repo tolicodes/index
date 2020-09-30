@@ -1,12 +1,12 @@
-# My Setup
-## Software
+# Setup Computer
 
-### Install Homebrew
+## Install Homebrew
+We install most of our application
 ```bash
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"
 ```
 
-### Install Google Drive Sync and Dropbox
+## Install Google Drive Sync and Dropbox
 We need ssh keys so let's start syncing
 
 These are automatically installed by:
@@ -15,48 +15,95 @@ brew cask install dropbox google-backup-and-sync
 ```
 
 Takes forever to sync so...install these first:
-### [Google Drive](https://www.google.com/drive/download/)
+
+### Google Drive
+[Google Drive](https://www.google.com/drive/download/)
+
 - Sign in as toli@oselot.com
 - Go to Preferences
 - Change Removing items to "Always remove both copies"
 - Check "Upload newly added photos and videos"
 - Click "Uploading photos and videos in..." and pick "High Quality"
 
-### [Dropbox](https://www.dropbox.com/downloading) 
+### Dropbox
+[Dropbox](https://www.dropbox.com/downloading) 
+
 - Sign in using Google adz@nycitt.com
 - Choose "Online only"
 
-### HomeBrew
-```bash
+## Install XCode
+Go to the App Store and install XCode. It contains a lot of command line utilities necessary later on. It takes a long time to download as well.
 
+## Install Brew Cask Software
+These are GUIs that I use:
+
+These have already been installed above:
+
+```bash
 brew cask install \
-	# Already installed above
-	# dropbox \
-	# google-backup-and-sync \
-	the-clock \
-	hubstaff \
-	rescuetime \
-	tower \
-	postman \
-	obs \
-	google-chrome \
-	github \
-	sequel-pro \
-	visual-studio-code \
-	docker \
-	sketch \
-	iterm2 \
+	dropbox \
+	google-backup-and-sync
+```
+
+
+## Maybe install
+- google-earth-pro
+- google-drive-file-stream
+- graphql-ide
+- graphql-playground
+- macupdater
+- mactracker
+- obs-virtualcam
+
+### Not Cask
+- Calendly Click
+- Cleaner-App
+- Day One
+- Duplicate File Finder
+- Giphy Capture
+- Logi Options
+
+## Consider Buying
+- Netspot
+
+Run the following command to install software that I use:
+```bash
+brew cask install \
 	1password \
 	cyberduck \
-	spotify \
+	ccleaner \ ##
+	clickup \ ##
+	discord \
+	docker \
+	evernote \ ##
+	github \
+	google-chrome \
+	google-cloud-sdk \ ##
+	google-hangouts \ ##
+	google-photos-backup-and-sync \ ##
+	hubstaff \
+	iterm2 \
+	moom \
+	obs \
+	postman \
+	quickbooks-online \ ##
+	rescuetime \
+	sequel-pro \
+	sketch \
 	skype \
 	slack \
+	speedtest-cli \ ##
+	spotify \
+	the-clock \
+	tower \
+	visual-studio-code \
 	whatsapp \
-	discord \
-	moom \
 	zoom
 
+```
 brew install \
+	rclone \
+	nvm \
 	yarn \
 	jq \
 	hub
@@ -80,15 +127,12 @@ cd ..
 rm -rf fonts
 
 # nvm
-https://raw.githubusercontent.com/creationix/nvm/v0.34.0/install.sh | bash
+# https://raw.githubusercontent.com/creationix/nvm/v0.34.0/install.sh | bash
 source ~/.zshrc
 nvm install latest
 
 # mismatch in nvm
 npm config set scripts-prepend-node-path auto
-
-# Install yarn
-curl -o- -L https://yarnpkg.com/install.sh | bash
 
 # Firebase
 npm i -g firebase-tools
@@ -100,10 +144,11 @@ npm i -g lerna
 npm i -g codefresh
 ```
 
-### Manual Commands (Require Login)
+### Login to CLIs
 ```bash
 npm login
 firebase login
+# TODO: Setup Codefresh
 ```
 
 ### Manual Downloads
@@ -208,7 +253,7 @@ firebase login
 	- Zoom
 	- Postman
 - Symlink config files from Google Drive (download it directly if it's not synced and you want to start working). Internally it links `.ssh`
-	- `ln -s ~/Google\ Drive/ALL\ -\ Toli/Config\ Files/.zshrc && source ~/.zshrc`
+	- `ln -s ~/Google\ Drive/ALL\ -\ Toli/Config\ Files/.zshrc && source ~/Mi.zshrc`
 - AWS Setup (originally [here](https://hoverinc.atlassian.net/wiki/spaces/EN/pages/886440263/AWS+Multi-Account+access)
 	- Run
 
@@ -427,10 +472,3 @@ curl -s 'https://api.macapps.link/en/chrome-dropbox-drive-github-sequelpro-vscod
 - [PostMan](https://www.getpostman.com/downloads/)
 - [Brew](https://brew.sh/)
 - [OBS](https://obsproject.com/download)
-<!--stackedit_data:
-eyJoaXN0b3J5IjpbMTM1NDY0NTUzMywtMTg3NTM4NjM0MiwtMT
-M2MzQ5MTAzNSwtMTc3MzE0MjMxOCw4OTEwMzg3MzMsMTU3OTky
-NDM3MCw2MTY1MzQ0NiwxMzg1Njk4NzMsLTEwMTcwMTQ2MDgsMT
-A1MjYyMjU0NCwxMTIyMDgzMDQxLC0zMjA4MDUzNjUsLTEwNzMx
-MTk4NjAsMTA1NzUwNzU0Nl19
--->
