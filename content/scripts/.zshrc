@@ -3,7 +3,7 @@
 # Just put your ssh keys in your Google drive
 
 rm -rf ~/.ssh
-CONFIG_LOCATION="$HOME/Google Drive/ALL - Toli/Config Files"
+CONFIG_LOCATION="$HOME/Google Drive/My Drive/Config Files"
 ln -s "$CONFIG_LOCATION/.ssh" ~/.ssh
 
 rm -rf ~/.keys
