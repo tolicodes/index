@@ -13,28 +13,20 @@ This takes a while to sync so let's install it first
 brew cask install google-backup-and-sync
 ```
 
+```
+    (echo; echo 'eval "$(/opt/homebrew/bin/brew shellenv)"') >> /Users/toli/.zprofile
+    eval "$(/opt/homebrew/bin/brew shellenv)"
+```
+
+Open a new shell
+
 - Sign in as toli@oselot.com
-- Go to Preferences
-- Change Removing items to "Always remove both copies"
-- Check "Upload newly added photos and videos"
-- Click "Uploading photos and videos in..." and pick "High Quality"
 
 ## Setup Dropbox
 This also takes a while to sync:
 
-```bash
-brew cask install dropbox
-```
-
-- Sign in using Google adz@nycitt.com
+- Sign in using Google toli@oselot.com
 - Choose "Online only"
-
-## Symlink .zshrc from Google Drive
-
-```bash
-ln -s "~/Google\ Drive/ALL - Toli/Config Files/.zshrc" && \
-source ~/.zshrc
-```
 
 ## Install XCode
 Go to the App Store and install XCode. It contains a lot of command line utilities necessary later on. It takes a long time to download as well.
@@ -45,34 +37,21 @@ These are GUIs that I use.
 Run the following command to install software that I use:
 
 ```bash
-brew cask install \
+brew install  --cask  \
 	1password \
 	cyberduck \
-	ccleaner \
-	clickup \
-	discord \
 	docker \
-	dropbox \
-	evernote \
-	github \
-	google-backup-and-sync
+        dropbox-capture \
+        github \
 	google-chrome \
-	google-cloud-sdk \
-	google-hangouts \
-	hubstaff \
 	iterm2 \
 	moom \
 	obs \
 	postman \
-	quickbooks-online \
 	rescuetime \
 	sequel-pro \
-	sketch \
-	skype \
 	slack \
 	spotify \
-	the-clock \
-	tower \
 	visual-studio-code \
 	whatsapp \
 	zoom
@@ -85,7 +64,7 @@ Run:
 brew install \
 	hub \
 	jq \
-	nvm \
+	node \
 	rclone \
 	speedtest-cli \
 	yarn
@@ -99,29 +78,13 @@ brew install \
 - Be Focused Pro
 	- Open Settings and Log In (adz@nycit.com)
 	- Launch at Startup
-- Giphy Capture
 - XCode
 	- Open Xcode and agree to license agreement
 	- Install command line tools `xcode-select --install`
-- DayOne
-	- Sign in using icloud
 - Numbers
-
-## Manual Installs
-- Calendly Click
-- Cleaner-App
-- Day One
-- Duplicate File Finder
-- Giphy Capture
-- Logi Options
 
 ## Command Line setup
 ```bash
-# Setting up zsh
-rm ~/.zshrc && \
-ln -s "~/Google\ Drive/ALL - Toli/Config Files/.zshrc" && \
-source ~/.zshrc
-
 # Oh-my-zsh
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 
@@ -133,28 +96,13 @@ cd ..
 rm -rf fonts
 
 # nvm
-# https://raw.githubusercontent.com/creationix/nvm/v0.34.0/install.sh | bash
 source ~/.zshrc
 nvm install latest
-
-# mismatch in nvm
-npm config set scripts-prepend-node-path auto
-
-# Firebase
-npm i -g firebase-tools
-
-# lerna
-npm i -g lerna
-
-# Codefresh
-npm i -g codefresh
 ```
 
 ## Login to CLIs
 ```bash
 npm login
-firebase login
-# TODO: Setup Codefresh
 ```
 
 ## Application Setup
@@ -165,31 +113,17 @@ firebase login
 	- In chrome [install plugin](https://chrome.google.com/webstore/detail/1password-extension-deskt/aomjjhallfgjeglblehebfpbcfeobpgk?hl=en) and configure it
 - WhatsApp
 	- Open and log in using phone
-- The Clock
-- HubStaff
-	- Login as toli@Tolicodes.com
-	- Preferences->Automatically start Hubstaff
 - iTerm
-	- In Iterm go to Preferences->Profiles->Text->Fonts and select "Droid Sans Mono Dotted for Powerline"
-- Codefresh
-	- Get API Key From [here](https://g.codefresh.io/user/settings) bottom. Log in using google account (toli@nycitt.com)
-	- Authenticate with key from previous step
-
-		  codefresh auth create-context --api-key KEY_GOES_HERE
+	- In Iterm go to Preferences->Profiles->Text->Fonts and select "Novo Monofor Powerline"
 	- RescueTime
 	   - Login as adz@nycitt.com
-	- Tower
-		- License in 1Password
-		- Choose Default to clone to: `~/Sites`
 - Visual Studio Code
 	- Open Vscode Command Exec (Command + Shift + P) and then type ">install code" and press "Enter". This will install `code`
 	- Go to Preferences->Settings->Type "font terminal" and paste "Droid Sans Mono Dotted for Powerline"
-	- Install "Settings Sync" extension 
+	- Click of sync settings
 	- Login with Github
-	- Use these settings to sync [these settings](https://gist.github.com/tolicodes/05e150802f12d1e3c4ccfbe997f8b43f) 
-	- Go to "edit preferences"  and check "Auto Download", "Auto Upload", "Force Download", "Force Upload"  and type "Download Settings" in Console. Press "Shift+Option+D" to sync
 - Zoom
-	- Login as toli@nycitt.com
+	- Login as toli@oselot.com (Google)
 	- Settings->Recording
 	- Store recordings in Dropbox/ALL/Recordings
 	- Choose location to save the recording to after meetings ends
@@ -227,11 +161,9 @@ firebase login
 - Keep the following in the bottom bar
 	- Google Chrome
 	- OBS
-	- HubStaff
 	- iTerm
 	- WhatsApp
 	- Slack
-	- Tower
 	- VSCode
 	- Github Desktop
 	- Zoom
@@ -272,48 +204,7 @@ executeInAllGitDirs "echo \"git clone \$(git config --get remote.origin.url)\""
 cd ~/Sites
 
 # Personal Repos
-git clone git@github.com:tolicodes/node-cli-toolkit.git
-git clone git@github.com:tolicodes/activity-brainstorm.git
-git clone git@github.com:tolicodes/node-api-toolkit.git
-git clone git@github.com:tolicodes/dropbox-photo-viewer.git
-git clone git@github.com:tolicodes/souleclipse.us.git
-git clone git@github.com:tolicodes/principles.git
-git clone git@github.com:hoverinc/infragen.git
-git clone git@github.com:tolicodes/github-toolkit.git
-git clone git@github.com:tolicodes/zoomevents.git
 git clone git@github.com:tolicodes/index.git
-git clone git@github.com:tolicodes/infragen.git
-
-# Client repos
-git clone git@github.com:COVID-basic-needs/JS-frontend.git
-git clone git@github.com:TackleHunger/TackleHunger.git
-git clone git@github.com:tolicodes/erxes.git
-git clone git@github.com:tolicodes/erxes-api.git
-
-# Hover
-git clone git@github.com:hoverinc/design-pro-frontend.git
-git clone git@github.com:hoverinc/ks8-applications.git
-git clone git@github.com:hoverinc/website.git
-git clone git@github.com:hoverinc/developers.hover.to.git
-git clone git@github.com:hoverinc/hoverctl.git
-git clone git@github.com:hoverinc/cd-tools.git
-git clone git@github.com:hoverinc/machete.git
-git clone git@github.com:hoverinc/org_analytics.git
-git clone git@github.com:hoverinc/hyperion.git
-git clone git@github.com:hoverinc/billing-frontend.git
-git clone git@github.com:hoverinc/codefresh_qa.git
-git clone git@github.com:hoverinc/design-tokens.git
-git clone git@github.com:hoverinc/engineering.git
-git clone git@github.com:hoverinc/hover-javascript.git
-git clone git@github.com:hoverinc/picklejs.git
-git clone git@github.com:hoverinc/webapps.git
-git clone git@github.com:hoverinc/codefresh-test.git
-git clone git@github.com:hoverinc/rfc.git
-git clone git@github.com:hoverinc/developers.hover.to.git
-git clone git@github.com:hoverinc/front-end-fastify-server.git
-git clone git@github.com:hoverinc/hover-cli.git
-git clone git@github.com:hoverinc/developers.hover.to.git
-git clone git@github.com:tolicodes/public-notes.git
 ```
 
 #### Yarn everything
@@ -391,12 +282,10 @@ curl -s 'https://api.macapps.link/en/chrome-dropbox-drive-github-sequelpro-vscod
 
 ### Download  Links (In Case Something Breaks)
 - [Chrome](https://www.google.com/chrome/?brand=CHBD&gclid=CjwKCAiA8K7uBRBBEiwACOm4d-CR4CPqSUYJJhj8Fks_GWJeAjOJvcLZibwbbQTjiNl9CM1-1W5VgRoCXNkQAvD_BwE&gclsrc=aw.ds)
-- [HubStaff](https://app.hubstaff.com/download)
 - [Docker](https://www.docker.com/products/docker-desktop)
 - [Google Drive](https://www.google.com/drive/download/)
 - [iTerm](https://www.iterm2.com/downloads.html)
 - [RescueTime](https://www.rescuetime.com/get_rescuetime)
-- [Sketch](https://sketchapp.com/get/)
 - [Spotify](https://www.spotify.com/us/download/other/)
 - [Visual Studio Code](https://code.visualstudio.com/)
 - [Zoom](https://zoom.us/download)
