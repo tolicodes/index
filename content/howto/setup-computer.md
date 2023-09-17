@@ -41,11 +41,12 @@ brew install  --cask  \
 	1password \
 	cyberduck \
 	docker \
-        dropbox-capture \
-        github \
+	dropbox-capture \
+	github \
 	google-chrome \
 	iterm2 \
 	moom \
+	notion \
 	obs \
 	postman \
 	rescuetime \
