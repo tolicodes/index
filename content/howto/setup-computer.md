@@ -6,27 +6,10 @@ We install most of our application
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"
 ```
 
-## Setup Google Drive Sync
-This takes a while to sync so let's install it first
-
-```bash
-brew cask install google-backup-and-sync
-```
-
 ```
     (echo; echo 'eval "$(/opt/homebrew/bin/brew shellenv)"') >> /Users/toli/.zprofile
     eval "$(/opt/homebrew/bin/brew shellenv)"
 ```
-
-Open a new shell
-
-- Sign in as toli@oselot.com
-
-## Setup Dropbox
-This also takes a while to sync:
-
-- Sign in using Google toli@oselot.com
-- Choose "Online only"
 
 ## Install XCode
 Go to the App Store and install XCode. It contains a lot of command line utilities necessary later on. It takes a long time to download as well.
@@ -38,20 +21,6 @@ Run the following command to install software that I use:
 
 ```bash
 brew install  --cask  \
-	1password \
-	cyberduck \
-	docker \
-	dropbox-capture \
-	github \
-	google-chrome \
-	iterm2 \
-	moom \
-	notion \
-	obs \
-	postman \
-	rescuetime \
-	sequel-pro \
-	slack \
 	spotify \
 	visual-studio-code \
 	whatsapp \
