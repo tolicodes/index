@@ -4,7 +4,7 @@
 
 ## ACTIVE PROJECTS
 
-- [PickleJS](./picklejs.md)
+- [PickleJS](./picklejs.md) · [Archived docs](https://picklejs.toli.me/)
 - [Practical Transformation Toolkit](./practical-transformation-toolkit.md)
 
 ### [Financial Health](./financial-health.md)

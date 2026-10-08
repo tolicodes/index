@@ -34,3 +34,7 @@ Stuff I'd like to buy
 <!--stackedit_data:
 eyJoaXN0b3J5IjpbNDQyNDE2NTQyXX0=
 -->
+
+## PickleJS cross-links — October 8, 2026
+
+The historical projects index retains its local planning page and adds a restored-docs link. The PickleJS page links to archived documentation and the personal source mirror. Historical todo items remain historical. The computer-setup clone command remains a source operation; an accompanying docs reference makes the restored site discoverable. The exact old Eleventy export is patched using the committed Netlify file-digest manifest, preserving all unrelated content and assets. Source Markdown and deployed HTML are reconciled; no dependency migration or full-site redesign is part of this change. Verification and publication are recorded separately.
