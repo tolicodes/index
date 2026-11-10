@@ -1,0 +1,562 @@
+<h1>Setup Computer</h1>
+<p>Historical setup notes. <a href="https://picklejs.toli.me/">PickleJS archived documentation</a> is restored.</p>
+<h2>Install Homebrew</h2>
+<p>We install most of our application</p>
+<pre><code class="language-bash">/bin/bash -c &quot;$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)&quot;
+</code></pre>
+<h2>Install Google Drive Sync and Dropbox</h2>
+<p>We need ssh keys so let's start syncing</p>
+<p>These are automatically installed by:</p>
+<pre><code class="language-bash">brew cask install dropbox google-backup-and-sync
+</code></pre>
+<p>Takes forever to sync so...install these first:</p>
+<h3>Google Drive</h3>
+<p><a href="https://www.google.com/drive/download/">Google Drive</a></p>
+<ul>
+<li>Sign in as toli@oselot.com</li>
+<li>Go to Preferences</li>
+<li>Change Removing items to &quot;Always remove both copies&quot;</li>
+<li>Check &quot;Upload newly added photos and videos&quot;</li>
+<li>Click &quot;Uploading photos and videos in...&quot; and pick &quot;High Quality&quot;</li>
+</ul>
+<h3>Dropbox</h3>
+<p><a href="https://www.dropbox.com/downloading">Dropbox</a></p>
+<ul>
+<li>Sign in using Google adz@nycitt.com</li>
+<li>Choose &quot;Online only&quot;</li>
+</ul>
+<h2>Install XCode</h2>
+<p>Go to the App Store and install XCode. It contains a lot of command line utilities necessary later on. It takes a long time to download as well.</p>
+<h2>Install Brew Cask Software</h2>
+<p>These are GUIs that I use:</p>
+<p>These have already been installed above:</p>
+<pre><code class="language-bash">brew cask install \
+	dropbox \
+	google-backup-and-sync
+</code></pre>
+<h3>Not Cask</h3>
+<ul>
+<li>Calendly Click</li>
+<li>Cleaner-App</li>
+<li>Day One</li>
+<li>Duplicate File Finder</li>
+<li>Giphy Capture</li>
+<li>Logi Options</li>
+</ul>
+<p>Run the following command to install software that I use:</p>
+<pre><code class="language-bash">brew cask install \
+	1password \
+	cyberduck \
+	ccleaner \
+	clickup \
+	discord \
+	docker \
+	evernote \
+	github \
+	google-chrome \
+	google-cloud-sdk \
+	google-hangouts \
+	hubstaff \
+	iterm2 \
+	moom \
+	obs \
+	postman \
+	quickbooks-online \
+	rescuetime \
+	sequel-pro \
+	sketch \
+	skype \
+	slack \
+	spotify \
+	the-clock \
+	tower \
+	visual-studio-code \
+	whatsapp \
+	zoom
+
+</code></pre>
+<p>brew install <br>
+hub <br>
+jq <br>
+nvm <br>
+rclone <br>
+speedtest-cli <br>
+yarn</p>
+<pre><code>
+### Command Line setup
+```bash
+# Setting up zsh
+rm ~/.zshrc &amp;&amp; \
+ln -s &quot;~/Google\ Drive/ALL - Toli/Config Files/.zshrc&quot; &amp;&amp; \
+source ~/.zshrc
+
+# Oh-my-zsh
+sh -c &quot;$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)&quot;
+
+# powerline fonts
+git clone https://github.com/powerline/fonts.git --depth=1
+cd fonts
+./install.sh
+cd ..
+rm -rf fonts
+
+# nvm
+# https://raw.githubusercontent.com/creationix/nvm/v0.34.0/install.sh | bash
+source ~/.zshrc
+nvm install latest
+
+# mismatch in nvm
+npm config set scripts-prepend-node-path auto
+
+# Firebase
+npm i -g firebase-tools
+
+# lerna
+npm i -g lerna
+
+# Codefresh
+npm i -g codefresh
+</code></pre>
+<h3>Login to CLIs</h3>
+<pre><code class="language-bash">npm login
+firebase login
+# TODO: Setup Codefresh
+</code></pre>
+<h3>Manual Downloads</h3>
+<p><a href="https://www.git-tower.com/download-TO2M">Tower</a></p>
+<ul>
+<li>License in 1Password</li>
+<li>Choose Default to clone to: <code>~/Sites</code></li>
+</ul>
+<h3>App Store</h3>
+<ul>
+<li>Amphetamine</li>
+<li>SpeedTest</li>
+<li>Duplicate File Remover
+<ul>
+<li>Preferences-&gt;Upgrade to Pro-&gt;Restore</li>
+</ul>
+</li>
+<li>Be Focused Pro
+<ul>
+<li>Open Settings and Log In (adz@nycit.com)</li>
+<li>Launch at Startup</li>
+</ul>
+</li>
+<li>Giphy Capture</li>
+<li>XCode
+<ul>
+<li>Open Xcode and agree to license agreement</li>
+<li>Install command line tools <code>xcode-select --install</code></li>
+</ul>
+</li>
+<li>DayOne
+<ul>
+<li>Sign in using icloud</li>
+</ul>
+</li>
+<li>Numbers</li>
+</ul>
+<h3>Manual Setup</h3>
+<ul>
+<li>1Password
+<ul>
+<li>Open on login</li>
+<li>Configure using iphone</li>
+<li>Preferences-&gt;Security-&gt;Allow Touch ID</li>
+<li>In chrome <a href="https://chrome.google.com/webstore/detail/1password-extension-deskt/aomjjhallfgjeglblehebfpbcfeobpgk?hl=en">install plugin</a> and configure it</li>
+</ul>
+</li>
+<li>WhatsApp
+<ul>
+<li>Open and log in using phone</li>
+</ul>
+</li>
+<li>The Clock</li>
+<li>HubStaff
+<ul>
+<li>Login as toli@Tolicodes.com</li>
+<li>Preferences-&gt;Automatically start Hubstaff</li>
+</ul>
+</li>
+<li>iTerm
+<ul>
+<li>In Iterm go to Preferences-&gt;Profiles-&gt;Text-&gt;Fonts and select &quot;Droid Sans Mono Dotted for Powerline&quot;</li>
+</ul>
+</li>
+<li>Codefresh
+<ul>
+<li>
+<p>Get API Key From <a href="https://g.codefresh.io/user/settings">here</a> bottom. Log in using google account (toli@nycitt.com)</p>
+</li>
+<li>
+<p>Authenticate with key from previous step</p>
+<pre><code>codefresh auth create-context --api-key KEY_GOES_HERE
+</code></pre>
+</li>
+<li>
+<p>RescueTime</p>
+<ul>
+<li>Login as adz@nycitt.com</li>
+</ul>
+</li>
+<li>
+<p>Tower</p>
+<ul>
+<li>License in 1Password</li>
+<li>Choose Default to clone to: <code>~/Sites</code></li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Visual Studio Code
+<ul>
+<li>Open Vscode Command Exec (Command + Shift + P) and then type &quot;&gt;install code&quot; and press &quot;Enter&quot;. This will install <code>code</code></li>
+<li>Go to Preferences-&gt;Settings-&gt;Type &quot;font terminal&quot; and paste &quot;Droid Sans Mono Dotted for Powerline&quot;</li>
+<li>Install &quot;Settings Sync&quot; extension</li>
+<li>Login with Github</li>
+<li>Use these settings to sync <a href="https://gist.github.com/tolicodes/05e150802f12d1e3c4ccfbe997f8b43f">these settings</a></li>
+<li>Go to &quot;edit preferences&quot;  and check &quot;Auto Download&quot;, &quot;Auto Upload&quot;, &quot;Force Download&quot;, &quot;Force Upload&quot;  and type &quot;Download Settings&quot; in Console. Press &quot;Shift+Option+D&quot; to sync</li>
+</ul>
+</li>
+<li>Zoom
+<ul>
+<li>Login as toli@nycitt.com</li>
+<li>Settings-&gt;Recording</li>
+<li>Store recordings in Dropbox/ALL/Recordings</li>
+<li>Choose location to save the recording to after meetings ends</li>
+<li>Add timestamp</li>
+<li>Record video during screen sharing-&gt;Place video next to shared screen</li>
+</ul>
+</li>
+<li>OBS
+<ul>
+<li>OBS-&gt;Preferences-&gt;Output-&gt;Recording-&gt;Recording Format select &quot;mp4&quot;</li>
+<li>OBS-&gt;Preferences-&gt;Output-&gt;Record-&gt;Recording Path set to &quot;/Users/toli/ToliCodes Dropbox/Anatoliy Zaslavskiy/ALL/Recordings&quot;</li>
+<li>OBS-&gt;Preferences-&gt;Video Both resolutions to 1920x1200</li>
+<li>Setup Display recording + top left hand corner video scene
+<ul>
+<li>Display Capture, Video Capture Device</li>
+<li>Edit-&gt;Transform-&gt;Fit to screen</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Moom
+<ul>
+<li>Go to General, uncheck &quot;Show preferences on launch&quot;, check &quot;Launch automatically on login&quot;</li>
+<li>Configure Moom Settings
+<ul>
+<li>Command+Option+Left - left side</li>
+<li>Command+Option+Right - right side</li>
+<li>Command+Option+Up - full screen</li>
+</ul>
+</li>
+<li>Check Run as &quot;Menu Application&quot; in the main screen</li>
+</ul>
+</li>
+<li>Postman
+<ul>
+<li>Sign in with toli@nycitt.com</li>
+</ul>
+</li>
+<li>Slack <a href="./slack-workspaces">Workspaces</a></li>
+<li>Github
+<ul>
+<li>Drag everything in the <code>~Sites</code> folder onto the screen</li>
+</ul>
+</li>
+<li>Docker
+<ul>
+<li>Open and accept permissions</li>
+</ul>
+</li>
+</ul>
+<h2>Config</h2>
+<ul>
+<li>System Preferences -&gt; Displays -&gt; Scaled for More Space</li>
+<li>Click On Top Bar -&gt; Battery -&gt; Show Battery Percentage</li>
+<li>Go to System Preferences-&gt;Sound and check &quot;Show volume in menu bar&quot;</li>
+<li>Create <code>~/Sites</code> and drag it into favorites</li>
+<li>System Preferences -&gt; Energy Saver -&gt; Power Adapter -&gt; Turn Display Off after &quot;Never&quot;, Uncheck &quot;Put harddisks to sleep&quot;, uncheck &quot;Enable power nap&quot;</li>
+<li>Get rid of all the icons you don't use on the bottom bar</li>
+<li>Keep the following in the bottom bar
+<ul>
+<li>Google Chrome</li>
+<li>OBS</li>
+<li>HubStaff</li>
+<li>iTerm</li>
+<li>WhatsApp</li>
+<li>Slack</li>
+<li>Tower</li>
+<li>VSCode</li>
+<li>Github Desktop</li>
+<li>Zoom</li>
+<li>Postman</li>
+</ul>
+</li>
+<li>Symlink config files from Google Drive (download it directly if it's not synced and you want to start working). Internally it links <code>.ssh</code>
+<ul>
+<li><code>ln -s ~/Google\ Drive/ALL\ -\ Toli/Config\ Files/.zshrc &amp;&amp; source ~/Mi.zshrc</code></li>
+</ul>
+</li>
+<li>AWS Setup (originally <a href="https://hoverinc.atlassian.net/wiki/spaces/EN/pages/886440263/AWS+Multi-Account+access">here</a>
+<ul>
+<li>
+<p>Run</p>
+<pre><code>brew install aws-okta awscli aws-iam-authenticator
+mkdir ~/.aws
+</code></pre>
+</li>
+<li>
+<p>Copy the following into <code>~/.aws/config</code></p>
+<pre><code>  [okta]
+  aws_saml_url=home/amazon_aws/0oa13zruhwnKvZc5u357/272
+   
+  [profile legacy]
+  region=us-east-1
+  role_arn=arn:aws:iam::241884713626:role/Developer
+   
+  [profile legacy-operator]
+  region=us-east-1
+  role_arn=arn:aws:iam::241884713626:role/Operator
+   
+  [profile app-prod]
+  region=us-east-1
+  role_arn=arn:aws:iam::567347048851:role/Developer
+    
+  [profile app-preprod]
+  region=us-east-1
+  role_arn=arn:aws:iam::550986622600:role/Developer
+    
+  [profile app-playground]
+  region=us-east-1
+  role_arn=arn:aws:iam::205623263074:role/Developer
+   
+  [profile logs]
+  region=us-east-1
+  role_arn=arn:aws:iam::053214610460:role/Developer
+</code></pre>
+</li>
+<li>
+<p>Run Okta setup</p>
+<pre><code>  aws-okta add
+
+  Okta organization: hover
+  Okta region (us, emea, preview): &lt;hit_enter_leaving_it_blank&gt;
+  Okta domain hover.okta.com: &lt;hit_enter_leaving_it_blank&gt;
+  Okta username: &lt;your_hover_email@hover.to&gt;
+  Okta password: &lt;your_okta_password&gt;
+</code></pre>
+</li>
+<li>
+<p>Setup expiration in <code>~/.zshrc</code></p>
+</li>
+</ul>
+</li>
+<li>VPN Set up (originally [here](<a href="https://hoverinc.atlassian.net/wiki/spaces/EN/pages/28049410/Setting+up+the+HOVER+VPN">https://hoverinc.atlassian.net/wiki/spaces/EN/pages/28049410/Setting+up+the+HOVER+VPN</a>
+<ul>
+<li>
+<p>In &quot;System Preferences -&gt;  Preferences&quot; add VPN as &quot;L2TP over IPSec&quot;</p>
+<ul>
+<li><strong>Server Address:</strong> san-francisco-wired-whvwpznqkc.dynamic-m.com</li>
+<li><strong>Type:</strong> VPN L2TP over IpSec</li>
+<li><strong>Shared Secret:</strong> H0v3rH1gh</li>
+<li><strong>username</strong>: toli@hoverinc.com</li>
+<li><strong>password</strong>: (Password sent via Cisco Meraki) - search in email</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h2>Repos to Clone</h2>
+<h3>Save Unmerged changes on old computer</h3>
+<pre><code class="language-bash">setopt sh_word_split # For zsh
+dirs=$(find . -maxdepth 1 -type d -execdir test -d {}/.git \; -prune -print 2&gt;/dev/null)
+for dir in $dirs; do
+	originalPwd=$(pwd)
+	cd $dir
+    unclean=$(git status --porcelain)
+    unpushed=$(git log --branches --not --remotes)
+    [[ $unclean || $unpushed ]] &amp;&amp; git add . &amp;&amp; git commit -m &quot;Uncommited Changes&quot; &amp;&amp; git push --all
+	cd $originalPwd
+done
+</code></pre>
+<h3>Get Repos From Old Computer</h3>
+<pre><code class="language-bash">function executeInAllGitDirs {
+	dirs=$(find . -maxdepth 1 -type d -execdir test -d {}/.git \; -prune -print 2&gt;/dev/null)
+	for dir in $dirs; do
+		originalPwd=$(pwd)
+		cd $dir
+		eval $1
+		cd $originalPwd
+	done
+}
+
+executeInAllGitDirs &quot;echo \&quot;git clone \$(git config --get remote.origin.url)\&quot;&quot;
+</code></pre>
+<h3>Clone on new computer</h3>
+<pre><code class="language-bash">cd ~/Sites
+
+# Personal Repos
+git clone git@github.com:tolicodes/node-cli-toolkit.git
+git clone git@github.com:tolicodes/activity-brainstorm.git
+git clone git@github.com:tolicodes/node-api-toolkit.git
+git clone git@github.com:tolicodes/dropbox-photo-viewer.git
+git clone git@github.com:tolicodes/souleclipse.us.git
+git clone git@github.com:tolicodes/principles.git
+git clone git@github.com:hoverinc/infragen.git
+git clone git@github.com:tolicodes/github-toolkit.git
+git clone git@github.com:tolicodes/zoomevents.git
+git clone git@github.com:tolicodes/index.git
+git clone git@github.com:tolicodes/infragen.git
+
+# Client repos
+git clone git@github.com:COVID-basic-needs/JS-frontend.git
+git clone git@github.com:TackleHunger/TackleHunger.git
+git clone git@github.com:tolicodes/erxes.git
+git clone git@github.com:tolicodes/erxes-api.git
+
+# Hover
+git clone git@github.com:hoverinc/design-pro-frontend.git
+git clone git@github.com:hoverinc/ks8-applications.git
+git clone git@github.com:hoverinc/website.git
+git clone git@github.com:hoverinc/developers.hover.to.git
+git clone git@github.com:hoverinc/hoverctl.git
+git clone git@github.com:hoverinc/cd-tools.git
+git clone git@github.com:hoverinc/machete.git
+git clone git@github.com:hoverinc/org_analytics.git
+git clone git@github.com:hoverinc/hyperion.git
+git clone git@github.com:hoverinc/billing-frontend.git
+git clone git@github.com:hoverinc/codefresh_qa.git
+git clone git@github.com:hoverinc/design-tokens.git
+git clone git@github.com:hoverinc/engineering.git
+git clone git@github.com:hoverinc/hover-javascript.git
+git clone git@github.com:hoverinc/picklejs.git
+git clone git@github.com:hoverinc/webapps.git
+git clone git@github.com:hoverinc/codefresh-test.git
+git clone git@github.com:hoverinc/rfc.git
+git clone git@github.com:hoverinc/developers.hover.to.git
+git clone git@github.com:hoverinc/front-end-fastify-server.git
+git clone git@github.com:hoverinc/hover-cli.git
+git clone git@github.com:hoverinc/developers.hover.to.git
+git clone git@github.com:tolicodes/public-notes.git
+</code></pre>
+<h4>Yarn everything</h4>
+<pre><code class="language-bash">setopt sh_word_split # For zsh
+function executeInAllGitDirs {
+	dirs=$(find . -maxdepth 1 -type d -execdir test -d {}/.git \; -prune -print 2&gt;/dev/null)
+	for dir in $dirs; do
+		originalPwd=$(pwd)
+		cd $dir
+		eval $1
+		cd $originalPwd
+	done
+}
+
+executeInAllGitDirs &quot;[[ \$(find . -name package.json) ]] &amp;&amp; yarn&quot;
+</code></pre>
+<h4>Copy DotFiles</h4>
+<p>Check <a href="https://github.com/tolicodes/index/blob/master/howto/git-commands/#sync-dotfiles-in-all-git-repos">this</a></p>
+<h2>Online Tools</h2>
+<ul>
+<li>Code Storage
+<ul>
+<li>GitHub - best experience, paid for private repos</li>
+<li>Bitbucket - free unlimited private repos, limited colabs</li>
+<li>GitLab - free unlimited repos, unlimited colab</li>
+</ul>
+</li>
+<li>Time Tracking
+<ul>
+<li>Hubstaff</li>
+</ul>
+</li>
+<li>Project Management
+<ul>
+<li>Trello: small projects/tasks</li>
+<li>JIRA: big projects, big teams</li>
+<li>Asana</li>
+</ul>
+</li>
+<li>Scheduling
+<ul>
+<li>Calend.ly</li>
+</ul>
+</li>
+<li>Jobs
+<ul>
+<li>CodeMentor</li>
+<li>CodeMentor X</li>
+</ul>
+</li>
+<li>Hosting
+<ul>
+<li>Netlify - preferred, easy hosting, Node</li>
+<li>Surge.sh - static website hosting</li>
+<li>AWS - big application hosting</li>
+</ul>
+</li>
+<li>Mockups
+<ul>
+<li>Invision</li>
+<li>SketchUp - making mockups</li>
+</ul>
+</li>
+<li>Analytics
+<ul>
+<li>HotJar - heatmaps</li>
+<li>FullStory</li>
+<li>Google Analytics</li>
+</ul>
+</li>
+<li>Error Tracking
+<ul>
+<li>Rollbar</li>
+</ul>
+</li>
+<li>Email Testing
+<ul>
+<li>Litmus</li>
+</ul>
+</li>
+<li>Document Signing/Contracts
+<ul>
+<li>HelloSign</li>
+</ul>
+</li>
+</ul>
+<h2>JS Stack</h2>
+<ul>
+<li>Node</li>
+<li>React</li>
+<li>React Native</li>
+<li>Redux</li>
+<li>Connected React Router</li>
+<li>StyledComponents</li>
+<li>Contentful - CMS</li>
+<li>Storybook</li>
+<li>create-react-app</li>
+<li>create-react-native-app</li>
+<li>Expo</li>
+</ul>
+<h2>Deprecated</h2>
+<h3>MacApps</h3>
+<pre><code>curl -s 'https://api.macapps.link/en/chrome-dropbox-drive-github-sequelpro-vscode-docker-sketch-iterm-1password-cyberduck-spotify-skype-slack-whatsapp-discord' | sh
+</code></pre>
+<h3>Download  Links (In Case Something Breaks)</h3>
+<ul>
+<li><a href="https://www.google.com/chrome/?brand=CHBD&amp;gclid=CjwKCAiA8K7uBRBBEiwACOm4d-CR4CPqSUYJJhj8Fks_GWJeAjOJvcLZibwbbQTjiNl9CM1-1W5VgRoCXNkQAvD_BwE&amp;gclsrc=aw.ds">Chrome</a></li>
+<li><a href="https://app.hubstaff.com/download">HubStaff</a></li>
+<li><a href="https://www.docker.com/products/docker-desktop">Docker</a></li>
+<li><a href="https://www.google.com/drive/download/">Google Drive</a></li>
+<li><a href="https://www.iterm2.com/downloads.html">iTerm</a></li>
+<li><a href="https://www.rescuetime.com/get_rescuetime">RescueTime</a></li>
+<li><a href="https://sketchapp.com/get/">Sketch</a></li>
+<li><a href="https://www.spotify.com/us/download/other/">Spotify</a></li>
+<li><a href="https://code.visualstudio.com/">Visual Studio Code</a></li>
+<li><a href="https://zoom.us/download">Zoom</a></li>
+<li><a href="https://www.getpostman.com/downloads/">PostMan</a></li>
+<li><a href="https://brew.sh/">Brew</a></li>
+<li><a href="https://obsproject.com/download">OBS</a></li>
+</ul>

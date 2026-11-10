@@ -262,3 +262,6 @@ curl -s 'https://api.macapps.link/en/chrome-dropbox-drive-github-sequelpro-vscod
 - [PostMan](https://www.getpostman.com/downloads/)
 - [Brew](https://brew.sh/)
 - [OBS](https://obsproject.com/download)
+
+
+[PickleJS archived documentation](https://picklejs.toli.me/) is restored; the commands above remain historical setup notes.

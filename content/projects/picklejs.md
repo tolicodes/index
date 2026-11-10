@@ -1,5 +1,7 @@
 # PickleJS
 
+Archived testing library. [Read the restored documentation](https://picklejs.toli.me/) · [View source](https://github.com/tolicodes/picklejs).
+
 ## Todo
 
 - Move Pickle to K8S
